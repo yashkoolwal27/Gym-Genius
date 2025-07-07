@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import { formatInTimeZone } from "date-fns-tz";
 import { cn } from "@/lib/utils";
-import { Clock, Dumbbell, Trash2, PlusCircle, CheckCircle, ChevronLeft } from "lucide-react";
+import { Clock, Dumbbell, Trash2, PlusCircle, CheckCircle, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
@@ -94,13 +94,6 @@ export function WorkoutGenerator() {
       );
   };
 
-  const handleDateSelect = (selectedDate: Date | undefined) => {
-    if (selectedDate) {
-      setDate(selectedDate);
-      setStep(2);
-    }
-  };
-
   const resetForm = () => {
     setDate(undefined);
     setTime(format(new Date(), 'HH:mm'));
@@ -151,7 +144,7 @@ export function WorkoutGenerator() {
       <Card className="w-full flex-1 flex flex-col shadow-xl border-none bg-card/70">
         <CardHeader>
             <div className="flex justify-between items-center">
-                <CardTitle className="text-2xl font-bold tracking-tight">Select a Date</CardTitle>
+                <CardTitle className="text-2xl font-bold tracking-tight">Select Date & Time</CardTitle>
                 <Button variant="link" className="p-0 text-primary">See Booked Slots &gt;</Button>
             </div>
         </CardHeader>
@@ -159,7 +152,7 @@ export function WorkoutGenerator() {
             <Calendar
                 mode="single"
                 selected={date}
-                onSelect={handleDateSelect}
+                onSelect={setDate}
                 toDate={today}
                 className="w-full h-full flex flex-col"
                 classNames={{
@@ -176,6 +169,19 @@ export function WorkoutGenerator() {
                 }}
             />
         </CardContent>
+        <CardFooter className="flex-col sm:flex-row items-center gap-4 border-t pt-6">
+            <div className="flex-1 w-full sm:w-auto">
+                <Label htmlFor="workout-time">Workout Time</Label>
+                <div className="relative mt-2">
+                    <Clock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Input id="workout-time" type="time" value={time} onChange={(e) => setTime(e.target.value)} className="pl-10" />
+                </div>
+            </div>
+            <Button onClick={() => setStep(2)} disabled={!date} className="w-full sm:w-auto mt-4 sm:mt-0" size="lg">
+                Next Step
+                <ChevronRight className="ml-2 h-4 w-4" />
+            </Button>
+        </CardFooter>
       </Card>
     );
   }
@@ -185,28 +191,18 @@ export function WorkoutGenerator() {
         <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
             <CardHeader>
                 <div className="flex items-center gap-4">
-                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => { setDate(undefined); setStep(1); }}>
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
                         <ChevronLeft className="h-4 w-4" />
                     </Button>
                     <div>
                         <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
                         <CardDescription>
-                            Fill in the details for your session on {date ? format(date, "PPP") : 'the selected date'}.
+                            Fill in the details for your session on {date ? format(date, "PPP") : 'the selected date'} at {time}.
                         </CardDescription>
                     </div>
                 </div>
             </CardHeader>
             <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="flex flex-col space-y-2">
-                        <Label htmlFor="workout-time">Workout Time</Label>
-                        <div className="relative">
-                            <Clock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                            <Input id="workout-time" type="time" value={time} onChange={(e) => setTime(e.target.value)} className="pl-10" />
-                        </div>
-                    </div>
-                </div>
-
                 <div>
                   <Label>Exercise Categories</Label>
                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
