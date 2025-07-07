@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -152,7 +153,7 @@ export function WorkoutGenerator() {
                 mode="single"
                 selected={date}
                 onSelect={setDate}
-                toDate={today}
+                disabled={{ after: today }}
                 className="w-full h-full flex flex-col"
                 classNames={{
                     months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 flex-1",
@@ -163,8 +164,9 @@ export function WorkoutGenerator() {
                     head_cell: "text-muted-foreground rounded-md flex-1 font-normal text-base",
                     cell: "p-0 relative text-center flex-1",
                     day: "w-full h-full text-base p-0 font-normal aria-selected:opacity-100 rounded-md",
-                    day_selected: "bg-transparent text-accent border border-accent",
-                    day_today: "bg-primary text-primary-foreground",
+                    day_selected: "bg-primary text-primary-foreground hover:bg-primary/90 focus:bg-primary/90",
+                    day_today: "bg-accent text-accent-foreground",
+                    day_disabled: "text-muted-foreground/50 cursor-not-allowed",
                 }}
             />
         </CardContent>
@@ -186,115 +188,111 @@ export function WorkoutGenerator() {
   }
 
   return (
-    <div className="space-y-8">
-        <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
-            <CardHeader>
-                <div className="flex items-center gap-4">
-                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
-                        <ChevronLeft className="h-4 w-4" />
-                    </Button>
-                    <div>
-                        <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
-                        <CardDescription>
-                            Fill in the details for your session on {date ? format(date, "PPP") : 'the selected date'} at {time}.
-                        </CardDescription>
-                    </div>
-                </div>
-            </CardHeader>
-            <CardContent className="space-y-6">
+    <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
+        <CardHeader>
+            <div className="flex items-center gap-4">
+                <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
+                    <ChevronLeft className="h-4 w-4" />
+                </Button>
                 <div>
-                  <Label>Exercise Categories</Label>
-                   <p className="text-sm text-muted-foreground">Select the muscle groups you trained.</p>
-                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
-                    {exerciseCategories.map((item) => {
-                      const isSelected = selectedCategories.includes(item.label);
-                      return (
-                          <div
-                            key={item.id}
-                            onClick={() => handleCategoryChange(item.label, !isSelected)}
-                            className={cn(
-                              "relative rounded-lg overflow-hidden cursor-pointer group border-2",
-                              isSelected ? "border-primary" : "border-transparent"
-                            )}
-                          >
-                            <Image
-                              src={item.image}
-                              alt={item.label}
-                              width={300}
-                              height={200}
-                              className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                              data-ai-hint={item.hint}
-                            />
-                            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors" />
-                            <div className="absolute bottom-0 left-0 p-3">
-                              <h3 className="font-semibold text-white">{item.label}</h3>
-                            </div>
-                            {isSelected && (
-                              <div className="absolute top-2 right-2 bg-primary text-primary-foreground rounded-full p-1">
-                                <CheckCircle className="h-5 w-5" />
-                              </div>
-                            )}
-                          </div>
-                        );
-                    })}
-                  </div>
+                    <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
+                    <CardDescription>
+                        Fill in the details for your session on {date ? format(date, "PPP") : 'the selected date'} at {time}.
+                    </CardDescription>
                 </div>
-            </CardContent>
-        </Card>
-        
-        <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
-            <CardHeader>
-                <CardTitle>Exercises</CardTitle>
-                <CardDescription>Add the exercises you performed in this session.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-                {exercises.length === 0 && (
-                    <div className="text-center text-muted-foreground py-8">
-                        <p>No exercises added yet.</p>
-                        <p className="text-sm">Click "Add Exercise" to get started.</p>
-                    </div>
-                )}
-                {exercises.map((exercise, exIndex) => (
-                    <Card key={exercise.id} className="p-4 bg-background relative">
-                        <Button variant="ghost" size="icon" className="absolute top-2 right-2 h-7 w-7 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeExercise(exercise.id)}>
-                            <Trash2 className="h-4 w-4" />
-                        </Button>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
-                            <div className="md:col-span-1 space-y-2">
-                                <Label htmlFor={`ex-name-${exIndex}`}>Exercise Name</Label>
-                                <Input id={`ex-name-${exIndex}`} placeholder="e.g. Bench Press" value={exercise.name} onChange={(e) => updateExercise(exercise.id, e.target.value)} />
-                            </div>
-                            <div className="md:col-span-2 space-y-2">
-                                <div className="flex justify-between items-center text-sm font-medium">
-                                    <Label>Sets</Label>
-                                    <Button variant="outline" size="sm" onClick={() => addSet(exercise.id)}>
-                                        <PlusCircle className="mr-2 h-4 w-4" /> Add Set
-                                    </Button>
+            </div>
+        </CardHeader>
+        <CardContent className="space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold">Exercise Categories</h3>
+               <p className="text-sm text-muted-foreground">Select the muscle groups you trained.</p>
+               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
+                {exerciseCategories.map((item) => {
+                  const isSelected = selectedCategories.includes(item.label);
+                  return (
+                      <div
+                        key={item.id}
+                        onClick={() => handleCategoryChange(item.label, !isSelected)}
+                        className={cn(
+                          "relative rounded-lg overflow-hidden cursor-pointer group border-2",
+                          isSelected ? "border-primary" : "border-transparent"
+                        )}
+                      >
+                        <Image
+                          src={item.image}
+                          alt={item.label}
+                          width={300}
+                          height={200}
+                          className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                          data-ai-hint={item.hint}
+                        />
+                        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors" />
+                        <div className="absolute bottom-0 left-0 p-3">
+                          <h3 className="font-semibold text-white">{item.label}</h3>
+                        </div>
+                        {isSelected && (
+                          <div className="absolute top-2 right-2 bg-primary text-primary-foreground rounded-full p-1">
+                            <CheckCircle className="h-5 w-5" />
+                          </div>
+                        )}
+                      </div>
+                    );
+                })}
+              </div>
+            </div>
+            
+            <div>
+                <h3 className="text-xl font-semibold">Exercises</h3>
+                <p className="text-sm text-muted-foreground">Add the exercises you performed in this session.</p>
+                <div className="space-y-4 pt-4">
+                    {exercises.length === 0 && (
+                        <div className="text-center text-muted-foreground py-8 border-2 border-dashed rounded-lg">
+                            <p>No exercises added yet.</p>
+                            <p className="text-sm">Click "Add Exercise" to get started.</p>
+                        </div>
+                    )}
+                    {exercises.map((exercise, exIndex) => (
+                        <Card key={exercise.id} className="p-4 bg-background relative">
+                            <Button variant="ghost" size="icon" className="absolute top-2 right-2 h-7 w-7 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeExercise(exercise.id)}>
+                                <Trash2 className="h-4 w-4" />
+                            </Button>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
+                                <div className="md:col-span-1 space-y-2">
+                                    <Label htmlFor={`ex-name-${exIndex}`}>Exercise Name</Label>
+                                    <Input id={`ex-name-${exIndex}`} placeholder="e.g. Bench Press" value={exercise.name} onChange={(e) => updateExercise(exercise.id, e.target.value)} />
                                 </div>
-                                {exercise.sets.map((set, setIndex) => (
-                                    <div key={set.id} className="flex gap-2 items-center">
-                                        <span className="text-sm font-medium text-muted-foreground w-8 text-center">#{setIndex + 1}</span>
-                                        <Input placeholder="Reps" value={set.reps} onChange={(e) => updateSet(exercise.id, set.id, 'reps', e.target.value)} />
-                                        <Input placeholder="Weight (kg/lbs)" value={set.weight} onChange={(e) => updateSet(exercise.id, set.id, 'weight', e.target.value)} />
-                                        <Button variant="ghost" size="icon" className="h-8 w-8 shrink-0 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeSet(exercise.id, set.id)} disabled={exercise.sets.length <= 1}>
-                                            <Trash2 className="h-4 w-4" />
+                                <div className="md:col-span-2 space-y-2">
+                                    <div className="flex justify-between items-center text-sm font-medium">
+                                        <Label>Sets</Label>
+                                        <Button variant="outline" size="sm" onClick={() => addSet(exercise.id)}>
+                                            <PlusCircle className="mr-2 h-4 w-4" /> Add Set
                                         </Button>
                                     </div>
-                                ))}
+                                    {exercise.sets.map((set, setIndex) => (
+                                        <div key={set.id} className="flex gap-2 items-center">
+                                            <span className="text-sm font-medium text-muted-foreground w-8 text-center">#{setIndex + 1}</span>
+                                            <Input placeholder="Reps" value={set.reps} onChange={(e) => updateSet(exercise.id, set.id, 'reps', e.target.value)} />
+                                            <Input placeholder="Weight (kg/lbs)" value={set.weight} onChange={(e) => updateSet(exercise.id, set.id, 'weight', e.target.value)} />
+                                            <Button variant="ghost" size="icon" className="h-8 w-8 shrink-0 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeSet(exercise.id, set.id)} disabled={exercise.sets.length <= 1}>
+                                                <Trash2 className="h-4 w-4" />
+                                            </Button>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    </Card>
-                ))}
-                 <Button variant="secondary" className="w-full" onClick={addExercise}>
-                    <PlusCircle className="mr-2 h-4 w-4" /> Add Exercise
-                </Button>
-            </CardContent>
-            <CardFooter>
-                 <Button onClick={handleSubmit} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={exercises.length === 0}>
-                    <CheckCircle className="mr-2 h-4 w-4" /> Log Workout
-                </Button>
-            </CardFooter>
-        </Card>
-    </div>
+                        </Card>
+                    ))}
+                    <Button variant="secondary" className="w-full" onClick={addExercise}>
+                        <PlusCircle className="mr-2 h-4 w-4" /> Add Exercise
+                    </Button>
+                </div>
+            </div>
+        </CardContent>
+        <CardFooter>
+             <Button onClick={handleSubmit} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={exercises.length === 0}>
+                <CheckCircle className="mr-2 h-4 w-4" /> Log Workout
+            </Button>
+        </CardFooter>
+    </Card>
   );
 }
