@@ -1,28 +1,51 @@
+
 "use client";
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { BrainCircuit, Dumbbell, Save, Loader2, Sparkles } from "lucide-react";
+import { format } from "date-fns";
+import { cn } from "@/lib/utils";
+import { Calendar as CalendarIcon, BrainCircuit, Dumbbell, Save, Loader2, Sparkles } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Calendar } from "@/components/ui/calendar";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { getWorkoutPlan } from "@/lib/actions";
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import type { WorkoutPlan } from "@/lib/types";
 import { Skeleton } from "./ui/skeleton";
 
+const exerciseTypes = [
+  { id: "strength", label: "Strength Training" },
+  { id: "cardio", label: "Cardio" },
+  { id: "hiit", label: "HIIT" },
+  { id: "yoga", label: "Yoga" },
+  { id: "pilates", label: "Pilates" },
+  { id: "flexibility", label: "Flexibility & Mobility" },
+] as const;
+
 const formSchema = z.object({
   fitnessLevel: z.enum(['Beginner', 'Intermediate', 'Advanced']),
   goals: z.string().min(3, "Goals must be at least 3 characters."),
   availableEquipment: z.string().min(3, "Please list available equipment."),
   workoutDays: z.coerce.number().min(1).max(7),
-  workoutType: z.string().min(3, "Workout type must be at least 3 characters."),
+  workoutDate: z.date({
+    required_error: "A date for your workout is required.",
+  }),
+  workoutTime: z.string().refine((time) => /^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/.test(time), {
+    message: "Please enter a valid time in HH:MM format (e.g., 09:30).",
+  }),
+  exerciseTypes: z.array(z.string()).refine((value) => value.length > 0, {
+    message: "You have to select at least one exercise type.",
+  }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -72,14 +95,19 @@ export function WorkoutGenerator() {
       goals: "General fitness and weight loss",
       availableEquipment: "Dumbbells and resistance bands",
       workoutDays: 3,
-      workoutType: "Full body strength training",
+      workoutDate: new Date(),
+      workoutTime: "09:00",
+      exerciseTypes: ["strength"],
     },
   });
 
   async function onSubmit(values: FormValues) {
     setIsLoading(true);
     setGeneratedPlan(null);
-    const result = await getWorkoutPlan(values);
+    const result = await getWorkoutPlan({
+      ...values,
+      workoutDate: format(values.workoutDate, "PPP"),
+    });
     setIsLoading(false);
 
     if (result.success && result.data?.workoutPlan) {
@@ -120,6 +148,61 @@ export function WorkoutGenerator() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <FormField
                   control={form.control}
+                  name="workoutDate"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-col">
+                      <FormLabel>Workout Date</FormLabel>
+                      <Popover>
+                        <PopoverTrigger asChild>
+                          <FormControl>
+                            <Button
+                              variant={"outline"}
+                              className={cn(
+                                "w-full pl-3 text-left font-normal",
+                                !field.value && "text-muted-foreground"
+                              )}
+                            >
+                              {field.value ? (
+                                format(field.value, "PPP")
+                              ) : (
+                                <span>Pick a date</span>
+                              )}
+                              <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                            </Button>
+                          </FormControl>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-auto p-0" align="start">
+                          <Calendar
+                            mode="single"
+                            selected={field.value}
+                            onSelect={field.onChange}
+                            disabled={(date) => date < new Date(new Date().setHours(0,0,0,0))}
+                            initialFocus
+                          />
+                        </PopoverContent>
+                      </Popover>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="workoutTime"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Workout Time</FormLabel>
+                      <FormControl>
+                        <Input type="time" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+            </div>
+
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <FormField
+                  control={form.control}
                   name="fitnessLevel"
                   render={({ field }) => (
                     <FormItem>
@@ -152,7 +235,7 @@ export function WorkoutGenerator() {
                   )}
                 />
             </div>
-
+            
             <FormField
               control={form.control}
               name="goals"
@@ -183,13 +266,45 @@ export function WorkoutGenerator() {
             
             <FormField
               control={form.control}
-              name="workoutType"
-              render={({ field }) => (
+              name="exerciseTypes"
+              render={() => (
                 <FormItem>
-                  <FormLabel>Preferred Workout Type</FormLabel>
-                  <FormControl>
-                    <Input placeholder="e.g., Strength training, cardio, HIIT" {...field} />
-                  </FormControl>
+                  <FormLabel>Preferred Workout Types</FormLabel>
+                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {exerciseTypes.map((item) => (
+                      <FormField
+                        key={item.id}
+                        control={form.control}
+                        name="exerciseTypes"
+                        render={({ field }) => {
+                          return (
+                            <FormItem
+                              key={item.id}
+                              className="flex flex-row items-start space-x-3 space-y-0"
+                            >
+                              <FormControl>
+                                <Checkbox
+                                  checked={field.value?.includes(item.label)}
+                                  onCheckedChange={(checked) => {
+                                    return checked
+                                      ? field.onChange([...field.value, item.label])
+                                      : field.onChange(
+                                          field.value?.filter(
+                                            (value) => value !== item.label
+                                          )
+                                        )
+                                  }}
+                                />
+                              </FormControl>
+                              <FormLabel className="font-normal">
+                                {item.label}
+                              </FormLabel>
+                            </FormItem>
+                          )
+                        }}
+                      />
+                    ))}
+                  </div>
                   <FormMessage />
                 </FormItem>
               )}
