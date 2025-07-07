@@ -139,25 +139,30 @@ export function WorkoutGenerator() {
   
   if (step === 1) {
     return (
-      <Card className="w-full max-w-md mx-auto shadow-xl border-none bg-card/70">
+      <Card className="w-full flex-1 flex flex-col shadow-xl border-none bg-card/70">
         <CardHeader>
             <div className="flex justify-between items-center">
                 <CardTitle className="text-2xl font-bold tracking-tight">Select a Date</CardTitle>
                 <Button variant="link" className="p-0 text-primary">See Booked Slots &gt;</Button>
             </div>
         </CardHeader>
-        <CardContent className="flex justify-center p-0 sm:p-6">
+        <CardContent className="flex-1 flex justify-center items-center p-0 sm:p-6">
             <Calendar
                 mode="single"
                 selected={date}
                 onSelect={handleDateSelect}
-                className="p-0 rounded-md"
-                 classNames={{
+                className="w-full h-full flex flex-col"
+                classNames={{
+                    months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 flex-1",
+                    month: "flex flex-col flex-1",
+                    table: "w-full border-collapse flex flex-col flex-1",
+                    head_row: "flex justify-around",
+                    row: "flex w-full mt-2 flex-1",
+                    head_cell: "text-muted-foreground rounded-md flex-1 font-normal text-base",
+                    cell: "p-0 relative text-center flex-1",
+                    day: "w-full h-full text-base p-0 font-normal aria-selected:opacity-100 rounded-md",
                     day_selected: "bg-transparent text-accent border border-accent",
                     day_today: "bg-primary text-primary-foreground",
-                    head_cell: "w-10 text-muted-foreground rounded-md",
-                    cell: "h-10 w-10 text-center text-sm p-0 relative focus-within:relative focus-within:z-20",
-                    day: "h-10 w-10 p-0 font-normal aria-selected:opacity-100",
                 }}
             />
         </CardContent>
