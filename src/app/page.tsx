@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { AlertCircle, Calendar, DollarSign, PlusCircle, UserPlus, Users, Utensils, Zap } from "lucide-react";
 import StatCard from "@/components/dashboard/stat-card";
 import RecentWorkouts from "@/components/dashboard/recent-workouts";
-import MemberAttendanceChart from "@/components/dashboard/member-attendance-chart";
+import DietAndExerciseChart from "@/components/dashboard/member-attendance-chart";
 import FeaturedMember from "@/components/dashboard/featured-member";
 import DietLogs from "@/components/dashboard/diet-logs";
 import RecentActivity from "@/components/dashboard/recent-activity";
@@ -42,7 +42,7 @@ export default function DashboardPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             <RecentWorkouts />
-            <MemberAttendanceChart />
+            <DietAndExerciseChart />
           </div>
           <div className="space-y-8">
             <FeaturedMember />
