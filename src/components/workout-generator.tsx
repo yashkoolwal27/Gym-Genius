@@ -187,60 +187,86 @@ export function WorkoutGenerator() {
     );
   }
 
+  if (step === 2) {
+    return (
+        <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
+            <CardHeader>
+                <div className="flex items-center gap-4">
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
+                        <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <div>
+                        <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
+                        <CardDescription>
+                            First, select the muscle groups for your session on {date ? format(date, "PPP") : 'the selected date'} at {time}.
+                        </CardDescription>
+                    </div>
+                </div>
+            </CardHeader>
+            <CardContent>
+                <div>
+                  <h3 className="text-xl font-semibold">Exercise Categories</h3>
+                   <p className="text-sm text-muted-foreground">Select the muscle groups you trained.</p>
+                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
+                    {exerciseCategories.map((item) => {
+                      const isSelected = selectedCategories.includes(item.label);
+                      return (
+                          <div
+                            key={item.id}
+                            onClick={() => handleCategoryChange(item.label, !isSelected)}
+                            className={cn(
+                              "relative rounded-lg overflow-hidden cursor-pointer group border-2",
+                              isSelected ? "border-primary" : "border-transparent"
+                            )}
+                          >
+                            <Image
+                              src={item.image}
+                              alt={item.label}
+                              width={300}
+                              height={200}
+                              className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                              data-ai-hint={item.hint}
+                            />
+                            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors" />
+                            <div className="absolute bottom-0 left-0 p-3">
+                              <h3 className="font-semibold text-white">{item.label}</h3>
+                            </div>
+                            {isSelected && (
+                              <div className="absolute top-2 right-2 bg-primary text-primary-foreground rounded-full p-1">
+                                <CheckCircle className="h-5 w-5" />
+                              </div>
+                            )}
+                          </div>
+                        );
+                    })}
+                  </div>
+                </div>
+            </CardContent>
+            <CardFooter>
+                 <Button onClick={() => setStep(3)} className="w-full" size="lg" disabled={selectedCategories.length === 0}>
+                    Next Step <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+            </CardFooter>
+        </Card>
+    );
+  }
+
   return (
     <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
         <CardHeader>
             <div className="flex items-center gap-4">
-                <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
+                <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(2)}>
                     <ChevronLeft className="h-4 w-4" />
                 </Button>
                 <div>
                     <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
                     <CardDescription>
-                        Fill in the details for your session on {date ? format(date, "PPP") : 'the selected date'} at {time}.
+                        Now, add the exercises you performed for your session on {date ? format(date, "PPP") : 'the selected date'} at {time}.
                     </CardDescription>
                 </div>
             </div>
         </CardHeader>
-        <CardContent className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold">Exercise Categories</h3>
-               <p className="text-sm text-muted-foreground">Select the muscle groups you trained.</p>
-               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
-                {exerciseCategories.map((item) => {
-                  const isSelected = selectedCategories.includes(item.label);
-                  return (
-                      <div
-                        key={item.id}
-                        onClick={() => handleCategoryChange(item.label, !isSelected)}
-                        className={cn(
-                          "relative rounded-lg overflow-hidden cursor-pointer group border-2",
-                          isSelected ? "border-primary" : "border-transparent"
-                        )}
-                      >
-                        <Image
-                          src={item.image}
-                          alt={item.label}
-                          width={300}
-                          height={200}
-                          className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                          data-ai-hint={item.hint}
-                        />
-                        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors" />
-                        <div className="absolute bottom-0 left-0 p-3">
-                          <h3 className="font-semibold text-white">{item.label}</h3>
-                        </div>
-                        {isSelected && (
-                          <div className="absolute top-2 right-2 bg-primary text-primary-foreground rounded-full p-1">
-                            <CheckCircle className="h-5 w-5" />
-                          </div>
-                        )}
-                      </div>
-                    );
-                })}
-              </div>
-            </div>
-            
+        <CardContent>
             <div>
                 <h3 className="text-xl font-semibold">Exercises</h3>
                 <p className="text-sm text-muted-foreground">Add the exercises you performed in this session.</p>
