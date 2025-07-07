@@ -1,8 +1,9 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { format } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
 import { cn } from "@/lib/utils";
 import { Clock, Dumbbell, Trash2, PlusCircle, CheckCircle, ChevronLeft } from "lucide-react";
 
@@ -35,6 +36,14 @@ export function WorkoutGenerator() {
   const [time, setTime] = useState<string>(format(new Date(), 'HH:mm'));
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [exercises, setExercises] = useState<LoggedExercise[]>([]);
+  const [today, setToday] = useState<Date | undefined>(undefined);
+
+  useEffect(() => {
+    // Set "today" based on Indian Standard Time. This ensures future dates
+    // are disabled correctly regardless of the user's local timezone.
+    const todayStrInIndia = formatInTimeZone(new Date(), 'Asia/Kolkata', 'yyyy-MM-dd');
+    setToday(new Date(todayStrInIndia));
+  }, []);
 
   const addExercise = () => {
     setExercises([...exercises, { id: crypto.randomUUID(), name: "", sets: [{ id: crypto.randomUUID(), reps: "", weight: "" }] }]);
@@ -151,7 +160,7 @@ export function WorkoutGenerator() {
                 mode="single"
                 selected={date}
                 onSelect={handleDateSelect}
-                toDate={new Date()}
+                toDate={today}
                 className="w-full h-full flex flex-col"
                 classNames={{
                     months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 flex-1",
