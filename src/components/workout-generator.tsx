@@ -257,8 +257,8 @@ export function WorkoutGenerator() {
   if (step === 3) {
     const availableExercises = selectedCategories
       .flatMap(category => exerciseData[category as ExerciseCategory] || [])
-      .filter(exName => !exercises.some(loggedEx => loggedEx.name === exName))
-      .sort();
+      .filter(ex => !exercises.some(loggedEx => loggedEx.name === ex.name))
+      .sort((a,b) => a.name.localeCompare(b.name));
 
     return (
       <Card className="w-full max-w-6xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
@@ -280,14 +280,15 @@ export function WorkoutGenerator() {
              <h3 className="text-xl font-semibold">Available Exercises</h3>
              <p className="text-sm text-muted-foreground">Click an exercise to add it to your log.</p>
              <Card className="flex-1">
-                <ScrollArea className="h-[400px] p-4">
+                <ScrollArea className="h-[400px] p-2">
                   {availableExercises.length > 0 ? (
-                    <div className="space-y-2">
-                      {availableExercises.map(exName => (
-                        <Button key={exName} variant="ghost" className="w-full justify-start" onClick={() => addExercise(exName)}>
-                          <PlusCircle className="mr-2 h-4 w-4" />
-                          {exName}
-                        </Button>
+                    <div className="space-y-1">
+                      {availableExercises.map(ex => (
+                        <div key={ex.name} className="flex items-center gap-4 p-2 rounded-lg hover:bg-muted cursor-pointer" onClick={() => addExercise(ex.name)}>
+                          <Image src={ex.image} alt={ex.name} width={60} height={60} className="rounded-md object-cover bg-muted-foreground/20 aspect-square" data-ai-hint={ex.hint} />
+                          <span className="font-medium flex-1">{ex.name}</span>
+                          <PlusCircle className="h-5 w-5 text-muted-foreground" />
+                        </div>
                       ))}
                     </div>
                   ) : (
