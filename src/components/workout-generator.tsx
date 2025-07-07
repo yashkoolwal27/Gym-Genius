@@ -1,7 +1,7 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { format } from "date-fns";
 import { formatInTimeZone } from "date-fns-tz";
 import { cn } from "@/lib/utils";
@@ -11,20 +11,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Calendar } from "@/components/ui/calendar";
-import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import type { WorkoutLog, LoggedExercise } from "@/lib/types";
 import { Label } from "./ui/label";
 
 const exerciseCategories = [
-  { id: "chest", label: "Chest" },
-  { id: "cardio", label: "Cardio" },
-  { id: "arms", label: "Arms" },
-  { id: "legs", label: "Legs" },
-  { id: "core", label: "Core" },
-  { id: "shoulders", label: "Shoulders" },
-  { id: "back", label: "Back" },
+  { id: "chest", label: "Chest", image: "https://placehold.co/300x200.png", hint: "chest press" },
+  { id: "cardio", label: "Cardio", image: "https://placehold.co/300x200.png", hint: "treadmill running" },
+  { id: "arms", label: "Arms", image: "https://placehold.co/300x200.png", hint: "bicep curl" },
+  { id: "legs", label: "Legs", image: "https://placehold.co/300x200.png", hint: "squat workout" },
+  { id: "core", label: "Core", image: "https://placehold.co/300x200.png", hint: "plank exercise" },
+  { id: "shoulders", label: "Shoulders", image: "https://placehold.co/300x200.png", hint: "shoulder press" },
+  { id: "back", label: "Back", image: "https://placehold.co/300x200.png", hint: "pull up" },
 ] as const;
 
 export function WorkoutGenerator() {
@@ -86,7 +85,7 @@ export function WorkoutGenerator() {
     }));
   };
   
-  const handleCategoryChange = (categoryId: string, checked: boolean | 'indeterminate') => {
+  const handleCategoryChange = (categoryId: string, checked: boolean) => {
       setSelectedCategories(prev =>
           checked
               ? [...prev, categoryId]
@@ -205,17 +204,39 @@ export function WorkoutGenerator() {
             <CardContent className="space-y-6">
                 <div>
                   <Label>Exercise Categories</Label>
-                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2">
-                    {exerciseCategories.map((item) => (
-                        <div key={item.id} className="flex flex-row items-center space-x-3 space-y-0">
-                            <Checkbox
-                                id={item.id}
-                                checked={selectedCategories.includes(item.label)}
-                                onCheckedChange={(checked) => handleCategoryChange(item.label, checked)}
+                   <p className="text-sm text-muted-foreground">Select the muscle groups you trained.</p>
+                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
+                    {exerciseCategories.map((item) => {
+                      const isSelected = selectedCategories.includes(item.label);
+                      return (
+                          <div
+                            key={item.id}
+                            onClick={() => handleCategoryChange(item.label, !isSelected)}
+                            className={cn(
+                              "relative rounded-lg overflow-hidden cursor-pointer group border-2",
+                              isSelected ? "border-primary" : "border-transparent"
+                            )}
+                          >
+                            <Image
+                              src={item.image}
+                              alt={item.label}
+                              width={300}
+                              height={200}
+                              className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                              data-ai-hint={item.hint}
                             />
-                            <Label htmlFor={item.id} className="font-normal">{item.label}</Label>
-                        </div>
-                    ))}
+                            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors" />
+                            <div className="absolute bottom-0 left-0 p-3">
+                              <h3 className="font-semibold text-white">{item.label}</h3>
+                            </div>
+                            {isSelected && (
+                              <div className="absolute top-2 right-2 bg-primary text-primary-foreground rounded-full p-1">
+                                <CheckCircle className="h-5 w-5" />
+                              </div>
+                            )}
+                          </div>
+                        );
+                    })}
                   </div>
                 </div>
             </CardContent>
