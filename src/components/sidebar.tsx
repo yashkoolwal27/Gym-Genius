@@ -10,7 +10,7 @@ import { Button } from "./ui/button"
 
 const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/workout-generator", label: "Workout Generator", icon: Dumbbell },
+  { href: "/workout-generator", label: "Exercise", icon: Dumbbell },
   { href: "/meal-planner", label: "Meal Planner", icon: UtensilsCrossed },
   { href: "/progress-tracker", label: "My Progress", icon: LineChart },
   { href: "/educational-resources", label: "Knowledge Base", icon: BookOpen },
