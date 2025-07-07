@@ -1,53 +1,61 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Dumbbell, UtensilsCrossed, BarChart, BookOpen } from "lucide-react";
+import { Header } from "@/components/header";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
+import { AlertCircle, Calendar, DollarSign, PlusCircle, UserPlus, Users, Utensils, Zap } from "lucide-react";
+import StatCard from "@/components/dashboard/stat-card";
+import RecentWorkouts from "@/components/dashboard/recent-workouts";
+import MemberAttendanceChart from "@/components/dashboard/member-attendance-chart";
+import FeaturedMember from "@/components/dashboard/featured-member";
+import DietLogs from "@/components/dashboard/diet-logs";
+import RecentActivity from "@/components/dashboard/recent-activity";
+import UpcomingClasses from "@/components/dashboard/upcoming-classes";
 
-import { Logo } from "@/components/logo";
-import { WorkoutGenerator } from "@/components/workout-generator";
-import { MealPlanner } from "@/components/meal-planner";
-import { ProgressTracker } from "@/components/progress-tracker";
-import { EducationalResources } from "@/components/educational-resources";
-
-export default function Home() {
+export default function DashboardPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-12 bg-background">
-      <header className="w-full max-w-4xl mx-auto mb-8">
-        <Logo />
-        <p className="text-muted-foreground mt-2">Your AI-powered fitness and diet coach.</p>
-      </header>
+    <div className="flex-1">
+      <Header />
+      <div className="p-4 md:p-8 space-y-8">
+        <div className="space-y-6">
+          <Alert variant="destructive" className="bg-destructive/10 border-destructive/20 text-destructive">
+            <AlertCircle className="h-4 w-4" />
+            <AlertTitle>Missed Workout: John Wilson</AlertTitle>
+            <AlertDescription className="text-destructive/80">
+              John missed his scheduled HIIT session today. Give him a call or send a text. Today, 09:42 AM
+            </AlertDescription>
+          </Alert>
 
-      <div className="w-full">
-        <Tabs defaultValue="workout" className="w-full">
-          <TabsList className="grid w-full max-w-4xl mx-auto grid-cols-2 md:grid-cols-4 h-auto md:h-12">
-            <TabsTrigger value="workout" className="py-2.5">
-              <Dumbbell className="w-4 h-4 mr-2" /> Workout
-            </TabsTrigger>
-            <TabsTrigger value="meal" className="py-2.5">
-              <UtensilsCrossed className="w-4 h-4 mr-2" /> Meal Plan
-            </TabsTrigger>
-            <TabsTrigger value="progress" className="py-2.5">
-              <BarChart className="w-4 h-4 mr-2" /> My Progress
-            </TabsTrigger>
-            <TabsTrigger value="resources" className="py-2.5">
-              <BookOpen className="w-4 h-4 mr-2" /> Resources
-            </TabsTrigger>
-          </TabsList>
-
-          <div className="mt-6">
-            <TabsContent value="workout">
-              <WorkoutGenerator />
-            </TabsContent>
-            <TabsContent value="meal">
-              <MealPlanner />
-            </TabsContent>
-            <TabsContent value="progress">
-              <ProgressTracker />
-            </TabsContent>
-            <TabsContent value="resources">
-              <EducationalResources />
-            </TabsContent>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <StatCard title="Active Members" value="312" change="+4.7% increase" iconBg="bg-blue-100" iconColor="text-blue-500" icon={Users} />
+            <StatCard title="Workouts Completed" value="1,128" change="+8.2% increase" iconBg="bg-orange-100" iconColor="text-orange-500" icon={Zap} />
+            <StatCard title="Diet Plans Followed" value="214" change="-1.2% decrease" iconBg="bg-purple-100" iconColor="text-purple-500" icon={Utensils} />
+            <StatCard title="Total Revenue" value="$24,350" change="+12.5% increase" iconBg="bg-green-100" iconColor="text-green-500" icon={DollarSign} />
           </div>
-        </Tabs>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><UserPlus className="mr-2 h-5 w-5 text-primary" /> New Member</Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><Zap className="mr-2 h-5 w-5 text-primary" /> Log Workout</Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><PlusCircle className="mr-2 h-5 w-5 text-primary" /> Add Diet Plan</Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><Calendar className="mr-2 h-5 w-5 text-primary" /> Schedule</Button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2 space-y-8">
+            <RecentWorkouts />
+            <MemberAttendanceChart />
+          </div>
+          <div className="space-y-8">
+            <FeaturedMember />
+            <DietLogs />
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <RecentActivity />
+            <UpcomingClasses />
+        </div>
+
       </div>
-    </main>
-  );
+    </div>
+  )
 }

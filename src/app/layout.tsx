@@ -1,10 +1,11 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { Sidebar } from '@/components/sidebar';
 
 export const metadata: Metadata = {
-  title: 'Gym Genius',
-  description: 'Your AI-powered fitness and diet coach.',
+  title: 'FitTrack Pro',
+  description: 'Gym & Diet Analytics Dashboard',
 };
 
 export default function RootLayout({
@@ -20,7 +21,12 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        {children}
+        <div className="flex min-h-screen bg-secondary/40">
+          <Sidebar />
+          <main className="flex-1 flex flex-col">
+            {children}
+          </main>
+        </div>
         <Toaster />
       </body>
     </html>
