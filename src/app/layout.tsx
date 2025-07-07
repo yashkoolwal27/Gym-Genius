@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Sidebar } from '@/components/sidebar';
 
 export const metadata: Metadata = {
-  title: 'FitTrack Pro',
-  description: 'Gym & Diet Analytics Dashboard',
+  title: 'Gym Genius',
+  description: 'Your personal AI fitness and nutrition guide.',
 };
 
 export default function RootLayout({
@@ -21,9 +21,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        <div className="min-h-screen bg-secondary/40">
+        <div className="min-h-screen bg-secondary/40 flex">
           <Sidebar />
-          <main className="ml-64 flex-1 flex flex-col">
+          <main className="flex-1 flex flex-col">
             {children}
           </main>
         </div>

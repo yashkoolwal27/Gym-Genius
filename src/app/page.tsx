@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { AlertCircle, Calendar, DollarSign, PlusCircle, UserPlus, Users, Utensils, Zap } from "lucide-react";
+import { AlertCircle, Calendar, PlusCircle, UserPlus, Zap, Dumbbell, UtensilsCrossed, LineChart, BookOpen } from "lucide-react";
 import StatCard from "@/components/dashboard/stat-card";
 import RecentWorkouts from "@/components/dashboard/recent-workouts";
 import DietAndExerciseChart from "@/components/dashboard/member-attendance-chart";
@@ -9,33 +9,26 @@ import FeaturedMember from "@/components/dashboard/featured-member";
 import DietLogs from "@/components/dashboard/diet-logs";
 import RecentActivity from "@/components/dashboard/recent-activity";
 import UpcomingClasses from "@/components/dashboard/upcoming-classes";
+import Link from "next/link";
 
 export default function DashboardPage() {
   return (
-    <div className="flex-1">
-      <Header />
-      <div className="p-4 md:p-8 space-y-8">
+    <div className="flex-1 flex flex-col">
+      <Header title="Dashboard" description="An overview of your fitness journey." />
+      <div className="p-4 md:p-8 space-y-8 overflow-y-auto">
         <div className="space-y-6">
-          <Alert variant="destructive" className="bg-destructive/10 border-destructive/20 text-destructive">
-            <AlertCircle className="h-4 w-4" />
-            <AlertTitle>Missed Workout: John Wilson</AlertTitle>
-            <AlertDescription className="text-destructive/80">
-              John missed his scheduled HIIT session today. Give him a call or send a text. Today, 09:42 AM
-            </AlertDescription>
-          </Alert>
-
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <StatCard title="Active Members" value="312" change="+4.7% increase" iconBg="bg-blue-100" iconColor="text-blue-500" icon={Users} />
-            <StatCard title="Workouts Completed" value="1,128" change="+8.2% increase" iconBg="bg-orange-100" iconColor="text-orange-500" icon={Zap} />
-            <StatCard title="Diet Plans Followed" value="214" change="-1.2% decrease" iconBg="bg-purple-100" iconColor="text-purple-500" icon={Utensils} />
-            <StatCard title="Total Revenue" value="$24,350" change="+12.5% increase" iconBg="bg-green-100" iconColor="text-green-500" icon={DollarSign} />
+            <StatCard title="Workouts This Month" value="12" change="+2 from last month" iconBg="bg-blue-100" iconColor="text-blue-500" icon={Zap} />
+            <StatCard title="Calories Today" value="1,850" change="-150 from yesterday" iconBg="bg-purple-100" iconColor="text-purple-500" icon={UtensilsCrossed} />
+            <StatCard title="Weight" value="182 lbs" change="-1.2 lbs this week" iconBg="bg-green-100" iconColor="text-green-500" icon={LineChart} />
+            <StatCard title="Streak" value="5 days" change="Keep it up!" iconBg="bg-orange-100" iconColor="text-orange-500" icon={Calendar} />
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><UserPlus className="mr-2 h-5 w-5 text-primary" /> New Member</Button>
-             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><Zap className="mr-2 h-5 w-5 text-primary" /> Log Workout</Button>
-             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><PlusCircle className="mr-2 h-5 w-5 text-primary" /> Add Diet Plan</Button>
-             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium"><Calendar className="mr-2 h-5 w-5 text-primary" /> Schedule</Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/workout-generator"><Dumbbell className="mr-2 h-5 w-5 text-primary" /> New Workout</Link></Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/meal-planner"><UtensilsCrossed className="mr-2 h-5 w-5 text-primary" /> New Meal Plan</Link></Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/progress-tracker"><LineChart className="mr-2 h-5 w-5 text-primary" /> View Progress</Link></Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/educational-resources"><BookOpen className="mr-2 h-5 w-5 text-primary" /> Learn More</Link></Button>
           </div>
         </div>
 

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Bell, DollarSign, FileText, LayoutDashboard, LineChart, Settings, Users, Utensils } from "lucide-react"
+import { LayoutDashboard, Settings, Dumbbell, UtensilsCrossed, LineChart, BookOpen } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Logo } from "@/components/logo"
@@ -10,12 +10,10 @@ import { Button } from "./ui/button"
 
 const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/#", label: "Members", icon: Users },
-  { href: "/#", label: "Diet Plans", icon: Utensils },
-  { href: "/#", label: "Progress", icon: LineChart },
-  { href: "/#", label: "Reports", icon: FileText },
-  { href: "/#", label: "Alerts", icon: Bell, badge: 2 },
-  { href: "/#", label: "Subsidies", icon: DollarSign },
+  { href: "/workout-generator", label: "Workout Generator", icon: Dumbbell },
+  { href: "/meal-planner", label: "Meal Planner", icon: UtensilsCrossed },
+  { href: "/progress-tracker", label: "My Progress", icon: LineChart },
+  { href: "/educational-resources", label: "Knowledge Base", icon: BookOpen },
 ]
 
 export function Sidebar() {
@@ -37,7 +35,6 @@ export function Sidebar() {
             <Link href={item.href}>
               <item.icon className="mr-3 h-5 w-5" />
               {item.label}
-              {item.badge && <span className="ml-auto bg-primary text-primary-foreground text-xs rounded-full h-5 w-5 flex items-center justify-center">{item.badge}</span>}
             </Link>
           </Button>
         ))}
@@ -48,7 +45,7 @@ export function Sidebar() {
           className="w-full justify-start h-11 text-base"
           asChild
         >
-          <Link href="/#">
+          <Link href="/settings">
             <Settings className="mr-3 h-5 w-5" />
             Settings
           </Link>
