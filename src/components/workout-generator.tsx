@@ -151,6 +151,7 @@ export function WorkoutGenerator() {
                 mode="single"
                 selected={date}
                 onSelect={handleDateSelect}
+                toDate={new Date()}
                 className="w-full h-full flex flex-col"
                 classNames={{
                     months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 flex-1",
