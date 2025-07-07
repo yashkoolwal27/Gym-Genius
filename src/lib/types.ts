@@ -7,7 +7,7 @@ export interface WorkoutPlan {
 export interface MealPlan {
   id: string;
   generatedPlan: string;
-t: string;
+  createdAt: string;
 }
 
 export interface ProgressLog {

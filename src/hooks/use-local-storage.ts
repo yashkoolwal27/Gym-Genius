@@ -12,13 +12,12 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, (value: T)
         setStoredValue(JSON.parse(item));
       } else {
         window.localStorage.setItem(key, JSON.stringify(initialValue));
-        setStoredValue(initialValue);
       }
     } catch (error) {
       console.log(error);
-      setStoredValue(initialValue);
     }
-  }, [key, initialValue]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [key]);
 
   const setValue = (value: T) => {
     try {
