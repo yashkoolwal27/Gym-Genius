@@ -1,7 +1,6 @@
 import { Header } from "@/components/header";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { AlertCircle, Calendar, PlusCircle, UserPlus, Zap, Dumbbell, UtensilsCrossed, LineChart, BookOpen } from "lucide-react";
+import { Calendar, Zap, Dumbbell, UtensilsCrossed, LineChart, FileText } from "lucide-react";
 import StatCard from "@/components/dashboard/stat-card";
 import RecentWorkouts from "@/components/dashboard/recent-workouts";
 import DietAndExerciseChart from "@/components/dashboard/member-attendance-chart";
@@ -28,7 +27,7 @@ export default function DashboardPage() {
              <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/workout-generator"><Dumbbell className="mr-2 h-5 w-5 text-primary" /> New Workout</Link></Button>
              <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/meal-planner"><UtensilsCrossed className="mr-2 h-5 w-5 text-primary" /> New Meal Plan</Link></Button>
              <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/progress-tracker"><LineChart className="mr-2 h-5 w-5 text-primary" /> View Progress</Link></Button>
-             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/educational-resources"><BookOpen className="mr-2 h-5 w-5 text-primary" /> Learn More</Link></Button>
+             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/reports"><FileText className="mr-2 h-5 w-5 text-primary" /> View Reports</Link></Button>
           </div>
         </div>
 

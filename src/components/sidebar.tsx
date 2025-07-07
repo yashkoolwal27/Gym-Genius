@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { LayoutDashboard, Settings, Dumbbell, UtensilsCrossed, LineChart, BookOpen } from "lucide-react"
+import { LayoutDashboard, Settings, Dumbbell, UtensilsCrossed, LineChart, FileText } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Logo } from "@/components/logo"
@@ -11,9 +11,10 @@ import { Button } from "./ui/button"
 const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
   { href: "/workout-generator", label: "Exercise", icon: Dumbbell },
-  { href: "/meal-planner", label: "Meal Planner", icon: UtensilsCrossed },
-  { href: "/progress-tracker", label: "My Progress", icon: LineChart },
-  { href: "/educational-resources", label: "Knowledge Base", icon: BookOpen },
+  { href: "/meal-planner", label: "Diet Plans", icon: UtensilsCrossed },
+  { href: "/progress-tracker", label: "Progress", icon: LineChart },
+  { href: "/reports", label: "Reports", icon: FileText },
+  { href: "/settings", label: "Settings", icon: Settings },
 ]
 
 export function Sidebar() {
@@ -39,18 +40,6 @@ export function Sidebar() {
           </Button>
         ))}
       </nav>
-      <div className="p-4 border-t">
-        <Button
-          variant="ghost"
-          className="w-full justify-start h-11 text-base"
-          asChild
-        >
-          <Link href="/settings">
-            <Settings className="mr-3 h-5 w-5" />
-            Settings
-          </Link>
-        </Button>
-      </div>
     </aside>
   )
 }
