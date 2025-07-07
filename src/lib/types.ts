@@ -7,3 +7,24 @@ export interface StoredPlan {
 
 export type WorkoutPlan = StoredPlan;
 export type MealPlan = StoredPlan;
+
+export interface WorkoutSet {
+  id: string;
+  reps: string;
+  weight: string;
+}
+
+export interface LoggedExercise {
+  id: string;
+  name: string;
+  sets: WorkoutSet[];
+}
+
+export interface WorkoutLog {
+  id: string;
+  date: string;
+  time: string;
+  exerciseTypes: string[];
+  exercises: LoggedExercise[];
+  createdAt: string;
+}
