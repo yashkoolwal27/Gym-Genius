@@ -1,14 +1,14 @@
+
 "use client";
 
 import { useState } from "react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
-import { Calendar as CalendarIcon, Clock, Dumbbell, Trash2, PlusCircle, CheckCircle } from "lucide-react";
+import { Clock, Dumbbell, Trash2, PlusCircle, CheckCircle, ChevronLeft } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
@@ -29,13 +29,13 @@ const exerciseCategories = [
 export function WorkoutGenerator() {
   const { toast } = useToast();
   const [loggedWorkouts, setLoggedWorkouts] = useLocalStorage<WorkoutLog[]>("workout-logs", []);
-
-  const [date, setDate] = useState<Date>(new Date());
+  
+  const [step, setStep] = useState(1);
+  const [date, setDate] = useState<Date | undefined>(undefined);
   const [time, setTime] = useState<string>(format(new Date(), 'HH:mm'));
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [exercises, setExercises] = useState<LoggedExercise[]>([]);
 
-  // Exercise handlers
   const addExercise = () => {
     setExercises([...exercises, { id: crypto.randomUUID(), name: "", sets: [{ id: crypto.randomUUID(), reps: "", weight: "" }] }]);
   };
@@ -48,7 +48,6 @@ export function WorkoutGenerator() {
     setExercises(exercises.map(ex => ex.id === exerciseId ? { ...ex, name } : ex));
   };
 
-  // Set handlers
   const addSet = (exerciseId: string) => {
     setExercises(exercises.map(ex => {
       if (ex.id === exerciseId) {
@@ -61,7 +60,6 @@ export function WorkoutGenerator() {
   const removeSet = (exerciseId: string, setId: string) => {
     setExercises(exercises.map(ex => {
       if (ex.id === exerciseId) {
-        // Prevent removing the last set
         if (ex.sets.length > 1) {
           return { ...ex, sets: ex.sets.filter(set => set.id !== setId) };
         }
@@ -79,7 +77,6 @@ export function WorkoutGenerator() {
     }));
   };
   
-  // Category handler
   const handleCategoryChange = (categoryId: string, checked: boolean | 'indeterminate') => {
       setSelectedCategories(prev =>
           checked
@@ -88,8 +85,30 @@ export function WorkoutGenerator() {
       );
   };
 
-  // Submit handler
+  const handleDateSelect = (selectedDate: Date | undefined) => {
+    if (selectedDate) {
+      setDate(selectedDate);
+      setStep(2);
+    }
+  };
+
+  const resetForm = () => {
+    setDate(undefined);
+    setTime(format(new Date(), 'HH:mm'));
+    setSelectedCategories([]);
+    setExercises([]);
+    setStep(1);
+  };
+
   const handleSubmit = () => {
+    if (!date) {
+        toast({
+            variant: "destructive",
+            title: "No Date Selected",
+            description: "An unexpected error occurred. Please select the date again.",
+        });
+        return;
+    }
     if (exercises.length === 0 || exercises.some(ex => !ex.name)) {
         toast({
             variant: "destructive",
@@ -115,39 +134,55 @@ export function WorkoutGenerator() {
         description: "Your workout has been saved to 'My Progress'.",
     });
 
-    // Reset form
-    setDate(new Date());
-    setTime(format(new Date(), 'HH:mm'));
-    setSelectedCategories([]);
-    setExercises([]);
+    resetForm();
   };
+  
+  if (step === 1) {
+    return (
+      <Card className="w-full max-w-md mx-auto shadow-xl border-none bg-card/70">
+        <CardHeader>
+            <div className="flex justify-between items-center">
+                <CardTitle className="text-2xl font-bold tracking-tight">Select a Date</CardTitle>
+                <Button variant="link" className="p-0 text-primary">See Booked Slots &gt;</Button>
+            </div>
+        </CardHeader>
+        <CardContent className="flex justify-center p-0 sm:p-6">
+            <Calendar
+                mode="single"
+                selected={date}
+                onSelect={handleDateSelect}
+                className="p-0 rounded-md"
+                 classNames={{
+                    day_selected: "bg-transparent text-accent border border-accent",
+                    day_today: "bg-primary text-primary-foreground",
+                    head_cell: "w-10 text-muted-foreground rounded-md",
+                    cell: "h-10 w-10 text-center text-sm p-0 relative focus-within:relative focus-within:z-20",
+                    day: "h-10 w-10 p-0 font-normal aria-selected:opacity-100",
+                }}
+            />
+        </CardContent>
+      </Card>
+    );
+  }
 
   return (
     <div className="space-y-8">
         <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
             <CardHeader>
-                <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
-                <CardDescription>Fill in the details of your training session.</CardDescription>
+                <div className="flex items-center gap-4">
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => { setDate(undefined); setStep(1); }}>
+                        <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <div>
+                        <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
+                        <CardDescription>
+                            Fill in the details for your session on {date ? format(date, "PPP") : 'the selected date'}.
+                        </CardDescription>
+                    </div>
+                </div>
             </CardHeader>
             <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="flex flex-col space-y-2">
-                        <Label>Workout Date</Label>
-                        <Popover>
-                            <PopoverTrigger asChild>
-                                <Button
-                                    variant={"outline"}
-                                    className={cn("w-full justify-start text-left font-normal", !date && "text-muted-foreground")}
-                                >
-                                    <CalendarIcon className="mr-2 h-4 w-4" />
-                                    {date ? format(date, "PPP") : <span>Pick a date</span>}
-                                </Button>
-                            </PopoverTrigger>
-                            <PopoverContent className="w-auto p-0" align="start">
-                                <Calendar mode="single" selected={date} onSelect={(d) => setDate(d || new Date())} initialFocus />
-                            </PopoverContent>
-                        </Popover>
-                    </div>
                     <div className="flex flex-col space-y-2">
                         <Label htmlFor="workout-time">Workout Time</Label>
                         <div className="relative">
