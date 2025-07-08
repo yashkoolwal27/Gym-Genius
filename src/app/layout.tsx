@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <div className="min-h-screen bg-secondary/40 flex">
           <Sidebar />
-          <main className="flex-1 flex flex-col ml-64">
+          <main className="flex-1 flex flex-col md:ml-64">
             {children}
           </main>
         </div>
