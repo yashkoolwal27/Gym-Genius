@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { format } from "date-fns";
 import { formatInTimeZone } from "date-fns-tz";
@@ -40,6 +40,7 @@ export function WorkoutGenerator() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [exercises, setExercises] = useState<LoggedExercise[]>([]);
   const [today, setToday] = useState<Date | undefined>(undefined);
+  const timeInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     // Set "today" based on Indian Standard Time. This ensures future dates
@@ -47,6 +48,15 @@ export function WorkoutGenerator() {
     const todayStrInIndia = formatInTimeZone(new Date(), 'Asia/Kolkata', 'yyyy-MM-dd');
     setToday(new Date(todayStrInIndia));
   }, []);
+
+  const handleDateSelect = (selectedDate: Date | undefined) => {
+    setDate(selectedDate);
+    if (selectedDate) {
+      setTimeout(() => {
+        timeInputRef.current?.focus();
+      }, 0);
+    }
+  };
 
   const addExercise = (name: string) => {
     if (exercises.some(ex => ex.name === name)) {
@@ -159,7 +169,7 @@ export function WorkoutGenerator() {
             <Calendar
                 mode="single"
                 selected={date}
-                onSelect={setDate}
+                onSelect={handleDateSelect}
                 disabled={{ after: today }}
                 className="w-full h-full flex flex-col"
                 classNames={{
@@ -177,18 +187,26 @@ export function WorkoutGenerator() {
                 }}
             />
         </CardContent>
-        <CardFooter className="flex-col sm:flex-row items-center gap-4 border-t pt-6">
-            <div className="flex-1 w-full sm:w-auto">
-                <Label htmlFor="workout-time">Workout Time</Label>
-                <div className="relative mt-2">
-                    <Clock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                    <Input id="workout-time" type="time" value={time} onChange={(e) => setTime(e.target.value)} className="pl-10" />
-                </div>
+        <CardFooter className="flex-col sm:flex-row items-center gap-4 border-t pt-6 transition-all duration-300 min-h-[98px] sm:min-h-[82px]">
+          {date ? (
+            <>
+              <div className="flex-1 w-full sm:w-auto">
+                  <Label htmlFor="workout-time">Workout Time</Label>
+                  <div className="relative mt-2">
+                      <Clock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <Input ref={timeInputRef} id="workout-time" type="time" value={time} onChange={(e) => setTime(e.target.value)} className="pl-10" />
+                  </div>
+              </div>
+              <Button onClick={() => setStep(2)} disabled={!date} className="w-full sm:w-auto mt-4 sm:mt-0" size="lg">
+                  Next Step
+                  <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+            </>
+          ) : (
+            <div className="flex w-full justify-center items-center">
+                <p className="text-muted-foreground">Select a date to set the time.</p>
             </div>
-            <Button onClick={() => setStep(2)} disabled={!date} className="w-full sm:w-auto mt-4 sm:mt-0" size="lg">
-                Next Step
-                <ChevronRight className="ml-2 h-4 w-4" />
-            </Button>
+          )}
         </CardFooter>
       </Card>
     );
@@ -355,3 +373,5 @@ export function WorkoutGenerator() {
   // Fallback return if step is not 1, 2, or 3
   return null;
 }
+
+    
