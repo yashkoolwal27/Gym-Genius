@@ -163,6 +163,7 @@ export default function SignupPage() {
                               "w-full pl-3 text-left font-normal",
                               !field.value && "text-muted-foreground"
                             )}
+                            onKeyDown={(e) => e.preventDefault()}
                           >
                             {field.value ? (
                               format(field.value, "PPP")
