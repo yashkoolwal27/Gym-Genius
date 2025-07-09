@@ -47,11 +47,36 @@ export const exerciseData: Record<string, CategoryData> = {
       },
       {
         name: "Middle Chest",
-        exercises: [
-          { name: "Bench Press", image: "https://placehold.co/100x100.png", hint: "bench press" },
-          { name: "Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "dumbbell press" },
-          { name: "Push-ups", image: "https://placehold.co/100x100.png", hint: "push up" },
-        ]
+        exercises: {
+            subCategories: [
+                {
+                    name: "Free Weights",
+                    exercises: [
+                        { name: "Flat Barbell Bench Press", image: "https://placehold.co/100x100.png", hint: "barbell bench press" },
+                        { name: "Flat Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "dumbbell press" },
+                        { name: "Flat Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "dumbbell fly" },
+                        { name: "Barbell or Dumbbell Pullover", image: "https://placehold.co/100x100.png", hint: "dumbbell pullover" },
+                        { name: "Hex Press", image: "https://placehold.co/100x100.png", hint: "hex press" },
+                    ]
+                },
+                {
+                    name: "Machine & Cable",
+                    exercises: [
+                        { name: "Seated Chest Press Machine", image: "https://placehold.co/100x100.png", hint: "seated chest press" },
+                        { name: "Flat Cable Chest Flys", image: "https://placehold.co/100x100.png", hint: "cable flys" },
+                        { name: "Horizontal Cable Press", image: "https://placehold.co/100x100.png", hint: "horizontal cable press" },
+                    ]
+                },
+                {
+                    name: "Bodyweight/Other",
+                    exercises: [
+                        { name: "Standard Push-Ups", image: "https://placehold.co/100x100.png", hint: "push up" },
+                        { name: "Wide Push-Ups", image: "https://placehold.co/100x100.png", hint: "wide push up" },
+                        { name: "Resistance Band Chest Press", image: "https://placehold.co/100x100.png", hint: "band chest press" },
+                    ]
+                }
+            ]
+        }
       },
       {
         name: "Lower Chest",
