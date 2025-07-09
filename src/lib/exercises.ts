@@ -120,13 +120,40 @@ export const exerciseData: Record<string, CategoryData> = {
         }
     ]
   },
-  "Legs": [
-    { name: "Squats", image: "https://placehold.co/100x100.png", hint: "barbell squat" },
-    { name: "Lunges", image: "https://placehold.co/100x100.png", hint: "dumbbell lunge" },
-    { name: "Leg Press", image: "https://placehold.co/100x100.png", hint: "leg press machine" },
-    { name: "Calf Raises", image: "https://placehold.co/100x100.png", hint: "calf raise" },
-    { name: "Deadlifts", image: "https://placehold.co/100x100.png", hint: "barbell deadlift" }
-  ],
+  "Legs": {
+    subCategories: [
+      {
+        name: "Quads",
+        exercises: [
+          { name: "Squats", image: "https://placehold.co/100x100.png", hint: "barbell squat" },
+          { name: "Leg Press", image: "https://placehold.co/100x100.png", hint: "leg press machine" },
+          { name: "Lunges", image: "https://placehold.co/100x100.png", hint: "dumbbell lunge" },
+          { name: "Leg Extensions", image: "https://placehold.co/100x100.png", hint: "leg extension machine" },
+        ]
+      },
+      {
+        name: "Hamstrings",
+        exercises: [
+          { name: "Romanian Deadlifts", image: "https://placehold.co/100x100.png", hint: "romanian deadlift" },
+          { name: "Lying Leg Curls", image: "https://placehold.co/100x100.png", hint: "leg curl machine" },
+        ]
+      },
+      {
+        name: "Glutes",
+        exercises: [
+          { name: "Hip Thrusts", image: "https://placehold.co/100x100.png", hint: "barbell hip thrust" },
+          { name: "Deadlifts", image: "https://placehold.co/100x100.png", hint: "barbell deadlift" },
+        ]
+      },
+      {
+        name: "Calves",
+        exercises: [
+          { name: "Standing Calf Raises", image: "https://placehold.co/100x100.png", hint: "standing calf raise" },
+          { name: "Seated Calf Raises", image: "https://placehold.co/100x100.png", hint: "seated calf raise" },
+        ]
+      }
+    ]
+  },
   "Core": [
     { name: "Plank", image: "https://placehold.co/100x100.png", hint: "plank exercise" },
     { name: "Crunches", image: "https://placehold.co/100x100.png", hint: "floor crunch" },
