@@ -60,16 +60,15 @@ export function WorkoutGenerator() {
     }
   };
 
-  const addExercise = (name: string) => {
-    if (exercises.some(ex => ex.name === name)) {
-      toast({
-        variant: "destructive",
-        title: "Exercise already added",
-        description: `${name} is already in your log.`,
-      });
-      return;
-    }
-    setExercises(prev => [...prev, { id: crypto.randomUUID(), name, sets: [{ id: crypto.randomUUID(), reps: "", weight: "" }] }]);
+  const toggleExercise = (name: string) => {
+    setExercises(prev => {
+        const isAdded = prev.some(ex => ex.name === name);
+        if (isAdded) {
+            return prev.filter(ex => ex.name !== name);
+        } else {
+            return [...prev, { id: crypto.randomUUID(), name, sets: [{ id: crypto.randomUUID(), reps: "", weight: "" }] }];
+        }
+    });
   };
 
   const removeExercise = (exerciseId: string) => {
@@ -273,20 +272,6 @@ export function WorkoutGenerator() {
   }
 
   if (step === 3) {
-    const hasAvailableExercises = selectedCategories.some(category => {
-        const categoryData = exerciseData[category as keyof typeof exerciseData];
-        if (!categoryData) return false;
-
-        if (Array.isArray(categoryData)) {
-          return categoryData.some(ex => !exercises.some(logged => logged.name === ex.name));
-        } else if ('subCategories' in categoryData) {
-          return categoryData.subCategories.some(sub => 
-            sub.exercises.some(ex => !exercises.some(logged => logged.name === ex.name))
-          );
-        }
-        return false;
-    });
-
     return (
       <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
         <CardHeader>
@@ -306,65 +291,59 @@ export function WorkoutGenerator() {
              <div className="flex justify-between items-center">
                 <p className="text-sm text-muted-foreground">Click an exercise to add it to your log. You have selected {exercises.length} exercises.</p>
              </div>
-             <Card className="flex-1">
-                <ScrollArea className="h-[450px] p-2">
-                  {!hasAvailableExercises ? (
-                    <div className="text-center text-muted-foreground h-full flex flex-col justify-center items-center">
-                      <p>All available exercises for the selected categories have been added.</p>
-                    </div>
-                  ) : (
-                    selectedCategories.map(category => {
-                      const categoryData = exerciseData[category as keyof typeof exerciseData];
-                      if (!categoryData) return null;
-    
-                      if (Array.isArray(categoryData)) {
-                        const available = categoryData.filter(ex => !exercises.some(loggedEx => loggedEx.name === ex.name));
-                        if (available.length === 0) return null;
-    
-                        return (
-                          <div key={category} className="space-y-1">
-                            {available.map(ex => (
-                                <div key={ex.name} className="flex items-center gap-4 p-2 rounded-lg hover:bg-muted cursor-pointer" onClick={() => addExercise(ex.name)}>
-                                  <Image src={ex.image} alt={ex.name} width={60} height={60} className="rounded-md object-cover bg-muted-foreground/20 aspect-square" data-ai-hint={ex.hint} />
-                                  <span className="font-medium flex-1">{ex.name}</span>
-                                  <PlusCircle className="h-5 w-5 text-muted-foreground" />
-                                </div>
-                            ))}
-                          </div>
-                        )
-                      }
-                      
-                      if ('subCategories' in categoryData && categoryData.subCategories) {
-                        return (
-                          <div key={category}>
-                            {categoryData.subCategories.map(subCategory => {
-                              const available = subCategory.exercises.filter(ex => !exercises.some(loggedEx => loggedEx.name === ex.name));
-                              if (available.length === 0) return null;
-    
-                              return (
-                                <div key={subCategory.name} className="mb-4">
-                                  <h4 className="font-semibold my-2 px-2 text-primary">{subCategory.name}</h4>
-                                  <div className="space-y-1">
-                                    {available.map(ex => (
-                                      <div key={ex.name} className="flex items-center gap-4 p-2 rounded-lg hover:bg-muted cursor-pointer" onClick={() => addExercise(ex.name)}>
-                                        <Image src={ex.image} alt={ex.name} width={60} height={60} className="rounded-md object-cover bg-muted-foreground/20 aspect-square" data-ai-hint={ex.hint} />
-                                        <span className="font-medium flex-1">{ex.name}</span>
-                                        <PlusCircle className="h-5 w-5 text-muted-foreground" />
+             <ScrollArea className="flex-1 -mx-2">
+                <div className="px-2">
+                  {selectedCategories.map(category => {
+                    const categoryData = exerciseData[category as keyof typeof exerciseData];
+                    if (!categoryData) return null;
+  
+                    const renderExercises = (exerciseList: readonly any[], subCategoryName?: string) => (
+                      <div key={subCategoryName || category} className="mb-4">
+                          {subCategoryName && <h4 className="font-semibold my-4 px-2 text-primary">{subCategoryName}</h4>}
+                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                              {exerciseList.map(ex => {
+                                  const isSelected = exercises.some(loggedEx => loggedEx.name === ex.name);
+                                  return (
+                                    <div
+                                      key={ex.name}
+                                      onClick={() => toggleExercise(ex.name)}
+                                      className={cn(
+                                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
+                                        isSelected
+                                          ? "border-primary bg-primary/5"
+                                          : "border-transparent bg-muted/50 hover:bg-muted/100"
+                                      )}
+                                    >
+                                      <div className="aspect-square w-full relative overflow-hidden rounded-md bg-muted-foreground/10">
+                                        <Image
+                                          src={ex.image}
+                                          alt={ex.name}
+                                          width={200}
+                                          height={200}
+                                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                          data-ai-hint={ex.hint}
+                                        />
                                       </div>
-                                    ))}
-                                  </div>
-                                </div>
-                              );
-                            })}
+                                      <h3 className="font-medium text-sm text-foreground h-10 flex items-center justify-center">{ex.name}</h3>
+                                    </div>
+                                  )
+                              })}
                           </div>
-                        );
-                      }
-                      
-                      return null;
-                    })
-                  )}
-                </ScrollArea>
-             </Card>
+                      </div>
+                    );
+
+                    if (Array.isArray(categoryData)) {
+                      return renderExercises(categoryData);
+                    }
+                    
+                    if ('subCategories' in categoryData && categoryData.subCategories) {
+                      return categoryData.subCategories.map(sub => renderExercises(sub.exercises, sub.name));
+                    }
+                    
+                    return null;
+                  })}
+                </div>
+              </ScrollArea>
         </CardContent>
         <CardFooter>
              <Button onClick={() => setStep(4)} className="w-full" size="lg" disabled={exercises.length === 0}>
