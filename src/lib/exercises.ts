@@ -59,11 +59,31 @@ export const exerciseData: Record<string, CategoryData> = {
     { name: "Hammer Curls", image: "https://placehold.co/100x100.png", hint: "hammer curl" },
     { name: "Preacher Curls", image: "https://placehold.co/100x100.png", hint: "preacher curl" }
   ],
-  "Triceps": [
-    { name: "Tricep Dips", image: "https://placehold.co/100x100.png", hint: "tricep dip" },
-    { name: "Tricep Pushdowns", image: "https://placehold.co/100x100.png", hint: "tricep pushdown" },
-    { name: "Skull Crushers", image: "https://placehold.co/100x100.png", hint: "skull crusher" }
-  ],
+  "Triceps": {
+    subCategories: [
+      {
+        name: "Long Head",
+        exercises: [
+          { name: "Skull Crushers", image: "https://placehold.co/100x100.png", hint: "skull crusher" },
+          { name: "Overhead Dumbbell Extension", image: "https://placehold.co/100x100.png", hint: "overhead extension" }
+        ]
+      },
+      {
+        name: "Lateral Head",
+        exercises: [
+          { name: "Tricep Dips", image: "https://placehold.co/100x100.png", hint: "tricep dip" },
+          { name: "Tricep Pushdowns", image: "https://placehold.co/100x100.png", hint: "tricep pushdown" }
+        ]
+      },
+      {
+        name: "Medial Head",
+        exercises: [
+          { name: "Reverse Grip Tricep Pushdown", image: "https://placehold.co/100x100.png", hint: "reverse grip pushdown" },
+          { name: "Close-Grip Bench Press", image: "https://placehold.co/100x100.png", hint: "close grip bench press" }
+        ]
+      }
+    ]
+  },
   "Forearms": [
     { name: "Wrist Curls", image: "https://placehold.co/100x100.png", hint: "wrist curl" },
     { name: "Reverse Wrist Curls", image: "https://placehold.co/100x100.png", hint: "reverse wrist curl" }
