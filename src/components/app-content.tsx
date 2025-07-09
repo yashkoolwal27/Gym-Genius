@@ -20,7 +20,7 @@ export function AppContent({ children }: { children: React.ReactNode }) {
         return (
             <div className="min-h-screen bg-secondary/40 flex">
                 <Sidebar />
-                <main className="flex-1 flex flex-col md:ml-64">
+                <main className="flex-1 flex flex-col">
                     {children}
                 </main>
             </div>
