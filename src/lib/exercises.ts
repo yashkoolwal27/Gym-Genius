@@ -57,18 +57,24 @@ export const exerciseData: Record<string, CategoryData> = {
   "Biceps": {
     subCategories: [
       {
-        name: "Long Head",
-        exercises: [
-          { name: "Hammer Curls", image: "https://placehold.co/100x100.png", hint: "hammer curl" },
-          { name: "Incline Dumbbell Curls", image: "https://placehold.co/100x100.png", hint: "incline dumbbell curl" },
-        ]
-      },
-      {
-        name: "Short Head",
+        name: "Biceps Brachii",
         exercises: [
           { name: "Bicep Curls", image: "https://placehold.co/100x100.png", hint: "bicep curl" },
           { name: "Preacher Curls", image: "https://placehold.co/100x100.png", hint: "preacher curl" },
-          { name: "Concentration Curls", image: "https://placehold.co/100x100.png", hint: "concentration curl" }
+          { name: "Concentration Curls", image: "https://placehold.co/100x100.png", hint: "concentration curl" },
+          { name: "Incline Dumbbell Curls", image: "https://placehold.co/100x100.png", hint: "incline dumbbell curl" }
+        ]
+      },
+      {
+        name: "Brachialis",
+        exercises: [
+          { name: "Hammer Curls", image: "https://placehold.co/100x100.png", hint: "hammer curl" },
+        ]
+      },
+      {
+        name: "Brachioradialis",
+        exercises: [
+          { name: "Reverse Barbell Curl", image: "https://placehold.co/100x100.png", hint: "reverse barbell curl" }
         ]
       }
     ]
@@ -100,12 +106,6 @@ export const exerciseData: Record<string, CategoryData> = {
   },
   "Forearms": {
     subCategories: [
-        {
-            name: "Brachioradialis",
-            exercises: [
-                { name: "Reverse Barbell Curl", image: "https://placehold.co/100x100.png", hint: "reverse barbell curl" }
-            ]
-        },
         {
             name: "Extensor Digitorum",
             exercises: [
