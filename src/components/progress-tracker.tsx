@@ -4,9 +4,11 @@ import { useLocalStorage } from "@/hooks/use-local-storage";
 import type { WorkoutPlan, MealPlan, WorkoutLog } from "@/lib/types";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Dumbbell, UtensilsCrossed, CalendarDays, Weight, Repeat } from 'lucide-react';
+import { Dumbbell, UtensilsCrossed, CalendarDays, Weight, Repeat, PlusCircle } from 'lucide-react';
 import { format } from 'date-fns';
 import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export function ProgressTracker() {
   const [workouts] = useLocalStorage<WorkoutPlan[]>("workout-plans", []);
@@ -21,7 +23,14 @@ export function ProgressTracker() {
       </CardHeader>
       <CardContent className="space-y-8">
         <div>
-            <h3 className="text-xl font-semibold flex items-center gap-2 mb-4"><Dumbbell /> Logged Workouts</h3>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-xl font-semibold flex items-center gap-2"><Dumbbell /> Logged Workouts</h3>
+              <Button asChild>
+                <Link href="/log-workout">
+                  <PlusCircle className="mr-2 h-4 w-4" /> Log New Workout
+                </Link>
+              </Button>
+            </div>
             {loggedWorkouts.length > 0 ? (
                 <Accordion type="single" collapsible className="w-full">
                     {loggedWorkouts.sort((a,b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).map((log) => (
