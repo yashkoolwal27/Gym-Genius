@@ -80,11 +80,34 @@ export const exerciseData: Record<string, CategoryData> = {
       },
       {
         name: "Lower Chest",
-        exercises: [
-          { name: "Decline Bench Press", image: "https://placehold.co/100x100.png", hint: "decline bench press" },
-          { name: "High-to-Low Cable Fly", image: "https://placehold.co/100x100.png", hint: "high low cable fly" },
-          { name: "Dips (Chest)", image: "https://placehold.co/100x100.png", hint: "chest dip" },
-        ]
+        exercises: {
+            subCategories: [
+                {
+                    name: "Free Weights",
+                    exercises: [
+                        { name: "Decline Barbell Bench Press", image: "https://placehold.co/100x100.png", hint: "decline barbell press" },
+                        { name: "Decline Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "decline dumbbell press" },
+                        { name: "Decline Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "decline dumbbell flys" },
+                    ]
+                },
+                {
+                    name: "Machine & Cable",
+                    exercises: [
+                        { name: "High to Low Cable Crossover", image: "https://placehold.co/100x100.png", hint: "high low cable crossover" },
+                        { name: "Decline Machine Chest Press", image: "https://placehold.co/100x100.png", hint: "decline machine press" },
+                        { name: "Smith Machine Decline Bench Press", image: "https://placehold.co/100x100.png", hint: "smith machine decline press" },
+                    ]
+                },
+                {
+                    name: "Bodyweight/Other",
+                    exercises: [
+                        { name: "Dips (Chest Lean Forward)", image: "https://placehold.co/100x100.png", hint: "chest dips" },
+                        { name: "Ring Dips", image: "https://placehold.co/100x100.png", hint: "ring dips" },
+                        { name: "Incline Push-Ups", image: "https://placehold.co/100x100.png", hint: "incline push ups" },
+                    ]
+                }
+            ]
+        }
       },
       {
         name: "Inner Chest",
