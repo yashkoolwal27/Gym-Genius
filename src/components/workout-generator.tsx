@@ -20,8 +20,7 @@ import { Label } from "./ui/label";
 import { exerciseData } from "@/lib/exercises";
 import { ScrollArea } from "./ui/scroll-area";
 
-
-const exerciseCategories = [
+const initialExerciseCategories = [
   { id: "chest", label: "Chest", image: "https://images.unsplash.com/photo-1739991892140-eab6fe4700d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGVzdCUyMHByZXNzfGVufDB8fHx8MTc1MjA2MDcyMHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "chest press" },
   { id: "cardio", label: "Cardio", image: "https://images.unsplash.com/photo-1669806954505-936e77929af6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmVhZG1pbGwlMjBydW5uaW5nfGVufDB8fHx8MTc1MjA2MDcyMHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "treadmill running" },
   { id: "biceps", label: "Biceps", image: "https://images.unsplash.com/photo-1605180427725-95e306fc0e9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiaWNlcCUyMGN1cmx8ZW58MHx8fHwxNzUyMDYwNzIwfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "bicep curl" },
@@ -43,6 +42,7 @@ export function WorkoutGenerator() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [exercises, setExercises] = useState<LoggedExercise[]>([]);
   const [today, setToday] = useState<Date | undefined>(undefined);
+  const [exerciseCategories, setExerciseCategories] = useState(initialExerciseCategories);
   const timeInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
