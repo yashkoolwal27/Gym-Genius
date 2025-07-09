@@ -7,7 +7,7 @@ export function Logo({ className }: { className?: string }) {
       <div className="bg-primary p-2 rounded-lg">
         <Dumbbell className="h-6 w-6 text-primary-foreground" />
       </div>
-      <h1 className="font-bold text-xl">FitTrack Pro</h1>
+      <h1 className="font-bold text-xl">Gym Genius</h1>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react";
@@ -53,7 +54,7 @@ const dataMap = {
 } as const;
 
 
-export default function DietAndExerciseChart() {
+export default function ProteinIntakeChart() {
     const [view, setView] = useState<keyof typeof dataMap>("daily");
     const { data, goal, description, domain } = dataMap[view];
 
