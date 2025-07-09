@@ -233,39 +233,35 @@ export function WorkoutGenerator() {
                 </div>
             </CardHeader>
             <CardContent className="flex-1">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
                 {initialExerciseCategories.map((item) => {
-                    const isSelected = selectedCategories.includes(item.label);
-                    return (
-                        <div
-                        key={item.id}
-                        onClick={() => handleCategoryChange(item.label, !isSelected)}
-                        className={cn(
-                            "relative rounded-lg overflow-hidden cursor-pointer group border-2",
-                            isSelected ? "border-primary" : "border-transparent"
-                        )}
-                        >
+                  const isSelected = selectedCategories.includes(item.label);
+                  return (
+                    <div
+                      key={item.id}
+                      onClick={() => handleCategoryChange(item.label, !isSelected)}
+                      className={cn(
+                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
+                        isSelected
+                          ? "border-primary bg-primary/5"
+                          : "border-transparent bg-muted/50 hover:bg-muted/100"
+                      )}
+                    >
+                      <div className="aspect-square w-full relative overflow-hidden rounded-md">
                         <Image
-                            src={item.image}
-                            alt={item.label}
-                            width={300}
-                            height={200}
-                            className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                            data-ai-hint={item.hint}
+                          src={item.image}
+                          alt={item.label}
+                          width={200}
+                          height={200}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          data-ai-hint={item.hint}
                         />
-                        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors" />
-                        <div className="absolute bottom-0 left-0 p-3">
-                            <h3 className="font-semibold text-white">{item.label}</h3>
-                        </div>
-                        {isSelected && (
-                            <div className="absolute top-2 right-2 bg-primary text-primary-foreground rounded-full p-1">
-                            <CheckCircle className="h-5 w-5" />
-                            </div>
-                        )}
-                        </div>
-                    );
+                      </div>
+                      <h3 className="font-medium text-sm text-foreground">{item.label}</h3>
+                    </div>
+                  );
                 })}
-                </div>
+              </div>
             </CardContent>
             <CardFooter>
                  <Button onClick={() => setStep(3)} className="w-full" size="lg" disabled={selectedCategories.length === 0}>
