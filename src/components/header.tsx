@@ -14,8 +14,31 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 import { SidebarNav } from "./sidebar-nav"
 import { Logo } from "./logo"
+import { auth } from "@/lib/firebase/config"
+import { signOut } from "firebase/auth"
+import { useToast } from "@/hooks/use-toast"
+import { useRouter } from "next/navigation"
+import { useAuth } from "@/hooks/use-auth"
 
 export function Header({ title, description }: { title: string, description: string }) {
+  const { toast } = useToast();
+  const router = useRouter();
+  const { user } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      toast({ title: "Logged out successfully" });
+      router.push('/login');
+    } catch (error) {
+       toast({
+        variant: "destructive",
+        title: "Logout Failed",
+        description: "There was an error logging out. Please try again.",
+      });
+    }
+  };
+  
   return (
     <header className="flex h-20 shrink-0 items-center justify-between border-b bg-card px-4 md:px-8">
       <div className="flex items-center gap-4">
@@ -60,7 +83,7 @@ export function Header({ title, description }: { title: string, description: str
               <div className="flex flex-col space-y-1">
                 <p className="text-sm font-medium leading-none">Gym Genius</p>
                 <p className="text-xs leading-none text-muted-foreground">
-                  user@gymgenius.com
+                  {user?.email}
                 </p>
               </div>
             </DropdownMenuLabel>
@@ -68,7 +91,7 @@ export function Header({ title, description }: { title: string, description: str
             <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Log out</DropdownMenuItem>
+            <DropdownMenuItem onClick={handleLogout}>Log out</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

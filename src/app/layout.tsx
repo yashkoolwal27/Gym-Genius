@@ -1,7 +1,8 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import { Sidebar } from '@/components/sidebar';
+import { AuthProvider } from '@/hooks/use-auth';
+import { AppContent } from '@/components/app-content';
 
 export const metadata: Metadata = {
   title: 'Gym Genius',
@@ -21,12 +22,11 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        <div className="min-h-screen bg-secondary/40 flex">
-          <Sidebar />
-          <main className="flex-1 flex flex-col md:ml-64">
+        <AuthProvider>
+          <AppContent>
             {children}
-          </main>
-        </div>
+          </AppContent>
+        </AuthProvider>
         <Toaster />
       </body>
     </html>
