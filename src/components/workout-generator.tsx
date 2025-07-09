@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { format } from "date-fns";
 import { formatInTimeZone } from "date-fns-tz";
 import { cn } from "@/lib/utils";
@@ -164,7 +165,9 @@ export function WorkoutGenerator() {
         <CardHeader>
             <div className="flex justify-between items-center">
                 <CardTitle className="text-2xl font-bold tracking-tight">Select Date & Time</CardTitle>
-                <Button variant="link" className="p-0 text-primary">See Booked Slots &gt;</Button>
+                <Button variant="link" className="p-0 text-primary" asChild>
+                  <Link href="/progress-tracker">See Logged Workouts</Link>
+                </Button>
             </div>
         </CardHeader>
         <CardContent className="flex-1 flex justify-center items-center p-0 sm:p-6">
