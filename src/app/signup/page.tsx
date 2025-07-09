@@ -162,22 +162,23 @@ export default function SignupPage() {
 
                   useEffect(() => {
                     if (field.value) {
-                      const formattedDate = format(field.value, 'MM/dd/yyyy');
-                      if (formattedDate !== dateString) {
-                        setDateString(formattedDate);
+                      const newDateString = format(field.value, 'MM/dd/yyyy');
+                      if (newDateString !== dateString) {
+                        setDateString(newDateString);
                       }
-                    } else if (dateString) {
-                      setDateString('');
                     }
                   }, [field.value, dateString]);
 
                   const handleBlur = () => {
-                    const date = parse(dateString, 'MM/dd/yyyy', new Date());
-                    if (isValid(date)) {
-                      field.onChange(date);
+                    const parsedDate = parse(dateString, 'MM/dd/yyyy', new Date());
+                    if (isValid(parsedDate)) {
+                      if (!field.value || format(parsedDate, 'yyyy-MM-dd') !== format(field.value, 'yyyy-MM-dd')) {
+                        field.onChange(parsedDate);
+                      }
                     } else {
-                      field.onChange(undefined);
-                      setDateString('');
+                      if (field.value !== undefined) {
+                        field.onChange(undefined);
+                      }
                     }
                   };
                   
