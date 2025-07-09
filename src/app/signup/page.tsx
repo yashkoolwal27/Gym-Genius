@@ -18,7 +18,7 @@ import { Logo } from '@/components/logo';
 import { Eye, EyeOff, Loader2, Calendar as CalendarIcon } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Calendar } from '@/components/ui/calendar';
-import { format } from 'date-fns';
+import { format, isValid, parse } from 'date-fns';
 import { cn } from '@/lib/utils';
 
 const formSchema = z.object({
@@ -157,32 +157,35 @@ export default function SignupPage() {
                   <FormItem className="flex flex-col">
                     <FormLabel>Date of birth</FormLabel>
                     <Popover>
-                      <PopoverTrigger asChild>
+                       <div className="relative flex items-center">
                         <FormControl>
-                          <Button
-                            variant={"outline"}
-                            className={cn(
-                              "w-full pl-3 text-left font-normal",
-                              !field.value && "text-muted-foreground"
-                            )}
-                            onKeyDown={(e) => e.preventDefault()}
-                          >
-                            {field.value ? (
-                              format(field.value, "PPP")
-                            ) : (
-                              <span>Pick a date</span>
-                            )}
-                            <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                          </Button>
+                            <Input
+                            placeholder="MM/DD/YYYY"
+                            value={field.value ? format(field.value, 'MM/dd/yyyy') : ''}
+                            onChange={(e) => {
+                                const date = parse(e.target.value, 'MM/dd/yyyy', new Date());
+                                if (isValid(date)) {
+                                field.onChange(date);
+                                } else {
+                                field.onChange(undefined);
+                                }
+                            }}
+                            />
                         </FormControl>
-                      </PopoverTrigger>
+                        <PopoverTrigger asChild>
+                            <Button variant="ghost" size="icon" className="absolute right-1 h-8 w-8">
+                                <CalendarIcon className="h-4 w-4 opacity-50" />
+                            </Button>
+                        </PopoverTrigger>
+                       </div>
                       <PopoverContent className="w-auto p-0" align="start">
                         <Calendar
                           mode="single"
+                          captionLayout="dropdown-buttons"
                           fromYear={1900}
                           toYear={new Date().getFullYear()}
                           selected={field.value}
-                          onSelect={field.onChange}
+                          onSelect={(date) => field.onChange(date)}
                           disabled={(date) =>
                             date > new Date() || date < new Date("1900-01-01")
                           }
