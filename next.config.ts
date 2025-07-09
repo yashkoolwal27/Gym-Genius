@@ -28,6 +28,10 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: "https",
+        hostname: "gymvisual.com",
+      },
     ],
   },
   // INJECTED: This is a temporary workaround for a known issue with Next.js

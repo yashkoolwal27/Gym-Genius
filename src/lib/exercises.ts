@@ -194,7 +194,7 @@ export const exerciseData: Record<string, CategoryData> = {
         name: "Biceps Brachii",
         exercises: [
           { name: "Bicep Curls", image: "https://images.unsplash.com/photo-1681040517791-aba993f05b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxCaWNlcCUyMEN1cmxzfGVufDB8fHx8MTc1MjA5MjgyNHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "bicep curl" },
-          { name: "Preacher Curls", image: "https://cdn.shopify.com/s/files/1/2384/0833/files/shutterstock_419477203_480x480_d668762a-37fc-4d56-acfc-7e12885e91c1.webp?v=1689192672", hint: "preacher curl" },
+          { name: "Preacher Curls", image: "https://gymvisual.com/img/p/1/0/3/9/8/10398.gif", hint: "preacher curl" },
           { name: "Concentration Curls", image: "https://placehold.co/100x100.png", hint: "concentration curl" },
           { name: "Incline Dumbbell Curls", image: "https://placehold.co/100x100.png", hint: "incline dumbbell curl" }
         ]
