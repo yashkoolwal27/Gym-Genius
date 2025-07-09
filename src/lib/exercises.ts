@@ -59,7 +59,7 @@ export const exerciseData: Record<string, CategoryData> = {
       {
         name: "Biceps Brachii",
         exercises: [
-          { name: "Bicep Curls", image: "https://placehold.co/100x100.png", hint: "bicep curl" },
+          { name: "Bicep Curls", image: "https://images.unsplash.com/photo-1681040517791-aba993f05b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxCaWNlcCUyMEN1cmxzfGVufDB8fHx8MTc1MjA5MjgyNHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "bicep curl" },
           { name: "Preacher Curls", image: "https://placehold.co/100x100.png", hint: "preacher curl" },
           { name: "Concentration Curls", image: "https://placehold.co/100x100.png", hint: "concentration curl" },
           { name: "Incline Dumbbell Curls", image: "https://placehold.co/100x100.png", hint: "incline dumbbell curl" }
@@ -117,6 +117,12 @@ export const exerciseData: Record<string, CategoryData> = {
             exercises: [
                 { name: "Ulnar Deviation", image: "https://placehold.co/100x100.png", hint: "ulnar deviation" }
             ]
+        },
+        {
+          name: "Brachioradialis",
+          exercises: [
+            { name: "Reverse Barbell Curl", image: "https://placehold.co/100x100.png", hint: "reverse barbell curl" }
+          ]
         }
     ]
   },
