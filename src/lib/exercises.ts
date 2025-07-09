@@ -54,11 +54,25 @@ export const exerciseData: Record<string, CategoryData> = {
     { name: "Burpees", image: "https://placehold.co/100x100.png", hint: "burpee exercise" },
     { name: "Rowing Machine", image: "https://placehold.co/100x100.png", hint: "rowing machine" }
   ],
-  "Biceps": [
-    { name: "Bicep Curls", image: "https://placehold.co/100x100.png", hint: "bicep curl" },
-    { name: "Hammer Curls", image: "https://placehold.co/100x100.png", hint: "hammer curl" },
-    { name: "Preacher Curls", image: "https://placehold.co/100x100.png", hint: "preacher curl" }
-  ],
+  "Biceps": {
+    subCategories: [
+      {
+        name: "Long Head",
+        exercises: [
+          { name: "Hammer Curls", image: "https://placehold.co/100x100.png", hint: "hammer curl" },
+          { name: "Incline Dumbbell Curls", image: "https://placehold.co/100x100.png", hint: "incline dumbbell curl" },
+        ]
+      },
+      {
+        name: "Short Head",
+        exercises: [
+          { name: "Bicep Curls", image: "https://placehold.co/100x100.png", hint: "bicep curl" },
+          { name: "Preacher Curls", image: "https://placehold.co/100x100.png", hint: "preacher curl" },
+          { name: "Concentration Curls", image: "https://placehold.co/100x100.png", hint: "concentration curl" }
+        ]
+      }
+    ]
+  },
   "Triceps": {
     subCategories: [
       {
