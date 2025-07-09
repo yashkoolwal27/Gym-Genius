@@ -166,8 +166,10 @@ export default function SignupPage() {
                       if (newDateString !== dateString) {
                         setDateString(newDateString);
                       }
+                    } else {
+                      setDateString("");
                     }
-                  }, [field.value, dateString]);
+                  }, [field.value]);
 
                   const handleBlur = () => {
                     const parsedDate = parse(dateString, 'MM/dd/yyyy', new Date());
@@ -176,9 +178,9 @@ export default function SignupPage() {
                         field.onChange(parsedDate);
                       }
                     } else {
-                      if (field.value !== undefined) {
-                        field.onChange(undefined);
-                      }
+                       if(dateString === "") {
+                         field.onChange(undefined);
+                       }
                     }
                   };
                   
