@@ -48,7 +48,7 @@ export default function RecentWorkouts() {
                 ) : (
                     <div className="text-center text-muted-foreground p-8">
                         <p>You haven't logged any workouts yet.</p>
-                        <p className="text-sm">Go to the "Exercise" page to log your first session!</p>
+                        <p className="text-sm">Go to the "Workout" page to log your first session!</p>
                     </div>
                 )}
             </CardContent>
