@@ -111,24 +111,73 @@ export const exerciseData: Record<string, CategoryData> = {
       },
       {
         name: "Inner Chest",
-        exercises: [
-          { name: "Close-Grip Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "close grip press" },
-          { name: "Cable Crossovers", image: "https://placehold.co/100x100.png", hint: "cable crossover" },
-        ]
+        exercises: {
+            subCategories: [
+                {
+                    name: "Free Weights",
+                    exercises: [
+                        { name: "Dumbbell Squeeze Press", image: "https://placehold.co/100x100.png", hint: "dumbbell squeeze press" },
+                        { name: "Hex Press", image: "https://placehold.co/100x100.png", hint: "hex press" },
+                        { name: "Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "dumbbell flys" },
+                    ]
+                },
+                {
+                    name: "Cable & Machine",
+                    exercises: [
+                        { name: "Cable Crossover", image: "https://placehold.co/100x100.png", hint: "cable crossover" },
+                        { name: "Pec Deck", image: "https://placehold.co/100x100.png", hint: "pec deck" },
+                        { name: "Cable Chest Press", image: "https://placehold.co/100x100.png", hint: "cable chest press" },
+                    ]
+                }
+            ]
+        }
       },
       {
         name: "Outer Chest",
-        exercises: [
-          { name: "Wide-Grip Bench Press", image: "https://placehold.co/100x100.png", hint: "wide grip bench" },
-          { name: "Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "dumbbell fly" },
-        ]
+        exercises: {
+            subCategories: [
+                {
+                    name: "Free Weights",
+                    exercises: [
+                        { name: "Wide-Grip Barbell Bench Press", image: "https://placehold.co/100x100.png", hint: "wide grip barbell press" },
+                        { name: "Wide-Grip Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "wide grip dumbbell press" },
+                        { name: "Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "dumbbell flys" },
+                    ]
+                },
+                {
+                    name: "Cable & Machine",
+                    exercises: [
+                        { name: "Wide Arc Cable Flys", image: "https://placehold.co/100x100.png", hint: "wide arc cable flys" },
+                        { name: "Wide Grip Chest Press", image: "https://placehold.co/100x100.png", hint: "wide grip chest press" },
+                    ]
+                }
+            ]
+        }
       },
       {
-        name: "Support Muscles",
-        exercises: [
-          { name: "Svend Press", image: "https://placehold.co/100x100.png", hint: "svend press" },
-          { name: "Plate Pinch", image: "https://placehold.co/100x100.png", hint: "plate pinch" },
-        ]
+        name: "Supporting Muscles",
+        exercises: {
+            subCategories: [
+                {
+                    name: "Triceps Activation",
+                    exercises: [
+                        { name: "All bench press variations", image: "https://placehold.co/100x100.png", hint: "bench press" },
+                        { name: "Dips", image: "https://placehold.co/100x100.png", hint: "dips" },
+                        { name: "Push-ups", image: "https://placehold.co/100x100.png", hint: "push ups" },
+                        { name: "Close-Grip Bench Press", image: "https://placehold.co/100x100.png", hint: "close grip bench" },
+                    ]
+                },
+                {
+                    name: "Anterior Deltoid",
+                    exercises: [
+                        { name: "Incline pressing", image: "https://placehold.co/100x100.png", hint: "incline press" },
+                        { name: "Dumbbell press", image: "https://placehold.co/100x100.png", hint: "dumbbell press" },
+                        { name: "Machine presses", image: "https://placehold.co/100x100.png", hint: "machine press" },
+                        { name: "Push-ups", image: "https://placehold.co/100x100.png", hint: "push ups" },
+                    ]
+                }
+            ]
+        }
       }
     ]
   },
@@ -269,3 +318,5 @@ export const exerciseData: Record<string, CategoryData> = {
 } as const;
 
 export type ExerciseCategory = keyof typeof exerciseData;
+
+    
