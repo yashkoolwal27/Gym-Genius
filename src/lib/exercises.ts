@@ -33,16 +33,35 @@ export const exerciseData: Record<string, CategoryData> = {
           { name: "Bench Press", image: "https://placehold.co/100x100.png", hint: "bench press" },
           { name: "Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "dumbbell press" },
           { name: "Push-ups", image: "https://placehold.co/100x100.png", hint: "push up" },
-          { name: "Cable Flys", image: "https://placehold.co/100x100.png", hint: "cable fly" },
         ]
       },
       {
         name: "Lower Chest",
         exercises: [
           { name: "Decline Bench Press", image: "https://placehold.co/100x100.png", hint: "decline bench press" },
-          { name: "Decline Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "decline dumbbell press" },
           { name: "High-to-Low Cable Fly", image: "https://placehold.co/100x100.png", hint: "high low cable fly" },
           { name: "Dips (Chest)", image: "https://placehold.co/100x100.png", hint: "chest dip" },
+        ]
+      },
+      {
+        name: "Inner Chest",
+        exercises: [
+          { name: "Close-Grip Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "close grip press" },
+          { name: "Cable Crossovers", image: "https://placehold.co/100x100.png", hint: "cable crossover" },
+        ]
+      },
+      {
+        name: "Outer Chest",
+        exercises: [
+          { name: "Wide-Grip Bench Press", image: "https://placehold.co/100x100.png", hint: "wide grip bench" },
+          { name: "Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "dumbbell fly" },
+        ]
+      },
+      {
+        name: "Support Muscles",
+        exercises: [
+          { name: "Svend Press", image: "https://placehold.co/100x100.png", hint: "svend press" },
+          { name: "Plate Pinch", image: "https://placehold.co/100x100.png", hint: "plate pinch" },
         ]
       }
     ]
