@@ -26,7 +26,7 @@ export function ProgressTracker() {
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-xl font-semibold flex items-center gap-2"><Dumbbell /> Logged Workouts</h3>
               <Button asChild>
-                <Link href="/log-workout">
+                <Link href="/workout">
                   <PlusCircle className="mr-2 h-4 w-4" /> Log New Workout
                 </Link>
               </Button>

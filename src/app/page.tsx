@@ -22,7 +22,7 @@ export default function DashboardPage() {
         </div>
         
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/workout-generator"><Dumbbell className="mr-2 h-5 w-5 text-primary" /> AI Workout Generator</Link></Button>
+            <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/workout"><Dumbbell className="mr-2 h-5 w-5 text-primary" /> AI Workout Generator</Link></Button>
             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/meal-planner"><UtensilsCrossed className="mr-2 h-5 w-5 text-primary" /> New Meal Plan</Link></Button>
             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/progress-tracker"><LineChart className="mr-2 h-5 w-5 text-primary" /> View Progress</Link></Button>
             <Button variant="outline" className="bg-card justify-start h-12 text-base font-medium" asChild><Link href="/educational-resources"><FileText className="mr-2 h-5 w-5 text-primary" /> Read Articles</Link></Button>
