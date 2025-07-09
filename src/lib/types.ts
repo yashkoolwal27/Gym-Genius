@@ -1,4 +1,5 @@
 
+
 export interface StoredPlan {
     id: string;
     generatedPlan: string;
@@ -28,3 +29,20 @@ export interface WorkoutLog {
   exercises: LoggedExercise[];
   createdAt: string;
 }
+
+export interface Exercise {
+  name: string;
+  image: string;
+  hint: string;
+}
+
+export interface SubCategory {
+  name: string;
+  exercises: readonly Exercise[] | SubCategoryData;
+}
+
+export interface SubCategoryData {
+    subCategories: readonly SubCategory[];
+}
+
+export type CategoryData = readonly Exercise[] | SubCategoryData;

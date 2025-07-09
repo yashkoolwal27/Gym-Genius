@@ -15,9 +15,9 @@ import { Input } from "@/components/ui/input";
 import { Calendar } from "@/components/ui/calendar";
 import { useToast } from "@/hooks/use-toast";
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import type { WorkoutLog, LoggedExercise } from "@/lib/types";
+import type { WorkoutLog, LoggedExercise, Exercise } from "@/lib/types";
 import { Label } from "./ui/label";
-import { exerciseData } from "@/lib/exercises";
+import { exerciseData, isSubCategory, isExerciseList } from "@/lib/exercises";
 import { ScrollArea } from "./ui/scroll-area";
 
 const initialExerciseCategories = [
@@ -162,7 +162,7 @@ export function WorkoutGenerator() {
       <Card className="w-full flex-1 flex flex-col shadow-xl border-none bg-card/70">
         <CardHeader>
             <div className="flex justify-between items-center">
-                <CardTitle className="text-2xl font-bold tracking-tight">Select Date & Time</CardTitle>
+                <CardTitle className="text-2xl font-bold tracking-tight">Select Date &amp; Time</CardTitle>
                 <Button variant="link" className="p-0 text-primary" asChild>
                   <Link href="/progress-tracker">See Logged Workouts</Link>
                 </Button>
@@ -272,6 +272,41 @@ export function WorkoutGenerator() {
   }
 
   if (step === 3) {
+    const renderExercises = (exerciseList: readonly Exercise[], subCategoryName?: string) => (
+      <div key={subCategoryName} className="mb-4">
+          {subCategoryName && <h4 className="font-semibold my-4 px-2 text-primary">{subCategoryName}</h4>}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {exerciseList.map(ex => {
+                  const isSelected = exercises.some(loggedEx => loggedEx.name === ex.name);
+                  return (
+                    <div
+                      key={ex.name}
+                      onClick={() => toggleExercise(ex.name)}
+                      className={cn(
+                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
+                        isSelected
+                          ? "border-primary bg-primary/5"
+                          : "border-transparent bg-muted/50 hover:bg-muted/100"
+                      )}
+                    >
+                      <div className="aspect-square w-full relative overflow-hidden rounded-md bg-muted-foreground/10">
+                        <Image
+                          src={ex.image}
+                          alt={ex.name}
+                          width={200}
+                          height={200}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          data-ai-hint={ex.hint}
+                        />
+                      </div>
+                      <h3 className="font-medium text-sm text-foreground h-10 flex items-center justify-center">{ex.name}</h3>
+                    </div>
+                  )
+              })}
+          </div>
+      </div>
+    );
+    
     return (
       <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
         <CardHeader>
@@ -296,48 +331,27 @@ export function WorkoutGenerator() {
                   {selectedCategories.map(category => {
                     const categoryData = exerciseData[category as keyof typeof exerciseData];
                     if (!categoryData) return null;
-  
-                    const renderExercises = (exerciseList: readonly any[], subCategoryName?: string) => (
-                      <div key={subCategoryName || category} className="mb-4">
-                          {subCategoryName && <h4 className="font-semibold my-4 px-2 text-primary">{subCategoryName}</h4>}
-                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                              {exerciseList.map(ex => {
-                                  const isSelected = exercises.some(loggedEx => loggedEx.name === ex.name);
-                                  return (
-                                    <div
-                                      key={ex.name}
-                                      onClick={() => toggleExercise(ex.name)}
-                                      className={cn(
-                                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
-                                        isSelected
-                                          ? "border-primary bg-primary/5"
-                                          : "border-transparent bg-muted/50 hover:bg-muted/100"
-                                      )}
-                                    >
-                                      <div className="aspect-square w-full relative overflow-hidden rounded-md bg-muted-foreground/10">
-                                        <Image
-                                          src={ex.image}
-                                          alt={ex.name}
-                                          width={200}
-                                          height={200}
-                                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                          data-ai-hint={ex.hint}
-                                        />
-                                      </div>
-                                      <h3 className="font-medium text-sm text-foreground h-10 flex items-center justify-center">{ex.name}</h3>
-                                    </div>
-                                  )
-                              })}
-                          </div>
-                      </div>
-                    );
 
-                    if (Array.isArray(categoryData)) {
+                    if (isExerciseList(categoryData)) {
                       return renderExercises(categoryData);
                     }
                     
-                    if ('subCategories' in categoryData && categoryData.subCategories) {
-                      return categoryData.subCategories.map(sub => renderExercises(sub.exercises, sub.name));
+                    if (isSubCategory(categoryData)) {
+                      return categoryData.subCategories.map(sub => {
+                          if (isExerciseList(sub.exercises)) {
+                            return renderExercises(sub.exercises, sub.name)
+                          }
+                          // This handles the new nested structure for Upper Chest
+                          if (isSubCategory(sub.exercises)) {
+                              return (
+                                <div key={sub.name}>
+                                    <h3 className="font-bold text-xl mt-6 mb-2 px-2 text-foreground">{sub.name}</h3>
+                                    {sub.exercises.subCategories.map(nestedSub => renderExercises(nestedSub.exercises, nestedSub.name))}
+                                </div>
+                              )
+                          }
+                          return null;
+                      });
                     }
                     
                     return null;
@@ -410,7 +424,7 @@ export function WorkoutGenerator() {
         </CardContent>
         <CardFooter>
              <Button onClick={handleSubmit} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={exercises.length === 0}>
-                <CheckCircle className="mr-2 h-4 w-4" /> Finish & Log Workout
+                <CheckCircle className="mr-2 h-4 w-4" /> Finish &amp; Log Workout
             </Button>
         </CardFooter>
       </Card>

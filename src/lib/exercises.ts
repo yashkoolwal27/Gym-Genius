@@ -1,39 +1,49 @@
 
-export interface Exercise {
-  name: string;
-  image: string;
-  hint: string;
-}
+import type { Exercise, SubCategory, SubCategoryData, CategoryData } from "./types";
 
-export interface SubCategory {
-  name: string;
-  exercises: readonly Exercise[];
-}
+export const isSubCategory = (data: CategoryData): data is SubCategoryData => {
+  return (data as SubCategoryData).subCategories !== undefined;
+};
 
-export interface SubCategoryData {
-    subCategories: readonly SubCategory[];
+export const isExerciseList = (data: readonly Exercise[] | SubCategoryData): data is readonly Exercise[] => {
+    return Array.isArray(data);
 }
-
-export type CategoryData = readonly Exercise[] | SubCategoryData;
 
 export const exerciseData: Record<string, CategoryData> = {
   "Chest": {
     subCategories: [
       {
         name: "Upper Chest",
-        exercises: [
-          { name: "Incline Barbell Bench Press", image: "https://placehold.co/100x100.png", hint: "incline barbell press" },
-          { name: "Incline Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "incline press" },
-          { name: "Incline Hex Press", image: "https://placehold.co/100x100.png", hint: "incline hex press" },
-          { name: "Incline Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "incline dumbbell fly" },
-          { name: "Incline Dumbbell Around the World", image: "https://placehold.co/100x100.png", hint: "dumbbell around world" },
-          { name: "Incline Machine Chest Press", image: "https://placehold.co/100x100.png", hint: "incline machine press" },
-          { name: "Low to High Cable Crossover", image: "https://placehold.co/100x100.png", hint: "low high cable crossover" },
-          { name: "Incline Cable Flys", image: "https://placehold.co/100x100.png", hint: "incline cable fly" },
-          { name: "Smith Machine Incline Bench Press", image: "https://placehold.co/100x100.png", hint: "smith machine press" },
-          { name: "Pike Push-Ups", image: "https://placehold.co/100x100.png", hint: "pike push up" },
-          { name: "Feet-Elevated Push-Ups", image: "https://placehold.co/100x100.png", hint: "elevated push up" },
-        ]
+        exercises: {
+          subCategories: [
+            {
+              name: "Free Weights",
+              exercises: [
+                { name: "Incline Barbell Bench Press", image: "https://placehold.co/100x100.png", hint: "incline barbell press" },
+                { name: "Incline Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "incline press" },
+                { name: "Incline Hex Press", image: "https://placehold.co/100x100.png", hint: "incline hex press" },
+                { name: "Incline Dumbbell Flys", image: "https://placehold.co/100x100.png", hint: "incline dumbbell fly" },
+                { name: "Incline Dumbbell Around the World", image: "https://placehold.co/100x100.png", hint: "dumbbell around world" },
+              ]
+            },
+            {
+              name: "Machine & Cable",
+              exercises: [
+                { name: "Incline Machine Chest Press", image: "https://placehold.co/100x100.png", hint: "incline machine press" },
+                { name: "Low to High Cable Crossover", image: "https://placehold.co/100x100.png", hint: "low high cable crossover" },
+                { name: "Incline Cable Flys", image: "https://placehold.co/100x100.png", hint: "incline cable fly" },
+                { name: "Smith Machine Incline Bench Press", image: "https://placehold.co/100x100.png", hint: "smith machine press" },
+              ]
+            },
+            {
+              name: "Bodyweight/Other",
+              exercises: [
+                { name: "Pike Push-Ups", image: "https://placehold.co/100x100.png", hint: "pike push up" },
+                { name: "Feet-Elevated Push-Ups", image: "https://placehold.co/100x100.png", hint: "elevated push up" },
+              ]
+            }
+          ]
+        }
       },
       {
         name: "Middle Chest",
