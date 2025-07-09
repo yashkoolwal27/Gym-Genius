@@ -5,16 +5,48 @@ export interface Exercise {
   hint: string;
 }
 
-export type ExerciseCategory = keyof typeof exerciseData;
+export interface SubCategory {
+  name: string;
+  exercises: readonly Exercise[];
+}
 
-export const exerciseData: Record<ExerciseCategory, readonly Exercise[]> = {
-  "Chest": [
-    { name: "Bench Press", image: "https://placehold.co/100x100.png", hint: "bench press" },
-    { name: "Incline Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "incline press" },
-    { name: "Push-ups", image: "https://placehold.co/100x100.png", hint: "push up" },
-    { name: "Cable Flys", image: "https://placehold.co/100x100.png", hint: "cable fly" },
-    { name: "Dumbbell Pullover", image: "https://placehold.co/100x100.png", hint: "dumbbell pullover" }
-  ],
+export interface SubCategoryData {
+    subCategories: readonly SubCategory[];
+}
+
+export type CategoryData = readonly Exercise[] | SubCategoryData;
+
+export const exerciseData: Record<string, CategoryData> = {
+  "Chest": {
+    subCategories: [
+      {
+        name: "Upper Chest",
+        exercises: [
+          { name: "Incline Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "incline press" },
+          { name: "Incline Bench Press", image: "https://placehold.co/100x100.png", hint: "incline bench press" },
+          { name: "Low-to-High Cable Fly", image: "https://placehold.co/100x100.png", hint: "cable fly" },
+        ]
+      },
+      {
+        name: "Middle Chest",
+        exercises: [
+          { name: "Bench Press", image: "https://placehold.co/100x100.png", hint: "bench press" },
+          { name: "Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "dumbbell press" },
+          { name: "Push-ups", image: "https://placehold.co/100x100.png", hint: "push up" },
+          { name: "Cable Flys", image: "https://placehold.co/100x100.png", hint: "cable fly" },
+        ]
+      },
+      {
+        name: "Lower Chest",
+        exercises: [
+          { name: "Decline Bench Press", image: "https://placehold.co/100x100.png", hint: "decline bench press" },
+          { name: "Decline Dumbbell Press", image: "https://placehold.co/100x100.png", hint: "decline dumbbell press" },
+          { name: "High-to-Low Cable Fly", image: "https://placehold.co/100x100.png", hint: "high low cable fly" },
+          { name: "Dips (Chest)", image: "https://placehold.co/100x100.png", hint: "chest dip" },
+        ]
+      }
+    ]
+  },
   "Cardio": [
     { name: "Running (Treadmill)", image: "https://placehold.co/100x100.png", hint: "treadmill run" },
     { name: "Cycling (Stationary Bike)", image: "https://placehold.co/100x100.png", hint: "stationary bike" },
@@ -65,3 +97,5 @@ export const exerciseData: Record<ExerciseCategory, readonly Exercise[]> = {
     { name: "T-Bar Rows", image: "https://placehold.co/100x100.png", hint: "t-bar row" }
   ],
 } as const;
+
+export type ExerciseCategory = keyof typeof exerciseData;

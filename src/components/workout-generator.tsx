@@ -16,7 +16,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import type { WorkoutLog, LoggedExercise } from "@/lib/types";
 import { Label } from "./ui/label";
-import { exerciseData, type ExerciseCategory } from "@/lib/exercises";
+import { exerciseData } from "@/lib/exercises";
 import { ScrollArea } from "./ui/scroll-area";
 
 
@@ -275,10 +275,19 @@ export function WorkoutGenerator() {
   }
 
   if (step === 3) {
-    const availableExercises = selectedCategories
-      .flatMap(category => exerciseData[category as ExerciseCategory] || [])
-      .filter(ex => !exercises.some(loggedEx => loggedEx.name === ex.name))
-      .sort((a,b) => a.name.localeCompare(b.name));
+    const hasAvailableExercises = selectedCategories.some(category => {
+        const categoryData = exerciseData[category as keyof typeof exerciseData];
+        if (!categoryData) return false;
+
+        if (Array.isArray(categoryData)) {
+          return categoryData.some(ex => !exercises.some(logged => logged.name === ex.name));
+        } else if ('subCategories' in categoryData) {
+          return categoryData.subCategories.some(sub => 
+            sub.exercises.some(ex => !exercises.some(logged => logged.name === ex.name))
+          );
+        }
+        return false;
+    });
 
     return (
       <Card className="w-full max-w-6xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
@@ -301,20 +310,60 @@ export function WorkoutGenerator() {
              <p className="text-sm text-muted-foreground">Click an exercise to add it to your log.</p>
              <Card className="flex-1">
                 <ScrollArea className="h-[400px] p-2">
-                  {availableExercises.length > 0 ? (
-                    <div className="space-y-1">
-                      {availableExercises.map(ex => (
-                        <div key={ex.name} className="flex items-center gap-4 p-2 rounded-lg hover:bg-muted cursor-pointer" onClick={() => addExercise(ex.name)}>
-                          <Image src={ex.image} alt={ex.name} width={60} height={60} className="rounded-md object-cover bg-muted-foreground/20 aspect-square" data-ai-hint={ex.hint} />
-                          <span className="font-medium flex-1">{ex.name}</span>
-                          <PlusCircle className="h-5 w-5 text-muted-foreground" />
-                        </div>
-                      ))}
+                  {!hasAvailableExercises ? (
+                    <div className="text-center text-muted-foreground h-full flex flex-col justify-center items-center">
+                      <p>All available exercises for the selected categories have been added.</p>
                     </div>
                   ) : (
-                     <div className="text-center text-muted-foreground pt-16">
-                        <p>All available exercises for the selected categories have been added.</p>
-                      </div>
+                    selectedCategories.map(category => {
+                      const categoryData = exerciseData[category as keyof typeof exerciseData];
+                      if (!categoryData) return null;
+    
+                      if (Array.isArray(categoryData)) {
+                        const available = categoryData.filter(ex => !exercises.some(loggedEx => loggedEx.name === ex.name));
+                        if (available.length === 0) return null;
+    
+                        return (
+                          <div key={category} className="space-y-1">
+                            {available.map(ex => (
+                                <div key={ex.name} className="flex items-center gap-4 p-2 rounded-lg hover:bg-muted cursor-pointer" onClick={() => addExercise(ex.name)}>
+                                  <Image src={ex.image} alt={ex.name} width={60} height={60} className="rounded-md object-cover bg-muted-foreground/20 aspect-square" data-ai-hint={ex.hint} />
+                                  <span className="font-medium flex-1">{ex.name}</span>
+                                  <PlusCircle className="h-5 w-5 text-muted-foreground" />
+                                </div>
+                            ))}
+                          </div>
+                        )
+                      }
+                      
+                      if ('subCategories' in categoryData && categoryData.subCategories) {
+                        return (
+                          <div key={category}>
+                            {categoryData.subCategories.map(subCategory => {
+                              const available = subCategory.exercises.filter(ex => !exercises.some(loggedEx => loggedEx.name === ex.name));
+                              if (available.length === 0) return null;
+    
+                              return (
+                                <div key={subCategory.name} className="mb-4">
+                                  <h4 className="font-semibold my-2 px-2 text-primary">{subCategory.name}</h4>
+                                  <div className="space-y-1">
+                                    {available.map(ex => (
+                                      <div key={ex.name} className="flex items-center gap-4 p-2 rounded-lg hover:bg-muted cursor-pointer" onClick={() => addExercise(ex.name)}>
+                                        <Image src={ex.image} alt={ex.name} width={60} height={60} className="rounded-md object-cover bg-muted-foreground/20 aspect-square" data-ai-hint={ex.hint} />
+                                        <span className="font-medium flex-1">{ex.name}</span>
+                                        <PlusCircle className="h-5 w-5 text-muted-foreground" />
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        );
+                      }
+                      
+                      return null;
+                    })
                   )}
                 </ScrollArea>
              </Card>
