@@ -154,7 +154,7 @@ export const exerciseData: Record<string, CategoryData> = {
       }
     ]
   },
-  "Core": [
+  "Abs": [
     { name: "Plank", image: "https://placehold.co/100x100.png", hint: "plank exercise" },
     { name: "Crunches", image: "https://placehold.co/100x100.png", hint: "floor crunch" },
     { name: "Leg Raises", image: "https://placehold.co/100x100.png", hint: "leg raise" },
