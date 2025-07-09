@@ -42,7 +42,6 @@ export function WorkoutGenerator() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [exercises, setExercises] = useState<LoggedExercise[]>([]);
   const [today, setToday] = useState<Date | undefined>(undefined);
-  const [exerciseCategories, setExerciseCategories] = useState(initialExerciseCategories);
   const timeInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -235,7 +234,7 @@ export function WorkoutGenerator() {
             </CardHeader>
             <CardContent className="flex-1">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
-                {exerciseCategories.map((item) => {
+                {initialExerciseCategories.map((item) => {
                     const isSelected = selectedCategories.includes(item.label);
                     return (
                         <div
@@ -293,26 +292,26 @@ export function WorkoutGenerator() {
     });
 
     return (
-      <Card className="w-full max-w-6xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
+      <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
         <CardHeader>
           <div className="flex items-center gap-4">
             <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(2)}>
               <ChevronLeft className="h-4 w-4" />
             </Button>
             <div>
-              <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Workout</CardTitle>
+              <CardTitle className="flex items-center gap-2"><Dumbbell /> Select Your Exercises</CardTitle>
               <CardDescription>
-                Add exercises from the list and fill in your sets, reps, and weight for {date ? format(date, "PPP") : 'the selected date'} at {time}.
+                Choose the exercises for your workout on {date ? format(date, "PPP") : 'the selected date'} at {time}.
               </CardDescription>
             </div>
           </div>
         </CardHeader>
-        <CardContent className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div className="flex flex-col gap-4 h-full">
-             <h3 className="text-xl font-semibold">Available Exercises</h3>
-             <p className="text-sm text-muted-foreground">Click an exercise to add it to your log.</p>
+        <CardContent className="flex-1 flex flex-col gap-4">
+             <div className="flex justify-between items-center">
+                <p className="text-sm text-muted-foreground">Click an exercise to add it to your log. You have selected {exercises.length} exercises.</p>
+             </div>
              <Card className="flex-1">
-                <ScrollArea className="h-[400px] p-2">
+                <ScrollArea className="h-[450px] p-2">
                   {!hasAvailableExercises ? (
                     <div className="text-center text-muted-foreground h-full flex flex-col justify-center items-center">
                       <p>All available exercises for the selected categories have been added.</p>
@@ -370,62 +369,79 @@ export function WorkoutGenerator() {
                   )}
                 </ScrollArea>
              </Card>
-          </div>
-
-           <div className="flex flex-col gap-4 h-full">
-            <h3 className="text-xl font-semibold">Your Log</h3>
-            <p className="text-sm text-muted-foreground">Fill in the details for your workout.</p>
-            <Card className="flex-1">
-              <ScrollArea className="h-[400px] p-4">
-                  {exercises.length === 0 ? (
-                      <div className="text-center text-muted-foreground h-full flex flex-col justify-center items-center">
-                          <p>No exercises added yet.</p>
-                          <p className="text-sm">Click an exercise from the left to start.</p>
-                      </div>
-                  ) : (
-                    <div className="space-y-4">
-                      {exercises.map((exercise) => (
-                          <Card key={exercise.id} className="p-4 bg-background/50 relative">
-                              <Button variant="ghost" size="icon" className="absolute top-2 right-2 h-7 w-7 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeExercise(exercise.id)}>
-                                  <Trash2 className="h-4 w-4" />
-                              </Button>
-                              <div className="space-y-2">
-                                  <Label className="font-semibold text-base">{exercise.name}</Label>
-                                  <div className="space-y-2">
-                                      {exercise.sets.map((set, setIndex) => (
-                                          <div key={set.id} className="flex gap-2 items-center">
-                                              <span className="text-sm font-medium text-muted-foreground w-8 text-center">#{setIndex + 1}</span>
-                                              <Input type="number" placeholder="Reps" value={set.reps} onChange={(e) => updateSet(exercise.id, set.id, 'reps', e.target.value)} />
-                                              <Input placeholder="Weight (kg/lbs)" value={set.weight} onChange={(e) => updateSet(exercise.id, set.id, 'weight', e.target.value)} />
-                                              <Button variant="ghost" size="icon" className="h-8 w-8 shrink-0 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeSet(exercise.id, set.id)} disabled={exercise.sets.length <= 1}>
-                                                  <Trash2 className="h-4 w-4" />
-                                              </Button>
-                                          </div>
-                                      ))}
-                                      <Button variant="outline" size="sm" onClick={() => addSet(exercise.id)} className="w-full">
-                                          <PlusCircle className="mr-2 h-4 w-4" /> Add Set
-                                      </Button>
-                                  </div>
-                              </div>
-                          </Card>
-                      ))}
-                    </div>
-                  )}
-              </ScrollArea>
-            </Card>
-          </div>
         </CardContent>
         <CardFooter>
-             <Button onClick={handleSubmit} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={exercises.length === 0}>
-                <CheckCircle className="mr-2 h-4 w-4" /> Log Workout
+             <Button onClick={() => setStep(4)} className="w-full" size="lg" disabled={exercises.length === 0}>
+                Next - Log Details <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
         </CardFooter>
       </Card>
     );
   }
 
-  // Fallback return if step is not 1, 2, or 3
+  if (step === 4) {
+    return (
+      <Card className="w-full max-w-2xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
+        <CardHeader>
+          <div className="flex items-center gap-4">
+            <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(3)}>
+              <ChevronLeft className="h-4 w-4" />
+            </Button>
+            <div>
+              <CardTitle className="flex items-center gap-2"><Dumbbell /> Log Your Details</CardTitle>
+              <CardDescription>
+                Fill in your sets, reps, and weight for each exercise.
+              </CardDescription>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent className="flex-1">
+          <ScrollArea className="h-[500px] p-4 -mx-4">
+              {exercises.length === 0 ? (
+                  <div className="text-center text-muted-foreground h-full flex flex-col justify-center items-center">
+                      <p>No exercises added yet.</p>
+                      <Button variant="link" onClick={() => setStep(3)}>Go back to select exercises</Button>
+                  </div>
+              ) : (
+                <div className="space-y-4">
+                  {exercises.map((exercise) => (
+                      <Card key={exercise.id} className="p-4 bg-background/50 relative">
+                          <Button variant="ghost" size="icon" className="absolute top-2 right-2 h-7 w-7 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeExercise(exercise.id)}>
+                              <Trash2 className="h-4 w-4" />
+                          </Button>
+                          <div className="space-y-2">
+                              <Label className="font-semibold text-base">{exercise.name}</Label>
+                              <div className="space-y-2">
+                                  {exercise.sets.map((set, setIndex) => (
+                                      <div key={set.id} className="flex gap-2 items-center">
+                                          <span className="text-sm font-medium text-muted-foreground w-8 text-center">#{setIndex + 1}</span>
+                                          <Input type="number" placeholder="Reps" value={set.reps} onChange={(e) => updateSet(exercise.id, set.id, 'reps', e.target.value)} />
+                                          <Input placeholder="Weight (kg/lbs)" value={set.weight} onChange={(e) => updateSet(exercise.id, set.id, 'weight', e.target.value)} />
+                                          <Button variant="ghost" size="icon" className="h-8 w-8 shrink-0 text-muted-foreground hover:bg-destructive/10 hover:text-destructive" onClick={() => removeSet(exercise.id, set.id)} disabled={exercise.sets.length <= 1}>
+                                              <Trash2 className="h-4 w-4" />
+                                          </Button>
+                                      </div>
+                                  ))}
+                                  <Button variant="outline" size="sm" onClick={() => addSet(exercise.id)} className="w-full">
+                                      <PlusCircle className="mr-2 h-4 w-4" /> Add Set
+                                  </Button>
+                              </div>
+                          </div>
+                      </Card>
+                  ))}
+                </div>
+              )}
+          </ScrollArea>
+        </CardContent>
+        <CardFooter>
+             <Button onClick={handleSubmit} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={exercises.length === 0}>
+                <CheckCircle className="mr-2 h-4 w-4" /> Finish & Log Workout
+            </Button>
+        </CardFooter>
+      </Card>
+    );
+  }
+
+  // Fallback return if step is not valid
   return null;
 }
-
-    
