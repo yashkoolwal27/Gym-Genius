@@ -1,7 +1,6 @@
-
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -16,19 +15,12 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
-import { Eye, EyeOff, Loader2, Calendar as CalendarIcon } from 'lucide-react';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Calendar } from '@/components/ui/calendar';
-import { format, isValid, parse } from 'date-fns';
-import { cn } from '@/lib/utils';
+import { Eye, EyeOff, Loader2 } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   username: z.string().min(3, { message: "Username must be at least 3 characters." })
     .regex(/^[a-zA-Z0-9_.]+$/, { message: "Username can only contain letters, numbers, underscores, and periods." }),
-  dob: z.date({
-    required_error: "A date of birth is required.",
-  }),
   email: z.string().email({ message: "Invalid email address." }),
   password: z.string().min(6, { message: "Password must be at least 6 characters." }),
   confirmPassword: z.string()
@@ -83,7 +75,6 @@ export default function SignupPage() {
         email: user.email,
         name: values.name,
         username: values.username,
-        dob: values.dob,
         createdAt: new Date().toISOString(),
       });
 
@@ -150,81 +141,6 @@ export default function SignupPage() {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
-              <FormField
-                control={form.control}
-                name="dob"
-                render={({ field }) => {
-                  const [dateString, setDateString] = useState<string>(
-                    field.value ? format(field.value, 'MM/dd/yyyy') : ''
-                  );
-                  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
-
-                  useEffect(() => {
-                    if (field.value) {
-                      const newDateString = format(field.value, 'MM/dd/yyyy');
-                      if (newDateString !== dateString) {
-                        setDateString(newDateString);
-                      }
-                    } else {
-                      setDateString("");
-                    }
-                  }, [field.value]);
-
-                  const handleBlur = () => {
-                    const parsedDate = parse(dateString, 'MM/dd/yyyy', new Date());
-                    if (isValid(parsedDate)) {
-                      if (!field.value || format(parsedDate, 'yyyy-MM-dd') !== format(field.value, 'yyyy-MM-dd')) {
-                        field.onChange(parsedDate);
-                      }
-                    } else {
-                       if(dateString === "") {
-                         field.onChange(undefined);
-                       }
-                    }
-                  };
-                  
-                  return (
-                    <FormItem className="flex flex-col">
-                      <FormLabel>Date of birth</FormLabel>
-                      <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
-                         <div className="relative flex items-center">
-                          <FormControl>
-                              <Input
-                                placeholder="MM/DD/YYYY"
-                                value={dateString}
-                                onChange={(e) => setDateString(e.target.value)}
-                                onBlur={handleBlur}
-                              />
-                          </FormControl>
-                          <PopoverTrigger asChild>
-                              <Button variant="ghost" size="icon" className="absolute right-1 h-8 w-8">
-                                  <CalendarIcon className="h-4 w-4 opacity-50" />
-                              </Button>
-                          </PopoverTrigger>
-                         </div>
-                        <PopoverContent className="w-auto p-0" align="start">
-                          <Calendar
-                            mode="single"
-                            captionLayout="dropdown-buttons"
-                            fromYear={1900}
-                            toYear={new Date().getFullYear()}
-                            selected={field.value}
-                            onSelect={(date) => {
-                              field.onChange(date);
-                              if(date) setIsPopoverOpen(false);
-                            }}
-                            disabled={(date) =>
-                              date > new Date() || date < new Date("1900-01-01")
-                            }
-                            initialFocus
-                          />
-                        </PopoverContent>
-                      </Popover>
-                      <FormMessage />
-                    </FormItem>
-                  )
-                }}
               />
               <FormField
                 control={form.control}
