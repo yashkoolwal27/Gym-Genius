@@ -23,11 +23,13 @@ import { ScrollArea } from "./ui/scroll-area";
 const exerciseCategories = [
   { id: "chest", label: "Chest", image: "https://images.unsplash.com/photo-1739991892137-6c0d8d242662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGVzdCUyMHByZXNzfGVufDB8fHx8MTc1MTkyNDkwMXww&ixlib=rb-4.1.0&q=80&w=1080", hint: "chest press" },
   { id: "cardio", label: "Cardio", image: "https://images.unsplash.com/photo-1651840403913-37901945493a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJlYWRtaWxsJTIwcnVubmluZ3xlbnwwfHx8fDE3NTE5MjQ5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "treadmill running" },
-  { id: "arms", label: "Arms", image: "https://images.unsplash.com/photo-1597452573811-85e7383195a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiaWNlcCUyMGN1cmx8ZW58MHx8fHwxNzUxOTI0OTAxfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "bicep curl" },
+  { id: "biceps", label: "Biceps", image: "https://images.unsplash.com/photo-1597452573811-85e7383195a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiaWNlcCUyMGN1cmx8ZW58MHx8fHwxNzUxOTI0OTAxfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "bicep curl" },
+  { id: "triceps", label: "Triceps", image: "https://placehold.co/300x200.png", hint: "tricep dip" },
+  { id: "forearms", label: "Forearms", image: "https://placehold.co/300x200.png", hint: "forearm grip" },
   { id: "legs", label: "Legs", image: "https://images.unsplash.com/photo-1700784795176-7ff886439d79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcXVhdCUyMHdvcmtvdXR8ZW58MHx8fHwxNzUxOTI0OTAxfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "squat workout" },
-  { id: "core", label: "Core", image: "https://images.unsplash.com/photo-1714646442330-9068099f5521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwbGFuayUyMGV4ZXJjaXNlfGVufDB8fHx8MTc1MTkyNDkwMXww&ixlib=rb-4.1.0&q=80&w=1080", hint: "plank exercise" },
-  { id: "shoulders", label: "Shoulders", image: "https://images.unsplash.com/photo-1615746361842-33eaad7d1263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaG91bGRlciUyMHByZXNzfGVufDB8fHx8MTc1MTkyNDkwMXww&ixlib=rb-4.1.0&q=80&w=1080", hint: "shoulder press" },
-  { id: "back", label: "Back", image: "https://images.unsplash.com/photo-1520334363269-c1b342d17261?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwdWxsJTIwdXB8ZW58MHx8fHwxNzUxOTI0OTAxfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "pull up" },
+  { id: "core", label: "Core", image: "https://images.unsplash.com/photo-1714646442330-9068099f5521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwbGFuayUyMGV4ZXJjaXNlfGVufDB8fHx8MTc1MTkyNDkwMXww&ixlib.rb-4.1.0&q=80&w=1080", hint: "plank exercise" },
+  { id: "shoulders", label: "Shoulders", image: "https://images.unsplash.com/photo-1615746361842-33eaad7d1263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzaG91bGRlciUyMHByZXNzfGVufDB8fHx8MTc1MTkyNDkwMXww&ixlib.rb-4.1.0&q=80&w=1080", hint: "shoulder press" },
+  { id: "back", label: "Back", image: "https://images.unsplash.com/photo-1520334363269-c1b342d17261?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwdWxsJTIwdXB8ZW58MHx8fHwxNzUxOTI0OTAxfDA&ixlib.rb-4.1.0&q=80&w=1080", hint: "pull up" },
 ] as const;
 
 export function WorkoutGenerator() {

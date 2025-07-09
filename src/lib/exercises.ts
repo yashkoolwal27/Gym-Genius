@@ -22,12 +22,19 @@ export const exerciseData: Record<ExerciseCategory, readonly Exercise[]> = {
     { name: "Burpees", image: "https://placehold.co/100x100.png", hint: "burpee exercise" },
     { name: "Rowing Machine", image: "https://placehold.co/100x100.png", hint: "rowing machine" }
   ],
-  "Arms": [
+  "Biceps": [
     { name: "Bicep Curls", image: "https://placehold.co/100x100.png", hint: "bicep curl" },
-    { name: "Tricep Dips", image: "https://placehold.co/100x100.png", hint: "tricep dip" },
     { name: "Hammer Curls", image: "https://placehold.co/100x100.png", hint: "hammer curl" },
-    { name: "Tricep Pushdowns", image: "https://placehold.co/100x100.png", hint: "tricep pushdown" },
     { name: "Preacher Curls", image: "https://placehold.co/100x100.png", hint: "preacher curl" }
+  ],
+  "Triceps": [
+    { name: "Tricep Dips", image: "https://placehold.co/100x100.png", hint: "tricep dip" },
+    { name: "Tricep Pushdowns", image: "https://placehold.co/100x100.png", hint: "tricep pushdown" },
+    { name: "Skull Crushers", image: "https://placehold.co/100x100.png", hint: "skull crusher" }
+  ],
+  "Forearms": [
+    { name: "Wrist Curls", image: "https://placehold.co/100x100.png", hint: "wrist curl" },
+    { name: "Reverse Wrist Curls", image: "https://placehold.co/100x100.png", hint: "reverse wrist curl" }
   ],
   "Legs": [
     { name: "Squats", image: "https://placehold.co/100x100.png", hint: "barbell squat" },
