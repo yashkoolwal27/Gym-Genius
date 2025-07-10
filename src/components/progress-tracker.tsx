@@ -2,7 +2,7 @@
 "use client";
 
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import type { WorkoutPlan, MealPlan, WorkoutLog, DietLog, WeightLog } from "@/lib/types";
+import type { WorkoutPlan, MealPlan, WorkoutLog, MealLog, WeightLog } from "@/lib/types";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Dumbbell, UtensilsCrossed, CalendarDays, Weight, Repeat, PlusCircle, Sprout, Soup, Fish, Apple } from 'lucide-react';
@@ -16,7 +16,7 @@ export function ProgressTracker() {
   const [workouts] = useLocalStorage<WorkoutPlan[]>("workout-plans", []);
   const [mealPlans] = useLocalStorage<MealPlan[]>("meal-plans", []);
   const [loggedWorkouts] = useLocalStorage<WorkoutLog[]>("workout-logs", []);
-  const [dietLogs] = useLocalStorage<DietLog[]>("diet-logs", []);
+  const [dietLogs] = useLocalStorage<MealLog[]>("meal-logs", []);
   const [weightLogs] = useLocalStorage<WeightLog[]>("weight-logs", []);
 
   return (
@@ -83,7 +83,7 @@ export function ProgressTracker() {
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-xl font-semibold flex items-center gap-2"><UtensilsCrossed /> Logged Daily Diets</h3>
                <Button asChild>
-                <Link href="/meal-planner">
+                <Link href="/add-meal">
                   <PlusCircle className="mr-2 h-4 w-4" /> Log New Diet
                 </Link>
               </Button>
@@ -94,16 +94,18 @@ export function ProgressTracker() {
                         <AccordionItem value={log.id} key={log.id}>
                             <AccordionTrigger>
                                 <div className="flex flex-col text-left">
-                                    <span>Diet Log for {format(new Date(log.date), "PPP")}</span>
+                                    <span>{log.mealType} on {format(new Date(log.date), "PPP")}</span>
                                     <span className="text-sm text-muted-foreground">Logged on {format(new Date(log.createdAt), "PPP")}</span>
                                 </div>
                             </AccordionTrigger>
                             <AccordionContent>
-                                <div className="p-4 bg-background rounded-md space-y-4 text-sm">
-                                    {log.meals.breakfast && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Sprout className="h-4 w-4 text-primary" />Breakfast</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.breakfast}</p></div>}
-                                    {log.meals.lunch && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Soup className="h-4 w-4 text-primary" />Lunch</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.lunch}</p></div>}
-                                    {log.meals.dinner && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Fish className="h-4 w-4 text-primary" />Dinner</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.dinner}</p></div>}
-                                    {log.meals.snacks && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Apple className="h-4 w-4 text-primary" />Snacks</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.snacks}</p></div>}
+                                <div className="p-4 bg-background rounded-md space-y-2 text-sm">
+                                    <div><h4 className="font-semibold flex items-center gap-2 mb-1">Details</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.mealDetails}</p></div>
+                                    <div className="flex flex-wrap gap-2 pt-2">
+                                        <Badge variant="outline">Goal: {log.fitnessGoals}</Badge>
+                                        <Badge variant="outline">Macro: {log.macronutrients}</Badge>
+                                        <Badge variant="outline">Category: {log.foodCategory}</Badge>
+                                    </div>
                                 </div>
                             </AccordionContent>
                         </AccordionItem>

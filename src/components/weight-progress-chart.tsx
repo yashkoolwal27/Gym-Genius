@@ -50,7 +50,7 @@ export default function WeightProgressChart({ weightLogs }: WeightProgressChartP
             <CardHeader>
                 <CardTitle>Weight Progress</CardTitle>
                 <CardDescription>Your weight trend over time.</CardDescription>
-            </Header>
+            </CardHeader>
             <CardContent>
                 <ChartContainer config={chartConfig} className="h-64 w-full">
                     <LineChart accessibilityLayer data={formattedData} margin={{ left: 12, right: 12, top: 20 }}>

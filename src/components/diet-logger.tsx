@@ -5,14 +5,13 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Utensils, CheckCircle, Loader2, ChevronRight, ChevronLeft } from "lucide-react";
+import { Utensils, CheckCircle, Loader2, ChevronRight, ChevronLeft, PlusCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import type { MealLog } from "@/lib/types";
+import type { MealLog, FoodItem } from "@/lib/types";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { useRouter } from "next/navigation";
 import { Calendar } from "./ui/calendar";
@@ -20,6 +19,9 @@ import { format } from 'date-fns';
 import { formatInTimeZone } from 'date-fns-tz';
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { foodData, FoodCategory } from "@/lib/foods";
+import { ScrollArea } from "./ui/scroll-area";
+import { Badge } from "./ui/badge";
 
 const foodCategories = [
     { id: "Veggies & Fruits", label: "Veggies & Fruits", image: "https://placehold.co/200x200.png", hint: "vegetables fruits" },
@@ -37,7 +39,6 @@ const formSchema = z.object({
   macronutrients: z.string({ required_error: "Please select a macronutrient profile." }),
   fitnessGoals: z.string({ required_error: "Please select a fitness goal." }),
   foodCategory: z.string({ required_error: "Please select a food category." }),
-  mealDetails: z.string().min(10, { message: "Please describe your meal in at least 10 characters." }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -55,6 +56,7 @@ export function DietLogger() {
   const [step, setStep] = useState(1);
   const [date, setDate] = useState<Date | undefined>(undefined);
   const [today, setToday] = useState<Date | undefined>(undefined);
+  const [selectedFoodItems, setSelectedFoodItems] = useState<FoodItem[]>([]);
 
   useEffect(() => {
     const todayStr = formatInTimeZone(new Date(), 'Asia/Kolkata', 'yyyy-MM-dd');
@@ -63,9 +65,7 @@ export function DietLogger() {
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-        mealDetails: "",
-    },
+    defaultValues: {},
   });
 
   function onSubmit(values: FormValues) {
@@ -73,17 +73,20 @@ export function DietLogger() {
         toast({ variant: "destructive", title: "Date not selected", description: "Please go back and select a date."});
         return;
     }
-    if (!form.getValues("foodCategory")) {
-        toast({ variant: "destructive", title: "Category not selected", description: "Please go back and select a food category." });
+    if (selectedFoodItems.length === 0) {
+        toast({ variant: "destructive", title: "No items selected", description: "Please select at least one food item." });
         return;
     }
 
     setIsLoading(true);
 
+    const mealDetails = selectedFoodItems.map(item => item.name).join(', ');
+
     const newLog: MealLog = {
       id: crypto.randomUUID(),
       createdAt: new Date().toISOString(),
       date: date.toISOString(),
+      mealDetails,
       ...values,
     };
     
@@ -95,6 +98,7 @@ export function DietLogger() {
     });
 
     form.reset();
+    setSelectedFoodItems([]);
     setIsLoading(false);
     router.push('/');
   }
@@ -111,6 +115,27 @@ export function DietLogger() {
     setStep(3);
   };
   
+  const toggleFoodItem = (item: FoodItem) => {
+    setSelectedFoodItems(prev => 
+        prev.some(i => i.name === item.name)
+            ? prev.filter(i => i.name !== item.name)
+            : [...prev, item]
+    );
+  };
+
+  const handleNextFromItems = () => {
+    if (selectedFoodItems.length > 0) {
+      setStep(4);
+    } else {
+      toast({
+        variant: 'destructive',
+        title: 'No Items Selected',
+        description: 'Please select at least one food item to continue.',
+      });
+    }
+  };
+
+
   if (step === 1) {
     return (
        <Card className="w-full flex-1 flex flex-col shadow-xl border-none bg-card/70">
@@ -192,105 +217,175 @@ export function DietLogger() {
         </Card>
     );
   }
+  
+  if (step === 3) {
+    const categoryKey = form.getValues("foodCategory") as FoodCategory;
+    const itemsToShow = foodData[categoryKey] || [];
 
-  return (
-    <Card className="w-full max-w-2xl mx-auto shadow-xl border-none bg-card/70">
-      <CardHeader>
-        <div className="flex items-center gap-4">
-            <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(2)}>
-                <ChevronLeft className="h-4 w-4" />
-            </Button>
-            <div>
-              <CardTitle className="flex items-center gap-2"><Utensils /> Add Your Meal Details</CardTitle>
-              <CardDescription>
-                Log a meal for {date ? format(date, "PPP") : "the selected date"} in the <span className="text-primary font-semibold">{form.getValues("foodCategory")}</span> category.
-              </CardDescription>
-            </div>
-        </div>
-      </CardHeader>
-      <CardContent>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="mealType"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Meal Type</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger><SelectValue placeholder="Select a meal type" /></SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {mealTypeOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                 <FormField
-                  control={form.control}
-                  name="macronutrients"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Macronutrients</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger><SelectValue placeholder="Select macro profile" /></SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {macronutrientOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                 <FormField
-                  control={form.control}
-                  name="fitnessGoals"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Fitness Goals</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger><SelectValue placeholder="Select a fitness goal" /></SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {fitnessGoalOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-            </div>
+    return (
+        <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
+            <CardHeader>
+                <div className="flex items-center gap-4">
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(2)}>
+                        <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <div>
+                        <CardTitle className="flex items-center gap-2"><Utensils /> Select Your Food</CardTitle>
+                        <CardDescription>
+                            Choose items for your meal on {date ? format(date, "PPP") : 'the selected date'}.
+                        </CardDescription>
+                    </div>
+                </div>
+            </CardHeader>
+            <CardContent className="flex-1">
+                <ScrollArea className="h-[500px] -mx-4">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
+                        {itemsToShow.map((item) => {
+                            const isSelected = selectedFoodItems.some(i => i.name === item.name);
+                            return (
+                                <div
+                                    key={item.name}
+                                    onClick={() => toggleFoodItem(item)}
+                                    className={cn(
+                                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
+                                        isSelected ? "border-primary bg-primary/5" : "border-transparent bg-muted/50 hover:bg-muted/100"
+                                    )}
+                                >
+                                    <div className="aspect-square w-full relative overflow-hidden rounded-md">
+                                        <Image
+                                            src={item.image}
+                                            alt={item.name}
+                                            width={200}
+                                            height={200}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                            data-ai-hint={item.hint}
+                                        />
+                                    </div>
+                                    <h3 className="font-medium text-sm text-foreground">{item.name}</h3>
+                                    <p className="text-xs text-muted-foreground">
+                                        {item.calories} kcal, {item.protein}g protein
+                                    </p>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </ScrollArea>
+            </CardContent>
+            <CardFooter>
+                 <Button onClick={handleNextFromItems} className="w-full" size="lg">
+                    Next - Finalize Meal <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+            </CardFooter>
+        </Card>
+    );
+  }
 
-            <FormField
-              control={form.control}
-              name="mealDetails"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Meal Details</FormLabel>
-                  <FormControl>
-                    <Textarea placeholder="e.g., Grilled chicken breast with a side of steamed broccoli and quinoa." {...field} rows={4} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </form>
-        </Form>
-      </CardContent>
-      <CardFooter>
-          <Button onClick={form.handleSubmit(onSubmit)} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={isLoading}>
-            {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <CheckCircle className="mr-2 h-4 w-4" />}
-            {isLoading ? "Saving..." : "Log Meal"}
-          </Button>
-      </CardFooter>
-    </Card>
-  );
+  if (step === 4) {
+      const totalCalories = selectedFoodItems.reduce((sum, item) => sum + item.calories, 0);
+      const totalProtein = selectedFoodItems.reduce((sum, item) => sum + item.protein, 0);
+
+      return (
+        <Card className="w-full max-w-2xl mx-auto shadow-xl border-none bg-card/70">
+          <CardHeader>
+            <div className="flex items-center gap-4">
+                <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(3)}>
+                    <ChevronLeft className="h-4 w-4" />
+                </Button>
+                <div>
+                  <CardTitle className="flex items-center gap-2"><Utensils /> Add Meal Details & Save</CardTitle>
+                  <CardDescription>
+                    Finalize the details for your meal on {date ? format(date, "PPP") : "the selected date"}.
+                  </CardDescription>
+                </div>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="text-lg">Your Selected Items</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="flex flex-wrap gap-2">
+                            {selectedFoodItems.map(item => <Badge key={item.name} variant="secondary">{item.name}</Badge>)}
+                        </div>
+                        <div className="mt-4 text-sm font-medium">
+                            <p>Total Calories: <span className="text-primary">{totalCalories.toFixed(0)} kcal</span></p>
+                            <p>Total Protein: <span className="text-primary">{totalProtein.toFixed(1)} g</span></p>
+                        </div>
+                    </CardContent>
+                </Card>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="mealType"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Meal Type</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger><SelectValue placeholder="Select a meal type" /></SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              {mealTypeOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                     <FormField
+                      control={form.control}
+                      name="fitnessGoals"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Primary Fitness Goal</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger><SelectValue placeholder="Select a fitness goal" /></SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              {fitnessGoalOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                     <FormField
+                      control={form.control}
+                      name="macronutrients"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Primary Macronutrient</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger><SelectValue placeholder="Select macro profile" /></SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              {macronutrientOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                </div>
+              </form>
+            </Form>
+          </CardContent>
+          <CardFooter>
+              <Button onClick={form.handleSubmit(onSubmit)} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={isLoading}>
+                {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <CheckCircle className="mr-2 h-4 w-4" />}
+                {isLoading ? "Saving..." : "Log Meal"}
+              </Button>
+          </CardFooter>
+        </Card>
+      );
+  }
+
+  return null;
 }

@@ -33,18 +33,6 @@ export interface WorkoutLog {
   createdAt: string;
 }
 
-export interface DietLog {
-  id: string;
-  date: string;
-  meals: {
-    breakfast: string;
-    lunch: string;
-    dinner: string;
-    snacks: string;
-  };
-  createdAt: string;
-}
-
 export interface MealLog {
     id: string;
     createdAt: string;
@@ -78,6 +66,14 @@ export interface SubCategoryData {
 }
 
 export type CategoryData = readonly Exercise[] | SubCategoryData;
+
+export interface FoodItem {
+    name: string;
+    image: string;
+    hint: string;
+    calories: number;
+    protein: number;
+}
 
 // Schemas for AI Trainer Flow
 const WorkoutSetSchema = z.object({
