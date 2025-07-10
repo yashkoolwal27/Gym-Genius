@@ -1,6 +1,7 @@
 
 
 
+
 export interface StoredPlan {
     id: string;
     generatedPlan: string;
@@ -46,6 +47,7 @@ export interface DietLog {
 export interface MealLog {
     id: string;
     createdAt: string;
+    date: string;
     mealType: string;
     macronutrients: string;
     fitnessGoals: string;
