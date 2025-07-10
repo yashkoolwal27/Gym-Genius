@@ -26,9 +26,9 @@ export default function WeightProgressChart({ weightLogs }: WeightProgressChartP
         }))
         .sort((a, b) => a.originalDate.getTime() - b.originalDate.getTime())
         .map(log => ({
-            date: format(log.originalDate, 'MMM d'), // Format date for display on X-axis
+            date: format(log.originalDate, 'MMM d'),
             weight: log.weight,
-            originalDate: log.originalDate.toISOString(), // Pass original date to chart payload
+            originalDate: log.originalDate.toISOString(),
         }));
     
     if (weightLogs.length < 2) {
@@ -69,7 +69,6 @@ export default function WeightProgressChart({ weightLogs }: WeightProgressChartP
                             cursor={false}
                             content={<ChartTooltipContent 
                                 indicator="line" 
-                                labelKey="weight"
                                 labelFormatter={(value, payload) => {
                                     if (payload && payload.length && payload[0].payload.originalDate) {
                                       return format(new Date(payload[0].payload.originalDate), 'PPP');
