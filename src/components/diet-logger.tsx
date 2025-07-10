@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Utensils, CheckCircle, Loader2, ChevronRight } from "lucide-react";
+import { Utensils, CheckCircle, Loader2, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -18,6 +18,19 @@ import { useRouter } from "next/navigation";
 import { Calendar } from "./ui/calendar";
 import { format } from 'date-fns';
 import { formatInTimeZone } from 'date-fns-tz';
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+
+const foodCategories = [
+    { id: "Veggies & Fruits", label: "Veggies & Fruits", image: "https://placehold.co/200x200.png", hint: "vegetables fruits" },
+    { id: "Dairy & Eggs", label: "Dairy & Eggs", image: "https://placehold.co/200x200.png", hint: "milk eggs" },
+    { id: "Grains & Pulses", label: "Grains & Pulses", image: "https://placehold.co/200x200.png", hint: "rice lentils" },
+    { id: "Meat & Seafood", label: "Meat & Seafood", image: "https://placehold.co/200x200.png", hint: "chicken fish" },
+    { id: "Bakery & Sweets", label: "Bakery & Sweets", image: "https://placehold.co/200x200.png", hint: "cake cookies" },
+    { id: "Beverages", label: "Beverages", image: "https://placehold.co/200x200.png", hint: "juice soda" },
+    { id: "Spices & Oils", label: "Spices & Oils", image: "https://placehold.co/200x200.png", hint: "spices oil" },
+    { id: "Munchies", label: "Munchies", image: "https://placehold.co/200x200.png", hint: "chips snacks" },
+];
 
 const formSchema = z.object({
   mealType: z.string({ required_error: "Please select a meal type." }),
@@ -32,7 +45,6 @@ type FormValues = z.infer<typeof formSchema>;
 const mealTypeOptions = ["Breakfast", "Lunch", "Dinner", "Snack / Pre/Post Workout"];
 const macronutrientOptions = ["High-Protein", "High-Carb", "Low-Carb", "Healthy Fats"];
 const fitnessGoalOptions = ["Muscle Gain", "Fat Loss", "Maintenance"];
-const foodCategoryOptions = ["Veggies & Fruits", "Dairy & Eggs", "Grains & Pulses", "Meat & Seafood", "Bakery & Sweets", "Beverages", "Spices & Oils"];
 
 export function DietLogger() {
   const { toast } = useToast();
@@ -59,6 +71,10 @@ export function DietLogger() {
   function onSubmit(values: FormValues) {
     if (!date) {
         toast({ variant: "destructive", title: "Date not selected", description: "Please go back and select a date."});
+        return;
+    }
+    if (!form.getValues("foodCategory")) {
+        toast({ variant: "destructive", title: "Category not selected", description: "Please go back and select a food category." });
         return;
     }
 
@@ -88,6 +104,11 @@ export function DietLogger() {
     if (selectedDate) {
       setStep(2);
     }
+  };
+
+  const handleCategorySelect = (categoryId: string) => {
+    form.setValue("foodCategory", categoryId);
+    setStep(3);
   };
   
   if (step === 1) {
@@ -129,13 +150,63 @@ export function DietLogger() {
     )
   }
 
+  if (step === 2) {
+    return (
+        <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex-1 flex flex-col">
+            <CardHeader>
+                <div className="flex items-center gap-4">
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
+                        <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <div>
+                        <CardTitle className="flex items-center gap-2"><Utensils /> Select Food Category</CardTitle>
+                        <CardDescription>
+                           Select a category for your meal on {date ? format(date, "PPP") : 'the selected date'}.
+                        </CardDescription>
+                    </div>
+                </div>
+            </CardHeader>
+            <CardContent className="flex-1">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
+                {foodCategories.map((item) => (
+                    <div
+                      key={item.id}
+                      onClick={() => handleCategorySelect(item.id)}
+                      className="rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all border-transparent bg-muted/50 hover:bg-muted/100 hover:border-primary"
+                    >
+                      <div className="aspect-square w-full relative overflow-hidden rounded-md">
+                        <Image
+                          src={item.image}
+                          alt={item.label}
+                          width={200}
+                          height={200}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          data-ai-hint={item.hint}
+                        />
+                      </div>
+                      <h3 className="font-medium text-sm text-foreground">{item.label}</h3>
+                    </div>
+                ))}
+              </div>
+            </CardContent>
+        </Card>
+    );
+  }
+
   return (
     <Card className="w-full max-w-2xl mx-auto shadow-xl border-none bg-card/70">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2"><Utensils /> Add Your Meal</CardTitle>
-        <CardDescription>
-          Log a meal for {date ? format(date, "PPP") : "the selected date"} with its details for better tracking.
-        </CardDescription>
+        <div className="flex items-center gap-4">
+            <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(2)}>
+                <ChevronLeft className="h-4 w-4" />
+            </Button>
+            <div>
+              <CardTitle className="flex items-center gap-2"><Utensils /> Add Your Meal Details</CardTitle>
+              <CardDescription>
+                Log a meal for {date ? format(date, "PPP") : "the selected date"} in the <span className="text-primary font-semibold">{form.getValues("foodCategory")}</span> category.
+              </CardDescription>
+            </div>
+        </div>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -190,24 +261,6 @@ export function DietLogger() {
                         </FormControl>
                         <SelectContent>
                           {fitnessGoalOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                 <FormField
-                  control={form.control}
-                  name="foodCategory"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Food Category</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger><SelectValue placeholder="Select a food category" /></SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {foodCategoryOptions.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}
                         </SelectContent>
                       </Select>
                       <FormMessage />
