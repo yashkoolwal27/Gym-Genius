@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { BrainCircuit, UtensilsCrossed, Save, Loader2, Sparkles, History } from "lucide-react";
+import { BrainCircuit, UtensilsCrossed, Save, Loader2, Sparkles, History, ChevronLeft } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
@@ -26,6 +26,7 @@ const formSchema = z.object({
 });
 
 type FormValues = z.infer<typeof formSchema>;
+type View = 'selector' | 'manual' | 'history';
 
 function MealPlanDisplay({ plan, onSave }: { plan: string; onSave: () => void }) {
   const mealSections = plan.split('\n\n').filter(p => p.trim().length > 0);
@@ -61,6 +62,7 @@ function MealPlanDisplay({ plan, onSave }: { plan: string; onSave: () => void })
 export function MealPlanner() {
   const [isLoading, setIsLoading] = useState(false);
   const [generatedPlan, setGeneratedPlan] = useState<string | null>(null);
+  const [view, setView] = useState<View>('selector');
   const [mealPlans, setMealPlans] = useLocalStorage<MealPlan[]>("meal-plans", []);
   const [dietLogs] = useLocalStorage<DietLog[]>("diet-logs", []);
   const { toast } = useToast();
@@ -111,7 +113,6 @@ export function MealPlanner() {
     }
     
     // For simplicity, we'll grab the goals from the manual form.
-    // In a real app, this might be stored in the user's profile.
     const { fitnessGoals, numberOfMeals } = form.getValues();
 
     const result = await getMealPlanFromHistory({ pastMeals, fitnessGoals, numberOfMeals });
@@ -144,99 +145,76 @@ export function MealPlanner() {
     }
   };
 
+  const renderContent = () => {
+    if (view === 'manual') {
+      return (
+        <div>
+          <Button variant="ghost" onClick={() => setView('selector')} className="mb-4">
+            <ChevronLeft className="mr-2 h-4 w-4" /> Back to options
+          </Button>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onManualSubmit)} className="space-y-6">
+              <FormField control={form.control} name="fitnessGoals" render={({ field }) => ( <FormItem><FormLabel>Fitness & Health Goals</FormLabel><FormControl><Input placeholder="e.g., Lose weight, build muscle" {...field} /></FormControl><FormMessage /></FormItem> )} />
+              <FormField control={form.control} name="dietaryRestrictions" render={({ field }) => ( <FormItem><FormLabel>Dietary Restrictions</FormLabel><FormControl><Input placeholder="e.g., Vegetarian, gluten-free, allergies" {...field} /></FormControl><FormMessage /></FormItem> )} />
+              <FormField control={form.control} name="preferences" render={({ field }) => ( <FormItem><FormLabel>Food Preferences</FormLabel><FormControl><Input placeholder="e.g., Loves salmon, hates olives" {...field} /></FormControl><FormMessage /></FormItem> )} />
+              <FormField control={form.control} name="numberOfMeals" render={({ field }) => ( <FormItem><FormLabel>Meals Per Day</FormLabel><FormControl><Input type="number" min="1" max="5" {...field} /></FormControl><FormMessage /></FormItem> )} />
+              <Button type="submit" disabled={isLoading} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                {isLoading ? ( <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Generating...</> ) : ( <><BrainCircuit className="mr-2 h-4 w-4" /> Generate Manually</> )}
+              </Button>
+            </form>
+          </Form>
+        </div>
+      );
+    }
+
+    if (view === 'history') {
+      return (
+         <div>
+          <Button variant="ghost" onClick={() => setView('selector')} className="mb-4">
+            <ChevronLeft className="mr-2 h-4 w-4" /> Back to options
+          </Button>
+          <Alert>
+            <History className="h-4 w-4" />
+            <AlertTitle>Use Your Past Data!</AlertTitle>
+            <AlertDescription>
+              Let the AI analyze your logged meals to create a new plan based on what you typically eat. We'll use your most recent fitness goals and meal count preferences.
+            </AlertDescription>
+          </Alert>
+           <FormField control={form.control} name="fitnessGoals" render={({ field }) => ( <FormItem className="my-4"><FormLabel>Confirm Fitness Goal</FormLabel><FormControl><Input placeholder="e.g., Lose weight, build muscle" {...field} /></FormControl><FormMessage /></FormItem> )} />
+           <FormField control={form.control} name="numberOfMeals" render={({ field }) => ( <FormItem className="my-4"><FormLabel>Confirm Meals Per Day</FormLabel><FormControl><Input type="number" min="1" max="5" {...field} /></FormControl><FormMessage /></FormItem> )} />
+          <Button onClick={onHistorySubmit} disabled={isLoading || dietLogs.length < 1} className="w-full mt-4">
+             {isLoading ? ( <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Generating...</> ) : ( <><History className="mr-2 h-4 w-4" /> Generate From My Diet History</> )}
+          </Button>
+           {dietLogs.length < 1 && <p className="text-xs text-center text-muted-foreground mt-2">Log some meals first to enable this feature.</p>}
+        </div>
+      )
+    }
+
+    // Default to selector
+    return (
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Card className="p-6 text-center flex flex-col items-center justify-center bg-background/70 hover:bg-background transition-colors cursor-pointer" onClick={() => setView('manual')}>
+              <BrainCircuit className="h-10 w-10 text-primary mb-4" />
+              <h3 className="text-lg font-semibold">Generate Manually</h3>
+              <p className="text-sm text-muted-foreground mt-1">Provide your preferences for a custom plan.</p>
+          </Card>
+          <Card className="p-6 text-center flex flex-col items-center justify-center bg-background/70 hover:bg-background transition-colors cursor-pointer" onClick={() => setView('history')}>
+              <History className="h-10 w-10 text-primary mb-4" />
+              <h3 className="text-lg font-semibold">Use My History</h3>
+              <p className="text-sm text-muted-foreground mt-1">Let the AI generate a plan from your past meals.</p>
+          </Card>
+      </div>
+    );
+  }
+
   return (
     <Card className="w-full shadow-xl border-none bg-card/70 mt-4">
       <CardHeader>
         <CardTitle className="flex items-center gap-2"><UtensilsCrossed /> AI Meal Planner</CardTitle>
-        <CardDescription>Describe your dietary needs, or use your history, and our AI will create a delicious meal plan for you.</CardDescription>
+        <CardDescription>Choose how you want to generate your new meal plan.</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
-            <div className="space-y-6">
-                <h3 className="text-lg font-semibold text-center md:text-left">Generate Manually</h3>
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onManualSubmit)} className="space-y-6">
-                    <FormField
-                      control={form.control}
-                      name="fitnessGoals"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Fitness & Health Goals</FormLabel>
-                          <FormControl>
-                            <Input placeholder="e.g., Lose weight, build muscle" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="dietaryRestrictions"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Dietary Restrictions</FormLabel>
-                          <FormControl>
-                            <Input placeholder="e.g., Vegetarian, gluten-free, allergies" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="preferences"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Food Preferences</FormLabel>
-                          <FormControl>
-                            <Input placeholder="e.g., Loves salmon, hates olives" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                     <FormField
-                      control={form.control}
-                      name="numberOfMeals"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Meals Per Day</FormLabel>
-                          <FormControl>
-                            <Input type="number" min="1" max="5" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <Button type="submit" disabled={isLoading} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                      {isLoading ? (
-                        <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Generating...</>
-                      ) : (
-                        <><BrainCircuit className="mr-2 h-4 w-4" /> Generate Manually</>
-                      )}
-                    </Button>
-                  </form>
-                </Form>
-            </div>
-            <div className="flex flex-col space-y-6">
-                <h3 className="text-lg font-semibold text-center md:text-left">Generate from History</h3>
-                <Alert>
-                  <History className="h-4 w-4" />
-                  <AlertTitle>Use Your Past Data!</AlertTitle>
-                  <AlertDescription>
-                    Let the AI analyze your logged meals to create a new plan based on what you typically eat. Ensure your fitness goals and desired number of meals are set on the left.
-                  </AlertDescription>
-                </Alert>
-                <Button onClick={onHistorySubmit} disabled={isLoading || dietLogs.length < 1} className="w-full">
-                   {isLoading ? (
-                        <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Generating...</>
-                      ) : (
-                        <><History className="mr-2 h-4 w-4" /> Generate From My Diet History</>
-                   )}
-                </Button>
-                 {dietLogs.length < 1 && <p className="text-xs text-center text-muted-foreground">Log some meals first to enable this feature.</p>}
-            </div>
-        </div>
+        {renderContent()}
 
         {isLoading && (
             <div className="space-y-4 mt-6">
