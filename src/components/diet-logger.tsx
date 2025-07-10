@@ -26,7 +26,7 @@ import { Input } from "./ui/input";
 import { Progress } from "./ui/progress";
 
 const foodCategories = [
-    { id: "Fruits", label: "Fruits", image: "https://placehold.co/200x200.png", hint: "apples bananas" },
+    { id: "Fruits", label: "Fruits", image: "https://images.unsplash.com/photo-1519996529931-28324d5a630e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcnVpdHN8ZW58MHx8fHwxNzUyMTIxNjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "apples bananas" },
     { id: "Dairy & Eggs", label: "Dairy & Eggs", image: "https://placehold.co/200x200.png", hint: "milk cheese eggs" },
     { id: "Grains & Pulses", label: "Grains & Pulses", image: "https://placehold.co/200x200.png", hint: "bread rice beans" },
     { id: "Meat & Seafood", label: "Meat & Seafood", image: "https://placehold.co/200x200.png", hint: "chicken fish steak" },
