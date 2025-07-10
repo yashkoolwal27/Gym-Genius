@@ -13,7 +13,7 @@ export const foodData = {
         { name: "Pineapple", image: "https://images.unsplash.com/photo-1587883984334-a09536893a06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaW5lYXBwbGUlMjBzbGljZXxlbnwwfHx8fDE3NTIxNDE3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "pineapple slice", calories: 50, protein: 0.5 },
         { name: "Mango", image: "https://images.unsplash.com/photo-1605027819013-1a3b5a93de04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5ZWxsb3clMjBtYW5nb3xlbnwwfHx8fDE3NTIxNDE3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "yellow mango", calories: 60, protein: 0.8 },
         { name: "Kiwi", image: "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXdpJTIwc2xpY2V8ZW58MHx8fHwxNzUyMTQxNzU4fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "kiwi slice", calories: 61, protein: 1.1 },
-        { name: "Peach", image: "https://images.unsplash.com/photo-1592317332264-5a6a6d368e71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjaCUyMGZydWl0fGVufDB8fHx8MTc1MjE0MTc1OXww&ixlib=rb-4.1.0&q=80&w=1080", hint: "peach fruit", calories: 59, protein: 1.4 },
+        { name: "Peach", image: "https://images.unsplash.com/photo-1592317332264-5a6a6d368e71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjaCUyMGZydWl0fGVufDB8fHx8fDE3NTIxNDE3NTl8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "peach fruit", calories: 59, protein: 1.4 },
     ],
     "Dairy & Eggs": [
         { name: "Milk", image: "https://images.unsplash.com/photo-1559598467-f8b76c8155d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG1pbGt8ZW58MHx8fHwxNzUyMTQxODQ0fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "glass milk", calories: 103, protein: 8 },
@@ -21,7 +21,7 @@ export const foodData = {
         { name: "Yogurt (Greek)", image: "https://images.unsplash.com/photo-1562119420-a194b6d394b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3dsJTIwZ3JlZWslMjB5b2d1cnR8ZW58MHx8fHwxNzUyMTQxODQ3fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "greek yogurt", calories: 100, protein: 17 },
         { name: "Egg", image: "https://images.unsplash.com/photo-1582722872445-44dc5f2e6cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmlkZCUyMGVnZ3xlbnwwfHx8fDE3NTIxNDE4NDh8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "fried egg", calories: 78, protein: 6 },
         { name: "Cottage Cheese", image: "https://images.unsplash.com/photo-1596649823335-c35999f836a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3dsJTIwY290dGFnZSUyMGNoZWVzZXxlbnwwfHx8fDE3NTIxNDE4NDl8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "cottage cheese", calories: 98, protein: 11 },
-        { name: "Butter", image: "https://images.unsplash.com/photo-1622926421334-f9b3b0923058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXR0ZXIlMjBjdWJlJTIwcGFkZGxlfGVufDB8fHx8MTc1MjE0MTg1MHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "stick butter", calories: 102, protein: 0.1 },
+        { name: "Butter", image: "https://images.unsplash.com/photo-1622926421334-f9b3b0923058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXR0ZXIlMjBjdWJlJTIwcGFkZGxlfGVufDB8fHx8fDE3NTIxNDE4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "stick butter", calories: 102, protein: 0.1 },
     ],
     "Grains & Pulses": [
         { name: "White Rice", image: "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3dsJTIwb2YlMjB3aGl0ZSUyMHJpY2V8ZW58MHx8fHwxNzUyMTQxODkxfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "bowl rice", calories: 205, protein: 4.3 },
@@ -58,9 +58,9 @@ export const foodData = {
         { name: "Black Pepper", image: "https://images.unsplash.com/photo-1509358271058-acd22cc93898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibGFjayUyMHBlcHBlcmNvcm5zfGVufDB8fHx8fDE3NTIxNDIwNzR8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "black pepper", calories: 6, protein: 0.2 },
     ],
     "Munchies": [
-        { name: "Almonds", image: "https://images.unsplash.com/photo-1600689439299-197b10515152?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3dsJTIwYWxtb25kc3xlbnwwfHx8fDE3NTIxNDIxMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "almonds bowl", calories: 164, protein: 6 },
-        { name: "Potato Chips", image: "https://images.unsplash.com/photo-1576402182903-6b8c871d3c26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3dsJTIwcG90YXRvJTIwY2hpcHN8ZW58MHx8fHwxNzUyMTQyMTA4fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "potato chips", calories: 160, protein: 2 },
-        { name: "Popcorn", image: "https://images.unsplash.com/photo-1578849218614-36b1981e7d13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3dsJTIwb2YlMjBwb3Bjb3JufGVufDB8fHx8fDE3NTIxNDIxMDl8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "popcorn bowl", calories: 93, protein: 3 },
+        { name: "Almonds", image: "https://images.unsplash.com/photo-1598371624230-a7bdd72e0d22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhbG1vbmRzJTIwYm93bHxlbnwwfHx8fDE3NTIxMjI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "almonds bowl", calories: 164, protein: 6 },
+        { name: "Potato Chips", image: "https://images.unsplash.com/photo-1613462847848-f65a8b231bb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3RhdG8lMjBjaGlwc3xlbnwwfHx8fDE3NTIxMjI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "potato chips", calories: 160, protein: 2 },
+        { name: "Popcorn", image: "https://images.unsplash.com/photo-1577373288412-306dcd07f871?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3Bjb3JuJTIwYm93bHxlbnwwfHx8fDE3NTIxMjI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "popcorn bowl", calories: 93, protein: 3 },
     ],
     "Breakfast": [
         { name: "Scrambled Eggs", image: "https://images.unsplash.com/photo-1498654896293-37a31d8201b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY3JhbWJsZWQlMjBlZ2dzfGVufDB8fHx8fDE3NTIxNDIxNDV8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "scrambled eggs", calories: 143, protein: 13 },
@@ -70,7 +70,7 @@ export const foodData = {
     "Lunch": [
         { name: "Grilled Chicken Salad", image: "https://images.unsplash.com/photo-1551248429-40975aa4de74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmllbGxlZCUyMGNoaWNrZW4lMjBzYWxhZHxlbnwwfHx8fDE3NTIxNDIxNzB8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "chicken salad", calories: 350, protein: 40 },
         { name: "Tuna Sandwich", image: "https://images.unsplash.com/photo-1553396733-47a3203878b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0dW5hJTIwc2FuZHdpY2h8ZW58MHx8fHwxNzUyMTQyMTcxfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "tuna sandwich", calories: 400, protein: 25 },
-        { name: "Quinoa Bowl with Veggies", image: "https://images.unsplash.com/photo-1512428237931-e9b4c09203c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWlub2ElMjBib3dsJTIwd2l0aCUyMHZlZ2dpZXN8ZW58MHx8fHwxNzUyMTQyMTcyfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "quinoa bowl veggies", calories: 450, protein: 15 },
+        { name: "Quinoa Bowl with Veggies", image: "https://images.unsplash.com/photo-1512428237931-e9b5c3679fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxxdWlub2ElMjBib3dsJTIwd2l0aCUyMHZlZ2dpZXN8ZW58MHx8fHwxNzUyMTQyMTcyfDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "quinoa bowl veggies", calories: 450, protein: 15 },
     ],
     "Dinner": [
         { name: "Salmon with Asparagus", image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYWxtb24lMjB3aXRoJTIwYXNwYXJhZ3VzfGVufDB8fHx8fDE3NTIxNDIyMDd8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "salmon asparagus", calories: 400, protein: 40 },
@@ -98,11 +98,11 @@ export const foodData = {
     "Low-Carb": [
         { name: "Avocado", image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdm9jYWRvJTIwc2xpY2V8ZW58MHx8fHwxNzUyMTQyNDY3fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "avocado slice", calories: 160, protein: 2 },
         { name: "Broccoli", image: "https://images.unsplash.com/photo-1587351177732-5b0939539a9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicm9jY29saSUyMGZsb3JldHxlbnwwfHx8fDE3NTIxNDI0Njh8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "broccoli floret", calories: 55, protein: 3.7 },
-        { name: "Spinach", image: "https://images.unsplash.com/photo-1576045057193-db3d395a1276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGlhY2glMjBsZWF2ZXN8ZW58MHx8fHwxNzUyMTQyNDY5fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "spinach leaves", calories: 23, protein: 2.9 },
-        { name: "Salmon", image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmllbGxlZCUyMHNhbG1vbiUyMHN0ZWFrfGVufDB8fHx8MTc1MjE0MTk0M3ww&ixlib=rb-4.1.0&q=80&w=1080", hint: "salmon steak", calories: 206, protein: 22 },
+        { name: "Spinach", image: "https://images.unsplash.com/photo-1576045057193-db3d395a1276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGlhY2glMjBsZWF2ZXN8ZW58MHx8fHwxNzUyMTQyNDY5fDA&ixlib.rb-4.1.0&q=80&w=1080", hint: "spinach leaves", calories: 23, protein: 2.9 },
+        { name: "Salmon", image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmllbGxlZCUyMHNhbG1vbiUyMHN0ZWFrfGVufDB8fHx8MTc1MjE0MTk0M3ww&ixlib.rb-4.1.0&q=80&w=1080", hint: "salmon steak", calories: 206, protein: 22 },
     ],
     "Healthy Fats": [
-        { name: "Avocado", image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdm9jYWRvJTIwc2xpY2V8ZW58MHx8fHwxNzUyMTQyNDY3fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "avocado slice", calories: 160, protein: 2 },
+        { name: "Avocado", image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdm9jYWRvJTIwc2xpY2V8ZW58MHx8fHwxNzUyMTQyNDY3fDA&ixlib.rb-4.1.0&q=80&w=1080", hint: "avocado slice", calories: 160, protein: 2 },
         { name: "Almonds", image: "https://images.unsplash.com/photo-1600689439299-197b10515152?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3dsJTIwYWxtb25kc3xlbnwwfHx8fDE3NTIxNDIxMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080", hint: "almonds bowl", calories: 164, protein: 6 },
         { name: "Olive Oil", image: "https://images.unsplash.com/photo-1598289410996-c9b5a863806e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3R0bGUlMjBvbGl2ZSUyMG9pbHxlbnwwfHx8fDE3NTIxNDIwNzJ8MA&ixlib.rb-4.1.0&q=80&w=1080", hint: "olive oil", calories: 119, protein: 0 },
         { name: "Salmon", image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmllbGxlZCUyMHNhbG1vbiUyMHN0ZWFrfGVufDB8fHx8MTc1MjE0MTk0M3ww&ixlib.rb-4.1.0&q=80&w=1080", hint: "salmon steak", calories: 206, protein: 22 },
@@ -127,6 +127,8 @@ export const foodData = {
 } as const;
 
 export type FoodCategory = keyof typeof foodData;
+
+    
 
     
 
