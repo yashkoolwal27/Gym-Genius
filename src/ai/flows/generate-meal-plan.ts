@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -30,6 +31,14 @@ const GenerateMealPlanInputSchema = z.object({
 
 export type GenerateMealPlanInput = z.infer<typeof GenerateMealPlanInputSchema>;
 
+const GenerateMealPlanFromHistoryInputSchema = z.object({
+    pastMeals: z.array(z.string()).describe("A list of the user's recently logged meals."),
+    fitnessGoals: z.string().describe("The user's current fitness goals (e.g., lose weight, gain muscle)."),
+    numberOfMeals: z.number().min(1).max(5).describe("The number of meals for the new plan."),
+});
+export type GenerateMealPlanFromHistoryInput = z.infer<typeof GenerateMealPlanFromHistoryInputSchema>;
+
+
 const GenerateMealPlanOutputSchema = z.object({
   mealPlan: z.string().describe('The generated meal plan.'),
 });
@@ -40,7 +49,11 @@ export async function generateMealPlan(input: GenerateMealPlanInput): Promise<Ge
   return generateMealPlanFlow(input);
 }
 
-const prompt = ai.definePrompt({
+export async function generateMealPlanFromHistory(input: GenerateMealPlanFromHistoryInput): Promise<GenerateMealPlanOutput> {
+    return generateMealPlanFromHistoryFlow(input);
+}
+
+const manualPrompt = ai.definePrompt({
   name: 'generateMealPlanPrompt',
   input: {schema: GenerateMealPlanInputSchema},
   output: {schema: GenerateMealPlanOutputSchema},
@@ -53,6 +66,24 @@ const prompt = ai.definePrompt({
   `,
 });
 
+const historyPrompt = ai.definePrompt({
+  name: 'generateMealPlanFromHistoryPrompt',
+  input: { schema: GenerateMealPlanFromHistoryInputSchema },
+  output: { schema: GenerateMealPlanOutputSchema },
+  prompt: `You are a personal nutritionist. A user wants a new meal plan based on their past meals.
+
+Analyze the following meals they have logged:
+{{#each pastMeals}}
+- {{{this}}}
+{{/each}}
+
+Based on this history, identify their likely preferences and dietary habits.
+
+Then, create a new, similar but varied meal plan for them that aligns with their stated fitness goal: "{{{fitnessGoals}}}".
+The new plan should have {{{numberOfMeals}}} meals per day.
+`,
+});
+
 const generateMealPlanFlow = ai.defineFlow(
   {
     name: 'generateMealPlanFlow',
@@ -60,7 +91,19 @@ const generateMealPlanFlow = ai.defineFlow(
     outputSchema: GenerateMealPlanOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
+    const {output} = await manualPrompt(input);
     return output!;
   }
+);
+
+const generateMealPlanFromHistoryFlow = ai.defineFlow(
+    {
+        name: 'generateMealPlanFromHistoryFlow',
+        inputSchema: GenerateMealPlanFromHistoryInputSchema,
+        outputSchema: GenerateMealPlanOutputSchema,
+    },
+    async (input) => {
+        const { output } = await historyPrompt(input);
+        return output!;
+    }
 );

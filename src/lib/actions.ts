@@ -1,7 +1,7 @@
 
 "use server";
 
-import { generateMealPlan, type GenerateMealPlanInput } from "@/ai/flows/generate-meal-plan";
+import { generateMealPlan, generateMealPlanFromHistory, type GenerateMealPlanInput, type GenerateMealPlanFromHistoryInput } from "@/ai/flows/generate-meal-plan";
 import { generateWorkoutPlan, type GenerateWorkoutPlanInput } from "@/ai/flows/generate-workout-plan";
 
 async function handleAction<T>(action: Promise<T>): Promise<{ success: true; data: T; } | { success: false; error: string; }> {
@@ -16,6 +16,10 @@ async function handleAction<T>(action: Promise<T>): Promise<{ success: true; dat
 
 export async function getMealPlan(values: GenerateMealPlanInput) {
     return handleAction(generateMealPlan(values));
+}
+
+export async function getMealPlanFromHistory(values: GenerateMealPlanFromHistoryInput) {
+    return handleAction(generateMealPlanFromHistory(values));
 }
 
 export async function getWorkoutPlan(values: GenerateWorkoutPlanInput) {
