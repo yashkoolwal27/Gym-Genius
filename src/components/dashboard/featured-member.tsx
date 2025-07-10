@@ -18,7 +18,7 @@ export default function UserProfileCard() {
           <AvatarFallback>{user?.email?.[0].toUpperCase() ?? 'U'}</AvatarFallback>
         </Avatar>
         <h3 className="text-lg font-semibold">{user?.email}</h3>
-        <p className="text-sm text-muted-foreground">28 years • 6'1" • 182lbs</p>
+        <p className="text-sm text-muted-foreground">28 years • 6'1" • 82kg</p>
         <div className="flex w-full justify-around mt-4 pt-4 border-t">
             <div className="text-center">
                 <p className="text-2xl font-bold">520</p>

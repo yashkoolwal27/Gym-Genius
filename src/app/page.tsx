@@ -19,14 +19,14 @@ export default function DashboardPage() {
   const [weightLogs, setWeightLogs] = useLocalStorage<WeightLog[]>("weight-logs", []);
   const [isWeightLogOpen, setIsWeightLogOpen] = useState(false);
 
-  const latestWeight = weightLogs.length > 0 ? weightLogs[weightLogs.length - 1].weight : 182;
+  const latestWeight = weightLogs.length > 0 ? weightLogs[weightLogs.length - 1].weight : 82;
   const previousWeight = weightLogs.length > 1 ? weightLogs[weightLogs.length - 2].weight : null;
   
-  let weightChangeText = "-1.2 lbs this week";
+  let weightChangeText = "-0.5 kg this week";
   if (previousWeight !== null) {
       const diff = latestWeight - previousWeight;
       const direction = diff > 0 ? "+" : "";
-      weightChangeText = `${direction}${diff.toFixed(1)} lbs from last entry`;
+      weightChangeText = `${direction}${diff.toFixed(1)} kg from last entry`;
   }
 
   const handleWeightLogged = (newLog: WeightLog) => {
@@ -41,7 +41,7 @@ export default function DashboardPage() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <StatCard title="Workouts This Week" value="3" change="+1 from last week" icon={Zap} />
           <StatCard title="Active Calories" value="1,850" change="-150 from yesterday" icon={UtensilsCrossed} />
-          <StatCard title="Current Weight" value={`${latestWeight} lbs`} change={weightChangeText} icon={LineChart} onClick={() => setIsWeightLogOpen(true)} />
+          <StatCard title="Current Weight" value={`${latestWeight} kg`} change={weightChangeText} icon={LineChart} onClick={() => setIsWeightLogOpen(true)} />
           <StatCard title="Workout Streak" value="5 days" change="Keep it up!" icon={Calendar} />
         </div>
         

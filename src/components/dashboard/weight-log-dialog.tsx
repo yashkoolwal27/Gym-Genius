@@ -61,7 +61,7 @@ export function WeightLogDialog({ isOpen, onClose, onWeightLogged, lastWeight }:
     onWeightLogged(newLog);
     toast({
       title: "Weight Logged!",
-      description: `Your weight of ${values.weight} lbs for ${format(values.date, "PPP")} has been saved.`,
+      description: `Your weight of ${values.weight} kg for ${format(values.date, "PPP")} has been saved.`,
     });
     setIsLoading(false);
     onClose();
@@ -84,9 +84,9 @@ export function WeightLogDialog({ isOpen, onClose, onWeightLogged, lastWeight }:
               name="weight"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Current Weight (lbs)</FormLabel>
+                  <FormLabel>Current Weight (kg)</FormLabel>
                   <FormControl>
-                    <Input type="number" step="0.1" placeholder="e.g., 182.5" {...field} />
+                    <Input type="number" step="0.1" placeholder="e.g., 82.5" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

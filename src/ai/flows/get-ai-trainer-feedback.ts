@@ -69,7 +69,7 @@ No meal data provided.
 **Weight Logs:**
 {{#if weightLogs}}
 {{#each weightLogs}}
-- Date: {{date}}, Weight: {{weight}} lbs
+- Date: {{date}}, Weight: {{weight}} kg
 {{/each}}
 {{else}}
 No weight data provided.
