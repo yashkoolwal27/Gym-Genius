@@ -5,10 +5,9 @@ import { useState } from "react";
 import { MealPlanner } from "@/components/meal-planner";
 import { Header } from "@/components/header";
 import { DietLogger } from "@/components/diet-logger";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 import { BrainCircuit, BookCheck } from "lucide-react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 type View = "selector" | "ai-planner" | "diet-logger";
 
