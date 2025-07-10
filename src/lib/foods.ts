@@ -2,16 +2,11 @@
 import type { FoodItem } from "./types";
 
 export const foodData = {
-    "Veggies & Fruits": [
+    "Fruits": [
         { name: "Apple", image: "https://placehold.co/200x200.png", hint: "red apple", calories: 95, protein: 0.5 },
         { name: "Banana", image: "https://placehold.co/200x200.png", hint: "yellow banana", calories: 105, protein: 1.3 },
-        { name: "Broccoli", image: "https://placehold.co/200x200.png", hint: "green broccoli", calories: 55, protein: 3.7 },
-        { name: "Carrot", image: "https://placehold.co/200x200.png", hint: "orange carrot", calories: 41, protein: 0.9 },
-        { name: "Spinach", image: "https://placehold.co/200x200.png", hint: "fresh spinach", calories: 23, protein: 2.9 },
         { name: "Strawberry", image: "https://placehold.co/200x200.png", hint: "red strawberry", calories: 32, protein: 0.7 },
         { name: "Blueberry", image: "https://placehold.co/200x200.png", hint: "fresh blueberry", calories: 57, protein: 0.7 },
-        { name: "Bell Pepper", image: "https://placehold.co/200x200.png", hint: "red bell pepper", calories: 31, protein: 1.0 },
-        { name: "Cucumber", image: "https://placehold.co/200x200.png", hint: "green cucumber", calories: 16, protein: 0.7 },
         { name: "Tomato", image: "https://placehold.co/200x200.png", hint: "red tomato", calories: 18, protein: 0.9 },
         { name: "Avocado", image: "https://placehold.co/200x200.png", hint: "green avocado", calories: 160, protein: 2.0 },
         { name: "Orange", image: "https://placehold.co/200x200.png", hint: "fresh orange", calories: 47, protein: 0.9 },

@@ -24,7 +24,7 @@ import { ScrollArea } from "./ui/scroll-area";
 import { Badge } from "./ui/badge";
 
 const foodCategories = [
-    { id: "Veggies & Fruits", label: "Veggies & Fruits", image: "https://placehold.co/200x200.png", hint: "vegetables fruits" },
+    { id: "Fruits", label: "Fruits", image: "https://placehold.co/200x200.png", hint: "apples bananas" },
     { id: "Dairy & Eggs", label: "Dairy & Eggs", image: "https://placehold.co/200x200.png", hint: "milk eggs" },
     { id: "Grains & Pulses", label: "Grains & Pulses", image: "https://placehold.co/200x200.png", hint: "rice lentils" },
     { id: "Meat & Seafood", label: "Meat & Seafood", image: "https://placehold.co/200x200.png", hint: "chicken fish" },
