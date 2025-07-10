@@ -1,10 +1,11 @@
+
 "use client";
 
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import type { WorkoutPlan, MealPlan, WorkoutLog } from "@/lib/types";
+import type { WorkoutPlan, MealPlan, WorkoutLog, DietLog } from "@/lib/types";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Dumbbell, UtensilsCrossed, CalendarDays, Weight, Repeat, PlusCircle } from 'lucide-react';
+import { Dumbbell, UtensilsCrossed, CalendarDays, Weight, Repeat, PlusCircle, Sprout, Soup, Fish, Apple } from 'lucide-react';
 import { format } from 'date-fns';
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -14,6 +15,7 @@ export function ProgressTracker() {
   const [workouts] = useLocalStorage<WorkoutPlan[]>("workout-plans", []);
   const [mealPlans] = useLocalStorage<MealPlan[]>("meal-plans", []);
   const [loggedWorkouts] = useLocalStorage<WorkoutLog[]>("workout-logs", []);
+  const [dietLogs] = useLocalStorage<DietLog[]>("diet-logs", []);
 
   return (
     <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
@@ -70,7 +72,42 @@ export function ProgressTracker() {
         </div>
         
         <div>
-            <h3 className="text-xl font-semibold flex items-center gap-2 mb-4"><Dumbbell /> Saved Workout Plans</h3>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-xl font-semibold flex items-center gap-2"><UtensilsCrossed /> Logged Daily Diets</h3>
+               <Button asChild>
+                <Link href="/meal-planner">
+                  <PlusCircle className="mr-2 h-4 w-4" /> Log New Diet
+                </Link>
+              </Button>
+            </div>
+            {dietLogs.length > 0 ? (
+                <Accordion type="single" collapsible className="w-full">
+                    {dietLogs.sort((a,b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).map((log) => (
+                        <AccordionItem value={log.id} key={log.id}>
+                            <AccordionTrigger>
+                                <div className="flex flex-col text-left">
+                                    <span>Diet Log for {format(new Date(log.date), "PPP")}</span>
+                                    <span className="text-sm text-muted-foreground">Logged on {format(new Date(log.createdAt), "PPP")}</span>
+                                </div>
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <div className="p-4 bg-background rounded-md space-y-4 text-sm">
+                                    {log.meals.breakfast && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Sprout className="h-4 w-4 text-primary" />Breakfast</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.breakfast}</p></div>}
+                                    {log.meals.lunch && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Soup className="h-4 w-4 text-primary" />Lunch</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.lunch}</p></div>}
+                                    {log.meals.dinner && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Fish className="h-4 w-4 text-primary" />Dinner</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.dinner}</p></div>}
+                                    {log.meals.snacks && <div><h4 className="font-semibold flex items-center gap-2 mb-1"><Apple className="h-4 w-4 text-primary" />Snacks</h4><p className="text-muted-foreground whitespace-pre-wrap pl-6">{log.meals.snacks}</p></div>}
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
+                </Accordion>
+            ) : (
+                <p className="text-muted-foreground italic text-center py-4">You haven't logged any daily diets yet.</p>
+            )}
+        </div>
+
+        <div>
+            <h3 className="text-xl font-semibold flex items-center gap-2 mb-4"><Dumbbell /> Saved AI Workout Plans</h3>
             {workouts.length > 0 ? (
                 <Accordion type="single" collapsible className="w-full">
                     {workouts.sort((a,b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).map((workout) => (
@@ -95,14 +132,14 @@ export function ProgressTracker() {
         </div>
 
         <div>
-            <h3 className="text-xl font-semibold flex items-center gap-2 mb-4"><UtensilsCrossed /> Saved Meal Plans</h3>
+            <h3 className="text-xl font-semibold flex items-center gap-2 mb-4"><UtensilsCrossed /> Saved AI Meal Plans</h3>
             {mealPlans.length > 0 ? (
                 <Accordion type="single" collapsible className="w-full">
                      {mealPlans.sort((a,b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).map((meal) => (
                         <AccordionItem value={meal.id} key={meal.id}>
                             <AccordionTrigger>
                                 <div className="flex flex-col text-left">
-                                    <span>Meal Plan</span>
+                                    <span>AI Meal Plan</span>
                                     <span className="text-sm text-muted-foreground">Saved on {format(new Date(meal.createdAt), "PPP")}</span>
                                 </div>
                             </AccordionTrigger>
@@ -115,7 +152,7 @@ export function ProgressTracker() {
                     ))}
                 </Accordion>
             ) : (
-                <p className="text-muted-foreground italic text-center py-4">You haven't saved any meal plans yet.</p>
+                <p className="text-muted-foreground italic text-center py-4">You haven't saved any AI meal plans yet.</p>
             )}
         </div>
       </CardContent>

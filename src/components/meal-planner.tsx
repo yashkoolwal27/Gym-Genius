@@ -106,7 +106,7 @@ export function MealPlanner() {
   };
 
   return (
-    <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
+    <Card className="w-full shadow-xl border-none bg-card/70 mt-4">
       <CardHeader>
         <CardTitle className="flex items-center gap-2"><UtensilsCrossed /> AI Meal Planner</CardTitle>
         <CardDescription>Describe your dietary needs, and our AI will create a delicious meal plan for you.</CardDescription>

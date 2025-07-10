@@ -30,6 +30,18 @@ export interface WorkoutLog {
   createdAt: string;
 }
 
+export interface DietLog {
+  id: string;
+  date: string;
+  meals: {
+    breakfast: string;
+    lunch: string;
+    dinner: string;
+    snacks: string;
+  };
+  createdAt: string;
+}
+
 export interface Exercise {
   name: string;
   image: string;
