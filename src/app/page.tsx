@@ -5,7 +5,7 @@ import StatCard from "@/components/dashboard/stat-card";
 import RecentWorkouts from "@/components/dashboard/recent-workouts";
 import ProteinIntakeChart from "@/components/dashboard/member-attendance-chart";
 import UserProfileCard from "@/components/dashboard/featured-member";
-import DietLogs from "@/components/dashboard/diet-logs";
+import RecentMeals from "@/components/dashboard/recent-meals";
 import Link from "next/link";
 
 export default function DashboardPage() {
@@ -35,7 +35,7 @@ export default function DashboardPage() {
           </div>
           <div className="space-y-8">
             <UserProfileCard />
-            <DietLogs />
+            <RecentMeals />
           </div>
         </div>
 

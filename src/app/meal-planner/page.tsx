@@ -2,9 +2,9 @@
 "use client"
 
 import { useState } from "react";
+import Link from "next/link";
 import { MealPlanner } from "@/components/meal-planner";
 import { Header } from "@/components/header";
-import { DietLogger } from "@/components/diet-logger";
 import { Card, CardHeader } from "@/components/ui/card";
 import { BrainCircuit, BookCheck } from "lucide-react";
 import Image from "next/image";
@@ -19,7 +19,53 @@ export default function MealPlannerPage() {
       case "ai-planner":
         return <MealPlanner />;
       case "diet-logger":
-        return <DietLogger />;
+        // This will now link to the new page.
+        // For a more integrated experience, we could render the new component here.
+        // But for now, we'll keep the card selector UI.
+         return (
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <Card 
+              className="relative rounded-lg overflow-hidden cursor-pointer group transform hover:scale-105 transition-transform duration-300"
+              onClick={() => setView("ai-planner")}
+            >
+              <Image 
+                src="https://placehold.co/600x400.png" 
+                alt="AI Meal Planner" 
+                width={600} 
+                height={400} 
+                className="object-cover w-full h-full"
+                data-ai-hint="healthy food"
+              />
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+              <CardHeader className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                <BrainCircuit className="h-12 w-12 text-white/80 mb-4" />
+                <h3 className="text-2xl font-bold text-white">AI Meal Planner</h3>
+                <p className="text-white/80 mt-2">Let our AI create a custom meal plan for you.</p>
+              </CardHeader>
+            </Card>
+
+            <Link href="/add-meal" passHref>
+              <Card 
+                className="relative rounded-lg overflow-hidden cursor-pointer group transform hover:scale-105 transition-transform duration-300 h-full"
+              >
+                <Image 
+                  src="https://placehold.co/600x400.png" 
+                  alt="Log Your Daily Diet" 
+                  width={600} 
+                  height={400} 
+                  className="object-cover w-full h-full"
+                  data-ai-hint="food journal"
+                />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+                <CardHeader className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                  <BookCheck className="h-12 w-12 text-white/80 mb-4" />
+                  <h3 className="text-2xl font-bold text-white">Log Your Daily Diet</h3>
+                  <p className="text-white/80 mt-2">Manually track your food intake.</p>
+                </CardHeader>
+              </Card>
+            </Link>
+          </div>
+        );
       default:
         return (
            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
@@ -43,25 +89,26 @@ export default function MealPlannerPage() {
               </CardHeader>
             </Card>
 
-            <Card 
-              className="relative rounded-lg overflow-hidden cursor-pointer group transform hover:scale-105 transition-transform duration-300"
-              onClick={() => setView("diet-logger")}
-            >
-              <Image 
-                src="https://placehold.co/600x400.png" 
-                alt="Log Your Daily Diet" 
-                width={600} 
-                height={400} 
-                className="object-cover w-full h-full"
-                data-ai-hint="food journal"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <CardHeader className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-                <BookCheck className="h-12 w-12 text-white/80 mb-4" />
-                <h3 className="text-2xl font-bold text-white">Log Your Daily Diet</h3>
-                <p className="text-white/80 mt-2">Manually track your food intake.</p>
-              </CardHeader>
-            </Card>
+            <Link href="/add-meal" passHref>
+              <Card 
+                className="relative rounded-lg overflow-hidden cursor-pointer group transform hover:scale-105 transition-transform duration-300 h-full"
+              >
+                <Image 
+                  src="https://placehold.co/600x400.png" 
+                  alt="Log Your Daily Diet" 
+                  width={600} 
+                  height={400} 
+                  className="object-cover w-full h-full"
+                  data-ai-hint="food journal"
+                />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+                <CardHeader className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                  <BookCheck className="h-12 w-12 text-white/80 mb-4" />
+                  <h3 className="text-2xl font-bold text-white">Log Your Daily Diet</h3>
+                  <p className="text-white/80 mt-2">Manually track your food intake.</p>
+                </CardHeader>
+              </Card>
+            </Link>
           </div>
         );
     }

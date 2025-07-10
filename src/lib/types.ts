@@ -1,5 +1,6 @@
 
 
+
 export interface StoredPlan {
     id: string;
     generatedPlan: string;
@@ -40,6 +41,16 @@ export interface DietLog {
     snacks: string;
   };
   createdAt: string;
+}
+
+export interface MealLog {
+    id: string;
+    createdAt: string;
+    mealType: string;
+    macronutrients: string;
+    fitnessGoals: string;
+    foodCategory: string;
+    mealDetails: string;
 }
 
 export interface Exercise {
