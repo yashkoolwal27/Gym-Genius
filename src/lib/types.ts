@@ -1,6 +1,6 @@
 
 
-
+import { z } from 'zod';
 
 
 export interface StoredPlan {
@@ -78,3 +78,54 @@ export interface SubCategoryData {
 }
 
 export type CategoryData = readonly Exercise[] | SubCategoryData;
+
+// Schemas for AI Trainer Flow
+const WorkoutSetSchema = z.object({
+  id: z.string(),
+  reps: z.string(),
+  weight: z.string(),
+});
+
+const LoggedExerciseSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  sets: z.array(WorkoutSetSchema),
+});
+
+const WorkoutLogSchema = z.object({
+  id: z.string(),
+  date: z.string(),
+  time: z.string(),
+  exerciseTypes: z.array(z.string()),
+  exercises: z.array(LoggedExerciseSchema),
+  createdAt: z.string(),
+});
+
+const MealLogSchema = z.object({
+    id: z.string(),
+    createdAt: z.string(),
+    date: z.string(),
+    mealType: z.string(),
+    macronutrients: z.string(),
+    fitnessGoals: z.string(),
+    foodCategory: z.string(),
+    mealDetails: z.string(),
+});
+
+const WeightLogSchema = z.object({
+    id: z.string(),
+    date: z.string(),
+    weight: z.number(),
+});
+
+export const GetAITrainerFeedbackInputSchema = z.object({
+  workoutLogs: z.array(WorkoutLogSchema).describe("The user's logged workouts."),
+  mealLogs: z.array(MealLogSchema).describe("The user's logged meals."),
+  weightLogs: z.array(WeightLogSchema).describe("The user's logged weights over time."),
+});
+export type GetAITrainerFeedbackInput = z.infer<typeof GetAITrainerFeedbackInputSchema>;
+
+export const GetAITrainerFeedbackOutputSchema = z.object({
+  feedback: z.string().describe('The generated feedback and advice for the user in Markdown format. Use ### for main section titles and ** for sub-headings.'),
+});
+export type GetAITrainerFeedbackOutput = z.infer<typeof GetAITrainerFeedbackOutputSchema>;

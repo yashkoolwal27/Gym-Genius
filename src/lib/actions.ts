@@ -3,7 +3,8 @@
 
 import { generateMealPlan, generateMealPlanFromHistory, type GenerateMealPlanInput, type GenerateMealPlanFromHistoryInput } from "@/ai/flows/generate-meal-plan";
 import { generateWorkoutPlan, type GenerateWorkoutPlanInput } from "@/ai/flows/generate-workout-plan";
-import { getAITrainerFeedback, type GetAITrainerFeedbackInput } from "@/ai/flows/get-ai-trainer-feedback";
+import { getAITrainerFeedback } from "@/ai/flows/get-ai-trainer-feedback";
+import type { GetAITrainerFeedbackInput } from "@/lib/types";
 
 async function handleAction<T>(action: Promise<T>): Promise<{ success: true; data: T; } | { success: false; error: string; }> {
   try {
