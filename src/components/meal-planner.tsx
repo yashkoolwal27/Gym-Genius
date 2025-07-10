@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { getMealPlan, getMealPlanFromHistory } from "@/lib/actions";
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import type { MealPlan, DietLog } from "@/lib/types";
+import type { MealPlan, MealLog } from "@/lib/types";
 import { Skeleton } from "./ui/skeleton";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 
@@ -64,7 +64,7 @@ export function MealPlanner() {
   const [generatedPlan, setGeneratedPlan] = useState<string | null>(null);
   const [view, setView] = useState<View>('selector');
   const [mealPlans, setMealPlans] = useLocalStorage<MealPlan[]>("meal-plans", []);
-  const [dietLogs] = useLocalStorage<DietLog[]>("diet-logs", []);
+  const [dietLogs] = useLocalStorage<MealLog[]>("meal-logs", []);
   const { toast } = useToast();
 
   const form = useForm<FormValues>({
@@ -98,9 +98,7 @@ export function MealPlanner() {
     setIsLoading(true);
     setGeneratedPlan(null);
 
-    const pastMeals = dietLogs
-      .flatMap(log => Object.values(log.meals))
-      .filter(meal => meal.trim() !== "");
+    const pastMeals = dietLogs.map(log => log.mealDetails);
 
     if (pastMeals.length < 3) {
       toast({

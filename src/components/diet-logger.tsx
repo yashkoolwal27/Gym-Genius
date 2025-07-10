@@ -45,7 +45,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-const mealTypeOptions = ["Breakfast", "Lunch", "Dinner", "Snack / Pre/Post Workout"];
+const mealTypeOptions = ["Breakfast", "Lunch", "Dinner", "Snack / Pre Workout", "Snack / Post Workout"];
 const macronutrientOptions = ["High-Protein", "High-Carb", "Low-Carb", "Healthy Fats"];
 const fitnessGoalOptions = ["Muscle Gain", "Fat Loss", "Maintenance"];
 
