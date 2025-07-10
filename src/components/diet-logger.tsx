@@ -34,6 +34,17 @@ const foodCategories = [
     { id: "Beverages", label: "Beverages", image: "https://placehold.co/200x200.png", hint: "juice coffee soda" },
     { id: "Spices & Oils", label: "Spices & Oils", image: "https://placehold.co/200x200.png", hint: "olive-oil spices herbs" },
     { id: "Munchies", label: "Munchies", image: "https://placehold.co/200x200.png", hint: "chips popcorn nuts" },
+    { id: "Breakfast", label: "Breakfast", image: "https://placehold.co/200x200.png", hint: "Breakfast meals food" },
+    { id: "Lunch", label: "Lunch", image: "https://placehold.co/200x200.png", hint: "Lunch meals food"},
+    { id: "Dinner", label: "Dinner", image: "https://placehold.co/200x200.png", hint: "Dinner meals food"},
+    { id: "Snacks", label: "Snacks", image: "https://placehold.co/200x200.png", hint: "Snacks food"},
+    { id: "High-Protein", label: "High-Protein", image: "https://placehold.co/200x200.png", hint: "foodmeat poultry fish dairy"},
+    { id: "High-Carb", label: "High-Carb", image: "https://placehold.co/200x200.png", hint: "foodgrains grains pulses"},
+    { id: "Low-Carb", label: "Low-Carb", image: "https://placehold.co/200x200.png", hint: "foodgrains grains pulses"},
+    { id: "Healthy Fats", label: "Healthy Fats", image: "https://placehold.co/200x200.png", hint: "fooddairy eggs"},
+    { id: "Muscle Gain", label: "Muscle Gain", image: "https://placehold.co/200x200.png", hint: "foodprotein"},
+    { id: "Fat Loss", label: "Fat Loss", image: "https://placehold.co/200x200.png", hint: "foodfat"},
+    { id: "Maintenance", label: "Maintenance", image: "https://placehold.co/200x200.png", hint: "foodprotein"},
 ];
 
 const mealTypeOptions = ["Breakfast", "Lunch", "Dinner", "Snack / Pre Workout", "Snack / Post Workout"];
