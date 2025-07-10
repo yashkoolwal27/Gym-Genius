@@ -16,7 +16,8 @@ import type { MealLog } from "@/lib/types";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { useRouter } from "next/navigation";
 import { Calendar } from "./ui/calendar";
-import { format, formatInTimeZone } from 'date-fns';
+import { format } from 'date-fns';
+import { formatInTimeZone } from 'date-fns-tz';
 
 const formSchema = z.object({
   mealType: z.string({ required_error: "Please select a meal type." }),
