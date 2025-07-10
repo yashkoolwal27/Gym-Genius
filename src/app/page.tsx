@@ -1,3 +1,7 @@
+
+"use client";
+
+import { useState } from "react";
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { Calendar, Zap, Dumbbell, UtensilsCrossed, LineChart, FileText } from "lucide-react";
@@ -7,8 +11,28 @@ import ProteinIntakeChart from "@/components/dashboard/member-attendance-chart";
 import UserProfileCard from "@/components/dashboard/featured-member";
 import RecentMeals from "@/components/dashboard/recent-meals";
 import Link from "next/link";
+import { useLocalStorage } from "@/hooks/use-local-storage";
+import { WeightLogDialog } from "@/components/dashboard/weight-log-dialog";
+import type { WeightLog } from "@/lib/types";
 
 export default function DashboardPage() {
+  const [weightLogs, setWeightLogs] = useLocalStorage<WeightLog[]>("weight-logs", []);
+  const [isWeightLogOpen, setIsWeightLogOpen] = useState(false);
+
+  const latestWeight = weightLogs.length > 0 ? weightLogs[weightLogs.length - 1].weight : 182;
+  const previousWeight = weightLogs.length > 1 ? weightLogs[weightLogs.length - 2].weight : null;
+  
+  let weightChangeText = "-1.2 lbs this week";
+  if (previousWeight !== null) {
+      const diff = latestWeight - previousWeight;
+      const direction = diff > 0 ? "+" : "";
+      weightChangeText = `${direction}${diff.toFixed(1)} lbs from last entry`;
+  }
+
+  const handleWeightLogged = (newLog: WeightLog) => {
+    setWeightLogs([...weightLogs, newLog]);
+  };
+
   return (
     <div className="flex-1 flex flex-col">
       <Header title="Your Dashboard" description="An overview of your fitness journey." />
@@ -17,7 +41,7 @@ export default function DashboardPage() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <StatCard title="Workouts This Week" value="3" change="+1 from last week" icon={Zap} />
           <StatCard title="Active Calories" value="1,850" change="-150 from yesterday" icon={UtensilsCrossed} />
-          <StatCard title="Current Weight" value="182 lbs" change="-1.2 lbs this week" icon={LineChart} />
+          <StatCard title="Current Weight" value={`${latestWeight} lbs`} change={weightChangeText} icon={LineChart} onClick={() => setIsWeightLogOpen(true)} />
           <StatCard title="Workout Streak" value="5 days" change="Keep it up!" icon={Calendar} />
         </div>
         
@@ -40,6 +64,12 @@ export default function DashboardPage() {
         </div>
 
       </div>
+      <WeightLogDialog 
+        isOpen={isWeightLogOpen} 
+        onClose={() => setIsWeightLogOpen(false)} 
+        onWeightLogged={handleWeightLogged}
+        lastWeight={latestWeight}
+      />
     </div>
   )
 }

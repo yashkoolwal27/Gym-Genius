@@ -2,6 +2,7 @@
 
 
 
+
 export interface StoredPlan {
     id: string;
     generatedPlan: string;
@@ -53,6 +54,12 @@ export interface MealLog {
     fitnessGoals: string;
     foodCategory: string;
     mealDetails: string;
+}
+
+export interface WeightLog {
+    id: string;
+    date: string;
+    weight: number;
 }
 
 export interface Exercise {

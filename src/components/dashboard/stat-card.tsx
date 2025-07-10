@@ -8,14 +8,15 @@ interface StatCardProps {
   value: string;
   change: string;
   icon: LucideIcon;
+  onClick?: () => void;
 }
 
-export default function StatCard({ title, value, change, icon: Icon }: StatCardProps) {
+export default function StatCard({ title, value, change, icon: Icon, onClick }: StatCardProps) {
   const isIncrease = change.startsWith('+');
   const isDecrease = change.startsWith('-');
 
   return (
-    <Card>
+    <Card onClick={onClick} className={cn(onClick && "cursor-pointer hover:bg-muted/50 transition-colors")}>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-sm font-medium">{title}</CardTitle>
         <div className="p-2 rounded-lg bg-primary/10">
