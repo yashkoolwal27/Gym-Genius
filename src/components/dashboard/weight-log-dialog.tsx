@@ -18,11 +18,16 @@ import {
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { Weight, Loader2, Save } from "lucide-react";
+import { Weight, Loader2, Save, CalendarIcon } from "lucide-react";
 import type { WeightLog } from "@/lib/types";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Calendar } from "@/components/ui/calendar";
+import { cn } from "@/lib/utils";
+import { format } from "date-fns";
 
 const formSchema = z.object({
   weight: z.coerce.number({ required_error: "Weight is required." }).positive("Weight must be a positive number."),
+  date: z.date({ required_error: "Date is required." }),
 });
 
 type WeightFormValues = z.infer<typeof formSchema>;
@@ -42,6 +47,7 @@ export function WeightLogDialog({ isOpen, onClose, onWeightLogged, lastWeight }:
     resolver: zodResolver(formSchema),
     defaultValues: {
       weight: lastWeight || 0,
+      date: new Date(),
     },
   });
 
@@ -49,17 +55,17 @@ export function WeightLogDialog({ isOpen, onClose, onWeightLogged, lastWeight }:
     setIsLoading(true);
     const newLog: WeightLog = {
         id: crypto.randomUUID(),
-        date: new Date().toISOString(),
+        date: values.date.toISOString(),
         weight: values.weight,
     };
     onWeightLogged(newLog);
     toast({
       title: "Weight Logged!",
-      description: `Your weight of ${values.weight} lbs has been saved.`,
+      description: `Your weight of ${values.weight} lbs for ${format(values.date, "PPP")} has been saved.`,
     });
     setIsLoading(false);
     onClose();
-    form.reset({ weight: values.weight });
+    form.reset({ weight: values.weight, date: new Date() });
   };
 
   return (
@@ -82,6 +88,47 @@ export function WeightLogDialog({ isOpen, onClose, onWeightLogged, lastWeight }:
                   <FormControl>
                     <Input type="number" step="0.1" placeholder="e.g., 182.5" {...field} />
                   </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="date"
+              render={({ field }) => (
+                <FormItem className="flex flex-col">
+                  <FormLabel>Date</FormLabel>
+                   <Popover>
+                    <PopoverTrigger asChild>
+                      <FormControl>
+                        <Button
+                          variant={"outline"}
+                          className={cn(
+                            "w-full pl-3 text-left font-normal",
+                            !field.value && "text-muted-foreground"
+                          )}
+                        >
+                          {field.value ? (
+                            format(field.value, "PPP")
+                          ) : (
+                            <span>Pick a date</span>
+                          )}
+                          <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                        </Button>
+                      </FormControl>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={field.value}
+                        onSelect={field.onChange}
+                        disabled={(date) =>
+                          date > new Date() || date < new Date("1900-01-01")
+                        }
+                        initialFocus
+                      />
+                    </PopoverContent>
+                  </Popover>
                   <FormMessage />
                 </FormItem>
               )}
