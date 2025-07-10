@@ -2,7 +2,7 @@
 "use client";
 
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import type { WorkoutPlan, MealPlan, WorkoutLog, DietLog } from "@/lib/types";
+import type { WorkoutPlan, MealPlan, WorkoutLog, DietLog, WeightLog } from "@/lib/types";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Dumbbell, UtensilsCrossed, CalendarDays, Weight, Repeat, PlusCircle, Sprout, Soup, Fish, Apple } from 'lucide-react';
@@ -10,12 +10,14 @@ import { format } from 'date-fns';
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import WeightProgressChart from "./weight-progress-chart";
 
 export function ProgressTracker() {
   const [workouts] = useLocalStorage<WorkoutPlan[]>("workout-plans", []);
   const [mealPlans] = useLocalStorage<MealPlan[]>("meal-plans", []);
   const [loggedWorkouts] = useLocalStorage<WorkoutLog[]>("workout-logs", []);
   const [dietLogs] = useLocalStorage<DietLog[]>("diet-logs", []);
+  const [weightLogs] = useLocalStorage<WeightLog[]>("weight-logs", []);
 
   return (
     <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70">
@@ -24,6 +26,12 @@ export function ProgressTracker() {
         <CardDescription>Review your saved plans and logged workouts. Stay consistent!</CardDescription>
       </CardHeader>
       <CardContent className="space-y-8">
+        
+        <div>
+          <h3 className="text-xl font-semibold flex items-center gap-2 mb-4"><Weight /> Weight Progress</h3>
+          <WeightProgressChart weightLogs={weightLogs} />
+        </div>
+        
         <div>
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-xl font-semibold flex items-center gap-2"><Dumbbell /> Logged Workouts</h3>
