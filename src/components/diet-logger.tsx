@@ -25,13 +25,6 @@ import { Badge } from "./ui/badge";
 
 const foodCategories = [
     { id: "Fruits", label: "Fruits", image: "https://placehold.co/200x200.png", hint: "apples bananas" },
-    { id: "Dairy & Eggs", label: "Dairy & Eggs", image: "https://placehold.co/200x200.png", hint: "milk eggs" },
-    { id: "Grains & Pulses", label: "Grains & Pulses", image: "https://placehold.co/200x200.png", hint: "rice lentils" },
-    { id: "Meat & Seafood", label: "Meat & Seafood", image: "https://placehold.co/200x200.png", hint: "chicken fish" },
-    { id: "Bakery & Sweets", label: "Bakery & Sweets", image: "https://placehold.co/200x200.png", hint: "cake cookies" },
-    { id: "Beverages", label: "Beverages", image: "https://placehold.co/200x200.png", hint: "juice soda" },
-    { id: "Spices & Oils", label: "Spices & Oils", image: "https://placehold.co/200x200.png", hint: "spices oil" },
-    { id: "Munchies", label: "Munchies", image: "https://placehold.co/200x200.png", hint: "chips snacks" },
 ];
 
 const formSchema = z.object({
@@ -106,7 +99,9 @@ export function DietLogger() {
   const handleDateSelect = (selectedDate: Date | undefined) => {
     setDate(selectedDate);
     if (selectedDate) {
-      setStep(2);
+      // Because there's only one category, we can skip the category selection step
+      form.setValue("foodCategory", "Fruits");
+      setStep(3);
     }
   };
 
@@ -174,49 +169,6 @@ export function DietLogger() {
       </Card>
     )
   }
-
-  if (step === 2) {
-    return (
-        <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex-1 flex flex-col">
-            <CardHeader>
-                <div className="flex items-center gap-4">
-                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
-                        <ChevronLeft className="h-4 w-4" />
-                    </Button>
-                    <div>
-                        <CardTitle className="flex items-center gap-2"><Utensils /> Select Food Category</CardTitle>
-                        <CardDescription>
-                           Select a category for your meal on {date ? format(date, "PPP") : 'the selected date'}.
-                        </CardDescription>
-                    </div>
-                </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-4">
-                {foodCategories.map((item) => (
-                    <div
-                      key={item.id}
-                      onClick={() => handleCategorySelect(item.id)}
-                      className="rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all border-transparent bg-muted/50 hover:bg-muted/100 hover:border-primary"
-                    >
-                      <div className="aspect-square w-full relative overflow-hidden rounded-md">
-                        <Image
-                          src={item.image}
-                          alt={item.label}
-                          width={200}
-                          height={200}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          data-ai-hint={item.hint}
-                        />
-                      </div>
-                      <h3 className="font-medium text-sm text-foreground">{item.label}</h3>
-                    </div>
-                ))}
-              </div>
-            </CardContent>
-        </Card>
-    );
-  }
   
   if (step === 3) {
     const categoryKey = form.getValues("foodCategory") as FoodCategory;
@@ -226,7 +178,7 @@ export function DietLogger() {
         <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
             <CardHeader>
                 <div className="flex items-center gap-4">
-                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(2)}>
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
                         <ChevronLeft className="h-4 w-4" />
                     </Button>
                     <div>
