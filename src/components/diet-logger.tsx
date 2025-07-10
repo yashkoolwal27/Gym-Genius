@@ -56,7 +56,8 @@ export function DietLogger() {
   const [mealLogs, setMealLogs] = useLocalStorage<MealLog[]>("meal-logs", []);
   
   const [step, setStep] = useState(1);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [categorySearchQuery, setCategorySearchQuery] = useState("");
+  const [itemSearchQuery, setItemSearchQuery] = useState("");
   const [date, setDate] = useState<Date | undefined>(undefined);
   const [today, setToday] = useState<Date | undefined>(undefined);
   const [selectedFoodItems, setSelectedFoodItems] = useState<FoodItem[]>([]);
@@ -118,6 +119,7 @@ export function DietLogger() {
 
   const handleCategorySelect = (categoryId: string) => {
     form.setValue("foodCategory", categoryId);
+    setItemSearchQuery('');
     setStep(3);
   };
   
@@ -142,7 +144,7 @@ export function DietLogger() {
   };
   
   const filteredCategories = foodCategories.filter(category =>
-    category.label.toLowerCase().includes(searchQuery.toLowerCase())
+    category.label.toLowerCase().includes(categorySearchQuery.toLowerCase())
   );
 
   const renderStepContent = () => {
@@ -178,8 +180,8 @@ export function DietLogger() {
                           <Input
                               placeholder="Search food categories..."
                               className="pl-10"
-                              value={searchQuery}
-                              onChange={(e) => setSearchQuery(e.target.value)}
+                              value={categorySearchQuery}
+                              onChange={(e) => setCategorySearchQuery(e.target.value)}
                           />
                       </div>
                       <ScrollArea className="h-[500px] -mx-4">
@@ -215,40 +217,55 @@ export function DietLogger() {
               );
           case 3:
               const categoryKey = form.getValues("foodCategory") as FoodCategory;
-              const itemsToShow = foodData[categoryKey] || [];
+              const itemsInCategory = foodData[categoryKey] || [];
+              const itemsToShow = itemsInCategory.filter(item => 
+                  item.name.toLowerCase().includes(itemSearchQuery.toLowerCase())
+              );
+
               return (
-                <ScrollArea className="h-[500px] -mx-4">
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
-                        {itemsToShow.map((item) => {
-                            const isSelected = selectedFoodItems.some(i => i.name === item.name);
-                            return (
-                                <div
-                                    key={item.name}
-                                    onClick={() => toggleFoodItem(item)}
-                                    className={cn(
-                                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
-                                        isSelected ? "border-primary bg-primary/5" : "border-transparent bg-muted/50 hover:bg-muted/100"
-                                    )}
-                                >
-                                    <div className="aspect-square w-full relative overflow-hidden rounded-md">
-                                        <Image
-                                            src={item.image}
-                                            alt={item.name}
-                                            width={200}
-                                            height={200}
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                            data-ai-hint={item.hint}
-                                        />
-                                    </div>
-                                    <h3 className="font-medium text-sm text-foreground">{item.name}</h3>
-                                    <p className="text-xs text-muted-foreground">
-                                        {item.calories} kcal, {item.protein}g protein
-                                    </p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </ScrollArea>
+                <>
+                  <div className="relative mb-4">
+                      <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                      <Input
+                          placeholder="Search for an item..."
+                          className="pl-10"
+                          value={itemSearchQuery}
+                          onChange={(e) => setItemSearchQuery(e.target.value)}
+                      />
+                  </div>
+                  <ScrollArea className="h-[500px] -mx-4">
+                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
+                          {itemsToShow.map((item) => {
+                              const isSelected = selectedFoodItems.some(i => i.name === item.name);
+                              return (
+                                  <div
+                                      key={item.name}
+                                      onClick={() => toggleFoodItem(item)}
+                                      className={cn(
+                                          "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
+                                          isSelected ? "border-primary bg-primary/5" : "border-transparent bg-muted/50 hover:bg-muted/100"
+                                      )}
+                                  >
+                                      <div className="aspect-square w-full relative overflow-hidden rounded-md">
+                                          <Image
+                                              src={item.image}
+                                              alt={item.name}
+                                              width={200}
+                                              height={200}
+                                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                              data-ai-hint={item.hint}
+                                          />
+                                      </div>
+                                      <h3 className="font-medium text-sm text-foreground">{item.name}</h3>
+                                      <p className="text-xs text-muted-foreground">
+                                          {item.calories} kcal, {item.protein}g protein
+                                      </p>
+                                  </div>
+                              );
+                          })}
+                      </div>
+                  </ScrollArea>
+                </>
               );
           case 4:
             const totalCalories = selectedFoodItems.reduce((sum, item) => sum + item.calories, 0);
