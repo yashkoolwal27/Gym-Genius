@@ -174,46 +174,35 @@ export function DietLogger() {
               );
           case 2:
               return (
-                  <>
-                      <div className="relative mb-4">
-                          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                          <Input
-                              placeholder="Search food categories..."
-                              className="pl-10"
-                              value={categorySearchQuery}
-                              onChange={(e) => setCategorySearchQuery(e.target.value)}
-                          />
-                      </div>
-                      <ScrollArea className="h-[500px] -mx-4">
-                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
-                              {filteredCategories.map((cat) => {
-                                  const isSelected = form.getValues("foodCategory") === cat.id;
-                                  return (
-                                      <div
-                                          key={cat.id}
-                                          onClick={() => handleCategorySelect(cat.id)}
-                                          className={cn(
-                                              "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
-                                              isSelected ? "border-primary bg-primary/5" : "border-transparent bg-muted/50 hover:bg-muted/100"
-                                          )}
-                                      >
-                                          <div className="aspect-square w-full relative overflow-hidden rounded-md">
-                                              <Image
-                                                  src={cat.image}
-                                                  alt={cat.label}
-                                                  width={200}
-                                                  height={200}
-                                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                                  data-ai-hint={cat.hint}
-                                              />
-                                          </div>
-                                          <h3 className="font-medium text-sm text-foreground">{cat.label}</h3>
-                                      </div>
-                                  );
-                              })}
-                          </div>
-                      </ScrollArea>
-                  </>
+                <ScrollArea className="h-[500px] -mx-4">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
+                        {filteredCategories.map((cat) => {
+                            const isSelected = form.getValues("foodCategory") === cat.id;
+                            return (
+                                <div
+                                    key={cat.id}
+                                    onClick={() => handleCategorySelect(cat.id)}
+                                    className={cn(
+                                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
+                                        isSelected ? "border-primary bg-primary/5" : "border-transparent bg-muted/50 hover:bg-muted/100"
+                                    )}
+                                >
+                                    <div className="aspect-square w-full relative overflow-hidden rounded-md">
+                                        <Image
+                                            src={cat.image}
+                                            alt={cat.label}
+                                            width={200}
+                                            height={200}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                            data-ai-hint={cat.hint}
+                                        />
+                                    </div>
+                                    <h3 className="font-medium text-sm text-foreground">{cat.label}</h3>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </ScrollArea>
               );
           case 3:
               const categoryKey = form.getValues("foodCategory") as FoodCategory;
@@ -317,15 +306,28 @@ export function DietLogger() {
     <div className="flex-1 flex flex-col bg-background">
        <div className="p-6 border-b">
          <Progress value={progress} className="mb-4 h-2" />
-         <div className="flex items-start gap-4">
+         <div className="flex items-center gap-4">
              {step > 1 && (
-                 <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(s => s - 1)}>
+                 <Button variant="outline" size="icon" className="h-8 w-8 flex-shrink-0" onClick={() => setStep(s => s - 1)}>
                      <ChevronLeft className="h-4 w-4" />
                  </Button>
              )}
-             <div>
-                <CardTitle className="flex items-center gap-2 text-2xl">{title}</CardTitle>
-                <CardDescription className="mt-1">{description}</CardDescription>
+             <div className="flex-1 flex justify-between items-center gap-4">
+                <div>
+                  <CardTitle className="flex items-center gap-2 text-2xl">{title}</CardTitle>
+                  <CardDescription className="mt-1">{description}</CardDescription>
+                </div>
+                {step === 2 && (
+                    <div className="relative w-full max-w-xs">
+                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                        <Input
+                            placeholder="Search food categories..."
+                            className="pl-10"
+                            value={categorySearchQuery}
+                            onChange={(e) => setCategorySearchQuery(e.target.value)}
+                        />
+                    </div>
+                )}
              </div>
          </div>
        </div>
