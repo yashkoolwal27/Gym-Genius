@@ -36,6 +36,10 @@ const foodCategories = [
     { id: "Munchies", label: "Munchies", image: "https://placehold.co/200x200.png", hint: "chips popcorn nuts" },
 ];
 
+const mealTypeOptions = ["Breakfast", "Lunch", "Dinner", "Snack / Pre Workout", "Snack / Post Workout"];
+const macronutrientOptions = ["High-Protein", "High-Carb", "Low-Carb", "Healthy Fats"];
+const fitnessGoalOptions = ["Muscle Gain", "Fat Loss", "Maintenance"];
+
 const formSchema = z.object({
   mealType: z.string({ required_error: "Please select a meal type." }),
   macronutrients: z.string({ required_error: "Please select a macronutrient profile." }),
@@ -45,9 +49,6 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-const mealTypeOptions = ["Breakfast", "Lunch", "Dinner", "Snack / Pre Workout", "Snack / Post Workout"];
-const macronutrientOptions = ["High-Protein", "High-Carb", "Low-Carb", "Healthy Fats"];
-const fitnessGoalOptions = ["Muscle Gain", "Fat Loss", "Maintenance"];
 
 export function DietLogger() {
   const { toast } = useToast();
