@@ -27,3 +27,5 @@ export const foodData = {
 } as const;
 
 export type FoodCategory = keyof typeof foodData;
+
+    

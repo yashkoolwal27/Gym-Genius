@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Utensils, CheckCircle, Loader2, ChevronRight, ChevronLeft, PlusCircle } from "lucide-react";
+import { Utensils, CheckCircle, Loader2, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -25,6 +25,13 @@ import { Badge } from "./ui/badge";
 
 const foodCategories = [
     { id: "Fruits", label: "Fruits", image: "https://placehold.co/200x200.png", hint: "apples bananas" },
+    { id: "Dairy & Eggs", label: "Dairy & Eggs", image: "https://placehold.co/200x200.png", hint: "milk cheese eggs" },
+    { id: "Grains & Pulses", label: "Grains & Pulses", image: "https://placehold.co/200x200.png", hint: "bread rice beans" },
+    { id: "Meat & Seafood", label: "Meat & Seafood", image: "https://placehold.co/200x200.png", hint: "chicken fish steak" },
+    { id: "Bakery & Sweets", label: "Bakery & Sweets", image: "https://placehold.co/200x200.png", hint: "cake cookies chocolate" },
+    { id: "Beverages", label: "Beverages", image: "https://placehold.co/200x200.png", hint: "juice coffee soda" },
+    { id: "Spices & Oils", label: "Spices & Oils", image: "https://placehold.co/200x200.png", hint: "olive-oil spices herbs" },
+    { id: "Munchies", label: "Munchies", image: "https://placehold.co/200x200.png", hint: "chips popcorn nuts" },
 ];
 
 const formSchema = z.object({
@@ -99,9 +106,7 @@ export function DietLogger() {
   const handleDateSelect = (selectedDate: Date | undefined) => {
     setDate(selectedDate);
     if (selectedDate) {
-      // Because there's only one category, we can skip the category selection step
-      form.setValue("foodCategory", "Fruits");
-      setStep(3);
+      setStep(2);
     }
   };
 
@@ -169,6 +174,60 @@ export function DietLogger() {
       </Card>
     )
   }
+
+  if (step === 2) {
+    return (
+        <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex-1 flex flex-col">
+            <CardHeader>
+                <div className="flex items-center gap-4">
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
+                        <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <div>
+                        <CardTitle className="flex items-center gap-2"><Utensils /> Select Food Category</CardTitle>
+                        <CardDescription>
+                            Choose a category for your meal on {date ? format(date, "PPP") : 'the selected date'}.
+                        </CardDescription>
+                    </div>
+                </div>
+            </CardHeader>
+            <CardContent className="flex-1">
+                <ScrollArea className="h-[500px] -mx-4">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 pt-4">
+                        {foodCategories.map((cat) => {
+                            const isSelected = form.getValues("foodCategory") === cat.id;
+                            return (
+                                <div
+                                    key={cat.id}
+                                    onClick={() => handleCategorySelect(cat.id)}
+                                    className={cn(
+                                        "rounded-lg cursor-pointer group border-2 p-2 text-center space-y-2 transition-all",
+                                        isSelected ? "border-primary bg-primary/5" : "border-transparent bg-muted/50 hover:bg-muted/100"
+                                    )}
+                                >
+                                    <div className="aspect-square w-full relative overflow-hidden rounded-md">
+                                        <Image
+                                            src={cat.image}
+                                            alt={cat.label}
+                                            width={200}
+                                            height={200}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                            data-ai-hint={cat.hint}
+                                        />
+                                    </div>
+                                    <h3 className="font-medium text-sm text-foreground">{cat.label}</h3>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </ScrollArea>
+            </CardContent>
+            <CardFooter>
+                 <p className="w-full text-center text-muted-foreground">Select a category to continue.</p>
+            </CardFooter>
+        </Card>
+    );
+  }
   
   if (step === 3) {
     const categoryKey = form.getValues("foodCategory") as FoodCategory;
@@ -178,7 +237,7 @@ export function DietLogger() {
         <Card className="w-full max-w-4xl mx-auto shadow-xl border-none bg-card/70 flex flex-col flex-1">
             <CardHeader>
                 <div className="flex items-center gap-4">
-                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(1)}>
+                    <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => setStep(2)}>
                         <ChevronLeft className="h-4 w-4" />
                     </Button>
                     <div>
@@ -341,3 +400,5 @@ export function DietLogger() {
 
   return null;
 }
+
+    
