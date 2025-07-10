@@ -21,13 +21,14 @@ interface WeightProgressChartProps {
 export default function WeightProgressChart({ weightLogs }: WeightProgressChartProps) {
     const formattedData = weightLogs
         .map(log => ({
-            date: new Date(log.date),
+            originalDate: new Date(log.date),
             weight: log.weight,
         }))
-        .sort((a, b) => a.date.getTime() - b.date.getTime())
+        .sort((a, b) => a.originalDate.getTime() - b.originalDate.getTime())
         .map(log => ({
-            ...log,
-            date: format(log.date, 'MMM d'), // Format date for display on X-axis
+            date: format(log.originalDate, 'MMM d'), // Format date for display on X-axis
+            weight: log.weight,
+            originalDate: log.originalDate.toISOString(), // Pass original date to chart payload
         }));
     
     if (weightLogs.length < 2) {
@@ -49,7 +50,7 @@ export default function WeightProgressChart({ weightLogs }: WeightProgressChartP
             <CardHeader>
                 <CardTitle>Weight Progress</CardTitle>
                 <CardDescription>Your weight trend over time.</CardDescription>
-            </CardHeader>
+            </Header>
             <CardContent>
                 <ChartContainer config={chartConfig} className="h-64 w-full">
                     <LineChart accessibilityLayer data={formattedData} margin={{ left: 12, right: 12, top: 20 }}>
@@ -70,7 +71,7 @@ export default function WeightProgressChart({ weightLogs }: WeightProgressChartP
                                 indicator="line" 
                                 labelKey="weight"
                                 labelFormatter={(value, payload) => {
-                                    if (payload && payload.length) {
+                                    if (payload && payload.length && payload[0].payload.originalDate) {
                                       return format(new Date(payload[0].payload.originalDate), 'PPP');
                                     }
                                     return value;
