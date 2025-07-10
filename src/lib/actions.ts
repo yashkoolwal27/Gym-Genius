@@ -3,6 +3,7 @@
 
 import { generateMealPlan, generateMealPlanFromHistory, type GenerateMealPlanInput, type GenerateMealPlanFromHistoryInput } from "@/ai/flows/generate-meal-plan";
 import { generateWorkoutPlan, type GenerateWorkoutPlanInput } from "@/ai/flows/generate-workout-plan";
+import { getAITrainerFeedback, type GetAITrainerFeedbackInput } from "@/ai/flows/get-ai-trainer-feedback";
 
 async function handleAction<T>(action: Promise<T>): Promise<{ success: true; data: T; } | { success: false; error: string; }> {
   try {
@@ -24,4 +25,8 @@ export async function getMealPlanFromHistory(values: GenerateMealPlanFromHistory
 
 export async function getWorkoutPlan(values: GenerateWorkoutPlanInput) {
     return handleAction(generateWorkoutPlan(values));
+}
+
+export async function getTrainerFeedback(values: GetAITrainerFeedbackInput) {
+    return handleAction(getAITrainerFeedback(values));
 }

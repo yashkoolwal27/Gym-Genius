@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { LayoutDashboard, Settings, Dumbbell, UtensilsCrossed, LineChart, FileText } from "lucide-react"
+import { LayoutDashboard, Settings, Dumbbell, UtensilsCrossed, LineChart, FileText, BrainCircuit } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "./ui/button"
@@ -12,6 +12,7 @@ const navItems = [
   { href: "/workout", label: "Workout", icon: Dumbbell },
   { href: "/meal-planner", label: "Diet Plans", icon: UtensilsCrossed },
   { href: "/progress-tracker", label: "Progress", icon: LineChart },
+  { href: "/ai-trainer", label: "AI Trainer", icon: BrainCircuit },
   { href: "/reports", label: "Reports", icon: FileText },
   { href: "/settings", label: "Settings", icon: Settings },
 ]
