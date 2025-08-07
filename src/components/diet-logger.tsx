@@ -39,8 +39,8 @@ const foodCategories = [
     { id: "Dinner", label: "Dinner", image: "https://images.unsplash.com/photo-1555704986-722506b49f83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxEaW5uZXIlMjBtZWFscyUyMGZvb2R8ZW58MHx8fHwxNzUyMTIxODg5fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "Dinner meals food"},
     { id: "Snacks", label: "Snacks", image: "https://images.unsplash.com/photo-1646565741744-9f798eb40271?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxTbmFja3MlMjBmb29kfGVufDB8fHx8MTc1MjEyMTg4OHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "Snacks food"},
     { id: "High-Protein", label: "High-Protein", image: "https://images.unsplash.com/photo-1682991136736-a2b44623eeba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kbWVhdCUyMHBvdWx0cnklMjBmaXNoJTIwZGFpcnl8ZW58MHx8fHwxNzUyMTIxODg4fDA&ixlib=rb-4.1.0&q=80&w=1080", hint: "foodmeat poultry fish dairy"},
-    { id: "High-Carb", label: "High-Carb", image: "https://images.unsplash.com/photo-1738429567624-8871239a8fa0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb29kZ3JhaW5zJTIwZ3JhaW5zJTIwcHVsc2VzfGVufDB8fHx8MTc1MjEyMTg4OHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "foodgrains grains pulses"},
-    { id: "Low-Carb", label: "Low-Carb", image: "https://images.unsplash.com/photo-1731970820339-e725b78f55e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmb29kZ3JhaW5zJTIwZ3JhaW5zJTIwcHVsc2VzfGVufDB8fHx8MTc1MjEyMTg4OHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "foodgrains grains pulses"},
+    { id: "High-Carb", label: "High-Carb", image: "https://images.unsplash.com/photo-1738429567624-8871239a8fa0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb29kZ3JhaW5zJTIwZ3JhaW5zJTIwcHVsc2VzfGVufDB8fHx8fDE3NTIxMjE4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "foodgrains grains pulses"},
+    { id: "Low-Carb", label: "Low-Carb", image: "https://images.unsplash.com/photo-1731970820339-e725b78f55e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmb29kZ3JhaW5zJTIwZ3JhaW5zJTIwcHVsc2VzfGVufDB8fHx8fDE3NTIxMjE4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "foodgrains grains pulses"},
     { id: "Healthy Fats", label: "Healthy Fats", image: "https://images.unsplash.com/photo-1603966926902-57b0cb2abe2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zm9vZGRhaXJ5JTIwZWdnc3xlbnwwfHx8fDE3NTIxMjE4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "fooddairy eggs"},
     { id: "Muscle Gain", label: "Muscle Gain", image: "https://images.unsplash.com/photo-1693219673462-26563efb53da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kcHJvdGVpbnxlbnwwfHx8fDE3NTIxMjE4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080", hint: "foodprotein"},
     { id: "Fat Loss", label: "Fat Loss", image: "https://images.unsplash.com/photo-1581455988162-f6040daa6923?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb29kZmF0fGVufDB8fHx8MTc1MjEyMTg4OHww&ixlib=rb-4.1.0&q=80&w=1080", hint: "foodfat"},
@@ -163,26 +163,15 @@ export function DietLogger() {
       switch (step) {
           case 1:
               return (
+                <div className="flex justify-center items-center h-full">
                   <Calendar
                       mode="single"
                       selected={date}
                       onSelect={handleDateSelect}
                       disabled={{ after: today }}
-                      className="w-full h-full flex flex-col"
-                      classNames={{
-                          months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 flex-1",
-                          month: "flex flex-col flex-1",
-                          table: "w-full border-collapse flex flex-col flex-1",
-                          head_row: "flex justify-around",
-                          row: "flex w-full mt-2 flex-1",
-                          head_cell: "text-muted-foreground rounded-md flex-1 font-normal text-base",
-                          cell: "p-0 relative text-center flex-1",
-                          day: "w-full h-full text-base p-0 font-normal aria-selected:opacity-100 rounded-md",
-                          day_selected: "bg-primary text-primary-foreground hover:bg-primary/90 focus:bg-primary/90",
-                          day_today: "bg-accent text-accent-foreground",
-                          day_disabled: "text-muted-foreground/50 cursor-not-allowed",
-                      }}
+                      className="rounded-md border"
                   />
+                </div>
               );
           case 2:
               return (
@@ -349,7 +338,7 @@ export function DietLogger() {
       </div>
 
       <div className="p-6 border-t">
-        {step === 1 && <p className="w-full text-center text-muted-foreground">Select a date to continue.</p>}
+        {step === 1 && <Button onClick={() => date && setStep(2)} disabled={!date} className="w-full" size="lg">Next <ChevronRight className="ml-2 h-4 w-4"/></Button>}
         {step === 2 && <p className="w-full text-center text-muted-foreground">Select a food category to choose items.</p>}
         {step === 3 && (
             <Button onClick={handleNextFromItems} className="w-full" size="lg" disabled={selectedFoodItems.length === 0}>
@@ -366,3 +355,5 @@ export function DietLogger() {
     </div>
   );
 }
+
+    

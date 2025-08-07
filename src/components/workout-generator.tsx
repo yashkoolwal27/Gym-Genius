@@ -168,26 +168,13 @@ export function WorkoutGenerator() {
                 </Button>
             </div>
         </CardHeader>
-        <CardContent className="flex-1 flex justify-center items-center p-0 sm:p-6">
+        <CardContent className="flex-1 flex justify-center items-center p-2 sm:p-6">
             <Calendar
                 mode="single"
                 selected={date}
                 onSelect={handleDateSelect}
                 disabled={{ after: today }}
-                className="w-full h-full flex flex-col"
-                classNames={{
-                    months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 flex-1",
-                    month: "flex flex-col flex-1",
-                    table: "w-full border-collapse flex flex-col flex-1",
-                    head_row: "flex justify-around",
-                    row: "flex w-full mt-2 flex-1",
-                    head_cell: "text-muted-foreground rounded-md flex-1 font-normal text-base",
-                    cell: "p-0 relative text-center flex-1",
-                    day: "w-full h-full text-base p-0 font-normal aria-selected:opacity-100 rounded-md",
-                    day_selected: "bg-primary text-primary-foreground hover:bg-primary/90 focus:bg-primary/90",
-                    day_today: "bg-accent text-accent-foreground",
-                    day_disabled: "text-muted-foreground/50 cursor-not-allowed",
-                }}
+                className="rounded-md border"
             />
         </CardContent>
         <CardFooter className="flex-col sm:flex-row items-center gap-4 border-t pt-6 transition-all duration-300 min-h-[98px] sm:min-h-[82px]">
@@ -434,3 +421,5 @@ export function WorkoutGenerator() {
   // Fallback return if step is not valid
   return null;
 }
+
+    
