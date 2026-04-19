@@ -32,13 +32,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "gymvisual.com",
       },
-    ],
-  },
-  // INJECTED: This is a temporary workaround for a known issue with Next.js
-  // and Turbopack. This can be removed in a future Next.js version.
-  experimental: {
-    allowedDevOrigins: [
-      'https://6000-firebase-studio-1751916238080.cluster-ys234awlzbhwoxmkkse6qo3fz6.cloudworkstations.dev',
+      {
+        // Google profile photos (for Google Sign-In)
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
     ],
   },
 };
