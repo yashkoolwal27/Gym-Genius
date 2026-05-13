@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
               'Current: ${_latestWeight.toStringAsFixed(1)} kg',
               style: const TextStyle(color: AppColors.textSecondary, fontSize: 13),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 4),
             TextField(
               controller: controller,
               keyboardType: const TextInputType.numberWithOptions(decimal: true),
@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     )
                   : Padding(
-                      padding: const EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -205,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             mainAxisSpacing: 12,
                             shrinkWrap: true,
                             physics: const NeverScrollableScrollPhysics(),
-                            childAspectRatio: 1.2,
+                            childAspectRatio: 1.0,
                             children: [
                               GradientStatCard(
                                 title: 'Workouts This Week',

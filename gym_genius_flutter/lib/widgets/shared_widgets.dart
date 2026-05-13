@@ -25,7 +25,7 @@ class GradientStatCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
           gradient: AppColors.cardGradient,
           borderRadius: BorderRadius.circular(16),
@@ -49,7 +49,7 @@ class GradientStatCard extends StatelessWidget {
                   Icon(Icons.edit_outlined, color: AppColors.textMuted, size: 16),
               ],
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 8),
             Text(
               value,
               style: TextStyle(
@@ -67,7 +67,7 @@ class GradientStatCard extends StatelessWidget {
                 color: AppColors.textSecondary,
               ),
             ),
-            const SizedBox(height: 6),
+            const SizedBox(height: 4),
             Text(
               change,
               style: TextStyle(
@@ -234,7 +234,7 @@ class QuickActionButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
+        padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           color: color.withOpacity(0.1),
           borderRadius: BorderRadius.circular(12),

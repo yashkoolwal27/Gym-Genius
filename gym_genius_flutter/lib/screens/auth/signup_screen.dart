@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../core/theme.dart';
 import '../../services/auth_service.dart';
 import '../../widgets/shared_widgets.dart';
+import 'onboarding_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -43,6 +44,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
       );
+      if (mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => OnboardingScreen(
+              name: _nameController.text.trim(),
+              email: _emailController.text.trim(),
+            ),
+          ),
+        );
+      }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

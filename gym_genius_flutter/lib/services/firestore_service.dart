@@ -33,7 +33,6 @@ class FirestoreService {
         .collection('users')
         .doc(_uid)
         .collection('workoutLogs')
-        .orderBy('createdAt', descending: true)
         .snapshots()
         .map((snap) => snap.docs.map((d) => WorkoutLog.fromFirestore(d)).toList());
   }

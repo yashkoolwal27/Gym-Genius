@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class WorkoutSet {
   final String id;
-  final String reps;
-  final String weight;
+  String reps;
+  String weight;
 
   WorkoutSet({required this.id, required this.reps, required this.weight});
 
