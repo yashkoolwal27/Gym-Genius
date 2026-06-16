@@ -10,7 +10,8 @@
 
 <p align="center">
   <a href="https://gym-genius-chi.vercel.app"><img src="https://img.shields.io/badge/Web%20App-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk"><img src="https://img.shields.io/badge/Android-Download%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white" /></a>
+  <a href="https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk"><img src="https://img.shields.io/badge/Android-Download%20Release-3DDC84?style=for-the-badge&logo=android&logoColor=white" /></a>
+  <a href="https://github.com/yashkoolwal27/Gym-Genius/releases/download/v2.0.0/gym-genius-app-debug.apk"><img src="https://img.shields.io/badge/Android-Download%20Debug-orange?style=for-the-badge&logo=android&logoColor=white" /></a>
   <a href="#-ios-installation"><img src="https://img.shields.io/badge/iOS-Xcode%20Build-000000?style=for-the-badge&logo=apple&logoColor=white" /></a>
 </p>
 
@@ -43,7 +44,7 @@
 | Platform | Build Status | Access / Download |
 |:---|:---|:---|
 | **🌐 Web (Next.js)** | ![Vercel Deploy](https://img.shields.io/badge/Vercel-Deployed-brightgreen?style=flat-square) | [Launch Live Site](https://gym-genius-chi.vercel.app) |
-| **🤖 Android App** | ![APK Release](https://img.shields.io/badge/APK-Available-blue?style=flat-square) | [Download Release APK (57MB)](https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk) |
+| **🤖 Android App** | ![APK Release](https://img.shields.io/badge/APK-Available-blue?style=flat-square) | [Download Release APK (59MB)](https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk) <br> [Download Debug APK (181MB)](https://github.com/yashkoolwal27/Gym-Genius/releases/download/v2.0.0/gym-genius-app-debug.apk) |
 | **🍎 iOS App** | ![Xcode Compilation](https://img.shields.io/badge/Xcode-Build%20Ready-lightgrey?style=flat-square) | [iOS Instructions](#-ios-installation) |
 
 ---
