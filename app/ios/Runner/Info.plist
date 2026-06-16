@@ -66,5 +66,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow taking food photos with the camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow uploading existing food photos from the gallery</string>
 </dict>
 </plist>

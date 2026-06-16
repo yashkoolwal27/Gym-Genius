@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:http/http.dart' as http;
 import 'package:uuid/uuid.dart';
 import '../models/models.dart';
@@ -349,6 +350,41 @@ class NutritionApiService {
     return _foodImages['default']!;
   }
 
+  static List<ServingMeasure> parseServings(String servingSizeText) {
+    final List<ServingMeasure> servings = [];
+    servings.add(ServingMeasure(name: '100g', grams: 100.0, multiplier: 1.0));
+
+    final String text = servingSizeText.trim();
+    if (text.isEmpty || 
+        text.toLowerCase() == '100g' || 
+        text.toLowerCase() == '100 g' || 
+        text.toLowerCase() == '100ml' || 
+        text.toLowerCase() == '100 ml') {
+      return servings;
+    }
+
+    final regex = RegExp(r'(\d+(?:\.\d+)?)\s*(?:g|ml|G|ML)');
+    final match = regex.firstMatch(text);
+    if (match != null) {
+      final grams = double.tryParse(match.group(1) ?? '') ?? 100.0;
+      if (grams > 0 && (grams - 100.0).abs() > 0.01) {
+        String name = text;
+        if (text.contains('(')) {
+          name = text.split('(').first.trim();
+        }
+        if (name.isEmpty) {
+          name = text;
+        }
+        servings.add(ServingMeasure(name: name, grams: grams, multiplier: grams / 100.0));
+      }
+    } else {
+      if (text.isNotEmpty) {
+        servings.add(ServingMeasure(name: text, grams: 100.0, multiplier: 1.0));
+      }
+    }
+    return servings;
+  }
+
   // Strict Fallback Search Query (Master DB -> Custom Foods -> USDA -> OpenFoodFacts)
   Future<List<FoodItem>> searchFoods(String query) async {
     if (query.trim().isEmpty) return [];
@@ -359,7 +395,19 @@ class NutritionApiService {
     // Fetch global image overrides
     final overrides = await firestoreService.getGlobalFoodOverrides();
 
-    // 1. Search foods_master (Local DB)
+    // 1. Search foods_master on Firestore
+    try {
+      final masterSnap = await FirebaseFirestore.instance
+          .collection('foods_master')
+          .where('searchKeywords', arrayContains: query.toLowerCase().trim())
+          .limit(10)
+          .get();
+      for (final doc in masterSnap.docs) {
+        rawResults.add(FoodItem.fromMap(doc.data()));
+      }
+    } catch (_) {}
+
+    // 2. Search local DB
     final localMatches = _localFoodDb
         .where((f) => f.name.toLowerCase().contains(query.toLowerCase()))
         .toList();
@@ -381,6 +429,7 @@ class NutritionApiService {
             micronutrients: food.micronutrients,
             imageUrl: overrides[food.id]!,
             lastUpdated: food.lastUpdated,
+            servings: food.servings,
           );
         }
         return food;
@@ -388,7 +437,7 @@ class NutritionApiService {
       rawResults.addAll(mappedLocal);
     }
 
-    // 2. Search custom_foods (Firestore DB)
+    // 3. Search custom_foods (Firestore DB)
     final customFoods = await firestoreService.getCustomFoods();
     final customMatches = customFoods
         .where((f) => f.name.toLowerCase().contains(query.toLowerCase()))
@@ -411,6 +460,7 @@ class NutritionApiService {
             micronutrients: food.micronutrients,
             imageUrl: overrides[food.id]!,
             lastUpdated: food.lastUpdated,
+            servings: food.servings,
           );
         }
         return food;
@@ -418,7 +468,7 @@ class NutritionApiService {
       rawResults.addAll(mappedCustom);
     }
 
-    // 3. Fallback: USDA API Search (only if Tier 1 & Tier 2 returned nothing)
+    // 4. Fallback: USDA API Search (only if Tier 1 & Tier 2 returned nothing)
     if (rawResults.isEmpty) {
       try {
         final response = await http.get(
@@ -461,13 +511,14 @@ class NutritionApiService {
               sodium: sod,
               imageUrl: overrides[foodId] ?? getFoodImage(name),
               lastUpdated: DateTime.now().toIso8601String(),
+              servings: parseServings(serving),
             ));
           }
         }
       } catch (_) {}
     }
 
-    // 4. Fallback: OpenFoodFacts Search (only if all previous tiers returned nothing)
+    // 5. Fallback: OpenFoodFacts Search (only if all previous tiers returned nothing)
     if (rawResults.isEmpty) {
       try {
         final response = await http.get(
@@ -503,6 +554,7 @@ class NutritionApiService {
               sodium: sodium,
               imageUrl: overrides[foodId] ?? (p['image_front_small_url'] ?? getFoodImage(name)),
               lastUpdated: DateTime.now().toIso8601String(),
+              servings: parseServings(serving),
             ));
           }
         }
@@ -514,16 +566,12 @@ class NutritionApiService {
     final List<FoodItem> uniqueResults = [];
     for (final item in rawResults) {
       String coreName = item.name.toLowerCase();
-      // Remove text inside parentheses (like "(Raw)", "(Whole Wheat)")
       coreName = coreName.replaceAll(RegExp(r'\([^)]*\)'), '');
-      // Remove commas, hyphens, periods
       coreName = coreName.replaceAll(RegExp(r'[,.\-]'), ' ');
-      // Remove common descriptive qualifiers as standalone words
       coreName = coreName.replaceAll(
         RegExp(r'\b(raw|dry|cooked|boiled|fresh|whole|wheat|organic|bowl|cup|spoon|rolled|sliced|diced|cooked)\b'),
         ' ',
       );
-      // Normalize whitespace
       coreName = coreName.replaceAll(RegExp(r'\s+'), ' ').trim();
 
       if (coreName.isEmpty) {

@@ -144,7 +144,13 @@ class _AddToMealScreenState extends State<AddToMealScreen> {
     final currentVal = double.tryParse(_quantityController.text) ?? 1.0;
     
     double grams;
-    if (oldUnit == 'g') {
+    final oldCustom = widget.food.servings.firstWhere(
+      (s) => s.name == oldUnit,
+      orElse: () => ServingMeasure(name: '', grams: 0.0, multiplier: 0.0),
+    );
+    if (oldCustom.name.isNotEmpty) {
+      grams = currentVal * oldCustom.grams;
+    } else if (oldUnit == 'g') {
       grams = currentVal;
     } else if (oldUnit == 'kg') {
       grams = currentVal * 1000.0;
@@ -153,7 +159,13 @@ class _AddToMealScreenState extends State<AddToMealScreen> {
     }
     
     double newVal;
-    if (newUnit == 'g') {
+    final newCustom = widget.food.servings.firstWhere(
+      (s) => s.name == newUnit,
+      orElse: () => ServingMeasure(name: '', grams: 0.0, multiplier: 0.0),
+    );
+    if (newCustom.name.isNotEmpty) {
+      newVal = newCustom.grams > 0 ? grams / newCustom.grams : 1.0;
+    } else if (newUnit == 'g') {
       newVal = grams;
     } else if (newUnit == 'kg') {
       newVal = grams / 1000.0;
@@ -181,6 +193,14 @@ class _AddToMealScreenState extends State<AddToMealScreen> {
   }
 
   double get _multiplier {
+    final customMatch = widget.food.servings.firstWhere(
+      (s) => s.name == _selectedUnit,
+      orElse: () => ServingMeasure(name: '', grams: 0.0, multiplier: 1.0),
+    );
+    if (customMatch.name.isNotEmpty) {
+      return _quantity * customMatch.multiplier;
+    }
+
     final baseGrams = _parseGrams(widget.food.servingSize);
     if (_selectedUnit == 'g') {
       return _quantity / baseGrams;
@@ -384,10 +404,14 @@ class _AddToMealScreenState extends State<AddToMealScreen> {
                       labelText: 'Unit',
                       contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 14),
                     ),
-                    items: const [
-                      DropdownMenuItem(value: 'g', child: Text('g')),
-                      DropdownMenuItem(value: 'kg', child: Text('kg')),
-                      DropdownMenuItem(value: 'pcs', child: Text('pcs')),
+                    items: [
+                      const DropdownMenuItem(value: 'g', child: Text('g')),
+                      const DropdownMenuItem(value: 'kg', child: Text('kg')),
+                      const DropdownMenuItem(value: 'pcs', child: Text('pcs')),
+                      ...widget.food.servings
+                          .where((s) => s.name != 'g' && s.name != 'kg' && s.name != 'pcs' && s.name.isNotEmpty)
+                          .map((s) => DropdownMenuItem(value: s.name, child: Text(s.name)))
+                          .toList(),
                     ],
                     onChanged: (val) {
                       if (val != null && val != _selectedUnit) {

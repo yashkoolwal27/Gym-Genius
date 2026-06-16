@@ -1,3 +1,31 @@
+class ServingMeasure {
+  final String name;
+  final double grams;
+  final double multiplier;
+
+  ServingMeasure({
+    required this.name,
+    required this.grams,
+    required this.multiplier,
+  });
+
+  Map<String, dynamic> toMap() {
+    return {
+      'name': name,
+      'grams': grams,
+      'multiplier': multiplier,
+    };
+  }
+
+  factory ServingMeasure.fromMap(Map<String, dynamic> map) {
+    return ServingMeasure(
+      name: map['name'] ?? '',
+      grams: (map['grams'] as num?)?.toDouble() ?? 0.0,
+      multiplier: (map['multiplier'] as num?)?.toDouble() ?? 1.0,
+    );
+  }
+}
+
 class FoodItem {
   final String id;
   final String name;
@@ -12,6 +40,7 @@ class FoodItem {
   final Map<String, double> micronutrients;
   final String imageUrl;
   final String lastUpdated;
+  final List<ServingMeasure> servings;
 
   FoodItem({
     required this.id,
@@ -27,20 +56,48 @@ class FoodItem {
     this.micronutrients = const {},
     this.imageUrl = '',
     required this.lastUpdated,
+    this.servings = const [],
   });
 
   factory FoodItem.fromMap(Map<String, dynamic> map) {
+    final macros = map['macros'] as Map<dynamic, dynamic>?;
+
+    final double caloriesVal = (macros?['calories'] ?? map['calories'] as num?)?.toDouble() ?? 0.0;
+    final double proteinVal = (macros?['protein'] ?? map['protein'] as num?)?.toDouble() ?? 0.0;
+    final double carbsVal = (macros?['carbs'] ?? map['carbs'] as num?)?.toDouble() ?? 0.0;
+    final double fatVal = (macros?['fat'] ?? map['fat'] as num?)?.toDouble() ?? 0.0;
+    final double fiberVal = (macros?['fiber'] ?? map['fiber'] as num?)?.toDouble() ?? 0.0;
+    final double sugarVal = (macros?['sugar'] ?? map['sugar'] as num?)?.toDouble() ?? 0.0;
+    final double sodiumVal = (macros?['sodium'] ?? map['sodium'] as num?)?.toDouble() ?? 0.0;
+
+    final rawServings = map['servings'] as List<dynamic>?;
+    List<ServingMeasure> servingsList = [];
+    if (rawServings != null) {
+      servingsList = rawServings
+          .map((e) => ServingMeasure.fromMap(Map<String, dynamic>.from(e)))
+          .toList();
+    } else {
+      // Create a default serving from servingSize
+      servingsList = [
+        ServingMeasure(
+          name: map['servingSize'] ?? '100g',
+          grams: 100.0,
+          multiplier: 1.0,
+        )
+      ];
+    }
+
     return FoodItem(
       id: map['id'] ?? '',
       name: map['name'] ?? '',
       servingSize: map['servingSize'] ?? '100g',
-      calories: (map['calories'] as num?)?.toDouble() ?? 0.0,
-      protein: (map['protein'] as num?)?.toDouble() ?? 0.0,
-      carbs: (map['carbs'] as num?)?.toDouble() ?? 0.0,
-      fat: (map['fat'] as num?)?.toDouble() ?? 0.0,
-      fiber: (map['fiber'] as num?)?.toDouble() ?? 0.0,
-      sugar: (map['sugar'] as num?)?.toDouble() ?? 0.0,
-      sodium: (map['sodium'] as num?)?.toDouble() ?? 0.0,
+      calories: caloriesVal,
+      protein: proteinVal,
+      carbs: carbsVal,
+      fat: fatVal,
+      fiber: fiberVal,
+      sugar: sugarVal,
+      sodium: sodiumVal,
       micronutrients: Map<String, double>.from(
         (map['micronutrients'] as Map<dynamic, dynamic>?)?.map(
           (k, v) => MapEntry(k.toString(), (v as num).toDouble()),
@@ -48,6 +105,7 @@ class FoodItem {
       ),
       imageUrl: map['imageUrl'] ?? '',
       lastUpdated: map['lastUpdated'] ?? '',
+      servings: servingsList,
     );
   }
 
@@ -66,6 +124,16 @@ class FoodItem {
       'micronutrients': micronutrients,
       'imageUrl': imageUrl,
       'lastUpdated': lastUpdated,
+      'servings': servings.map((e) => e.toMap()).toList(),
+      'macros': {
+        'calories': calories,
+        'protein': protein,
+        'carbs': carbs,
+        'fat': fat,
+        'fiber': fiber,
+        'sugar': sugar,
+        'sodium': sodium,
+      }
     };
   }
 }

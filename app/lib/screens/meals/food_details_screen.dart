@@ -20,6 +20,9 @@ class _FoodDetailsScreenState extends State<FoodDetailsScreen> {
   bool _isAdmin = false;
   bool _isImageLoading = false;
   String _currentImageUrl = '';
+  List<ServingMeasure> _servingsList = [];
+  ServingMeasure? _selectedServing;
+  bool _submitted = false;
 
   @override
   void initState() {
@@ -27,6 +30,16 @@ class _FoodDetailsScreenState extends State<FoodDetailsScreen> {
     _currentImageUrl = widget.food.imageUrl;
     _checkFavorite();
     _checkAdmin();
+
+    _servingsList = List<ServingMeasure>.from(widget.food.servings);
+    if (_servingsList.isEmpty) {
+      _servingsList.add(ServingMeasure(
+        name: widget.food.servingSize.isNotEmpty ? widget.food.servingSize : '100g',
+        grams: 100.0,
+        multiplier: 1.0,
+      ));
+    }
+    _selectedServing = _servingsList.first;
   }
 
   Future<void> _checkFavorite() async {
@@ -146,18 +159,20 @@ class _FoodDetailsScreenState extends State<FoodDetailsScreen> {
   }
 
   @override
+  @override
   Widget build(BuildContext context) {
     final food = widget.food;
     final grams = _parseGrams(food.servingSize);
-    final factor = 100.0 / grams;
+    final double mult = _selectedServing?.multiplier ?? 1.0;
+    final factor = (100.0 / grams) * mult;
 
-    final calories100g = food.calories * factor;
-    final protein100g = food.protein * factor;
-    final carbs100g = food.carbs * factor;
-    final fat100g = food.fat * factor;
-    final fiber100g = food.fiber * factor;
-    final sugar100g = food.sugar * factor;
-    final sodium100g = food.sodium * factor;
+    final caloriesScaled = food.calories * mult;
+    final proteinScaled = food.protein * mult;
+    final carbsScaled = food.carbs * mult;
+    final fatScaled = food.fat * mult;
+    final fiberScaled = food.fiber * mult;
+    final sugarScaled = food.sugar * mult;
+    final sodiumScaled = food.sodium * mult;
 
     final vitamins = <String, double>{};
     final aminoAcids = <String, double>{};
@@ -236,53 +251,79 @@ class _FoodDetailsScreenState extends State<FoodDetailsScreen> {
                 children: [
                   AppCard(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const Text('Normalized Serving', style: TextStyle(color: AppColors.textSecondary)),
-                            Text('100g (Original: ${food.servingSize})', style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
-                          ],
+                        const Text('SELECT SERVING UNIT', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: AppColors.textSecondary, letterSpacing: 0.5)),
+                        const SizedBox(height: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          decoration: BoxDecoration(
+                            color: AppColors.background,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: AppColors.border),
+                          ),
+                          child: DropdownButtonHideUnderline(
+                            child: DropdownButton<ServingMeasure>(
+                              value: _selectedServing,
+                              dropdownColor: AppColors.cardBg,
+                              isExpanded: true,
+                              icon: const Icon(Icons.keyboard_arrow_down_rounded, color: AppColors.primary),
+                              style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold),
+                              items: _servingsList.map((ServingMeasure m) {
+                                return DropdownMenuItem<ServingMeasure>(
+                                  value: m,
+                                  child: Text('${m.name} (${m.grams.toStringAsFixed(0)}g)'),
+                                );
+                              }).toList(),
+                              onChanged: (ServingMeasure? newValue) {
+                                if (newValue != null) {
+                                  setState(() {
+                                    _selectedServing = newValue;
+                                  });
+                                }
+                              },
+                            ),
+                          ),
                         ),
                         const SizedBox(height: 12),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Text('Calories per 100g', style: TextStyle(color: AppColors.textSecondary)),
-                            Text('${calories100g.toStringAsFixed(0)} kcal', style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
+                            const Text('Calories', style: TextStyle(color: AppColors.textSecondary)),
+                            Text('${caloriesScaled.toStringAsFixed(0)} kcal', style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
                           ],
                         ),
                       ],
                     ),
                   ),
                   const SizedBox(height: 20),
-                  const SectionHeader(title: 'Macronutrients (per 100g)'),
+                  SectionHeader(title: 'Macronutrients (${_selectedServing?.name ?? '100g'})'),
                   const SizedBox(height: 12),
                   Row(
                     children: [
-                      Expanded(child: _MacroProgressRing(label: 'Protein', value: protein100g, total: 50, color: AppColors.primary)),
+                      Expanded(child: _MacroProgressRing(label: 'Protein', value: proteinScaled, total: 50, color: AppColors.primary)),
                       const SizedBox(width: 12),
-                      Expanded(child: _MacroProgressRing(label: 'Carbs', value: carbs100g, total: 100, color: AppColors.accent)),
+                      Expanded(child: _MacroProgressRing(label: 'Carbs', value: carbsScaled, total: 100, color: AppColors.accent)),
                       const SizedBox(width: 12),
-                      Expanded(child: _MacroProgressRing(label: 'Fat', value: fat100g, total: 30, color: AppColors.accentOrange)),
+                      Expanded(child: _MacroProgressRing(label: 'Fat', value: fatScaled, total: 30, color: AppColors.accentOrange)),
                     ],
                   ),
                   const SizedBox(height: 24),
-                  const SectionHeader(title: 'Other Nutrients (per 100g)'),
+                  SectionHeader(title: 'Other Nutrients (${_selectedServing?.name ?? '100g'})'),
                   const SizedBox(height: 12),
                   AppCard(
                     child: Column(
                       children: [
-                        _NutrientRow(label: 'Dietary Fiber', value: '${fiber100g.toStringAsFixed(1)} g'),
+                        _NutrientRow(label: 'Dietary Fiber', value: '${fiberScaled.toStringAsFixed(1)} g'),
                         const Divider(color: AppColors.border),
-                        _NutrientRow(label: 'Sugar', value: '${sugar100g.toStringAsFixed(1)} g'),
+                        _NutrientRow(label: 'Sugar', value: '${sugarScaled.toStringAsFixed(1)} g'),
                         const Divider(color: AppColors.border),
-                        _NutrientRow(label: 'Sodium', value: '${sodium100g.toStringAsFixed(0)} mg'),
+                        _NutrientRow(label: 'Sodium', value: '${sodiumScaled.toStringAsFixed(0)} mg'),
                       ],
                     ),
                   ),
                   const SizedBox(height: 24),
-                  const SectionHeader(title: 'Micronutrients (per 100g)'),
+                  SectionHeader(title: 'Micronutrients (${_selectedServing?.name ?? '100g'})'),
                   const SizedBox(height: 12),
                   if (food.micronutrients.isEmpty)
                     AppCard(
@@ -341,6 +382,52 @@ class _FoodDetailsScreenState extends State<FoodDetailsScreen> {
                         ),
                       ),
                     ],
+                  ],
+                  if (widget.food.id.startsWith('custom_')) ...[
+                    const SizedBox(height: 20),
+                    AppCard(
+                      child: Column(
+                        children: [
+                          const Text(
+                            'Help grow Gym-Genius database! Submit this custom food to the community catalog for admin approval.',
+                            style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 12),
+                          ElevatedButton.icon(
+                            icon: const Icon(Icons.share_rounded, size: 18),
+                            label: Text(_submitted ? 'Submitted for Review' : 'Submit to Community Database'),
+                            onPressed: _submitted
+                                ? null
+                                : () async {
+                                    try {
+                                      await _firestoreService.submitFoodForReview(widget.food);
+                                      setState(() => _submitted = true);
+                                      if (mounted) {
+                                        ScaffoldMessenger.of(context).showSnackBar(
+                                          const SnackBar(
+                                            content: Text('Food submitted to community database review! ✅'),
+                                            backgroundColor: AppColors.success,
+                                          ),
+                                        );
+                                      }
+                                    } catch (e) {
+                                      if (mounted) {
+                                        ScaffoldMessenger.of(context).showSnackBar(
+                                          SnackBar(content: Text('Submission failed: $e'), backgroundColor: AppColors.error),
+                                        );
+                                      }
+                                    }
+                                  },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: AppColors.primary,
+                              foregroundColor: Colors.black,
+                              minimumSize: const Size(double.infinity, 44),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                   const SizedBox(height: 100),
                 ],

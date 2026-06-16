@@ -13,6 +13,8 @@ import 'diet_preferences_screen.dart';
 import 'achievements_screen.dart';
 import 'ai_health_summary_screen.dart';
 import 'settings_screen.dart';
+import 'admin_db_screen.dart';
+
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -25,6 +27,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   final _firestoreService = FirestoreService();
   bool _isLoading = true;
   UserProfile? _currentProfile;
+  bool _isAdmin = false;
 
   @override
   void initState() {
@@ -35,13 +38,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Future<void> _loadProfile() async {
     setState(() => _isLoading = true);
     final profile = await _firestoreService.getUserProfile();
+    bool isAdminUser = false;
+    try {
+      isAdminUser = await _firestoreService.checkIfAdmin();
+    } catch (_) {}
+    
     if (profile != null && mounted) {
       setState(() {
         _currentProfile = profile;
+        _isAdmin = isAdminUser;
         _isLoading = false;
       });
     } else {
-      if (mounted) setState(() => _isLoading = false);
+      if (mounted) {
+        setState(() {
+          _isAdmin = isAdminUser;
+          _isLoading = false;
+        });
+      }
     }
   }
 
@@ -464,6 +478,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
           ),
+          if (_isAdmin) ...[
+            const Divider(height: 1, color: AppColors.border),
+            _buildMenuRow(
+              icon: Icons.admin_panel_settings_rounded,
+              title: 'Admin Portal (Moderator)',
+              color: AppColors.primary,
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const AdminDbScreen(),
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );

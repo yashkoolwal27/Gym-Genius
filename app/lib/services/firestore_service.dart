@@ -1,5 +1,7 @@
+import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import '../models/models.dart';
 
 class FirestoreService {
@@ -411,9 +413,204 @@ class FirestoreService {
     }
   }
 
+  Future<String> uploadFoodImage(String foodId, File file) async {
+    final storageRef = FirebaseStorage.instance.ref().child('food_images/$foodId.jpg');
+    // Always overwrite by uploading to the same ref path
+    await storageRef.putFile(file);
+    final downloadUrl = await storageRef.getDownloadURL();
+    return downloadUrl;
+  }
+
+  // ───────── COMMUNITY FOOD MODERATION & LOGGING ─────────
+  Future<void> submitFoodForReview(FoodItem food) async {
+    if (_uid == null) return;
+    final docRef = _db.collection('pending_food_reviews').doc(food.id);
+    await docRef.set({
+      'submittedBy': _uid,
+      'submittedAt': FieldValue.serverTimestamp(),
+      'status': 'pending',
+      'food': food.toMap(),
+    });
+  }
+
+  Stream<List<Map<String, dynamic>>> getPendingReviewsStream() {
+    return _db
+        .collection('pending_food_reviews')
+        .where('status', isEqualTo: 'pending')
+        .snapshots()
+        .map((snap) => snap.docs.map((d) {
+              final data = d.data();
+              data['reviewId'] = d.id;
+              return data;
+            }).toList());
+  }
+
+  Future<void> approveFoodReview(String reviewId, FoodItem food) async {
+    if (_uid == null) return;
+    
+    // 1. Update review status
+    await _db.collection('pending_food_reviews').doc(reviewId).update({
+      'status': 'approved',
+      'approvedAt': FieldValue.serverTimestamp(),
+      'approvedBy': _uid,
+    });
+
+    // 2. Generate search keywords for foods_master
+    final List<String> keywords = _generateKeywords(food.name);
+
+    final foodMap = food.toMap();
+    foodMap['searchKeywords'] = keywords;
+
+    // 3. Write to foods_master
+    await _db.collection('foods_master').doc(food.id).set(foodMap);
+
+    // 4. Write to admin_foods (to show in Admin Portal local database list)
+    await _db.collection('admin_foods').doc(food.id).set(foodMap);
+
+    // 5. Log the override/approval action
+    await logAdminAction(food.id, 'food_approve', {
+      'reviewId': reviewId,
+      'approvedName': food.name,
+      'calories': food.calories,
+    });
+  }
+
+  Future<void> rejectFoodReview(String reviewId, String reason) async {
+    if (_uid == null) return;
+    await _db.collection('pending_food_reviews').doc(reviewId).update({
+      'status': 'rejected',
+      'rejectedAt': FieldValue.serverTimestamp(),
+      'rejectedBy': _uid,
+      'rejectionReason': reason,
+    });
+
+    await logAdminAction(reviewId, 'food_reject', {
+      'reason': reason,
+    });
+  }
+
+  Future<void> addAdminCreatedFood(FoodItem food) async {
+    if (_uid == null) return;
+
+    final keywords = _generateKeywords(food.name);
+    final foodMap = food.toMap();
+    foodMap['searchKeywords'] = keywords;
+
+    await _db.collection('foods_master').doc(food.id).set(foodMap);
+    await _db.collection('admin_foods').doc(food.id).set(foodMap);
+
+    await logAdminAction(food.id, 'food_create', {
+      'name': food.name,
+      'calories': food.calories,
+    });
+  }
+
+  Future<void> editAdminFood(FoodItem food) async {
+    if (_uid == null) return;
+    
+    final keywords = _generateKeywords(food.name);
+    final foodMap = food.toMap();
+    foodMap['searchKeywords'] = keywords;
+
+    await _db.collection('foods_master').doc(food.id).set(foodMap);
+    await _db.collection('admin_foods').doc(food.id).set(foodMap);
+
+    await logAdminAction(food.id, 'food_edit', {
+      'name': food.name,
+      'calories': food.calories,
+    });
+  }
+
+  Future<void> deleteAdminFood(String foodId) async {
+    if (_uid == null) return;
+    await _db.collection('foods_master').doc(foodId).delete();
+    await _db.collection('admin_foods').doc(foodId).delete();
+    await logAdminAction(foodId, 'food_delete', {});
+  }
+
+  Stream<List<FoodItem>> getAdminFoodsStream() {
+    return _db
+        .collection('admin_foods')
+        .snapshots()
+        .map((snap) => snap.docs.map((d) => FoodItem.fromMap(d.data())).toList());
+  }
+
+  Stream<List<Map<String, dynamic>>> getAdminLogsStream() {
+    return _db
+        .collection('food_override_logs')
+        .orderBy('timestamp', descending: true)
+        .snapshots()
+        .map((snap) => snap.docs.map((d) {
+              final data = d.data();
+              data['logId'] = d.id;
+              return data;
+            }).toList());
+  }
+
+  Future<void> logAdminAction(String foodId, String action, Map<String, dynamic> details) async {
+    if (_uid == null) return;
+    await _db.collection('food_override_logs').add({
+      'foodId': foodId,
+      'action': action,
+      'actorId': _uid,
+      'timestamp': FieldValue.serverTimestamp(),
+      'details': details,
+    });
+  }
+
+  List<String> _generateKeywords(String name) {
+    final parts = name.toLowerCase().split(RegExp(r'\s+'));
+    final Set<String> keywords = {};
+    for (final part in parts) {
+      if (part.isEmpty) continue;
+      for (int i = 1; i <= part.length; i++) {
+        keywords.add(part.substring(0, i));
+      }
+    }
+    keywords.addAll(parts);
+    return keywords.toList();
+  }
+
   Future<bool> checkIfAdmin() async {
-    return true; // Temporary test override
+    if (_uid == null) return false;
+    try {
+      final email = _auth.currentUser?.email?.toLowerCase();
+      final isYashKoolwal = email != null && email.contains('yashkoolwal');
+
+      final doc = await _db.collection('users').doc(_uid).get();
+      if (!doc.exists) {
+        if (isYashKoolwal) {
+          await _db.collection('users').doc(_uid).set({
+            'email': email,
+            'isAdmin': true,
+            'basicProfile': {
+              'isAdmin': true,
+            },
+          }, SetOptions(merge: true));
+          return true;
+        }
+        return false;
+      }
+      
+      final data = doc.data()!;
+      var isAdminValue = data['isAdmin'] == true || 
+          (data['basicProfile'] as Map<dynamic, dynamic>?)?['isAdmin'] == true;
+
+      if (isYashKoolwal && !isAdminValue) {
+        await _db.collection('users').doc(_uid).set({
+          'isAdmin': true,
+          'basicProfile': {
+            'isAdmin': true,
+          },
+        }, SetOptions(merge: true));
+        isAdminValue = true;
+      }
+      return isAdminValue;
+    } catch (_) {
+      return false;
+    }
   }
 }
+
 
 

@@ -1,4 +1,6 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -18,6 +20,71 @@ class _CreateCustomFoodScreenState extends State<CreateCustomFoodScreen> {
   final _firestoreService = FirestoreService();
   final _formKey = GlobalKey<FormState>();
   bool _isSaving = false;
+
+  File? _pickedImage;
+  final _picker = ImagePicker();
+
+  Future<void> _pickImage(ImageSource source) async {
+    try {
+      final pickedFile = await _picker.pickImage(
+        source: source,
+        maxWidth: 1024,
+        maxHeight: 1024,
+        imageQuality: 85,
+      );
+      if (pickedFile != null) {
+        setState(() {
+          _pickedImage = File(pickedFile.path);
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error picking image: $e'), backgroundColor: AppColors.error),
+        );
+      }
+    }
+  }
+
+  void _showImageSourceSheet() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.cardBg,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
+      builder: (context) {
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text(
+                  'Select Image Source',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+                ),
+              ),
+              ListTile(
+                leading: const Icon(Icons.camera_alt_rounded, color: AppColors.primary),
+                title: const Text('Take Photo (Camera)', style: TextStyle(color: AppColors.textPrimary)),
+                onTap: () {
+                  Navigator.pop(context);
+                  _pickImage(ImageSource.camera);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.photo_library_rounded, color: AppColors.primary),
+                title: const Text('Choose from Gallery', style: TextStyle(color: AppColors.textPrimary)),
+                onTap: () {
+                  Navigator.pop(context);
+                  _pickImage(ImageSource.gallery);
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
 
   // Controllers for basic fields
   final _nameController = TextEditingController();
@@ -113,8 +180,25 @@ class _CreateCustomFoodScreenState extends State<CreateCustomFoodScreen> {
     addMicroIfGreaterZero('Arginine', _arginineController.text);
     addMicroIfGreaterZero('Lysine', _lysineController.text);
 
+    final foodId = 'custom_${const Uuid().v4()}';
+    String finalImageUrl = _imageUrlController.text.trim();
+
+    if (_pickedImage != null) {
+      try {
+        finalImageUrl = await _firestoreService.uploadFoodImage(foodId, _pickedImage!);
+      } catch (e) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Failed to upload image: $e'), backgroundColor: AppColors.error),
+          );
+        }
+        setState(() => _isSaving = false);
+        return;
+      }
+    }
+
     final newFood = FoodItem(
-      id: 'custom_${const Uuid().v4()}',
+      id: foodId,
       name: _nameController.text.trim(),
       servingSize: _servingSizeController.text.trim(),
       calories: double.tryParse(_caloriesController.text) ?? 0.0,
@@ -124,7 +208,7 @@ class _CreateCustomFoodScreenState extends State<CreateCustomFoodScreen> {
       fiber: double.tryParse(_fiberController.text) ?? 0.0,
       sugar: double.tryParse(_sugarController.text) ?? 0.0,
       sodium: double.tryParse(_sodiumController.text) ?? 0.0,
-      imageUrl: _imageUrlController.text.trim(),
+      imageUrl: finalImageUrl,
       micronutrients: micros,
       lastUpdated: DateTime.now().toIso8601String(),
     );
@@ -216,8 +300,42 @@ class _CreateCustomFoodScreenState extends State<CreateCustomFoodScreen> {
                             controller: _imageUrlController,
                             style: const TextStyle(color: AppColors.textPrimary),
                             decoration: const InputDecoration(
-                              labelText: 'Image URL (Optional)',
+                              labelText: 'Image URL (Optional Fallback)',
                               hintText: 'https://...',
+                            ),
+                          ),
+                          const SizedBox(height: 16),
+                          GestureDetector(
+                            onTap: _showImageSourceSheet,
+                            child: Container(
+                              height: 150,
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                color: AppColors.background,
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(color: AppColors.border),
+                              ),
+                              child: _pickedImage != null
+                                  ? ClipRRect(
+                                      borderRadius: BorderRadius.circular(12),
+                                      child: Image.file(_pickedImage!, fit: BoxFit.cover),
+                                    )
+                                  : const Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Icon(Icons.add_a_photo_rounded, color: AppColors.primary, size: 36),
+                                        SizedBox(height: 8),
+                                        Text(
+                                          'Capture/Upload Photo (Camera or Gallery)',
+                                          style: TextStyle(color: AppColors.textSecondary, fontWeight: FontWeight.bold, fontSize: 13),
+                                        ),
+                                        SizedBox(height: 4),
+                                        Text(
+                                          'Replaces / overwrites existing food photo',
+                                          style: TextStyle(color: AppColors.textMuted, fontSize: 11),
+                                        ),
+                                      ],
+                                    ),
                             ),
                           ),
                         ],

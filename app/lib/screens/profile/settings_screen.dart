@@ -24,7 +24,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
   final _firestoreService = FirestoreService();
   late UserProfile _currentProfile;
 
-  // Settings state variables
   bool _smartWatch = false;
   bool _fitnessBand = false;
   bool _smartScale = false;
@@ -50,7 +49,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _loadSettings();
   }
 
-  void _loadSettings() {
+  void _loadSettings() async {
     final devices = _currentProfile.connectedDevices;
     _smartWatch = devices['smartWatch'] ?? false;
     _fitnessBand = devices['fitnessBand'] ?? false;
@@ -160,7 +159,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 onTap: () {},
               ),
             ]),
-            const SizedBox(height: 16),
+
 
             // Connected Devices Section
             _buildSettingsGroup('Connected Devices', [
