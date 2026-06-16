@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760417052067",
+    "project_id": "gym-genius-7v97e",
+    "storage_bucket": "gym-genius-7v97e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760417052067:android:a44b78bc00f6404c006616",
+        "android_client_info": {
+          "package_name": "com.gym.gini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760417052067-5iaihb0e3c5t9jvrvcc1is8dtp1btgkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBUVmgquWN59rI5I4c0GLUTG6nAvmrVfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760417052067-5iaihb0e3c5t9jvrvcc1is8dtp1btgkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
