@@ -1,189 +1,178 @@
 # 🏋️ Gym Genius
 
 <p align="center">
-  <img src="docs/banner.png" alt="Gym Genius Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/yashkoolwal27/Gym-Genius/main/docs/banner.png" alt="Gym Genius Banner" width="100%" onerror="this.src='https://placehold.co/1200x400/1e1e24/5AFD9A?text=Gym+Genius'" />
 </p>
 
 <p align="center">
-  <b>Your Smart Fitness Companion — Track Workouts, Manage Goals & Stay Consistent</b>
+  <b>Your AI-Powered Fitness Companion — Generate Workout Plans, Track Nutrition, and Stay Consistent</b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-Framework-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-Backend-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+  <a href="https://gym-genius-chi.vercel.app"><img src="https://img.shields.io/badge/Web%20App-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk"><img src="https://img.shields.io/badge/Android-Download%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white" /></a>
+  <a href="#-ios-installation"><img src="https://img.shields.io/badge/iOS-Xcode%20Build-000000?style=for-the-badge&logo=apple&logoColor=white" /></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js%2015-Framework-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flutter%203-Mobile-02569B?style=flat-square&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-Backend-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Genkit%20AI-Powered-purple?style=flat-square" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" />
 </p>
 
 ---
 
 ## 📖 Table of Contents
+- [📱 Platform Links](#-platform-links)
+- [🧠 About the Project](#-about-the-project)
+- [✨ Core Features](#-core-features)
+- [📁 Repository Structure](#-repository-structure)
+- [🚀 Quick Start Guide](#-quick-start-guide)
+  - [Web Version (Next.js)](#1-web-version-nextjs)
+  - [App Version (Flutter)](#2-app-version-flutter)
+- [🔥 Firebase Infrastructure](#-firebase-infrastructure)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
-- [About the Project](#-about-the-project)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Firebase Setup](#-firebase-setup)
-- [Screenshots](#-screenshots)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
+---
+
+## 📱 Platform Links
+
+| Platform | Build Status | Access / Download |
+|:---|:---|:---|
+| **🌐 Web (Next.js)** | ![Vercel Deploy](https://img.shields.io/badge/Vercel-Deployed-brightgreen?style=flat-square) | [Launch Live Site](https://gym-genius-chi.vercel.app) |
+| **🤖 Android App** | ![APK Release](https://img.shields.io/badge/APK-Available-blue?style=flat-square) | [Download Release APK (57MB)](https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk) <br> [Download Debug APK (157MB)](https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app-debug.apk) |
+| **🍎 iOS App** | ![Xcode Compilation](https://img.shields.io/badge/Xcode-Build%20Ready-lightgrey?style=flat-square) | [iOS Instructions](#-ios-installation) |
 
 ---
 
 ## 🧠 About the Project
 
-**Gym Genius** is a modern fitness web/mobile application built with **Flutter** and powered by **Firebase**. It helps gym-goers and fitness enthusiasts track their workouts, monitor progress, and stay on top of their fitness goals — all in one clean, intuitive interface.
+**Gym Genius** is a state-of-the-art fitness companion designed as a **monorepo** housing both a **Next.js web portal** and a **Flutter mobile app**. It provides users with automated workout scheduling, AI-powered nutritional recommendations, and smart local/cloud logging of daily physical progress.
 
-Whether you're a beginner starting your fitness journey or a seasoned athlete optimizing your training, Gym Genius provides the tools you need to stay consistent and motivated.
-
----
-
-## ✨ Features
-
-- 🔐 **User Authentication** — Secure sign up & login via Firebase Auth
-- 📋 **Workout Tracking** — Log daily workouts with sets, reps, and weights
-- 📈 **Progress Monitoring** — Visualize your fitness journey over time
-- 🎯 **Goal Setting** — Set and track personal fitness goals
-- 🔔 **Notifications** — Stay reminded of your workout schedule
-- 📱 **Responsive Design** — Works seamlessly on web and mobile
-- ☁️ **Cloud Sync** — Data synced in real-time via Firebase Firestore
+The project utilizes a cohesive design system centered around a premium **Dark Slate & Neon Accent theme** to deliver an engaging, modern interface across both mobile screens and web layouts.
 
 ---
 
-## 🛠 Tech Stack
+## ✨ Core Features
 
-| Technology | Purpose |
-|---|---|
-| **Flutter** | Frontend UI Framework |
-| **Firebase Auth** | User Authentication |
-| **Cloud Firestore** | Real-time Database |
-| **Firebase Hosting** | Web Deployment |
-| **Firebase Rules** | Database Security |
+### 🌟 Sequential Food Search Pipeline
+Our smart 4-tier fallback search ensures users can always find or log what they eat:
+1. **Local Database (`foods_master`)** — Instant lookups with pre-mapped micronutrients.
+2. **User Custom Foods (`custom_foods`)** — Personal items saved securely in Firestore.
+3. **USDA API Fallback** — Millions of standard ingredients.
+4. **OpenFoodFacts API** — International barcode and packaged item fallback.
+*If all else fails, users can create custom foods instantly.*
+
+### 🛠️ Admin Overrides
+Admins (`isAdmin: true`) have special overlays on food details cards to instantly update/override food banner images globally, saving edits directly to Firestore to improve database quality for all users in real-time.
+
+### 🧘 Onboarding & Profile Health Check
+- **60-Second Onboarding:** A fast, friction-free profile configuration that skips secondary details (like usernames) during sign-up to boost completion rates.
+- **Completion Tracker:** Gives weighted completion scores based on critical health inputs (e.g., Body Fat % and body metrics).
+- **Interactive Body Visualizer:** A premium silhouette widget highlighting active/missing logs (calves, thighs, chest, shoulders, arms).
 
 ---
 
-## 📁 Project Structure
+## 📁 Repository Structure
+
+We organize our codebase inside two primary subfolders:
 
 ```
-Gym-Genius/
-├── src/                    # Main source code
-│   ├── components/         # Reusable UI components
-│   ├── pages/              # App screens/pages
-│   └── services/           # Firebase & API services
-├── docs/                   # Documentation & assets
-├── .vscode/                # VS Code workspace settings
-├── .gitignore              # Git ignored files
-├── apphosting.yaml         # Firebase App Hosting config
-├── components.json         # Component configuration
-├── firestore.rules         # Firestore security rules
-└── README.md               # Project documentation
+Gym-Genius/ (Root)
+├── app/                  # 📱 Flutter Mobile Application (iOS & Android)
+│   ├── lib/              # Dart sources (screens, models, widgets, services)
+│   ├── assets/           # Audio, animation, and image assets
+│   ├── android/          # Native Android configuration
+│   └── ios/              # Native iOS configuration
+├── web/                  # 🌐 Next.js 15 Web Portal (Vercel Deployed)
+│   ├── src/              # Next.js page components, Genkit AI flows, and action hooks
+│   ├── public/           # Static assets
+│   └── tsconfig.json     # TypeScript config
+├── docs/                 # 📂 Architecture blueprints, plans, and assets
+├── firebase.json         # Firebase Configuration
+├── firestore.rules       # Cloud Firestore Security Rules
+└── package.json          # Root helper command orchestrator
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start Guide
 
-### Prerequisites
+### 1. Web Version (Next.js)
 
-Make sure you have the following installed:
+```bash
+# Navigate to the web folder
+cd web
 
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (v3.0 or above)
-- [Dart](https://dart.dev/get-dart)
-- [Firebase CLI](https://firebase.google.com/docs/cli)
-- A Google account for Firebase
+# Install dependencies
+npm install
 
-### Installation
+# Run dev server locally (port 9002 default)
+npm run dev
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yashkoolwal27/Gym-Genius.git
-   cd Gym-Genius
-   ```
-
-2. **Install dependencies**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Set up Firebase** *(see section below)*
-
-4. **Run the app**
-   ```bash
-   flutter run
-   ```
-
-5. **Build for web**
-   ```bash
-   flutter build web
-   ```
+*Note: You can also use root-level proxy commands without navigating: `npm run web:dev`, `npm run web:build`.*
 
 ---
 
-## 🔥 Firebase Setup
+### 2. App Version (Flutter)
 
-1. Go to [Firebase Console](https://console.firebase.google.com/) and create a new project
-2. Enable **Authentication** (Email/Password)
-3. Create a **Firestore Database** in production mode
-4. Enable **Firebase Hosting**
-5. Download your `google-services.json` (Android) or `GoogleService-Info.plist` (iOS) and place them in the correct directories
-6. Update `firestore.rules` with your security rules
-7. Deploy with:
-   ```bash
-   firebase deploy
-   ```
+#### Prerequisites
+- Flutter SDK (v3.0.0+)
+- Android Studio / Xcode
+
+#### Setup
+```bash
+# Navigate to the app directory
+cd app
+
+# Fetch packages
+flutter pub get
+
+# Run on emulator/connected device
+flutter run
+```
+
+*Note: You can also clean and fetch packages from the workspace root: `npm run app:clean`, `npm run app:pubget`.*
+
+#### 🍏 iOS Installation
+To run the iOS version on a simulator or device:
+1. Open terminal in `/app/ios`.
+2. Run `pod install`.
+3. Open `Runner.xcworkspace` in Xcode.
+4. Configure your Development Team signing profiles.
+5. Select a target iOS simulator and click **Run** (or run `flutter run` inside `/app`).
 
 ---
 
-## 📸 Screenshots
+## 🔥 Firebase Infrastructure
 
-> *(Add your app screenshots here)*
-
-| Home Screen | Workout Log | Progress |
-|---|---|---|
-| ![Home](docs/home.png) | ![Workout](docs/workout.png) | ![Progress](docs/progress.png) |
+Our backend runs entirely on Firebase serverless architectures:
+- **Authentication:** Email/password-based profiles.
+- **Firestore Database:** Configured via custom rules ([firestore.rules](firestore.rules)) to isolate private user profiles while keeping global assets open read-only.
+- **App Hosting & Emulators:** Fully integrates with Firebase CLI. To initialize, set up a project in the Firebase console and download the configuration keys to:
+  - Android: `app/android/app/google-services.json`
+  - iOS: `app/ios/Runner/GoogleService-Info.plist`
 
 ---
 
 ## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create your feature branch:
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add some AmazingFeature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. Open a **Pull Request**
-
-Please make sure your code follows the existing style and includes relevant comments.
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m "feat: add AmazingFeature"`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
 ---
 
 ## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📬 Contact
-
-**Yash Koolwal**
-
-- GitHub: [@yashkoolwal27](https://github.com/yashkoolwal27)
-- Project Link: [https://github.com/yashkoolwal27/Gym-Genius](https://github.com/yashkoolwal27/Gym-Genius)
+This project is licensed under the MIT License - see the [LICENSE](app/LICENSE) file for details.
 
 ---
 
 <p align="center">
-  Made with ❤️ and 💪 by Yash Koolwal
+  Made with ❤️ and 💪 by <a href="https://github.com/yashkoolwal27">Yash Koolwal</a>
 </p>
