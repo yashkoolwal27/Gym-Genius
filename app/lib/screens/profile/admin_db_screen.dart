@@ -1,5 +1,7 @@
+import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/firestore_service.dart';
@@ -507,6 +509,9 @@ class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProvider
     }
 
     final isEditMode = existingFood != null;
+    File? dialogPickedImage;
+    final picker = ImagePicker();
+    bool isDialogSaving = false;
 
     await showModalBottomSheet(
       context: context,
@@ -625,9 +630,105 @@ class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProvider
                         ],
                       ),
                       const SizedBox(height: 12),
-                      TextField(
-                        controller: imageCtrl,
-                        decoration: const InputDecoration(labelText: 'Image URL'),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: TextField(
+                              controller: imageCtrl,
+                              decoration: const InputDecoration(
+                                labelText: 'Image URL (Optional)',
+                                hintText: 'https://...',
+                              ),
+                              onChanged: (val) {
+                                setModalState(() {});
+                              },
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          GestureDetector(
+                            onTap: isDialogSaving
+                                ? null
+                                : () async {
+                                    final source = await showModalBottomSheet<ImageSource>(
+                                      context: context,
+                                      backgroundColor: AppColors.cardBg,
+                                      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
+                                      builder: (context) => SafeArea(
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            const Padding(
+                                              padding: EdgeInsets.all(16.0),
+                                              child: Text(
+                                                'Select Image Source',
+                                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+                                              ),
+                                            ),
+                                            ListTile(
+                                              leading: const Icon(Icons.camera_alt_rounded, color: AppColors.primary),
+                                              title: const Text('Take Photo (Camera)', style: TextStyle(color: AppColors.textPrimary)),
+                                              onTap: () => Navigator.pop(context, ImageSource.camera),
+                                            ),
+                                            ListTile(
+                                              leading: const Icon(Icons.photo_library_rounded, color: AppColors.primary),
+                                              title: const Text('Choose from Gallery', style: TextStyle(color: AppColors.textPrimary)),
+                                              onTap: () => Navigator.pop(context, ImageSource.gallery),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    );
+
+                                    if (source != null) {
+                                      try {
+                                        final pickedFile = await picker.pickImage(
+                                          source: source,
+                                          maxWidth: 1024,
+                                          maxHeight: 1024,
+                                          imageQuality: 85,
+                                        );
+                                        if (pickedFile != null) {
+                                          setModalState(() {
+                                            dialogPickedImage = File(pickedFile.path);
+                                          });
+                                        }
+                                      } catch (e) {
+                                        if (context.mounted) {
+                                          ScaffoldMessenger.of(context).showSnackBar(
+                                            SnackBar(content: Text('Error picking image: $e'), backgroundColor: AppColors.error),
+                                          );
+                                        }
+                                      }
+                                    }
+                                  },
+                            child: Container(
+                              width: 80,
+                              height: 80,
+                              margin: const EdgeInsets.only(top: 8),
+                              decoration: BoxDecoration(
+                                color: AppColors.background,
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(color: AppColors.border),
+                              ),
+                              child: dialogPickedImage != null
+                                  ? ClipRRect(
+                                      borderRadius: BorderRadius.circular(10),
+                                      child: Image.file(dialogPickedImage!, fit: BoxFit.cover),
+                                    )
+                                  : (imageCtrl.text.isNotEmpty
+                                      ? ClipRRect(
+                                          borderRadius: BorderRadius.circular(10),
+                                          child: Image.network(
+                                            imageCtrl.text,
+                                            fit: BoxFit.cover,
+                                            errorBuilder: (context, error, stackTrace) => const Icon(Icons.add_a_photo_rounded, color: AppColors.primary),
+                                          ),
+                                        )
+                                      : const Icon(Icons.add_a_photo_rounded, color: AppColors.primary)),
+                            ),
+                          ),
+                        ],
                       ),
                       const SizedBox(height: 20),
                       const Text(
@@ -726,58 +827,93 @@ class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProvider
                       ),
                       const SizedBox(height: 24),
                       ElevatedButton(
-                        onPressed: () async {
-                          final foodId = existingFood?.id ?? 'admin_${DateTime.now().millisecondsSinceEpoch}';
-                          final food = FoodItem(
-                            id: foodId,
-                            name: nameCtrl.text.trim(),
-                            servingSize: servingSizeCtrl.text.trim(),
-                            calories: double.tryParse(caloriesCtrl.text) ?? 0.0,
-                            protein: double.tryParse(proteinCtrl.text) ?? 0.0,
-                            carbs: double.tryParse(carbsCtrl.text) ?? 0.0,
-                            fat: double.tryParse(fatCtrl.text) ?? 0.0,
-                            fiber: double.tryParse(fiberCtrl.text) ?? 0.0,
-                            sugar: double.tryParse(sugarCtrl.text) ?? 0.0,
-                            sodium: double.tryParse(sodiumCtrl.text) ?? 0.0,
-                            imageUrl: imageCtrl.text.trim(),
-                            lastUpdated: DateTime.now().toIso8601String(),
-                            servings: servings.where((s) => s.name.isNotEmpty).toList(),
-                          );
+                        onPressed: isDialogSaving
+                            ? null
+                            : () async {
+                                final foodId = existingFood?.id ?? 'admin_${DateTime.now().millisecondsSinceEpoch}';
+                                setModalState(() {
+                                  isDialogSaving = true;
+                                });
 
-                          try {
-                            if (reviewId != null) {
-                              // Approval flow from community submission
-                              await _firestoreService.approveFoodReview(reviewId, food);
-                            } else {
-                              // Direct Admin Create or Edit flow
-                              if (isEditMode) {
-                                await _firestoreService.editAdminFood(food);
-                              } else {
-                                await _firestoreService.addAdminCreatedFood(food);
-                              }
-                            }
-                            if (mounted) {
-                              Navigator.pop(context);
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  content: Text(isEditMode ? 'Food updated successfully! ✅' : 'Food created and published! ✅'),
-                                  backgroundColor: AppColors.success,
-                                ),
-                              );
-                            }
-                          } catch (e) {
-                            if (mounted) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(content: Text('Error saving food: $e'), backgroundColor: AppColors.error),
-                              );
-                            }
-                          }
-                        },
+                                String finalImageUrl = imageCtrl.text.trim();
+                                if (dialogPickedImage != null) {
+                                  try {
+                                    finalImageUrl = await _firestoreService.uploadFoodImage(foodId, dialogPickedImage!);
+                                  } catch (e) {
+                                    if (context.mounted) {
+                                      ScaffoldMessenger.of(context).showSnackBar(
+                                        SnackBar(content: Text('Failed to upload image: $e'), backgroundColor: AppColors.error),
+                                      );
+                                    }
+                                    setModalState(() {
+                                      isDialogSaving = false;
+                                    });
+                                    return;
+                                  }
+                                }
+
+                                final food = FoodItem(
+                                  id: foodId,
+                                  name: nameCtrl.text.trim(),
+                                  servingSize: servingSizeCtrl.text.trim(),
+                                  calories: double.tryParse(caloriesCtrl.text) ?? 0.0,
+                                  protein: double.tryParse(proteinCtrl.text) ?? 0.0,
+                                  carbs: double.tryParse(carbsCtrl.text) ?? 0.0,
+                                  fat: double.tryParse(fatCtrl.text) ?? 0.0,
+                                  fiber: double.tryParse(fiberCtrl.text) ?? 0.0,
+                                  sugar: double.tryParse(sugarCtrl.text) ?? 0.0,
+                                  sodium: double.tryParse(sodiumCtrl.text) ?? 0.0,
+                                  imageUrl: finalImageUrl,
+                                  lastUpdated: DateTime.now().toIso8601String(),
+                                  servings: servings.where((s) => s.name.isNotEmpty).toList(),
+                                );
+
+                                try {
+                                  if (reviewId != null) {
+                                    // Approval flow from community submission
+                                    await _firestoreService.approveFoodReview(reviewId, food);
+                                  } else {
+                                    // Direct Admin Create or Edit flow
+                                    if (isEditMode) {
+                                      await _firestoreService.editAdminFood(food);
+                                    } else {
+                                      await _firestoreService.addAdminCreatedFood(food);
+                                    }
+                                  }
+                                  if (context.mounted) {
+                                    Navigator.pop(context);
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(isEditMode ? 'Food updated successfully! ✅' : 'Food created and published! ✅'),
+                                        backgroundColor: AppColors.success,
+                                      ),
+                                    );
+                                  }
+                                } catch (e) {
+                                  if (context.mounted) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(content: Text('Error saving food: $e'), backgroundColor: AppColors.error),
+                                    );
+                                  }
+                                } finally {
+                                  if (context.mounted) {
+                                    setModalState(() {
+                                      isDialogSaving = false;
+                                    });
+                                  }
+                                }
+                              },
                         style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary),
-                        child: Text(
-                          reviewId != null ? 'Approve with Changes' : (isEditMode ? 'Save Changes' : 'Publish Food'),
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        ),
+                        child: isDialogSaving
+                            ? const SizedBox(
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black),
+                              )
+                            : Text(
+                                reviewId != null ? 'Approve with Changes' : (isEditMode ? 'Save Changes' : 'Publish Food'),
+                                style: const TextStyle(fontWeight: FontWeight.bold),
+                              ),
                       )
                     ],
                   ),
