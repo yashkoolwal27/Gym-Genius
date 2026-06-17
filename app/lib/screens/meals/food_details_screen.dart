@@ -1,4 +1,6 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/firestore_service.dart';
@@ -61,6 +63,95 @@ class _FoodDetailsScreenState extends State<FoodDetailsScreen> {
         backgroundColor: AppColors.cardBg,
         duration: const Duration(seconds: 1),
       ),
+    );
+  }
+
+  final _picker = ImagePicker();
+
+  Future<void> _pickAndUploadImage(String foodId, ImageSource source) async {
+    try {
+      final pickedFile = await _picker.pickImage(
+        source: source,
+        maxWidth: 1024,
+        maxHeight: 1024,
+        imageQuality: 85,
+      );
+      if (pickedFile != null) {
+        setState(() => _isImageLoading = true);
+        final file = File(pickedFile.path);
+        final downloadUrl = await _firestoreService.uploadFoodImage(foodId, file);
+        await _firestoreService.updateGlobalFoodImage(foodId, downloadUrl);
+        if (mounted) {
+          setState(() {
+            _currentImageUrl = downloadUrl;
+            _isImageLoading = false;
+          });
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Product image updated successfully! 📸'),
+              backgroundColor: AppColors.success,
+            ),
+          );
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isImageLoading = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to update image: $e'),
+            backgroundColor: AppColors.error,
+          ),
+        );
+      }
+    }
+  }
+
+  void _showImageSourceSheet(String foodId) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.cardBg,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
+      builder: (context) {
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text(
+                  'Update Product Image',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+                ),
+              ),
+              ListTile(
+                leading: const Icon(Icons.camera_alt_rounded, color: AppColors.primary),
+                title: const Text('Take Photo (Camera)', style: TextStyle(color: AppColors.textPrimary)),
+                onTap: () {
+                  Navigator.pop(context);
+                  _pickAndUploadImage(foodId, ImageSource.camera);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.photo_library_rounded, color: AppColors.primary),
+                title: const Text('Choose from Gallery', style: TextStyle(color: AppColors.textPrimary)),
+                onTap: () {
+                  Navigator.pop(context);
+                  _pickAndUploadImage(foodId, ImageSource.gallery);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.link_rounded, color: AppColors.primary),
+                title: const Text('Paste Image URL', style: TextStyle(color: AppColors.textPrimary)),
+                onTap: () {
+                  Navigator.pop(context);
+                  _showEditImageDialog(foodId);
+                },
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 
@@ -234,7 +325,7 @@ class _FoodDetailsScreenState extends State<FoodDetailsScreen> {
                         child: FloatingActionButton.small(
                           heroTag: 'edit_img_btn',
                           backgroundColor: AppColors.primary,
-                          onPressed: () => _showEditImageDialog(food.id),
+                          onPressed: () => _showImageSourceSheet(food.id),
                           child: const Icon(Icons.edit, color: Colors.black),
                         ),
                       ),

@@ -318,37 +318,44 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
         children: [
           const Text("Today's Water", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14, color: AppColors.textPrimary)),
           const SizedBox(height: 12),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      SizedBox(
-                        width: 50,
-                        height: 50,
-                        child: CircularProgressIndicator(
-                          value: pct,
-                          strokeWidth: 4,
-                          backgroundColor: AppColors.border,
-                          valueColor: const AlwaysStoppedAnimation<Color>(AppColors.accent),
+              Expanded(
+                child: Row(
+                  children: [
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        SizedBox(
+                          width: 50,
+                          height: 50,
+                          child: CircularProgressIndicator(
+                            value: pct,
+                            strokeWidth: 4,
+                            backgroundColor: AppColors.border,
+                            valueColor: const AlwaysStoppedAnimation<Color>(AppColors.accent),
+                          ),
                         ),
+                        const Icon(Icons.local_drink, color: AppColors.accent, size: 20),
+                      ],
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('${loggedL.toStringAsFixed(1)} L / ${goalL.toStringAsFixed(0)} L', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15, color: AppColors.textPrimary)),
+                          const Text(
+                            'Hydration target progress',
+                            style: TextStyle(color: AppColors.textSecondary, fontSize: 11),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ],
                       ),
-                      const Icon(Icons.local_drink, color: AppColors.accent, size: 20),
-                    ],
-                  ),
-                  const SizedBox(width: 16),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('${loggedL.toStringAsFixed(1)} L / ${goalL.toStringAsFixed(0)} L', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15, color: AppColors.textPrimary)),
-                      const Text('Hydration target progress', style: TextStyle(color: AppColors.textSecondary, fontSize: 11)),
-                    ],
-                  ),
-                ],
+                    ),
+                  ],
+                ),
               ),
+              const SizedBox(width: 8),
               Row(
                 children: [
                   OutlinedButton(
@@ -372,8 +379,6 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
                   ),
                 ],
               ),
-            ],
-          ),
         ],
       ),
     );
