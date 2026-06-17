@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "760417052067-6i4fbn61n9065f18dpuabqf1ftvp10r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gym.gini",
+            "certificate_hash": "23dea1bdf59b7885f0c5c53e20c9e7c93208c6f3"
+          }
+        },
+        {
           "client_id": "760417052067-5iaihb0e3c5t9jvrvcc1is8dtp1btgkj.apps.googleusercontent.com",
           "client_type": 3
         }
