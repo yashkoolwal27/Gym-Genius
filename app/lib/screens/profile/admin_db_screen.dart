@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/firestore_service.dart';
+import '../../services/ai_service.dart';
 import '../../widgets/shared_widgets.dart';
 
 class AdminDbScreen extends StatefulWidget {
@@ -16,7 +17,10 @@ class AdminDbScreen extends StatefulWidget {
 
 class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProviderStateMixin {
   final _firestoreService = FirestoreService();
+  final _aiService = AIService();
   late TabController _tabController;
+  final _aiQueryController = TextEditingController();
+  bool _isAiGenerating = false;
 
   @override
   void initState() {
@@ -27,7 +31,43 @@ class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProvider
   @override
   void dispose() {
     _tabController.dispose();
+    _aiQueryController.dispose();
     super.dispose();
+  }
+
+  Future<void> _generateFoodWithGemini() async {
+    final query = _aiQueryController.text.trim();
+    if (query.isEmpty) return;
+
+    setState(() => _isAiGenerating = true);
+
+    try {
+      final generatedFood = await _aiService.generateFoodItemFromQuery(query);
+      
+      if (mounted) {
+        _aiQueryController.clear();
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Gemini successfully generated food details! Previewing... 🤖'),
+            backgroundColor: AppColors.success,
+          ),
+        );
+        _showEditFoodDialog(generatedFood, null);
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to generate food: $e'),
+            backgroundColor: AppColors.error,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _isAiGenerating = false);
+      }
+    }
   }
 
   @override
@@ -235,6 +275,71 @@ class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProvider
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Gemini AI Auto-Generator Box
+          AppCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    ShaderMask(
+                      shaderCallback: (bounds) => const LinearGradient(
+                        colors: [Colors.blue, Colors.purpleAccent, Colors.pinkAccent],
+                      ).createShader(bounds),
+                      child: const Icon(Icons.auto_awesome_rounded, color: Colors.white, size: 22),
+                    ),
+                    const SizedBox(width: 8),
+                    const Text(
+                      'ADD WITH GEMINI AI',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.textPrimary,
+                        letterSpacing: 0.8,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                const Text(
+                  'Describe the food item you want to add, and Gemini will automatically generate all macro/micronutrients, serving measures, and image URL.',
+                  style: TextStyle(fontSize: 11, color: AppColors.textSecondary),
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _aiQueryController,
+                        style: const TextStyle(fontSize: 13, color: AppColors.textPrimary),
+                        decoration: const InputDecoration(
+                          hintText: "e.g., 'Add standard single egg omelette'",
+                          contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    ElevatedButton(
+                      onPressed: _isAiGenerating ? null : _generateFoodWithGemini,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.primary,
+                        foregroundColor: Colors.black,
+                        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                      ),
+                      child: _isAiGenerating
+                          ? const SizedBox(
+                              height: 18,
+                              width: 18,
+                              child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black),
+                            )
+                          : const Icon(Icons.arrow_forward_rounded, size: 18),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 20),
           const Text(
             'ADMIN CREATED/APPROVED FOODS',
             style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: AppColors.textSecondary, letterSpacing: 0.8),

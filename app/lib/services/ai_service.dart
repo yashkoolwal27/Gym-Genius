@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import '../core/constants.dart';
 import '../models/models.dart';
@@ -272,6 +273,62 @@ Keep the tone encouraging, casual, and friendly. Use clear markdown formatting.
       return response.text ?? 'Unable to generate nutrition insights. Please try again.';
     } catch (e) {
       throw 'Failed to connect with AI Coach. Please check your internet.';
+    }
+  }
+
+  // ─── AI Food Item Generator ───
+  Future<FoodItem> generateFoodItemFromQuery(String query) async {
+    final prompt = '''
+You are an expert nutritionist. Based on the user's food request: "$query", generate the complete standard nutrition facts for this food item.
+Your response MUST be a strictly formatted JSON object matching this structure:
+{
+  "name": "Clean capitalized food name (e.g. Oats, Maggi Noodles, Pepperoni Pizza)",
+  "servingSize": "The base serving size label (e.g. 100g, 1 pack, 1 slice)",
+  "calories": double (in kcal, e.g. 389.0),
+  "protein": double (in grams),
+  "carbs": double (in grams),
+  "fat": double (in grams),
+  "fiber": double (in grams),
+  "sugar": double (in grams),
+  "sodium": double (in mg),
+  "imageUrl": "A valid public image URL of the food if available, otherwise leave empty",
+  "micronutrients": {
+    "Vitamin A": double (in % DV, e.g. 15.0),
+    "Vitamin C": double (in % DV),
+    "Vitamin D": double (in % DV),
+    "Vitamin E": double (in % DV),
+    "Calcium": double (in % DV),
+    "Iron": double (in % DV),
+    "Zinc": double (in % DV)
+  },
+  "servings": [
+    {
+      "name": "Standard serving name (e.g. 100g, 1 pack)",
+      "grams": double (the equivalent weight in grams, e.g. 100.0 or 70.0),
+      "multiplier": double (multiplier relative to base serving size, usually 1.0)
+    }
+  ]
+}
+
+Provide ONLY the raw JSON. Do not include markdown code block formatting (such as ```json).
+If you cannot identify the food, estimate the closest common food item.
+''';
+
+    try {
+      final response = await _model.generateContent(
+        [Content.text(prompt)],
+        generationConfig: GenerationConfig(responseMimeType: 'application/json'),
+      );
+      final jsonText = response.text ?? '{}';
+      final Map<String, dynamic> data = json.decode(jsonText);
+      
+      final foodId = 'gemini_${DateTime.now().millisecondsSinceEpoch}';
+      data['id'] = foodId;
+      data['lastUpdated'] = DateTime.now().toIso8601String();
+      
+      return FoodItem.fromMap(data);
+    } catch (e) {
+      throw 'Failed to parse food details from Gemini: $e';
     }
   }
 }
