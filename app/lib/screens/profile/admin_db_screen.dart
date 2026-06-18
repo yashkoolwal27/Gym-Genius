@@ -312,9 +312,23 @@ class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProvider
                       child: TextField(
                         controller: _aiQueryController,
                         style: const TextStyle(fontSize: 13, color: AppColors.textPrimary),
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           hintText: "e.g., 'Add standard single egg omelette'",
-                          contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                          filled: true,
+                          fillColor: AppColors.background,
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: const BorderSide(color: AppColors.border),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: const BorderSide(color: AppColors.border),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
+                          ),
                         ),
                       ),
                     ),
@@ -324,6 +338,7 @@ class _AdminDbScreenState extends State<AdminDbScreen> with SingleTickerProvider
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.primary,
                         foregroundColor: Colors.black,
+                        minimumSize: const Size(0, 44),
                         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
                       ),
                       child: _isAiGenerating
