@@ -3,6 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import '../models/models.dart';
+import '../core/exercises_data.dart';
+
 
 class FirestoreService {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
@@ -609,6 +611,158 @@ class FirestoreService {
     } catch (_) {
       return false;
     }
+  }
+
+  // ───────── EXERCISE DATABASE & PRs ─────────
+  Future<List<Exercise>> getExercises() async {
+    try {
+      final snap = await _db.collection('exercise_master').get();
+      if (snap.docs.isEmpty) {
+        // Seed from local
+        final localList = ExercisesData.masterExercises;
+        final batch = _db.batch();
+        for (final ex in localList) {
+          final docRef = _db.collection('exercise_master').doc(ex.exerciseId);
+          batch.set(docRef, ex.toMap());
+        }
+        await batch.commit();
+        return localList;
+      } else {
+        return snap.docs.map((d) => Exercise.fromMap(d.data())).toList();
+      }
+    } catch (e) {
+      // Fallback to local
+      return ExercisesData.masterExercises;
+    }
+  }
+
+  Future<Map<String, double>> getPersonalRecords() async {
+    if (_uid == null) return {};
+    try {
+      final snap = await _db
+          .collection('users')
+          .doc(_uid)
+          .collection('personal_records')
+          .get();
+      final Map<String, double> records = {};
+      for (final doc in snap.docs) {
+        final val = doc.data()['weight'];
+        if (val != null) {
+          records[doc.id] = (val as num).toDouble();
+        }
+      }
+      return records;
+    } catch (_) {
+      return {};
+    }
+  }
+
+  Future<void> updatePersonalRecord(String exerciseId, double weight) async {
+    if (_uid == null) return;
+    try {
+      await _db
+          .collection('users')
+          .doc(_uid)
+          .collection('personal_records')
+          .doc(exerciseId)
+          .set({
+        'weight': weight,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+    } catch (_) {}
+  }
+
+  // ───────── FAVORITE EXERCISES ─────────
+  Future<void> toggleFavoriteExercise(String exerciseId, bool isFavorite) async {
+    if (_uid == null) return;
+    final docRef = _db
+        .collection('users')
+        .doc(_uid)
+        .collection('favorite_exercises')
+        .doc(exerciseId);
+
+    if (isFavorite) {
+      await docRef.set({
+        'exerciseId': exerciseId,
+        'isFavorite': true,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+    } else {
+      await docRef.delete();
+    }
+  }
+
+  Future<List<String>> getFavoriteExercises() async {
+    if (_uid == null) return [];
+    try {
+      final snap = await _db
+          .collection('users')
+          .doc(_uid)
+          .collection('favorite_exercises')
+          .get();
+      return snap.docs.map((d) => d.id).toList();
+    } catch (_) {
+      return [];
+    }
+  }
+
+  Stream<List<String>> getFavoriteExercisesStream() {
+    if (_uid == null) return const Stream.empty();
+    return _db
+        .collection('users')
+        .doc(_uid)
+        .collection('favorite_exercises')
+        .snapshots()
+        .map((snap) => snap.docs.map((d) => d.id).toList());
+  }
+
+  // ───────── WORKOUT TEMPLATES ─────────
+  Future<void> saveWorkoutTemplate(WorkoutTemplate template) async {
+    if (_uid == null) return;
+    final collection = _db
+        .collection('users')
+        .doc(_uid)
+        .collection('workout_templates');
+    
+    if (template.id.isEmpty) {
+      await collection.add(template.toMap());
+    } else {
+      await collection.doc(template.id).set(template.toMap(), SetOptions(merge: true));
+    }
+  }
+
+  Future<List<WorkoutTemplate>> getWorkoutTemplates() async {
+    if (_uid == null) return [];
+    try {
+      final snap = await _db
+          .collection('users')
+          .doc(_uid)
+          .collection('workout_templates')
+          .get();
+      return snap.docs.map((d) => WorkoutTemplate.fromMap(d.data(), d.id)).toList();
+    } catch (_) {
+      return [];
+    }
+  }
+
+  Stream<List<WorkoutTemplate>> getWorkoutTemplatesStream() {
+    if (_uid == null) return const Stream.empty();
+    return _db
+        .collection('users')
+        .doc(_uid)
+        .collection('workout_templates')
+        .snapshots()
+        .map((snap) => snap.docs.map((d) => WorkoutTemplate.fromMap(d.data(), d.id)).toList());
+  }
+
+  Future<void> deleteWorkoutTemplate(String templateId) async {
+    if (_uid == null) return;
+    await _db
+        .collection('users')
+        .doc(_uid)
+        .collection('workout_templates')
+        .doc(templateId)
+        .delete();
   }
 }
 

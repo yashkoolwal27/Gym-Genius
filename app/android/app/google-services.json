@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "760417052067",
-    "project_id": "gym-genius-7v97e",
-    "storage_bucket": "gym-genius-7v97e.firebasestorage.app"
+    "project_number": "374735619368",
+    "project_id": "rhymetime-studio",
+    "storage_bucket": "rhymetime-studio.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:760417052067:android:a44b78bc00f6404c006616",
+        "mobilesdk_app_id": "1:374735619368:android:1fc43e75ee8136f6ae3c1d",
         "android_client_info": {
           "package_name": "com.gym.gini"
         }
       },
       "oauth_client": [
         {
-          "client_id": "760417052067-6i4fbn61n9065f18dpuabqf1ftvp10r7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.gym.gini",
-            "certificate_hash": "23dea1bdf59b7885f0c5c53e20c9e7c93208c6f3"
-          }
-        },
-        {
-          "client_id": "760417052067-5iaihb0e3c5t9jvrvcc1is8dtp1btgkj.apps.googleusercontent.com",
+          "client_id": "374735619368-ska36fhss0mclhtsnee99d6bvs24ph7k.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBBUVmgquWN59rI5I4c0GLUTG6nAvmrVfU"
+          "current_key": "AIzaSyASSBlTLZi3jyYIFBLL4hI1pcwUq04MA7w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "760417052067-5iaihb0e3c5t9jvrvcc1is8dtp1btgkj.apps.googleusercontent.com",
+              "client_id": "374735619368-ska36fhss0mclhtsnee99d6bvs24ph7k.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

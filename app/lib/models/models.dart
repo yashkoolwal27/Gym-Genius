@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 export 'structured_workout.dart';
 export 'nutrition_models.dart';
+export 'exercise_model.dart';
+
 
 
 
@@ -8,16 +10,32 @@ class WorkoutSet {
   final String id;
   String reps;
   String weight;
+  String rpe;
+  String notes;
 
-  WorkoutSet({required this.id, required this.reps, required this.weight});
+  WorkoutSet({
+    required this.id,
+    required this.reps,
+    required this.weight,
+    this.rpe = '',
+    this.notes = '',
+  });
 
   factory WorkoutSet.fromMap(Map<String, dynamic> map) => WorkoutSet(
         id: map['id'] ?? '',
         reps: map['reps'] ?? '',
         weight: map['weight'] ?? '',
+        rpe: map['rpe'] ?? '',
+        notes: map['notes'] ?? '',
       );
 
-  Map<String, dynamic> toMap() => {'id': id, 'reps': reps, 'weight': weight};
+  Map<String, dynamic> toMap() => {
+        'id': id,
+        'reps': reps,
+        'weight': weight,
+        'rpe': rpe,
+        'notes': notes,
+      };
 }
 
 class LoggedExercise {
@@ -222,6 +240,10 @@ class UserProfile {
   String get fitnessGoal => basicProfile['goal'] ?? 'Weight Loss';
   String get activityLevel => basicProfile['activityLevel'] ?? 'Moderate';
   String get dietPreference => basicProfile['dietPreference'] ?? 'Vegetarian';
+  String get fitnessLevel => basicProfile['fitnessLevel'] ?? 'Beginner';
+  String get primaryTrainingStyle => basicProfile['primaryTrainingStyle'] ?? 'General Fitness';
+  String get secondaryTrainingStyle => basicProfile['secondaryTrainingStyle'] ?? 'None';
+  List<String> get availableEquipment => List<String>.from(basicProfile['availableEquipment'] ?? ['Barbell', 'Dumbbell', 'Machine', 'Bodyweight', 'Cable']);
 
   factory UserProfile.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>? ?? {};
@@ -359,4 +381,33 @@ class UserProfile {
 
     return missing;
   }
+}
+
+class WorkoutTemplate {
+  final String id;
+  final String name;
+  final List<String> exerciseNames;
+  final List<String> muscleGroups;
+
+  WorkoutTemplate({
+    required this.id,
+    required this.name,
+    required this.exerciseNames,
+    required this.muscleGroups,
+  });
+
+  factory WorkoutTemplate.fromMap(Map<String, dynamic> map, String docId) {
+    return WorkoutTemplate(
+      id: docId,
+      name: map['name'] ?? '',
+      exerciseNames: List<String>.from(map['exerciseNames'] ?? []),
+      muscleGroups: List<String>.from(map['muscleGroups'] ?? []),
+    );
+  }
+
+  Map<String, dynamic> toMap() => {
+    'name': name,
+    'exerciseNames': exerciseNames,
+    'muscleGroups': muscleGroups,
+  };
 }

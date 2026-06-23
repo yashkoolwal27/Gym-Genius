@@ -38,6 +38,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   String _fitnessGoal = 'Muscle Building';
   String _activityLevel = 'Moderately Active';
   String _dietPreference = 'Vegetarian';
+  String _fitnessLevel = 'Beginner';
+  String _primaryTrainingStyle = 'General Fitness';
+  String _secondaryTrainingStyle = 'None';
+  final List<String> _selectedEquipment = ['Barbell', 'Dumbbell', 'Machine', 'Bodyweight', 'Cable'];
+
 
   // Calculated targets
   double _bmr = 0;
@@ -72,6 +77,40 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     'Jain',
     'Custom'
   ];
+
+  final List<String> _fitnessLevels = ['Beginner', 'Intermediate', 'Advanced'];
+  final List<String> _trainingStyles = [
+    'Bodybuilding',
+    'Powerlifting',
+    'Weightlifting',
+    'Calisthenics',
+    'CrossFit',
+    'Fat Loss',
+    'Athletic Performance',
+    'General Fitness'
+  ];
+  final List<String> _secondaryStyles = [
+    'None',
+    'Bodybuilding',
+    'Powerlifting',
+    'Weightlifting',
+    'Calisthenics',
+    'CrossFit',
+    'Fat Loss',
+    'Athletic Performance',
+    'General Fitness'
+  ];
+  final List<String> _equipmentOptions = [
+    'Barbell',
+    'Dumbbell',
+    'Machine',
+    'Bodyweight',
+    'Cable',
+    'Smith Machine',
+    'Kettlebell',
+    'Band'
+  ];
+
 
   @override
   void initState() {
@@ -205,6 +244,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         'goal': _fitnessGoal,
         'activityLevel': _activityLevel,
         'dietPreference': _dietPreference,
+        'fitnessLevel': _fitnessLevel,
+        'primaryTrainingStyle': _primaryTrainingStyle,
+        'secondaryTrainingStyle': _secondaryTrainingStyle,
+        'availableEquipment': _selectedEquipment,
       },
       goals: {
         'caloriesGoal': double.parse(_caloriesGoal.toStringAsFixed(0)),
@@ -273,12 +316,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       }
     }
 
-    if (_currentPage == 5) {
-      // Transitioning to Step 7 (AI calculation target screen)
+    if (_currentPage == 7) {
+      // Transitioning to Step 8 (AI calculation target screen)
       _calculateStartingPlan();
     }
 
-    if (_currentPage < 6) {
+    if (_currentPage < 8) {
       _pageController.nextPage(duration: const Duration(milliseconds: 300), curve: Curves.easeInOut);
     } else {
       _completeOnboarding();
@@ -304,11 +347,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Step $_currentPage of 6',
+                            'Step $_currentPage of 8',
                             style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.primary),
                           ),
                           Text(
-                            '${((_currentPage / 6) * 100).toInt()}%',
+                            '${((_currentPage / 8) * 100).toInt()}%',
                             style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.textSecondary),
                           ),
                         ],
@@ -317,7 +360,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(4),
                         child: LinearProgressIndicator(
-                          value: _currentPage / 6,
+                          value: _currentPage / 8,
                           minHeight: 6,
                           backgroundColor: AppColors.border,
                           valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
@@ -340,6 +383,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     _buildFitnessGoal(),
                     _buildActivityLevel(),
                     _buildDietPreference(),
+                    _buildTrainingStyles(),
+                    _buildAvailableEquipment(),
                     _buildAICalculation(),
                   ],
                 ),
@@ -365,9 +410,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       SizedBox(
                         width: 160,
                         child: GradientButton(
-                          text: _currentPage == 6 ? 'Start My Journey' : 'Continue',
+                          text: _currentPage == 8 ? 'Start My Journey' : 'Continue',
                           onPressed: _nextPage,
-                          icon: _currentPage == 6 ? Icons.rocket_launch_rounded : Icons.arrow_forward_rounded,
+                          icon: _currentPage == 8 ? Icons.rocket_launch_rounded : Icons.arrow_forward_rounded,
                         ),
                       ),
                     ],
@@ -808,6 +853,255 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           style: TextStyle(
                             color: isSel ? AppColors.primary : AppColors.textPrimary,
                             fontWeight: isSel ? FontWeight.bold : FontWeight.normal,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // Training Style & Fitness Level
+  Widget _buildTrainingStyles() {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Training Style & Level',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            'This helps us personalize and prioritize exercise recommendations.',
+            style: TextStyle(fontSize: 14, color: AppColors.textMuted),
+          ),
+          const SizedBox(height: 24),
+          
+          // Fitness Level Selector
+          AppCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Your Experience Level',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  children: _fitnessLevels.map((lvl) {
+                    final isSel = _fitnessLevel == lvl;
+                    return Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        child: InkWell(
+                          onTap: () => setState(() => _fitnessLevel = lvl),
+                          borderRadius: BorderRadius.circular(10),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: isSel ? AppColors.primary : AppColors.border,
+                                width: 1.5,
+                              ),
+                              color: isSel ? AppColors.primary.withOpacity(0.05) : AppColors.cardBg2,
+                            ),
+                            child: Column(
+                              children: [
+                                Icon(
+                                  lvl == 'Beginner'
+                                      ? Icons.fitness_center_rounded
+                                      : lvl == 'Intermediate'
+                                          ? Icons.speed_rounded
+                                          : Icons.bolt_rounded,
+                                  color: isSel ? AppColors.primary : AppColors.textMuted,
+                                  size: 20,
+                                ),
+                                const SizedBox(height: 6),
+                                Text(
+                                  lvl,
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: isSel ? FontWeight.bold : FontWeight.normal,
+                                    color: isSel ? AppColors.primary : AppColors.textPrimary,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 20),
+
+          // Primary Training Style Selector
+          AppCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Primary Training Style',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+                ),
+                const SizedBox(height: 12),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: AppColors.border),
+                    color: AppColors.cardBg2,
+                  ),
+                  child: DropdownButtonHideUnderline(
+                    child: DropdownButton<String>(
+                      value: _primaryTrainingStyle,
+                      isExpanded: true,
+                      dropdownColor: AppColors.cardBg,
+                      style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
+                      icon: const Icon(Icons.arrow_drop_down_rounded, color: AppColors.textMuted),
+                      items: _trainingStyles.map((style) {
+                        return DropdownMenuItem<String>(
+                          value: style,
+                          child: Text(style),
+                        );
+                      }).toList(),
+                      onChanged: (val) {
+                        if (val != null) {
+                          setState(() => _primaryTrainingStyle = val);
+                        }
+                      },
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 20),
+
+          // Secondary Training Style Selector
+          AppCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Secondary Training Style',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+                ),
+                const SizedBox(height: 12),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: AppColors.border),
+                    color: AppColors.cardBg2,
+                  ),
+                  child: DropdownButtonHideUnderline(
+                    child: DropdownButton<String>(
+                      value: _secondaryTrainingStyle,
+                      isExpanded: true,
+                      dropdownColor: AppColors.cardBg,
+                      style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
+                      icon: const Icon(Icons.arrow_drop_down_rounded, color: AppColors.textMuted),
+                      items: _secondaryStyles.map((style) {
+                        return DropdownMenuItem<String>(
+                          value: style,
+                          child: Text(style),
+                        );
+                      }).toList(),
+                      onChanged: (val) {
+                        if (val != null) {
+                          setState(() => _secondaryTrainingStyle = val);
+                        }
+                      },
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // Available Equipment
+  Widget _buildAvailableEquipment() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Available Equipment',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            'Select all equipment you have access to. Recommendations will adapt accordingly.',
+            style: TextStyle(fontSize: 14, color: AppColors.textMuted),
+          ),
+          const SizedBox(height: 20),
+          Expanded(
+            child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 12,
+                mainAxisSpacing: 12,
+                childAspectRatio: 2.2,
+              ),
+              itemCount: _equipmentOptions.length,
+              itemBuilder: (context, index) {
+                final eq = _equipmentOptions[index];
+                final isSelected = _selectedEquipment.contains(eq);
+                return InkWell(
+                  onTap: () {
+                    setState(() {
+                      if (isSelected) {
+                        _selectedEquipment.remove(eq);
+                      } else {
+                        _selectedEquipment.add(eq);
+                      }
+                    });
+                  },
+                  borderRadius: BorderRadius.circular(12),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: isSelected ? AppColors.primary : AppColors.border,
+                        width: 1.5,
+                      ),
+                      color: isSelected ? AppColors.primary.withOpacity(0.05) : AppColors.cardBg,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          isSelected ? Icons.check_box_rounded : Icons.check_box_outline_blank_rounded,
+                          color: isSelected ? AppColors.primary : AppColors.textMuted,
+                          size: 20,
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            eq,
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                              color: isSelected ? AppColors.primary : AppColors.textPrimary,
+                            ),
                           ),
                         ),
                       ],

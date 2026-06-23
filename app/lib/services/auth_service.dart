@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 class AuthService extends ChangeNotifier {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn(
-    serverClientId: '760417052067-5iaihb0e3c5t9jvrvcc1is8dtp1btgkj.apps.googleusercontent.com',
+    serverClientId: '374735619368-ska36fhss0mclhtsnee99d6bvs24ph7k.apps.googleusercontent.com',
   );
 
   User? get currentUser => _auth.currentUser;

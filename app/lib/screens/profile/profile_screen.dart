@@ -14,6 +14,7 @@ import 'achievements_screen.dart';
 import 'ai_health_summary_screen.dart';
 import 'settings_screen.dart';
 import 'admin_db_screen.dart';
+import 'fitness_profile_screen.dart';
 
 
 class ProfileScreen extends StatefulWidget {
@@ -448,6 +449,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
               context,
               MaterialPageRoute(
                 builder: (_) => DietPreferencesScreen(
+                  profile: profile,
+                  onProfileUpdated: _updateProfileState,
+                ),
+              ),
+            ),
+          ),
+          const Divider(height: 1, color: AppColors.border),
+          _buildMenuRow(
+            icon: Icons.fitness_center_rounded,
+            title: 'Workout & Fitness Profile',
+            color: Colors.purpleAccent,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => FitnessProfileScreen(
                   profile: profile,
                   onProfileUpdated: _updateProfileState,
                 ),

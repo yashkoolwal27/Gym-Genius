@@ -1,7 +1,7 @@
 class AppConstants {
   // Firebase / Gemini
-  static const String geminiApiKey = 'AIzaSyCeXg8s6p24S4L8e0ju_W6lsSQJfdzMMUM';
-  static const String firebaseProjectId = 'gym-genius-7v97e';
+  static const String geminiApiKey = String.fromEnvironment('GEMINI_API_KEY', defaultValue: '');
+  static const String firebaseProjectId = 'rhymetime-studio';
 
   // Firestore Collections
   static const String usersCollection = 'users';

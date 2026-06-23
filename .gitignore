@@ -34,4 +34,6 @@ yarn-error.log*
 firebase-debug.log
 firestore-debug.log
 pglite-debug.log
+*.env
+.env
 *.apk
