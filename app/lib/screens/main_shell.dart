@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../../core/theme.dart';
-import '../../services/auth_service.dart';
 import 'home/home_screen.dart';
 import 'workouts/workouts_screen.dart';
 import 'progress/progress_screen.dart';
 import 'meals/meal_planner_screen.dart';
 import 'ai_trainer/ai_trainer_screen.dart';
 import 'profile/profile_screen.dart';
-import 'resources/resources_screen.dart';
 
 class MainShell extends StatefulWidget {
   const MainShell({super.key});

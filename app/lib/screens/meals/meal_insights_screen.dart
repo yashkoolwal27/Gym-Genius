@@ -109,8 +109,6 @@ class _MealInsightsScreenState extends State<MealInsightsScreen> {
     
     double loggedCalories = _todayEntries.fold(0.0, (sum, item) => sum + item.calories);
     double loggedProtein = _todayEntries.fold(0.0, (sum, item) => sum + item.protein);
-    double loggedCarbs = _todayEntries.fold(0.0, (sum, item) => sum + item.carbs);
-    double loggedFat = _todayEntries.fold(0.0, (sum, item) => sum + item.fat);
     double loggedFiber = _todayEntries.fold(0.0, (sum, item) => sum + item.fiber);
     double loggedWaterL = _waterMl / 1000.0;
 

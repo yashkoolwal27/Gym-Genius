@@ -24,7 +24,6 @@ class _FoodSearchScreenState extends State<FoodSearchScreen> with SingleTickerPr
 
   late TabController _tabController;
   List<FoodItem> _foods = [];
-  List<Recipe> _recipes = [];
   bool _isLoading = false;
 
   @override

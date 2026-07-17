@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uuid/uuid.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/firestore_service.dart';
@@ -18,7 +17,6 @@ class _SavedTemplatesScreenState extends State<SavedTemplatesScreen> {
   final _firestoreService = FirestoreService();
   String _sortBy = 'recent'; // 'recent', 'name'
   List<Exercise> _allExercises = [];
-  bool _isLoadingExercises = true;
 
   final List<WorkoutTemplate> _defaultTemplates = [
     WorkoutTemplate(
@@ -64,10 +62,9 @@ class _SavedTemplatesScreenState extends State<SavedTemplatesScreen> {
       final exercises = await _firestoreService.getExercises();
       setState(() {
         _allExercises = exercises;
-        _isLoadingExercises = false;
       });
     } catch (_) {
-      setState(() => _isLoadingExercises = false);
+      // Ignore errors
     }
   }
 

@@ -12,7 +12,6 @@ import 'todays_log_screen.dart';
 import 'recipes_list_screen.dart';
 import 'meal_insights_screen.dart';
 import 'nutrition_summary_screen.dart';
-import 'food_details_screen.dart';
 
 class MealPlannerScreen extends StatefulWidget {
   const MealPlannerScreen({super.key});
@@ -318,67 +317,65 @@ class _MealPlannerScreenState extends State<MealPlannerScreen> {
         children: [
           const Text("Today's Water", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14, color: AppColors.textPrimary)),
           const SizedBox(height: 12),
-              Expanded(
-                child: Row(
-                  children: [
-                    Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        SizedBox(
-                          width: 50,
-                          height: 50,
-                          child: CircularProgressIndicator(
-                            value: pct,
-                            strokeWidth: 4,
-                            backgroundColor: AppColors.border,
-                            valueColor: const AlwaysStoppedAnimation<Color>(AppColors.accent),
-                          ),
-                        ),
-                        const Icon(Icons.local_drink, color: AppColors.accent, size: 20),
-                      ],
+          Row(
+            children: [
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  SizedBox(
+                    width: 50,
+                    height: 50,
+                    child: CircularProgressIndicator(
+                      value: pct,
+                      strokeWidth: 4,
+                      backgroundColor: AppColors.border,
+                      valueColor: const AlwaysStoppedAnimation<Color>(AppColors.accent),
                     ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('${loggedL.toStringAsFixed(1)} L / ${goalL.toStringAsFixed(0)} L', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15, color: AppColors.textPrimary)),
-                          const Text(
-                            'Hydration target progress',
-                            style: TextStyle(color: AppColors.textSecondary, fontSize: 11),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ],
-                      ),
+                  ),
+                  const Icon(Icons.local_drink, color: AppColors.accent, size: 20),
+                ],
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('${loggedL.toStringAsFixed(1)} L / ${goalL.toStringAsFixed(0)} L', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15, color: AppColors.textPrimary)),
+                    const Text(
+                      'Hydration target progress',
+                      style: TextStyle(color: AppColors.textSecondary, fontSize: 11),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ],
                 ),
               ),
-              const SizedBox(width: 8),
-              Row(
-                children: [
-                  OutlinedButton(
-                    style: OutlinedButton.styleFrom(
-                      minimumSize: const Size(65, 36),
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                    ),
-                    onPressed: () => _addWater(250),
-                    child: const Text('+250ml', style: TextStyle(fontSize: 11, color: AppColors.primary)),
-                  ),
-                  const SizedBox(width: 8),
-                  OutlinedButton(
-                    style: OutlinedButton.styleFrom(
-                      minimumSize: const Size(65, 36),
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                    ),
-                    onPressed: () => _addWater(500),
-                    child: const Text('+500ml', style: TextStyle(fontSize: 11, color: AppColors.primary)),
-                  ),
-                ],
+            ],
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(65, 36),
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                ),
+                onPressed: () => _addWater(250),
+                child: const Text('+250ml', style: TextStyle(fontSize: 11, color: AppColors.primary)),
               ),
+              const SizedBox(width: 8),
+              OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(65, 36),
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                ),
+                onPressed: () => _addWater(500),
+                child: const Text('+500ml', style: TextStyle(fontSize: 11, color: AppColors.primary)),
+              ),
+            ],
+          ),
         ],
       ),
     );

@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import '../models/models.dart';
-import '../core/exercises_data.dart';
+import '../core/exercises_data/exercises_data.dart';
 
 
 class FirestoreService {
@@ -617,8 +617,15 @@ class FirestoreService {
   Future<List<Exercise>> getExercises() async {
     try {
       final snap = await _db.collection('exercise_master').get();
-      if (snap.docs.isEmpty) {
-        // Seed from local
+      bool needsReSeed = false;
+      if (snap.docs.isNotEmpty) {
+        final firstDoc = snap.docs.first.data();
+        if (!firstDoc.containsKey('targetRegions') || snap.docs.length != ExercisesData.masterExercises.length) {
+          needsReSeed = true;
+        }
+      }
+      if (snap.docs.isEmpty || needsReSeed) {
+        // Seed/overwrite from local
         final localList = ExercisesData.masterExercises;
         final batch = _db.batch();
         for (final ex in localList) {

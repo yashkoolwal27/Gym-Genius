@@ -30,7 +30,6 @@ class _CreateRecipeScreenState extends State<CreateRecipeScreen> {
   double get _totalFat => _ingredients.fold(0.0, (sum, item) => sum + item.fat);
 
   void _addIngredientSheet() {
-    String query = '';
     List<FoodItem> searchResults = [];
     bool isSearching = false;
 

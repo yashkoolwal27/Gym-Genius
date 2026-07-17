@@ -15,7 +15,6 @@ class ProgressScreen extends StatefulWidget {
 
 class _ProgressScreenState extends State<ProgressScreen> {
   final _firestoreService = FirestoreService();
-  List<WeightLog> _weightLogs = [];
   List<WorkoutLog> _workoutLogs = [];
   bool _isLoading = true;
   String _selectedTimeframe = 'Week'; // 'Week', 'Month', 'Year'
@@ -28,11 +27,9 @@ class _ProgressScreenState extends State<ProgressScreen> {
 
   Future<void> _loadData() async {
     try {
-      final weights = await _firestoreService.getWeightLogs();
       final workouts = await _firestoreService.getWorkoutLogs();
       if (mounted) {
         setState(() {
-          _weightLogs = weights;
           _workoutLogs = workouts;
           _isLoading = false;
         });

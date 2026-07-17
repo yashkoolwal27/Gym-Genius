@@ -8,6 +8,7 @@ import '../../models/models.dart';
 import '../../services/firestore_service.dart';
 import '../../services/ai_service.dart';
 import '../../widgets/shared_widgets.dart';
+import '../../core/exercise_filter_tags.dart';
 import 'workout_player_screen.dart';
 import '../main_shell.dart';
 import 'saved_templates_screen.dart';
@@ -39,7 +40,6 @@ class _WorkoutDashboardTab extends StatefulWidget {
 class _WorkoutDashboardTabState extends State<_WorkoutDashboardTab> {
   final _firestoreService = FirestoreService();
   UserProfile? _userProfile;
-  bool _isLoading = true;
 
   @override
   void initState() {
@@ -52,7 +52,6 @@ class _WorkoutDashboardTabState extends State<_WorkoutDashboardTab> {
     if (mounted) {
       setState(() {
         _userProfile = profile;
-        _isLoading = false;
       });
     }
   }
@@ -725,7 +724,6 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
   final Map<String, List<WorkoutSet>> _exerciseDetails = {};
 
   final _firestoreService = FirestoreService();
-  bool _isSaving = false;
 
   // State fields to hold final saved workout stats for the success screen
   int _savedDuration = 0;
@@ -738,10 +736,8 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
   List<Exercise> _allExercises = [];
   UserProfile? _userProfile;
   List<WorkoutLog> _workoutHistory = [];
-  Map<String, double> _personalRecords = {};
   bool _isLoadingData = true;
-  String _selectedEquipmentFilter = 'All';
-  late final DateTime _startTime;
+  final Set<String> _activeFilters = {};
   bool _isExerciseGridView = false;
 
   // Added search, favorites, recents, templates state
@@ -751,20 +747,19 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
   Set<String> _favoritedExerciseIds = {};
 
   final Map<String, String> _muscleImages = {
-    'Chest': 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80',
-    'Back': 'https://images.unsplash.com/photo-1603287611837-f214690781d6?w=400&q=80',
-    'Legs': 'https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=400&q=80',
-    'Shoulders': 'https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=400&q=80',
-    'Biceps': 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=400&q=80',
-    'Triceps': 'https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=400&q=80',
-    'Abs': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80',
-    'Cardio': 'https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=400&q=80',
+    'Chest': 'https://cdn.muscleandstrength.com/sites/default/files/machine_press_exercise_for_chest_feature.jpg?w=400&q=80',
+    'Back': 'https://i.ytimg.com/vi/JdjJC6eIk44/sddefault.jpg?w=400&q=80',
+    'Legs': 'https://hips.hearstapps.com/hmg-prod/images/closeup-of-man-doing-box-jump-exercise-at-gym-royalty-free-image-1610722191.?crop=0.668xw:1.00xh;0.150xw,0&resize=640:*?w=400&q=80',
+    'Shoulders': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sZDah15JjuXBw7z_WfSoHmmggZ3n-9dligBv0hbXnYLd6ui4Wofddlw&s=10?w=400&q=80',
+    'Biceps': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcAuGhshbzpV6PZKnj3lGdJpG991ZD0xajbsXGK2A6YtieNOT-zZZid5EP&s=10?w=400&q=80',
+    'Triceps': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxe-tc2WdbAjxGyjguenedpTya49ro0x5aHmjin0EA2w&s=10?w=400&q=80',
+    'Abs': 'https://cdn.mypowerlife.com/wp-content/uploads/2021/04/64572607_s.jpg?w=400&q=80',
+    'Cardio': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFpdUqEFnnA4AoBJkcrmcJuxlrWqQIFvSubImdAQiG3XB8JY_-9a0RJuOI&s=10?w=400&q=80',
   };
 
   @override
   void initState() {
     super.initState();
-    _startTime = DateTime.now();
     _loadData();
   }
 
@@ -780,14 +775,12 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
       final profile = await _firestoreService.getUserProfile();
       final exercises = await _firestoreService.getExercises();
       final logs = await _firestoreService.getWorkoutLogs();
-      final records = await _firestoreService.getPersonalRecords();
       final favs = await _firestoreService.getFavoriteExercises();
       final templates = await _firestoreService.getWorkoutTemplates();
       setState(() {
         _userProfile = profile;
         _allExercises = exercises;
         _workoutHistory = logs;
-        _personalRecords = records;
         _favoritedExerciseIds = favs.toSet();
         _workoutTemplates = templates;
         _isLoadingData = false;
@@ -808,17 +801,17 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     final equip = _userProfile!.availableEquipment.map((e) => e.toLowerCase()).toList();
 
     // 1. Primary Style Match (+70)
-    if (exercise.categories.any((c) => c.toLowerCase() == primary)) {
+    if (exercise.trainingStyles.any((c) => c.toLowerCase() == primary)) {
       score += 70;
     }
 
     // 2. Secondary Style Match (+30)
-    if (secondary != 'none' && exercise.categories.any((c) => c.toLowerCase() == secondary)) {
+    if (secondary != 'none' && exercise.trainingStyles.any((c) => c.toLowerCase() == secondary)) {
       score += 30;
     }
 
     // 3. Goal based scoring (+20)
-    if (exercise.categories.any((c) => c.toLowerCase() == fitnessGoal) || 
+    if (exercise.trainingStyles.any((c) => c.toLowerCase() == fitnessGoal) || 
         exercise.goalTags.any((t) => t.toLowerCase() == fitnessGoal)) {
       score += 20;
     }
@@ -829,8 +822,9 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     }
 
     // 5. Equipment Availability: Available (+10), Missing (-50)
-    final exEquip = exercise.equipmentType.toLowerCase();
-    if (equip.contains(exEquip)) {
+    final hasEquipment = exercise.equipment.isEmpty || 
+        exercise.equipment.any((reqEquip) => equip.contains(reqEquip.toLowerCase()) || reqEquip.toLowerCase() == 'bodyweight');
+    if (hasEquipment) {
       score += 10;
     } else {
       score -= 50;
@@ -1737,13 +1731,17 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     }).toList();
 
     List<Exercise> displayExercises = filteredExercises;
-    if (_selectedEquipmentFilter == 'Favorites') {
+    if (_activeFilters.isNotEmpty) {
       displayExercises = displayExercises.where((ex) {
-        return _favoritedExerciseIds.contains(ex.exerciseId);
-      }).toList();
-    } else if (_selectedEquipmentFilter != 'All') {
-      displayExercises = displayExercises.where((ex) {
-        return ex.equipmentType.toLowerCase() == _selectedEquipmentFilter.toLowerCase();
+        return _activeFilters.every((filt) {
+          if (filt == 'Favorites') {
+            return _favoritedExerciseIds.contains(ex.exerciseId);
+          }
+          return ex.tags.any((t) => t.toLowerCase() == filt.toLowerCase()) ||
+              ex.difficulty.toLowerCase() == filt.toLowerCase() ||
+              ex.equipment.any((e) => e.toLowerCase() == filt.toLowerCase()) ||
+              ex.targetRegions.any((r) => r.toLowerCase() == filt.toLowerCase());
+        });
       }).toList();
     }
 
@@ -1753,7 +1751,8 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     final recommended = displayExercises.where((ex) => _scoreExercise(ex) > 0).toList();
     final other = displayExercises.where((ex) => _scoreExercise(ex) <= 0).toList();
 
-    final List<String> equipmentFilters = ['All', 'Favorites', 'Barbell', 'Dumbbell', 'Machine', 'Bodyweight', 'Cable'];
+    final activeMuscleGroup = _selectedMuscles.isNotEmpty ? _selectedMuscles.first : 'Chest';
+    final List<String> groupFilters = ExerciseFilterTags.getFiltersForMuscleGroup(activeMuscleGroup);
 
     return Column(
       children: [
@@ -1821,8 +1820,10 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           child: Row(
-            children: equipmentFilters.map((filt) {
-              final isSel = _selectedEquipmentFilter == filt;
+            children: groupFilters.map((filt) {
+              final isSel = filt == 'All'
+                  ? _activeFilters.isEmpty
+                  : _activeFilters.contains(filt);
               return Padding(
                 padding: const EdgeInsets.only(right: 8),
                 child: ChoiceChip(
@@ -1836,9 +1837,17 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                     fontSize: 12,
                   ),
                   onSelected: (selected) {
-                    if (selected) {
-                      setState(() => _selectedEquipmentFilter = filt);
-                    }
+                    setState(() {
+                      if (filt == 'All') {
+                        _activeFilters.clear();
+                      } else {
+                        if (selected) {
+                          _activeFilters.add(filt);
+                        } else {
+                          _activeFilters.remove(filt);
+                        }
+                      }
+                    });
                   },
                 ),
               );
@@ -2107,7 +2116,7 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                             ),
                             const SizedBox(height: 2),
                             Text(
-                              ex.equipmentType,
+                              ex.equipment.join(', '),
                               style: const TextStyle(
                                 fontSize: 8,
                                 color: AppColors.textMuted,
@@ -2208,25 +2217,16 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                       color: isSelected ? AppColors.primary : AppColors.textPrimary,
                     ),
                   ),
-                  const SizedBox(height: 4),
-                  Row(
+                  const SizedBox(height: 6),
+                  Wrap(
+                    spacing: 4,
+                    runSpacing: 4,
                     children: [
-                      Text(
-                        '${ex.difficulty} • ${ex.equipmentType}',
-                        style: const TextStyle(fontSize: 11, color: AppColors.textMuted),
-                      ),
-                      const SizedBox(width: 8),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: AppColors.primary.withOpacity(0.1),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          'Score: ${_scoreExercise(ex)}',
-                          style: const TextStyle(fontSize: 9, color: AppColors.primary, fontWeight: FontWeight.bold),
-                        ),
-                      ),
+                      ...ex.targetRegions.map((region) => _buildCardChip(region, Colors.teal)),
+                      ...ex.equipment.map((eq) => _buildCardChip(eq, Colors.indigo)),
+                      _buildCardChip(ex.difficulty, Colors.amber),
+                      _buildCardChip(ex.isCompound ? 'Compound' : 'Isolation', Colors.deepPurple),
+                      _buildCardChip('Score: ${_scoreExercise(ex)}', AppColors.primary, isHighlight: true),
                     ],
                   ),
                 ],
@@ -2262,6 +2262,25 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
               size: 24,
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCardChip(String text, Color color, {bool isHighlight = false}) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+      decoration: BoxDecoration(
+        color: isHighlight ? color.withOpacity(0.15) : color.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(6),
+        border: isHighlight ? Border.all(color: color.withOpacity(0.5), width: 0.8) : null,
+      ),
+      child: Text(
+        text,
+        style: TextStyle(
+          fontSize: 9,
+          color: color,
+          fontWeight: isHighlight ? FontWeight.bold : FontWeight.normal,
         ),
       ),
     );
@@ -2327,7 +2346,7 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                     runSpacing: 8,
                     children: [
                       _buildDetailTag(ex.difficulty, Colors.green),
-                      _buildDetailTag(ex.equipmentType, Colors.blue),
+                      ...ex.equipment.map((e) => _buildDetailTag(e, Colors.blue)),
                       _buildDetailTag(ex.muscleGroup, Colors.orange),
                     ],
                   ),
@@ -2473,6 +2492,82 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                       spacing: 8,
                       children: ex.secondaryMuscles.map((m) => _buildDetailTag(m, AppColors.textSecondary, isOutline: true)).toList(),
                     ),
+                    const SizedBox(height: 20),
+                  ],
+
+                  // Extra Architectural Metadata
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      if (ex.targetRegions.isNotEmpty)
+                        ...ex.targetRegions.map((region) => _buildDetailTag('Region: $region', Colors.teal)),
+                      if (ex.forceType.isNotEmpty)
+                        _buildDetailTag('Force: ${ex.forceType}', Colors.indigo),
+                      if (ex.mechanics.isNotEmpty)
+                        _buildDetailTag('Mechanics: ${ex.mechanics}', Colors.purple),
+                      if (ex.bodyRegion.isNotEmpty)
+                        _buildDetailTag('Region: ${ex.bodyRegion}', Colors.deepOrange),
+                      if (ex.exerciseType.isNotEmpty)
+                        _buildDetailTag('Type: ${ex.exerciseType}', Colors.pink),
+                      if (ex.movementPattern.isNotEmpty)
+                        _buildDetailTag('Pattern: ${ex.movementPattern}', Colors.cyan),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+
+                  if (ex.breathing.isNotEmpty) ...[
+                    const Text('Breathing Pattern 🫁', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: AppColors.textPrimary)),
+                    const SizedBox(height: 6),
+                    Text(ex.breathing, style: const TextStyle(fontSize: 13, color: AppColors.textSecondary, height: 1.4)),
+                    const SizedBox(height: 20),
+                  ],
+
+                  if (ex.commonMistakes.isNotEmpty) ...[
+                    const Text('Common Mistakes ⚠️', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: AppColors.textPrimary)),
+                    const SizedBox(height: 8),
+                    ...ex.commonMistakes.map((mistake) => Padding(
+                      padding: const EdgeInsets.only(bottom: 6),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(Icons.close_rounded, color: AppColors.error, size: 16),
+                          const SizedBox(width: 8),
+                          Expanded(child: Text(mistake, style: const TextStyle(fontSize: 13, color: AppColors.textSecondary))),
+                        ],
+                      ),
+                    )),
+                    const SizedBox(height: 20),
+                  ],
+
+                  if (ex.safetyTips.isNotEmpty) ...[
+                    const Text('Safety Tips 🛡️', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: AppColors.textPrimary)),
+                    const SizedBox(height: 8),
+                    ...ex.safetyTips.map((tip) => Padding(
+                      padding: const EdgeInsets.only(bottom: 6),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(Icons.check_circle_outline_rounded, color: AppColors.success, size: 16),
+                          const SizedBox(width: 8),
+                          Expanded(child: Text(tip, style: const TextStyle(fontSize: 13, color: AppColors.textSecondary))),
+                        ],
+                      ),
+                    )),
+                    const SizedBox(height: 20),
+                  ],
+
+                  if (ex.progressions.isNotEmpty) ...[
+                    const Text('Progressions 📈', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: AppColors.textPrimary)),
+                    const SizedBox(height: 6),
+                    Text(ex.progressions.join(' → '), style: const TextStyle(fontSize: 13, color: AppColors.textSecondary)),
+                    const SizedBox(height: 20),
+                  ],
+
+                  if (ex.regressions.isNotEmpty) ...[
+                    const Text('Regressions 📉', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: AppColors.textPrimary)),
+                    const SizedBox(height: 6),
+                    Text(ex.regressions.join(' ← '), style: const TextStyle(fontSize: 13, color: AppColors.textSecondary)),
                     const SizedBox(height: 20),
                   ],
 
