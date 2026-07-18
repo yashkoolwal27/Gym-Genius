@@ -6,7 +6,8 @@ workflows:
       flutter: stable
       java: 17
       groups:
-        - firebase_credentials   # optional: for google-services.json if stored as env var
+        - firebase_credentials   # GOOGLE_SERVICES_JSON (base64)
+        - app_secrets            # GEMINI_API_KEY
 
     triggering:
       events:
@@ -21,6 +22,14 @@ workflows:
       - name: Set up local.properties
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/app/android/local.properties"
+
+      - name: Decode google-services.json
+        script: |
+          echo $GOOGLE_SERVICES_JSON | base64 --decode > "$CM_BUILD_DIR/app/android/app/google-services.json"
+
+      - name: Write .env file
+        script: |
+          echo "GEMINI_API_KEY=$GEMINI_API_KEY" > "$CM_BUILD_DIR/app/.env"
 
       - name: Get Flutter packages
         script: |
