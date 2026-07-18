@@ -1,0 +1,56 @@
+workflows:
+  android-workflow:
+    name: Gym Genius Android Build
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      java: 17
+      groups:
+        - firebase_credentials   # optional: for google-services.json if stored as env var
+
+    triggering:
+      events:
+        - push
+        - pull_request
+      branch_patterns:
+        - pattern: main
+          include: true
+          source: true
+
+    scripts:
+      - name: Set up local.properties
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/app/android/local.properties"
+
+      - name: Get Flutter packages
+        script: |
+          cd app
+          flutter pub get
+
+      - name: Flutter analyze
+        script: |
+          cd app
+          flutter analyze --no-fatal-infos
+
+      - name: Build Android APK (release)
+        script: |
+          cd app
+          flutter build apk --release
+
+      - name: Build Android App Bundle (release)
+        script: |
+          cd app
+          flutter build appbundle --release
+
+    artifacts:
+      - app/build/app/outputs/flutter-apk/app-release.apk
+      - app/build/app/outputs/bundle/release/app-release.aab
+      - app/build/app/outputs/**/mapping.txt
+
+    publishing:
+      email:
+        recipients:
+          - yashkoolwal2048@gmail.com
+        notify:
+          success: true
+          failure: true
