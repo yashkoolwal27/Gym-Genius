@@ -27,7 +27,7 @@ class ForearmsExercises {
       alternatives: ['finger_curl', 'barbell_wrist_curl'],
       progressions: ['heavy_barbell_finger_curl'],
       regressions: ['dumbbell_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -67,7 +67,7 @@ class ForearmsExercises {
       alternatives: ['dumbbell_reverse_wrist_curl', 'cable_reverse_wrist_curl'],
       progressions: ['heavy_barbell_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -108,7 +108,7 @@ class ForearmsExercises {
       alternatives: ['dumbbell_wrist_curl', 'cable_wrist_curl'],
       progressions: ['heavy_barbell_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -149,7 +149,7 @@ class ForearmsExercises {
       alternatives: ['barbell_wrist_curl', 'cable_wrist_curl'],
       progressions: ['heavy_behind_back_wrist_curl'],
       regressions: ['dumbbell_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -189,7 +189,7 @@ class ForearmsExercises {
       alternatives: ['barbell_reverse_wrist_curl', 'dumbbell_reverse_wrist_curl'],
       progressions: ['heavy_cable_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -230,7 +230,7 @@ class ForearmsExercises {
       alternatives: ['barbell_wrist_curl', 'dumbbell_wrist_curl'],
       progressions: ['heavy_cable_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -271,7 +271,7 @@ class ForearmsExercises {
       alternatives: ['dead_hang', 'plate_pinch_hold'],
       progressions: ['heavier_gripper_level'],
       regressions: ['lighter_hand_gripper'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -311,7 +311,7 @@ class ForearmsExercises {
       alternatives: ['towel_dead_hang', 'thick_bar_hold'],
       progressions: ['single_arm_dead_hang', 'towel_dead_hang'],
       regressions: ['feet_supported_dead_hang'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -351,7 +351,7 @@ class ForearmsExercises {
       alternatives: ['dumbbell_supination', 'lever_bar_rotation'],
       progressions: ['heavy_dumbbell_pronation'],
       regressions: ['light_dumbbell_pronation'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -392,7 +392,7 @@ class ForearmsExercises {
       alternatives: ['barbell_reverse_wrist_curl', 'cable_reverse_wrist_curl'],
       progressions: ['heavy_dumbbell_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -431,7 +431,7 @@ class ForearmsExercises {
       alternatives: ['dumbbell_pronation', 'lever_bar_rotation'],
       progressions: ['heavy_dumbbell_supination'],
       regressions: ['light_dumbbell_supination'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -472,7 +472,7 @@ class ForearmsExercises {
       alternatives: ['barbell_wrist_curl', 'cable_wrist_curl'],
       progressions: ['heavy_dumbbell_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -511,7 +511,7 @@ class ForearmsExercises {
       alternatives: ['barbell_finger_curl', 'dumbbell_wrist_curl'],
       progressions: ['heavy_finger_curl'],
       regressions: ['light_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -551,7 +551,7 @@ class ForearmsExercises {
       alternatives: ['dumbbell_pronation', 'dumbbell_supination'],
       progressions: ['heavy_lever_bar_rotation'],
       regressions: ['light_dumbbell_rotation'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -591,7 +591,7 @@ class ForearmsExercises {
       alternatives: ['dead_hang', 'captains_of_crush_gripper'],
       progressions: ['heavy_plate_pinch_hold', 'two_plate_pinch_hold'],
       regressions: ['lighter_plate_pinch_hold'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -630,7 +630,7 @@ class ForearmsExercises {
       alternatives: ['dumbbell_reverse_wrist_curl', 'cable_reverse_wrist_curl'],
       progressions: ['heavy_band_reverse_wrist_curl'],
       regressions: ['lighter_band_reverse_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -669,7 +669,7 @@ class ForearmsExercises {
       alternatives: ['dumbbell_wrist_curl', 'cable_wrist_curl'],
       progressions: ['heavy_band_wrist_curl'],
       regressions: ['lighter_band_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -708,7 +708,7 @@ class ForearmsExercises {
       alternatives: ['reverse_barbell_curl', 'reverse_dumbbell_curl'],
       progressions: ['heavy_reverse_ez_bar_curl'],
       regressions: ['resistance_band_reverse_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -748,7 +748,7 @@ class ForearmsExercises {
       alternatives: ['barbell_reverse_wrist_curl', 'dumbbell_reverse_wrist_curl'],
       progressions: ['barbell_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -787,7 +787,7 @@ class ForearmsExercises {
       alternatives: ['barbell_wrist_curl', 'cable_wrist_curl'],
       progressions: ['heavy_seated_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -825,7 +825,7 @@ class ForearmsExercises {
       alternatives: ['dead_hang', 'plate_pinch_hold'],
       progressions: ['heavy_thick_bar_hold'],
       regressions: ['standard_barbell_hold'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -864,7 +864,7 @@ class ForearmsExercises {
       alternatives: ['dead_hang', 'plate_pinch_hold'],
       progressions: ['one_arm_towel_dead_hang'],
       regressions: ['dead_hang'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -904,7 +904,7 @@ class ForearmsExercises {
       alternatives: ['barbell_wrist_curl', 'barbell_reverse_wrist_curl'],
       progressions: ['heavy_wrist_roller'],
       regressions: ['dumbbell_wrist_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

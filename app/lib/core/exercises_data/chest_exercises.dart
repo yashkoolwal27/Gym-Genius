@@ -27,7 +27,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'ring_push_ups'],
       progressions: ['one_arm_push_ups'],
       regressions: ['push_ups', 'assisted_archer_push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -108,7 +108,7 @@ class ChestExercises {
       alternatives: ['incline_db_press', 'chest_press_machine', 'push_ups'],
       progressions: ['push_ups', 'dumbbell_bench_press', 'bench_press'],
       regressions: ['chest_press_machine', 'incline_push_ups'],
-      thumbnail: 'https://media.gq.com/photos/5633d4f4b318c58a0305f54d/1:1/w_1331,h_1331,c_limit/benchpress.jpg?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -149,7 +149,7 @@ class ChestExercises {
       alternatives: ['pec_deck', 'dumbbell_fly'],
       progressions: ['weighted_cable_fly'],
       regressions: ['pec_deck', 'resistance_band_fly'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -190,7 +190,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'push_ups', 'close_grip_bench_press'],
       progressions: ['weighted_dips', 'ring_dips'],
       regressions: ['bench_dips', 'band_assisted_dips'],
-      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -272,7 +272,7 @@ class ChestExercises {
       alternatives: ['plyometric_push_up', 'push_ups'],
       progressions: ['one_arm_push_up'],
       regressions: ['push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -312,7 +312,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'tricep_pushdowns'],
       progressions: ['weighted_dips', 'close_grip_paused_bench'],
       regressions: ['tricep_pushdowns', 'push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -352,7 +352,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'chest_dip'],
       progressions: ['heavy_decline_press'],
       regressions: ['decline_dumbbell_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -431,7 +431,7 @@ class ChestExercises {
       alternatives: ['decline_dumbbell_press', 'pec_deck'],
       progressions: ['cable_fly'],
       regressions: ['decline_dumbbell_fly_light'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -471,7 +471,7 @@ class ChestExercises {
       alternatives: ['decline_bench_press', 'chest_dip'],
       progressions: ['decline_bench_press'],
       regressions: ['chest_press_machine'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -511,7 +511,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'dips'],
       progressions: ['archer_push_ups', 'ring_push_ups'],
       regressions: ['push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -552,7 +552,7 @@ class ChestExercises {
       alternatives: ['decline_bench_press', 'decline_chest_press_machine'],
       progressions: ['decline_bench_press'],
       regressions: ['assisted_dip'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -591,7 +591,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'close_grip_bench_press'],
       progressions: ['weighted_diamond_push_up'],
       regressions: ['knee_diamond_push_up', 'incline_diamond_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -631,7 +631,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'incline_db_press', 'chest_press_machine'],
       progressions: ['heavy_dumbbell_bench_press'],
       regressions: ['chest_press_machine', 'floor_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -670,7 +670,7 @@ class ChestExercises {
       alternatives: ['pec_deck', 'cable_fly'],
       progressions: ['cable_fly'],
       regressions: ['resistance_band_fly', 'floor_db_fly'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -710,7 +710,7 @@ class ChestExercises {
       alternatives: ['straight_arm_dumbbell_pullover', 'cable_pullover'],
       progressions: ['heavy_dumbbell_pullover'],
       regressions: ['resistance_band_pullover'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -750,7 +750,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'close_grip_bench_press'],
       progressions: ['bench_press'],
       regressions: ['push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -790,7 +790,7 @@ class ChestExercises {
       alternatives: ['cable_fly', 'decline_dumbbell_fly'],
       progressions: ['heavy_high_to_low_cable_fly'],
       regressions: ['pec_deck'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -830,7 +830,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'plyometric_push_up'],
       progressions: ['one_arm_push_up'],
       regressions: ['push_ups', 'knee_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -871,7 +871,7 @@ class ChestExercises {
       alternatives: ['incline_db_press', 'bench_press'],
       progressions: ['heavy_incline_press'],
       regressions: ['incline_machine_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -950,7 +950,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'chest_press_machine', 'dumbbell_fly'],
       progressions: ['dumbbell_bench_press', 'incline_db_press'],
       regressions: ['machine_chest_press', 'incline_push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -991,7 +991,7 @@ class ChestExercises {
       alternatives: ['incline_db_press', 'cable_fly'],
       progressions: ['incline_cable_fly'],
       regressions: ['pec_deck'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1070,7 +1070,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'knee_push_up'],
       progressions: ['push_ups'],
       regressions: ['wall_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1109,7 +1109,7 @@ class ChestExercises {
       alternatives: ['incline_barbell_bench_press', 'incline_chest_press_machine'],
       progressions: ['incline_barbell_bench_press'],
       regressions: ['incline_machine_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1149,7 +1149,7 @@ class ChestExercises {
       alternatives: ['incline_push_up', 'wall_push_up'],
       progressions: ['push_ups'],
       regressions: ['wall_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1189,7 +1189,7 @@ class ChestExercises {
       alternatives: ['incline_dumbbell_fly', 'cable_fly'],
       progressions: ['heavy_low_to_high_cable_fly'],
       regressions: ['pec_deck'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1228,7 +1228,7 @@ class ChestExercises {
       alternatives: ['archer_push_ups', 'plyometric_push_up'],
       progressions: ['weighted_one_arm_push_up'],
       regressions: ['archer_push_ups', 'push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1268,7 +1268,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'spoto_press'],
       progressions: ['spoto_press'],
       regressions: ['bench_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1350,7 +1350,7 @@ class ChestExercises {
       alternatives: ['clap_push_up', 'push_ups'],
       progressions: ['clap_push_up'],
       regressions: ['push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1390,7 +1390,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'scapular_push_up'],
       progressions: ['push_ups'],
       regressions: ['knee_push_up_plus'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1430,7 +1430,7 @@ class ChestExercises {
       alternatives: ['decline_push_ups', 'bench_press', 'dips'],
       progressions: ['decline_push_ups', 'archer_push_ups', 'one_arm_push_ups'],
       regressions: ['incline_push_ups', 'knee_push_ups'],
-      thumbnail: 'https://i.shgcdn.com/d27a16e6-0eb2-411d-9b76-e6eed6a7c148/-/format/auto/-/preview/3000x3000/-/quality/lighter/?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1471,7 +1471,7 @@ class ChestExercises {
       alternatives: ['cable_fly', 'dumbbell_fly'],
       progressions: ['cable_fly'],
       regressions: ['lighter_band_fly'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1511,7 +1511,7 @@ class ChestExercises {
       alternatives: ['chest_dip', 'dips'],
       progressions: ['weighted_ring_dip'],
       regressions: ['dips', 'assisted_dip'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1551,7 +1551,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'dips'],
       progressions: ['archer_push_ups', 'weighted_ring_push_ups'],
       regressions: ['push_ups', 'incline_ring_push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1592,7 +1592,7 @@ class ChestExercises {
       alternatives: ['cable_fly', 'pec_deck'],
       progressions: ['heavy_single_arm_cable_fly'],
       regressions: ['cable_fly'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1632,7 +1632,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'dumbbell_bench_press'],
       progressions: ['bench_press'],
       regressions: ['chest_press_machine'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1671,7 +1671,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'paused_bench_press'],
       progressions: ['spoto_press_heavy'],
       regressions: ['paused_bench_press', 'bench_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1712,7 +1712,7 @@ class ChestExercises {
       alternatives: ['cable_fly', 'pec_deck'],
       progressions: ['heavy_standing_cable_fly'],
       regressions: ['cable_fly'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1751,7 +1751,7 @@ class ChestExercises {
       alternatives: ['chest_dip', 'bench_press'],
       progressions: ['heavy_weighted_dips'],
       regressions: ['chest_dip'],
-      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1791,7 +1791,7 @@ class ChestExercises {
       alternatives: ['bench_press', 'push_ups'],
       progressions: ['one_arm_push_up'],
       regressions: ['push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1830,7 +1830,7 @@ class ChestExercises {
       alternatives: ['push_ups', 'incline_push_up'],
       progressions: ['decline_push_ups'],
       regressions: ['knee_push_up', 'incline_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

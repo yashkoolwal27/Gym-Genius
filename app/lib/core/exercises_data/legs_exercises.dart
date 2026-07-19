@@ -68,7 +68,7 @@ class LegExercises {
       alternatives: ['hip_thrust', 'dumbbell_hip_thrust'],
       progressions: ['heavy_barbell_hip_thrust'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -110,7 +110,7 @@ class LegExercises {
       alternatives: ['leg_press', 'goblet_squat'],
       progressions: ['heavy_belt_squat'],
       regressions: ['bodyweight_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -151,7 +151,7 @@ class LegExercises {
       alternatives: ['goblet_squat', 'leg_press'],
       progressions: ['goblet_squat', 'pistol_squat'],
       regressions: ['box_squat', 'wall_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -191,7 +191,7 @@ class LegExercises {
       alternatives: ['frog_jump', 'broad_jump'],
       progressions: ['high_box_jump'],
       regressions: ['step_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -272,7 +272,7 @@ class LegExercises {
       alternatives: ['walking_lunge', 'leg_press'],
       progressions: ['weighted_bulgarian_split_squat'],
       regressions: ['reverse_lunge', 'split_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -313,7 +313,7 @@ class LegExercises {
       alternatives: ['donkey_kick', 'cable_pull_through'],
       progressions: ['heavy_cable_kickback'],
       regressions: ['donkey_kick'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -354,7 +354,7 @@ class LegExercises {
       alternatives: ['romanian_deadlift', 'kettlebell_swing'],
       progressions: ['heavy_cable_pull_through'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -395,7 +395,7 @@ class LegExercises {
       alternatives: ['reverse_lunge', 'lateral_lunge'],
       progressions: ['weighted_curtsy_lunge'],
       regressions: ['reverse_lunge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -436,7 +436,7 @@ class LegExercises {
       alternatives: ['walking_lunge', 'bulgarian_split_squat'],
       progressions: ['weighted_deficit_lunge'],
       regressions: ['forward_lunge'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -476,7 +476,7 @@ class LegExercises {
       alternatives: ['standing_calf_raise', 'seated_calf_raise'],
       progressions: ['heavy_donkey_calf_raise'],
       regressions: ['bodyweight_calf_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -515,7 +515,7 @@ class LegExercises {
       alternatives: ['cable_kickback', 'fire_hydrant'],
       progressions: ['weighted_donkey_kick', 'resistance_band_donkey_kick'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -555,7 +555,7 @@ class LegExercises {
       alternatives: ['barbell_hip_thrust', 'glute_bridge'],
       progressions: ['barbell_hip_thrust'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -595,7 +595,7 @@ class LegExercises {
       alternatives: ['donkey_kick', 'lateral_band_walk'],
       progressions: ['banded_fire_hydrant'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -635,7 +635,7 @@ class LegExercises {
       alternatives: ['reverse_lunge', 'walking_lunge'],
       progressions: ['weighted_forward_lunge', 'deficit_lunge'],
       regressions: ['static_lunge', 'assisted_lunge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -675,7 +675,7 @@ class LegExercises {
       alternatives: ['glute_bridge', 'hip_thrust'],
       progressions: ['weighted_frog_pump'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -756,7 +756,7 @@ class LegExercises {
       alternatives: ['hip_thrust', 'frog_pump'],
       progressions: ['single_leg_glute_bridge', 'dumbbell_hip_thrust'],
       regressions: ['pelvic_tilts'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -796,7 +796,7 @@ class LegExercises {
       alternatives: ['nordic_curl', 'lying_leg_curl'],
       progressions: ['weighted_glute_ham_raise'],
       regressions: ['nordic_curl_assisted', 'lying_leg_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -837,7 +837,7 @@ class LegExercises {
       alternatives: ['barbell_back_squat', 'leg_press'],
       progressions: ['barbell_back_squat', 'front_squat'],
       regressions: ['bodyweight_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -878,7 +878,7 @@ class LegExercises {
       alternatives: ['leg_press', 'barbell_back_squat'],
       progressions: ['heavy_hack_squat'],
       regressions: ['leg_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -998,7 +998,7 @@ class LegExercises {
       alternatives: ['glute_bridge', 'barbell_hip_thrust'],
       progressions: ['barbell_hip_thrust', 'dumbbell_hip_thrust'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1115,7 +1115,7 @@ class LegExercises {
       alternatives: ['jump_rope', 'standing_calf_raise'],
       progressions: ['single_leg_rope_jump'],
       regressions: ['bodyweight_calf_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1193,7 +1193,7 @@ class LegExercises {
       alternatives: ['monster_walk', 'hip_abduction_machine'],
       progressions: ['heavy_band_walk'],
       regressions: ['bodyweight_side_steps'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1232,7 +1232,7 @@ class LegExercises {
       alternatives: ['curtsy_lunge', 'forward_lunge'],
       progressions: ['weighted_lateral_lunge'],
       regressions: ['lateral_steps'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1312,7 +1312,7 @@ class LegExercises {
       alternatives: ['squats'],
       progressions: ['squats', 'single_leg_press'],
       regressions: ['goblet_squat', 'bodyweight_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1433,7 +1433,7 @@ class LegExercises {
       alternatives: ['lateral_band_walk', 'hip_abduction_machine'],
       progressions: ['heavy_monster_walk'],
       regressions: ['bodyweight_forward_walk'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1472,7 +1472,7 @@ class LegExercises {
       alternatives: ['glute_ham_raise', 'lying_leg_curl'],
       progressions: ['weighted_nordic_curl'],
       regressions: ['assisted_nordic_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1553,7 +1553,7 @@ class LegExercises {
       alternatives: ['bulgarian_split_squat', 'leg_press'],
       progressions: ['weighted_pistol_squat'],
       regressions: ['assisted_pistol_squat', 'bench_pistol_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1593,7 +1593,7 @@ class LegExercises {
       alternatives: ['forward_lunge', 'walking_lunge'],
       progressions: ['weighted_reverse_lunge', 'bulgarian_split_squat'],
       regressions: ['assisted_lunge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1712,7 +1712,7 @@ class LegExercises {
       alternatives: ['standing_calf_raise', 'seated_calf_raise'],
       progressions: ['weighted_single_leg_calf_raise'],
       regressions: ['standing_calf_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1790,7 +1790,7 @@ class LegExercises {
       alternatives: ['romanian_deadlift', 'kettlebell_deadlift'],
       progressions: ['weighted_single_leg_rdl'],
       regressions: ['kickstand_rdl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1830,7 +1830,7 @@ class LegExercises {
       alternatives: ['leg_extension', 'spanish_squat'],
       progressions: ['weighted_sissy_squat'],
       regressions: ['spanish_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1909,7 +1909,7 @@ class LegExercises {
       alternatives: ['reverse_lunge', 'bulgarian_split_squat'],
       progressions: ['heavy_smith_lunge'],
       regressions: ['assisted_lunge'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1948,7 +1948,7 @@ class LegExercises {
       alternatives: ['barbell_back_squat', 'leg_press'],
       progressions: ['barbell_back_squat'],
       regressions: ['bodyweight_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1987,7 +1987,7 @@ class LegExercises {
       alternatives: ['spanish_squat_hold', 'leg_extension'],
       progressions: ['weighted_spanish_squat'],
       regressions: ['bodyweight_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2028,7 +2028,7 @@ class LegExercises {
       alternatives: ['lying_leg_curl', 'nordic_curl'],
       progressions: ['single_leg_stability_ball_curl'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2069,7 +2069,7 @@ class LegExercises {
       alternatives: ['seated_calf_raise', 'donkey_calf_raise'],
       progressions: ['heavy_standing_calf_raise', 'single_leg_calf_raise'],
       regressions: ['bodyweight_calf_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2108,7 +2108,7 @@ class LegExercises {
       alternatives: ['reverse_lunge', 'forward_lunge'],
       progressions: ['reverse_lunge_weighted'],
       regressions: ['assisted_lunge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2146,7 +2146,7 @@ class LegExercises {
       alternatives: ['weighted_step_up', 'walking_lunge'],
       progressions: ['weighted_step_up'],
       regressions: ['low_box_step_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2186,7 +2186,7 @@ class LegExercises {
       alternatives: ['romanian_deadlift', 'deadlift'],
       progressions: ['heavy_sldl'],
       regressions: ['kettlebell_deadlift'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2226,7 +2226,7 @@ class LegExercises {
       alternatives: ['deadlift', 'romanian_deadlift'],
       progressions: ['heavy_sumo_deadlift'],
       regressions: ['kettlebell_deadlift'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2266,7 +2266,7 @@ class LegExercises {
       alternatives: ['sumo_deadlift', 'squats'],
       progressions: ['weighted_sumo_squat'],
       regressions: ['bodyweight_squat'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2306,7 +2306,7 @@ class LegExercises {
       alternatives: ['reverse_calf_raise'],
       progressions: ['weighted_tibialis_raise'],
       regressions: ['seated_tib_raises'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2346,7 +2346,7 @@ class LegExercises {
       alternatives: ['reverse_lunge', 'forward_lunge'],
       progressions: ['weighted_walking_lunge'],
       regressions: ['reverse_lunge'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -2385,7 +2385,7 @@ class LegExercises {
       alternatives: ['step_up', 'walking_lunge'],
       progressions: ['heavy_weighted_step_up'],
       regressions: ['step_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

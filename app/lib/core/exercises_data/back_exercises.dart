@@ -27,7 +27,7 @@ class BackExercises {
       alternatives: ['lat_pulldown', 'negative_pull_up'],
       progressions: ['pull_up'],
       regressions: ['assisted_pull_up_heavy'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -69,7 +69,7 @@ class BackExercises {
       alternatives: ['superman', 'bird_dog'],
       progressions: ['weighted_back_extension'],
       regressions: ['bird_dog', 'superman'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -111,7 +111,7 @@ class BackExercises {
       alternatives: ['t_bar_row', 'dumbbell_row', 'seated_cable_row'],
       progressions: ['heavy_barbell_row', 'pendlay_row'],
       regressions: ['chest_supported_row', 'machine_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -153,7 +153,7 @@ class BackExercises {
       alternatives: ['plank', 'dead_bug'],
       progressions: ['weighted_bird_dog', 'elevated_bird_dog'],
       regressions: ['single_limb_raises'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -196,7 +196,7 @@ class BackExercises {
       alternatives: ['straight_arm_pulldown', 'machine_pullover'],
       progressions: ['heavy_cable_pullover'],
       regressions: ['resistance_band_pullover'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -238,7 +238,7 @@ class BackExercises {
       alternatives: ['machine_row', 'seated_cable_row'],
       progressions: ['bent_over_barbell_row', 'heavy_dumbbell_row'],
       regressions: ['trx_row', 'machine_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -280,7 +280,7 @@ class BackExercises {
       alternatives: ['pull_up', 'reverse_grip_lat_pulldown'],
       progressions: ['weighted_chin_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -322,7 +322,7 @@ class BackExercises {
       alternatives: ['t_bar_row', 'chest_supported_row'],
       progressions: ['heavy_seated_cable_row', 'bent_over_barbell_row'],
       regressions: ['machine_row', 'trx_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -364,7 +364,7 @@ class BackExercises {
       alternatives: ['lat_pulldown', 'chin_up'],
       progressions: ['heavy_close_grip_pulldown'],
       regressions: ['assisted_pull_up', 'straight_arm_pulldown'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -406,7 +406,7 @@ class BackExercises {
       alternatives: ['chin_up', 'neutral_grip_pull_up'],
       progressions: ['weighted_pull_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -448,7 +448,7 @@ class BackExercises {
       alternatives: ['trap_bar_deadlift', 'romanian_deadlift', 'rack_pull'],
       progressions: ['heavy_deadlifts', 'deficit_deadlift'],
       regressions: ['kettlebell_deadlift', 'rack_pull'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -491,7 +491,7 @@ class BackExercises {
       alternatives: ['deadlift', 'trap_bar_deadlift'],
       progressions: ['heavy_deficit_deadlift'],
       regressions: ['deadlift', 'rack_pull'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -533,7 +533,7 @@ class BackExercises {
       alternatives: ['rear_delt_cable_fly', 'reverse_pec_deck'],
       progressions: ['weighted_rear_delt_fly_heavy'],
       regressions: ['resistance_band_pull_apart'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -575,7 +575,7 @@ class BackExercises {
       alternatives: ['single_arm_dumbbell_row', 'bent_over_barbell_row'],
       progressions: ['heavy_dumbbell_row'],
       regressions: ['chest_supported_row', 'machine_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -617,7 +617,7 @@ class BackExercises {
       alternatives: ['dumbbell_rear_delt_fly', 'resistance_band_pull_apart'],
       progressions: ['heavy_face_pull'],
       regressions: ['band_face_pull'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -660,7 +660,7 @@ class BackExercises {
       alternatives: ['romanian_deadlift', 'back_extension'],
       progressions: ['heavy_good_morning'],
       regressions: ['bodyweight_good_morning', 'back_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -702,7 +702,7 @@ class BackExercises {
       alternatives: ['superman', 'bird_dog'],
       progressions: ['back_extension', 'weighted_back_extension'],
       regressions: ['bird_dog'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -743,7 +743,7 @@ class BackExercises {
       alternatives: ['trx_row', 'chest_supported_row'],
       progressions: ['weighted_inverted_row', 'pull_up'],
       regressions: ['assisted_inverted_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -785,7 +785,7 @@ class BackExercises {
       alternatives: ['deadlift', 'trap_bar_deadlift'],
       progressions: ['deadlift', 'romanian_deadlift'],
       regressions: ['glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838357463-d25dfeac3438?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -827,7 +827,7 @@ class BackExercises {
       alternatives: ['pull_up', 'close_grip_lat_pulldown'],
       progressions: ['heavy_lat_pulldown', 'pull_up'],
       regressions: ['assisted_pull_up', 'straight_arm_pulldown'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -869,7 +869,7 @@ class BackExercises {
       alternatives: ['cable_pullover', 'straight_arm_dumbbell_pullover'],
       progressions: ['heavy_machine_pullover'],
       regressions: ['cable_pullover'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -911,7 +911,7 @@ class BackExercises {
       alternatives: ['seated_cable_row', 'chest_supported_row'],
       progressions: ['heavy_machine_row', 'bent_over_barbell_row'],
       regressions: ['trx_row', 'assisted_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -952,7 +952,7 @@ class BackExercises {
       alternatives: ['single_arm_dumbbell_row', 't_bar_row'],
       progressions: ['heavy_meadows_row'],
       regressions: ['dumbbell_row', 'machine_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -994,7 +994,7 @@ class BackExercises {
       alternatives: ['assisted_pull_up', 'lat_pulldown'],
       progressions: ['pull_up'],
       regressions: ['assisted_pull_up', 'lat_pulldown'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1035,7 +1035,7 @@ class BackExercises {
       alternatives: ['pull_up', 'chin_up'],
       progressions: ['weighted_neutral_grip_pull_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1077,7 +1077,7 @@ class BackExercises {
       alternatives: ['bent_over_barbell_row', 't_bar_row'],
       progressions: ['heavy_pendlay_row'],
       regressions: ['chest_supported_row', 'dumbbell_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1119,7 +1119,7 @@ class BackExercises {
       alternatives: ['lat_pulldown', 'chin_up', 'neutral_grip_pull_up'],
       progressions: ['weighted_pull_up', 'muscle_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up', 'lat_pulldown'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1161,7 +1161,7 @@ class BackExercises {
       alternatives: ['deadlift', 'block_pull'],
       progressions: ['heavy_rack_pull'],
       regressions: ['deadlift', 'kettlebell_deadlift'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1203,7 +1203,7 @@ class BackExercises {
       alternatives: ['dumbbell_rear_delt_fly', 'reverse_pec_deck'],
       progressions: ['heavy_cable_rear_delt_fly'],
       regressions: ['resistance_band_pull_apart'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1246,7 +1246,7 @@ class BackExercises {
       alternatives: ['face_pull', 'dumbbell_rear_delt_fly'],
       progressions: ['double_band_pull_apart'],
       regressions: ['single_band_pull_apart_light'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1288,7 +1288,7 @@ class BackExercises {
       alternatives: ['lat_pulldown', 'chin_up'],
       progressions: ['heavy_reverse_grip_pulldown'],
       regressions: ['assisted_pull_up', 'straight_arm_pulldown'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1330,7 +1330,7 @@ class BackExercises {
       alternatives: ['dumbbell_rear_delt_fly', 'rear_delt_cable_fly'],
       progressions: ['heavy_reverse_pec_deck'],
       regressions: ['resistance_band_pull_apart'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1371,7 +1371,7 @@ class BackExercises {
       alternatives: ['deadlift', 'good_morning', 'dumbbell_romanian_deadlift'],
       progressions: ['heavy_romanian_deadlift'],
       regressions: ['kettlebell_deadlift', 'back_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1413,7 +1413,7 @@ class BackExercises {
       alternatives: ['passive_hang', 'assisted_pull_up'],
       progressions: ['pull_up', 'negative_pull_up'],
       regressions: ['assisted_scapular_pull_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1454,7 +1454,7 @@ class BackExercises {
       alternatives: ['machine_row', 'chest_supported_row'],
       progressions: ['heavy_seated_cable_row', 'bent_over_barbell_row'],
       regressions: ['trx_row', 'machine_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1495,7 +1495,7 @@ class BackExercises {
       alternatives: ['single_arm_dumbbell_row', 'seated_cable_row'],
       progressions: ['heavy_single_arm_cable_row'],
       regressions: ['two_arm_seated_cable_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1536,7 +1536,7 @@ class BackExercises {
       alternatives: ['dumbbell_row', 'seated_cable_row'],
       progressions: ['heavy_single_arm_dumbbell_row', 'meadows_row'],
       regressions: ['chest_supported_row', 'machine_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1578,7 +1578,7 @@ class BackExercises {
       alternatives: ['deadlift', 'deficit_deadlift'],
       progressions: ['heavy_snatch_grip_deadlift'],
       regressions: ['deadlift', 'kettlebell_deadlift'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1621,7 +1621,7 @@ class BackExercises {
       alternatives: ['cable_pullover', 'machine_pullover'],
       progressions: ['heavy_dumbbell_pullover'],
       regressions: ['resistance_band_pullover'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1663,7 +1663,7 @@ class BackExercises {
       alternatives: ['cable_pullover', 'machine_pullover'],
       progressions: ['heavy_straight_arm_pulldown'],
       regressions: ['resistance_band_lat_pulldown'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1704,7 +1704,7 @@ class BackExercises {
       alternatives: ['bird_dog', 'back_extension'],
       progressions: ['superman_rocks', 'aquaman_alternating'],
       regressions: ['single_leg_lifts', 'bird_dog'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1746,7 +1746,7 @@ class BackExercises {
       alternatives: ['bent_over_barbell_row', 'chest_supported_row'],
       progressions: ['heavy_t_bar_row'],
       regressions: ['chest_supported_row', 'seated_cable_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1788,7 +1788,7 @@ class BackExercises {
       alternatives: ['deadlift', 'kettlebell_deadlift'],
       progressions: ['heavy_trap_bar_deadlift'],
       regressions: ['kettlebell_deadlift', 'glute_bridge'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1831,7 +1831,7 @@ class BackExercises {
       alternatives: ['inverted_row', 'seated_cable_row'],
       progressions: ['one_leg_trx_row', 'weighted_trx_row'],
       regressions: ['trx_row_high_angle'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1872,7 +1872,7 @@ class BackExercises {
       alternatives: ['pull_up', 'lat_pulldown'],
       progressions: ['weighted_wide_grip_pull_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=400&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

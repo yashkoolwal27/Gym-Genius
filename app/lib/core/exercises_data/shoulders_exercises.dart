@@ -27,7 +27,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_front_raise', 'cable_front_raise'],
       progressions: ['barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -67,7 +67,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_shoulder_press', 'machine_shoulder_press'],
       progressions: ['heavy_dumbbell_shoulder_press'],
       regressions: ['dumbbell_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -107,7 +107,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_front_raise', 'plate_front_raise'],
       progressions: ['heavy_barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -147,7 +147,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_shoulder_press', 'machine_shoulder_press'],
       progressions: ['heavy_overhead_press', 'push_press'],
       regressions: ['dumbbell_shoulder_press', 'kettlebell_overhead_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -188,7 +188,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_shrug', 'upright_row'],
       progressions: ['heavy_barbell_shrug'],
       regressions: ['light_dumbbell_shrug'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -228,7 +228,7 @@ class ShouldersExercises {
       alternatives: ['cable_lateral_raise', 'leaning_cable_lateral_raise'],
       progressions: ['heavy_cable_lateral_raise'],
       regressions: ['dumbbell_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -269,7 +269,7 @@ class ShouldersExercises {
       alternatives: ['barbell_overhead_press', 'arnold_press'],
       progressions: ['heavy_overhead_press'],
       regressions: ['dumbbell_shoulder_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -309,7 +309,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_front_raise', 'plate_front_raise'],
       progressions: ['barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -349,7 +349,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_lateral_raise', 'machine_lateral_raise'],
       progressions: ['leaning_cable_lateral_raise'],
       regressions: ['dumbbell_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -390,7 +390,7 @@ class ShouldersExercises {
       alternatives: ['external_rotation', 'scaption_raise'],
       progressions: ['heavy_cuban_press'],
       regressions: ['external_rotation'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -431,7 +431,7 @@ class ShouldersExercises {
       alternatives: ['barbell_front_raise', 'cable_front_raise'],
       progressions: ['barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -471,7 +471,7 @@ class ShouldersExercises {
       alternatives: ['overhead_press', 'cable_lateral_raise'],
       progressions: ['cable_lateral_raise', 'dumbbell_lateral_raise_heavy'],
       regressions: ['resistance_band_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -512,7 +512,7 @@ class ShouldersExercises {
       alternatives: ['barbell_overhead_press', 'machine_shoulder_press'],
       progressions: ['heavy_dumbbell_shoulder_press'],
       regressions: ['dumbbell_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -551,7 +551,7 @@ class ShouldersExercises {
       alternatives: ['barbell_shrug', 'upright_row'],
       progressions: ['heavy_dumbbell_shrug'],
       regressions: ['light_dumbbell_shrug'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -590,7 +590,7 @@ class ShouldersExercises {
       alternatives: ['internal_rotation', 'cuban_press'],
       progressions: ['cuban_press'],
       regressions: ['light_band_rotation'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -631,7 +631,7 @@ class ShouldersExercises {
       alternatives: ['pike_push_up', 'barbell_overhead_press'],
       progressions: ['freestanding_hspu'],
       regressions: ['pike_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -671,7 +671,7 @@ class ShouldersExercises {
       alternatives: ['upright_row', 'power_clean'],
       progressions: ['power_snatch'],
       regressions: ['upright_row'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -711,7 +711,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_lateral_raise', 'cable_lateral_raise'],
       progressions: ['leaning_cable_lateral_raise'],
       regressions: ['dumbbell_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -750,7 +750,7 @@ class ShouldersExercises {
       alternatives: ['external_rotation', 'cuban_press'],
       progressions: ['cuban_press'],
       regressions: ['light_band_rotation'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -791,7 +791,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_shoulder_press', 'barbell_overhead_press'],
       progressions: ['heavy_kettlebell_overhead_press'],
       regressions: ['light_dumbbell_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -831,7 +831,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_shoulder_press', 'single_arm_landmine_press'],
       progressions: ['single_arm_landmine_press'],
       regressions: ['push_ups'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -871,7 +871,7 @@ class ShouldersExercises {
       alternatives: ['cable_lateral_raise', 'dumbbell_lateral_raise'],
       progressions: ['heavy_leaning_cable_raise'],
       regressions: ['dumbbell_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -990,7 +990,7 @@ class ShouldersExercises {
       alternatives: ['farmers_carry', 'suitcase_carry'],
       progressions: ['heavy_overhead_carry'],
       regressions: ['farmers_carry'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1030,7 +1030,7 @@ class ShouldersExercises {
       alternatives: ['push_ups', 'handstand_push_up'],
       progressions: ['handstand_push_up'],
       regressions: ['incline_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1070,7 +1070,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_front_raise', 'barbell_front_raise'],
       progressions: ['heavy_plate_front_raise'],
       regressions: ['resistance_band_front_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1110,7 +1110,7 @@ class ShouldersExercises {
       alternatives: ['barbell_overhead_press', 'dumbbell_shoulder_press'],
       progressions: ['jerk'],
       regressions: ['barbell_overhead_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1150,7 +1150,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_front_raise', 'cable_front_raise'],
       progressions: ['dumbbell_front_raise'],
       regressions: ['lighter_band_front_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1190,7 +1190,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_lateral_raise', 'cable_lateral_raise'],
       progressions: ['dumbbell_lateral_raise'],
       regressions: ['lighter_band_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1230,7 +1230,7 @@ class ShouldersExercises {
       alternatives: ['rear_delt_cable_fly', 'reverse_pec_deck'],
       progressions: ['heavy_reverse_cable_fly'],
       regressions: ['dumbbell_rear_delt_fly'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1270,7 +1270,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_lateral_raise', 'external_rotation'],
       progressions: ['dumbbell_lateral_raise'],
       regressions: ['light_band_raises'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1310,7 +1310,7 @@ class ShouldersExercises {
       alternatives: ['barbell_overhead_press', 'dumbbell_shoulder_press'],
       progressions: ['barbell_overhead_press'],
       regressions: ['machine_shoulder_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1349,7 +1349,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_lateral_raise', 'machine_lateral_raise'],
       progressions: ['incline_lateral_raise'],
       regressions: ['dumbbell_lateral_raise_light'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1388,7 +1388,7 @@ class ShouldersExercises {
       alternatives: ['landmine_press', 'dumbbell_shoulder_press'],
       progressions: ['heavy_single_arm_landmine_press'],
       regressions: ['landmine_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1429,7 +1429,7 @@ class ShouldersExercises {
       alternatives: ['seated_barbell_shoulder_press', 'machine_shoulder_press'],
       progressions: ['seated_barbell_shoulder_press'],
       regressions: ['machine_shoulder_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1468,7 +1468,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_rear_delt_fly', 'reverse_cable_fly'],
       progressions: ['weighted_trx_rear_delt_fly'],
       regressions: ['band_pull_aparts'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1508,7 +1508,7 @@ class ShouldersExercises {
       alternatives: ['dumbbell_lateral_raise', 'high_pull'],
       progressions: ['high_pull'],
       regressions: ['dumbbell_lateral_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1548,7 +1548,7 @@ class ShouldersExercises {
       alternatives: ['barbell_overhead_press', 'dumbbell_shoulder_press'],
       progressions: ['heavy_z_press'],
       regressions: ['barbell_overhead_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

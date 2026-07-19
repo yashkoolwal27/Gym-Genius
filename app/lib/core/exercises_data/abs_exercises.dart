@@ -27,7 +27,7 @@ class AbsExercises {
       alternatives: ['plank', 'hollow_body_hold'],
       progressions: ['standing_ab_wheel_rollout'],
       regressions: ['knee_plank', 'swiss_ball_rollout'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -68,7 +68,7 @@ class AbsExercises {
       alternatives: ['russian_twist', 'crunch', 'reverse_crunch'],
       progressions: ['weighted_bicycle_crunch', 'decline_bicycle_crunch', 'hanging_bicycle_raise'],
       regressions: ['heel_touch', 'crunch'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -122,7 +122,7 @@ class AbsExercises {
       alternatives: ['plank', 'dead_bug', 'superman'],
       progressions: ['weighted_bird_dog', 'elevated_bird_dog', 'bird_dog_on_stability_ball'],
       regressions: ['supported_bird_dog', 'arm_only_bird_dog', 'leg_only_bird_dog'],
-      thumbnail: 'https://unsplash.com',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -258,7 +258,7 @@ class AbsExercises {
       alternatives: ['sit_up', 'cable_crunch', 'machine_crunch'],
       progressions: ['decline_crunch', 'weighted_crunch', 'cable_crunch'],
       regressions: ['partial_crunch', 'dead_bug'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -309,7 +309,7 @@ class AbsExercises {
       alternatives: ['plank', 'bird_dog'],
       progressions: ['weighted_dead_bug', 'elevated_dead_bug'],
       regressions: ['single_leg_lower', 'dead_bug_static'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -350,7 +350,7 @@ class AbsExercises {
       alternatives: ['crunch', 'weighted_crunch'],
       progressions: ['weighted_decline_crunch'],
       regressions: ['standard_crunch'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -390,7 +390,7 @@ class AbsExercises {
       alternatives: ['plank', 'hanging_leg_raise'],
       progressions: ['dragon_flag_flutter_kicks'],
       regressions: ['tucked_dragon_flag', 'lying_leg_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -430,7 +430,7 @@ class AbsExercises {
       alternatives: ['suitcase_carry', 'plank'],
       progressions: ['heavy_farmers_carry'],
       regressions: ['lighter_farmers_carry'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -470,7 +470,7 @@ class AbsExercises {
       alternatives: ['lying_leg_raise', 'reverse_crunch', 'scissor_kick'],
       progressions: ['weighted_flutter_kick', 'hollow_body_flutter_kick', 'hanging_flutter_kick'],
       regressions: ['bent_knee_flutter_kick', 'dead_bug'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -523,7 +523,7 @@ class AbsExercises {
       alternatives: ['lying_leg_raise', 'reverse_crunch'],
       progressions: ['hanging_leg_raise', 'toes_to_bar'],
       regressions: ['assisted_hanging_knee_raise', 'lying_knee_tucks'],
-      thumbnail: 'https://images.unsplash.com/photo-1603287611837-f214690781d6?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -563,7 +563,7 @@ class AbsExercises {
       alternatives: ['lying_leg_raise', 'plank'],
       progressions: ['toes_to_bar'],
       regressions: ['hanging_knee_raises', 'hanging_knee_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1603287611837-f214690781d6?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -603,7 +603,7 @@ class AbsExercises {
       alternatives: ['windshield_wiper', 'russian_twist'],
       progressions: ['hanging_windshield_wiper_slow'],
       regressions: ['windshield_wiper', 'hanging_leg_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1603287611837-f214690781d6?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -643,7 +643,7 @@ class AbsExercises {
       alternatives: ['bicycle_crunch', 'russian_twist', 'side_plank'],
       progressions: ['weighted_heel_touch', 'decline_heel_touch'],
       regressions: ['crunch'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -697,7 +697,7 @@ class AbsExercises {
       alternatives: ['plank', 'dead_bug'],
       progressions: ['hollow_body_rocks'],
       regressions: ['dead_bug_static', 'tucked_hollow_hold'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -737,7 +737,7 @@ class AbsExercises {
       alternatives: ['v_up', 'crunches'],
       progressions: ['weighted_jackknife_sit_up'],
       regressions: ['crunches', 'lying_leg_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -777,7 +777,7 @@ class AbsExercises {
       alternatives: ['plank', 'hanging_leg_raise'],
       progressions: ['v_sit', 'l_sit_lifts'],
       regressions: ['tucked_l_sit', 'single_leg_l_sit'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -816,7 +816,7 @@ class AbsExercises {
       alternatives: ['lying_leg_raise', 'reverse_crunch'],
       progressions: ['hanging_leg_raise'],
       regressions: ['lying_knee_tucks'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -855,7 +855,7 @@ class AbsExercises {
       alternatives: ['plank', 'crunches'],
       progressions: ['hanging_leg_raises', 'hanging_leg_raise'],
       regressions: ['lying_knee_tucks'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -935,7 +935,7 @@ class AbsExercises {
       alternatives: ['kettlebell_swing', 'burpees'],
       progressions: ['heavy_medicine_ball_slam'],
       regressions: ['light_medicine_ball_slam'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -975,7 +975,7 @@ class AbsExercises {
       alternatives: ['plank', 'burpees'],
       progressions: ['cross_body_mountain_climber', 'sliding_mountain_climbers'],
       regressions: ['incline_mountain_climbers', 'slow_mountain_climber'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1015,7 +1015,7 @@ class AbsExercises {
       alternatives: ['plank', 'russian_twist'],
       progressions: ['kneeling_pallof_press', 'pallof_press_with_rotation'],
       regressions: ['band_pallof_press_light'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1137,7 +1137,7 @@ class AbsExercises {
       alternatives: ['lying_leg_raise', 'hanging_knee_raise', 'reverse_crunch_on_bench'],
       progressions: ['decline_reverse_crunch', 'weighted_reverse_crunch', 'dragon_flag'],
       regressions: ['bent_knee_reverse_crunch', 'dead_bug'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1190,7 +1190,7 @@ class AbsExercises {
       alternatives: ['plank', 'side_plank'],
       progressions: ['weighted_russian_twists'],
       regressions: ['feet_supported_russian_twists'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1230,7 +1230,7 @@ class AbsExercises {
       alternatives: ['flutter_kick', 'lying_leg_raise'],
       progressions: ['hollow_body_scissor_kicks'],
       regressions: ['bent_knee_scissor_kicks'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1310,7 +1310,7 @@ class AbsExercises {
       alternatives: ['crunch', 'machine_crunch', 'cable_crunch'],
       progressions: ['weighted_sit_up', 'decline_sit_up', 'medicine_ball_sit_up'],
       regressions: ['partial_sit_up', 'crunch'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1362,7 +1362,7 @@ class AbsExercises {
       alternatives: ['crunch', 'decline_crunch'],
       progressions: ['weighted_stability_ball_crunch'],
       regressions: ['standard_crunch'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1402,7 +1402,7 @@ class AbsExercises {
       alternatives: ['farmers_carry', 'side_plank'],
       progressions: ['heavy_suitcase_carry'],
       regressions: ['lighter_suitcase_carry'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1441,7 +1441,7 @@ class AbsExercises {
       alternatives: ['trx_pike', 'plank'],
       progressions: ['swiss_ball_pike_one_leg'],
       regressions: ['swiss_ball_knee_tucks'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1482,7 +1482,7 @@ class AbsExercises {
       alternatives: ['crunch', 'v_up'],
       progressions: ['weighted_toe_touch'],
       regressions: ['crunch'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1522,7 +1522,7 @@ class AbsExercises {
       alternatives: ['swiss_ball_pike', 'plank'],
       progressions: ['trx_pike_to_pushup'],
       regressions: ['trx_knee_tucks'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1563,7 +1563,7 @@ class AbsExercises {
       alternatives: ['crunches', 'jackknife_sit_up'],
       progressions: ['weighted_v_up'],
       regressions: ['crunches', 'lying_leg_raise'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1643,7 +1643,7 @@ class AbsExercises {
       alternatives: ['russian_twist', 'side_plank'],
       progressions: ['hanging_windshield_wiper'],
       regressions: ['bent_knee_windshield_wiper'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1683,7 +1683,7 @@ class AbsExercises {
       alternatives: ['russian_twist', 'pallof_press'],
       progressions: ['heavy_cable_woodchop'],
       regressions: ['band_woodchop_light'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

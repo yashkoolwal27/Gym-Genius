@@ -27,7 +27,7 @@ class BicepsExercises {
       alternatives: ['standing_dumbbell_curl', 'barbell_curl'],
       progressions: ['incline_dumbbell_curl'],
       regressions: ['resistance_band_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -68,7 +68,7 @@ class BicepsExercises {
       alternatives: ['hammer_curl', 'standing_dumbbell_curl'],
       progressions: ['heavy_barbell_curl'],
       regressions: ['resistance_band_curl', 'cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -109,7 +109,7 @@ class BicepsExercises {
       alternatives: ['behind_the_back_cable_curl', 'incline_dumbbell_curl'],
       progressions: ['heavy_bayesian_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -150,7 +150,7 @@ class BicepsExercises {
       alternatives: ['bayesian_curl', 'incline_dumbbell_curl'],
       progressions: ['heavy_behind_back_cable_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -191,7 +191,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'standing_dumbbell_curl'],
       progressions: ['heavy_cable_curl'],
       regressions: ['resistance_band_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -232,7 +232,7 @@ class BicepsExercises {
       alternatives: ['drag_curl', 'dumbbell_drag_curl'],
       progressions: ['heavy_cable_drag_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -272,7 +272,7 @@ class BicepsExercises {
       alternatives: ['preacher_dumbbell_curl', 'machine_preacher_curl'],
       progressions: ['heavy_cable_preacher_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -314,7 +314,7 @@ class BicepsExercises {
       alternatives: ['reverse_barbell_curl', 'reverse_dumbbell_curl'],
       progressions: ['heavy_cable_reverse_curl'],
       regressions: ['resistance_band_reverse_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -355,7 +355,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl'],
       progressions: ['heavy_cheat_curl'],
       regressions: ['barbell_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -395,7 +395,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'preacher_dumbbell_curl'],
       progressions: ['heavy_close_grip_barbell_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -435,7 +435,7 @@ class BicepsExercises {
       alternatives: ['preacher_dumbbell_curl', 'bayesian_curl'],
       progressions: ['heavy_concentration_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -476,7 +476,7 @@ class BicepsExercises {
       alternatives: ['hammer_curl', 'zottman_curl'],
       progressions: ['heavy_pinwheel_curl'],
       regressions: ['cable_hammer_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -517,7 +517,7 @@ class BicepsExercises {
       alternatives: ['dumbbell_drag_curl', 'cable_drag_curl'],
       progressions: ['heavy_drag_curl'],
       regressions: ['barbell_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -557,7 +557,7 @@ class BicepsExercises {
       alternatives: ['cable_curl', 'high_cable_curl'],
       progressions: ['heavy_dual_cable_curl'],
       regressions: ['single_arm_cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -597,7 +597,7 @@ class BicepsExercises {
       alternatives: ['drag_curl', 'cable_drag_curl'],
       progressions: ['heavy_dumbbell_drag_curl'],
       regressions: ['standing_dumbbell_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -637,7 +637,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'dumbbell_curl'],
       progressions: ['heavy_ez_bar_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -677,7 +677,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'hammer_curl'],
       progressions: ['heavy_fat_grip_curl'],
       regressions: ['barbell_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -717,7 +717,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'cable_hammer_curls'],
       progressions: ['dumbbell_hammer_curls_heavy'],
       regressions: ['resistance_band_curls', 'cable_curls'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -758,7 +758,7 @@ class BicepsExercises {
       alternatives: ['cable_curl', 'preacher_dumbbell_curl'],
       progressions: ['heavy_high_cable_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -799,7 +799,7 @@ class BicepsExercises {
       alternatives: ['bayesian_curl', 'behind_the_back_cable_curl'],
       progressions: ['heavy_incline_dumbbell_curl'],
       regressions: ['seated_dumbbell_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -840,7 +840,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'cable_curl'],
       progressions: ['heavy_machine_curl'],
       regressions: ['assisted_bicep_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -880,7 +880,7 @@ class BicepsExercises {
       alternatives: ['hammer_curl', 'rope_hammer_curl'],
       progressions: ['heavy_machine_hammer_curl'],
       regressions: ['cable_hammer_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -920,7 +920,7 @@ class BicepsExercises {
       alternatives: ['preacher_dumbbell_curl', 'cable_preacher_curl'],
       progressions: ['heavy_machine_preacher_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -960,7 +960,7 @@ class BicepsExercises {
       alternatives: ['machine_preacher_curl', 'concentration_curl'],
       progressions: ['heavy_preacher_dumbbell_curl'],
       regressions: ['concentration_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1001,7 +1001,7 @@ class BicepsExercises {
       alternatives: ['dumbbell_curl', 'cable_curl'],
       progressions: ['heavier_band_curl'],
       regressions: ['lighter_band_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1042,7 +1042,7 @@ class BicepsExercises {
       alternatives: ['hammer_curl', 'rope_hammer_curl'],
       progressions: ['heavier_band_hammer_curl'],
       regressions: ['lighter_band_hammer_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1081,7 +1081,7 @@ class BicepsExercises {
       alternatives: ['reverse_dumbbell_curl', 'cable_reverse_curl'],
       progressions: ['heavier_band_reverse_curl'],
       regressions: ['lighter_band_reverse_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1120,7 +1120,7 @@ class BicepsExercises {
       alternatives: ['cable_reverse_curl', 'reverse_dumbbell_curl'],
       progressions: ['heavy_reverse_barbell_curl'],
       regressions: ['resistance_band_reverse_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1161,7 +1161,7 @@ class BicepsExercises {
       alternatives: ['reverse_barbell_curl', 'cable_reverse_curl'],
       progressions: ['heavy_reverse_dumbbell_curl'],
       regressions: ['resistance_band_reverse_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1202,7 +1202,7 @@ class BicepsExercises {
       alternatives: ['chin_up', 'towel_chin_up'],
       progressions: ['weighted_ring_chin_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1242,7 +1242,7 @@ class BicepsExercises {
       alternatives: ['hammer_curl', 'machine_hammer_curl'],
       progressions: ['heavy_rope_hammer_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1283,7 +1283,7 @@ class BicepsExercises {
       alternatives: ['standing_dumbbell_curl', 'incline_dumbbell_curl'],
       progressions: ['heavy_seated_dumbbell_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1323,7 +1323,7 @@ class BicepsExercises {
       alternatives: ['cable_curl', 'concentration_curl'],
       progressions: ['heavy_single_arm_cable_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1363,7 +1363,7 @@ class BicepsExercises {
       alternatives: ['preacher_dumbbell_curl', 'concentration_curl'],
       progressions: ['heavy_spider_curl'],
       regressions: ['seated_dumbbell_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1404,7 +1404,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'alternating_dumbbell_curl'],
       progressions: ['heavy_standing_dumbbell_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1445,7 +1445,7 @@ class BicepsExercises {
       alternatives: ['chin_up', 'ring_chin_up'],
       progressions: ['weighted_towel_chin_up'],
       regressions: ['chin_up', 'assisted_pull_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-a6f9d1f6b1b8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1486,7 +1486,7 @@ class BicepsExercises {
       alternatives: ['barbell_curl', 'preacher_dumbbell_curl'],
       progressions: ['heavy_wide_grip_barbell_curl'],
       regressions: ['cable_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1526,7 +1526,7 @@ class BicepsExercises {
       alternatives: ['dumbbell_curl', 'reverse_dumbbell_curl'],
       progressions: ['heavy_zottman_curl'],
       regressions: ['alternating_dumbbell_curl'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

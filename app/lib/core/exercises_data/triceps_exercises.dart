@@ -67,7 +67,7 @@ class TricepsExercises {
       alternatives: ['dumbbell_overhead_extension', 'ez_bar_overhead_extension'],
       progressions: ['heavy_barbell_overhead_extension'],
       regressions: ['resistance_band_overhead_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -107,7 +107,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'assisted_dip_machine'],
       progressions: ['weighted_bench_dip', 'tricep_dip'],
       regressions: ['bench_dip_knees_bent'],
-      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -147,7 +147,7 @@ class TricepsExercises {
       alternatives: ['skull_crusher', 'tricep_pushdown'],
       progressions: ['floor_bodyweight_tricep_extension'],
       regressions: ['incline_bodyweight_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -187,7 +187,7 @@ class TricepsExercises {
       alternatives: ['dumbbell_kickback', 'tricep_pushdown'],
       progressions: ['heavy_cable_kickback_tricep'],
       regressions: ['resistance_band_kickback'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -228,7 +228,7 @@ class TricepsExercises {
       alternatives: ['skull_crusher', 'overhead_cable_tricep_extension'],
       progressions: ['heavy_cable_skull_crusher'],
       regressions: ['tricep_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -268,7 +268,7 @@ class TricepsExercises {
       alternatives: ['bench_dip', 'tricep_pushdown'],
       progressions: ['diamond_push_up'],
       regressions: ['knee_push_up'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -308,7 +308,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'rope_pushdown'],
       progressions: ['heavy_cross_body_pushdown'],
       regressions: ['single_arm_cable_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -348,7 +348,7 @@ class TricepsExercises {
       alternatives: ['skull_crusher', 'incline_skull_crusher'],
       progressions: ['heavy_decline_skull_crusher'],
       regressions: ['tricep_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -388,7 +388,7 @@ class TricepsExercises {
       alternatives: ['cable_tricep_kickback', 'tricep_pushdown'],
       progressions: ['cable_tricep_kickback'],
       regressions: ['resistance_band_kickback'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -428,7 +428,7 @@ class TricepsExercises {
       alternatives: ['barbell_overhead_tricep_extension', 'ez_bar_overhead_tricep_extension'],
       progressions: ['heavy_dumbbell_overhead_extension'],
       regressions: ['resistance_band_overhead_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -468,7 +468,7 @@ class TricepsExercises {
       alternatives: ['skull_crusher', 'cable_skull_crusher'],
       progressions: ['heavy_dumbbell_skull_crusher'],
       regressions: ['tricep_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -508,7 +508,7 @@ class TricepsExercises {
       alternatives: ['barbell_overhead_tricep_extension', 'dumbbell_overhead_tricep_extension'],
       progressions: ['heavy_ez_bar_overhead_extension'],
       regressions: ['resistance_band_overhead_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -548,7 +548,7 @@ class TricepsExercises {
       alternatives: ['skull_crusher', 'dumbbell_skull_crusher'],
       progressions: ['heavy_ez_bar_skull_crusher'],
       regressions: ['tricep_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -588,7 +588,7 @@ class TricepsExercises {
       alternatives: ['skull_crusher', 'floor_press'],
       progressions: ['heavy_floor_skull_crusher'],
       regressions: ['tricep_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -628,7 +628,7 @@ class TricepsExercises {
       alternatives: ['rope_pushdown', 'v_bar_pushdown'],
       progressions: ['heavy_rope_pushdown_max'],
       regressions: ['rope_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -667,7 +667,7 @@ class TricepsExercises {
       alternatives: ['skull_crusher', 'decline_skull_crusher'],
       progressions: ['heavy_incline_skull_crusher'],
       regressions: ['tricep_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -707,7 +707,7 @@ class TricepsExercises {
       alternatives: ['close_grip_bench_press', 'skull_crusher'],
       progressions: ['heavy_jm_press'],
       regressions: ['close_grip_bench_press'],
-      thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -787,7 +787,7 @@ class TricepsExercises {
       alternatives: ['dumbbell_overhead_tricep_extension', 'overhead_rope_tricep_extension'],
       progressions: ['heavy_overhead_cable_extension'],
       regressions: ['resistance_band_overhead_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -828,7 +828,7 @@ class TricepsExercises {
       alternatives: ['overhead_cable_tricep_extension', 'dumbbell_overhead_tricep_extension'],
       progressions: ['heavy_overhead_rope_extension'],
       regressions: ['resistance_band_overhead_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -867,7 +867,7 @@ class TricepsExercises {
       alternatives: ['dumbbell_kickback', 'cable_tricep_kickback'],
       progressions: ['dumbbell_kickback'],
       regressions: ['lighter_band_kickback'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -907,7 +907,7 @@ class TricepsExercises {
       alternatives: ['dumbbell_overhead_tricep_extension', 'barbell_overhead_tricep_extension'],
       progressions: ['dumbbell_overhead_tricep_extension'],
       regressions: ['lighter_band_overhead_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -946,7 +946,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'rope_pushdown'],
       progressions: ['tricep_pushdown'],
       regressions: ['lighter_band_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -986,7 +986,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'straight_bar_pushdown'],
       progressions: ['heavy_reverse_grip_pushdown'],
       regressions: ['rope_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1025,7 +1025,7 @@ class TricepsExercises {
       alternatives: ['bodyweight_tricep_extension', 'trx_tricep_extension'],
       progressions: ['single_arm_ring_extension'],
       regressions: ['bodyweight_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1065,7 +1065,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'straight_bar_pushdown'],
       progressions: ['heavy_rope_pushdown'],
       regressions: ['resistance_band_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1145,7 +1145,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'dumbbell_kickback'],
       progressions: ['heavy_single_arm_pushdown'],
       regressions: ['resistance_band_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1184,7 +1184,7 @@ class TricepsExercises {
       alternatives: ['dumbbell_overhead_tricep_extension', 'barbell_overhead_tricep_extension'],
       progressions: ['heavy_single_arm_overhead_extension'],
       regressions: ['resistance_band_overhead_tricep_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1224,7 +1224,7 @@ class TricepsExercises {
       alternatives: ['ez_bar_skull_crusher', 'dumbbell_skull_crusher'],
       progressions: ['heavy_skull_crushers'],
       regressions: ['tricep_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1264,7 +1264,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'v_bar_pushdown'],
       progressions: ['heavy_straight_bar_pushdown'],
       regressions: ['rope_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1303,7 +1303,7 @@ class TricepsExercises {
       alternatives: ['dumbbell_skull_crusher', 'jm_press'],
       progressions: ['heavy_tate_press'],
       regressions: ['dumbbell_skull_crusher'],
-      thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef03a726ec?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1343,7 +1343,7 @@ class TricepsExercises {
       alternatives: ['chest_dip', 'bench_dip'],
       progressions: ['weighted_dip'],
       regressions: ['assisted_dip_machine'],
-      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1384,7 +1384,7 @@ class TricepsExercises {
       alternatives: ['close_grip_bench_press', 'dips', 'overhead_tricep_extension'],
       progressions: ['heavy_tricep_pushdowns', 'weighted_dips'],
       regressions: ['resistance_band_pushdowns'],
-      thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1425,7 +1425,7 @@ class TricepsExercises {
       alternatives: ['bodyweight_tricep_extension', 'ring_tricep_extension'],
       progressions: ['weighted_trx_extension'],
       regressions: ['incline_trx_extension'],
-      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1465,7 +1465,7 @@ class TricepsExercises {
       alternatives: ['tricep_pushdown', 'straight_bar_pushdown'],
       progressions: ['heavy_v_bar_pushdown'],
       regressions: ['rope_pushdown'],
-      thumbnail: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [

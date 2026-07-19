@@ -27,7 +27,7 @@ class CardioExercises {
       alternatives: ['stationary_bike', 'rowing_machine'],
       progressions: ['heavy_air_bike_intervals'],
       regressions: ['stationary_bike'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -68,7 +68,7 @@ class CardioExercises {
       alternatives: ['running', 'jogging'],
       progressions: ['backward_running_sprints'],
       regressions: ['backward_walking'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -109,7 +109,7 @@ class CardioExercises {
       alternatives: ['medicine_ball_slam', 'rowing_machine'],
       progressions: ['heavy_battle_rope_slams'],
       regressions: ['single_arm_rope_waves'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -150,7 +150,7 @@ class CardioExercises {
       alternatives: ['crab_walk', 'mountain_climber'],
       progressions: ['weighted_bear_crawl', 'lateral_bear_crawl'],
       regressions: ['tabletop_crawl', 'plank'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -191,7 +191,7 @@ class CardioExercises {
       alternatives: ['jump_rope', 'speed_rope'],
       progressions: ['double_under'],
       regressions: ['jumping_jacks'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -272,7 +272,7 @@ class CardioExercises {
       alternatives: ['frog_jump', 'tuck_jump'],
       progressions: ['weighted_broad_jump'],
       regressions: ['squat_jump'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -313,7 +313,7 @@ class CardioExercises {
       alternatives: ['half_burpee', 'squat_thrust'],
       progressions: ['weighted_burpee', 'burpee_pull_up'],
       regressions: ['half_burpee', 'squat_thrust'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -355,7 +355,7 @@ class CardioExercises {
       alternatives: ['high_knees', 'jumping_jacks'],
       progressions: ['fast_butt_kicks'],
       regressions: ['walking_butt_kicks'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -395,7 +395,7 @@ class CardioExercises {
       alternatives: ['bear_crawl', 'plank'],
       progressions: ['fast_crab_walk'],
       regressions: ['supine_plank_hold'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -436,7 +436,7 @@ class CardioExercises {
       alternatives: ['stationary_bike', 'running'],
       progressions: ['incline_cycling', 'sprint_cycling'],
       regressions: ['stationary_bike'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -476,7 +476,7 @@ class CardioExercises {
       alternatives: ['speed_rope', 'jump_rope'],
       progressions: ['triple_under'],
       regressions: ['jump_rope', 'boxer_skip'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -557,7 +557,7 @@ class CardioExercises {
       alternatives: ['broad_jump', 'tuck_jump'],
       progressions: ['weighted_frog_jump'],
       regressions: ['squats'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -598,7 +598,7 @@ class CardioExercises {
       alternatives: ['burpee', 'squat_thrust'],
       progressions: ['burpee'],
       regressions: ['squat_thrust'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -639,7 +639,7 @@ class CardioExercises {
       alternatives: ['butt_kicks', 'jumping_jacks'],
       progressions: ['fast_high_knees'],
       regressions: ['marching_in_place'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -679,7 +679,7 @@ class CardioExercises {
       alternatives: ['sprint', 'treadmill_run'],
       progressions: ['weighted_hill_sprints'],
       regressions: ['hill_walking', 'jogging'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -800,7 +800,7 @@ class CardioExercises {
       alternatives: ['speed_rope', 'boxer_skip'],
       progressions: ['double_under', 'boxer_skip'],
       regressions: ['jumping_jacks'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -841,7 +841,7 @@ class CardioExercises {
       alternatives: ['seal_jacks', 'high_knees'],
       progressions: ['star_jump', 'seal_jacks'],
       regressions: ['step_jacks'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -881,7 +881,7 @@ class CardioExercises {
       alternatives: ['kettlebell_deadlift', 'medicine_ball_slam'],
       progressions: ['one_arm_kettlebell_swing'],
       regressions: ['kettlebell_deadlift'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -923,7 +923,7 @@ class CardioExercises {
       alternatives: ['jumping_jacks', 'mountain_climber'],
       progressions: ['forearm_plank_jacks'],
       regressions: ['plank_steps'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -962,7 +962,7 @@ class CardioExercises {
       alternatives: ['high_knees', 'broad_jump'],
       progressions: ['weighted_power_skip'],
       regressions: ['standard_skipping'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1082,7 +1082,7 @@ class CardioExercises {
       alternatives: ['farmers_carry', 'sled_push'],
       progressions: ['heavy_sandbag_carry'],
       regressions: ['farmers_carry'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1122,7 +1122,7 @@ class CardioExercises {
       alternatives: ['jumping_jacks', 'high_knees'],
       progressions: ['star_jump'],
       regressions: ['step_jacks'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1162,7 +1162,7 @@ class CardioExercises {
       alternatives: ['jump_rope', 'speed_rope'],
       progressions: ['double_under'],
       regressions: ['jump_rope', 'boxer_skip'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1202,7 +1202,7 @@ class CardioExercises {
       alternatives: ['jumping_jacks', 'frog_jump'],
       progressions: ['weighted_skater_jumps', 'high_speed_skaters'],
       regressions: ['lateral_steps'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1283,7 +1283,7 @@ class CardioExercises {
       alternatives: ['sled_push', 'rowing_machine'],
       progressions: ['heavy_sled_pull'],
       regressions: ['lighter_sled_pull'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1323,7 +1323,7 @@ class CardioExercises {
       alternatives: ['sled_pull', 'farmers_carry'],
       progressions: ['heavy_sled_push'],
       regressions: ['lighter_sled_push'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1363,7 +1363,7 @@ class CardioExercises {
       alternatives: ['jump_rope', 'boxer_skip'],
       progressions: ['double_under'],
       regressions: ['jumping_jacks'],
-      thumbnail: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1402,7 +1402,7 @@ class CardioExercises {
       alternatives: ['jumping_jacks', 'frog_jump'],
       progressions: ['weighted_split_jumps'],
       regressions: ['lunges', 'stepping_lunges'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1442,7 +1442,7 @@ class CardioExercises {
       alternatives: ['running', 'hill_sprint'],
       progressions: ['hill_sprint'],
       regressions: ['jogging'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1482,7 +1482,7 @@ class CardioExercises {
       alternatives: ['burpee', 'half_burpee'],
       progressions: ['half_burpee', 'burpee'],
       regressions: ['squat_holds', 'plank'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1562,7 +1562,7 @@ class CardioExercises {
       alternatives: ['stair_climber', 'hill_sprint'],
       progressions: ['stair_sprints'],
       regressions: ['stair_walking'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1602,7 +1602,7 @@ class CardioExercises {
       alternatives: ['jumping_jacks', 'seal_jacks'],
       progressions: ['weighted_star_jumps'],
       regressions: ['jumping_jacks'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1642,7 +1642,7 @@ class CardioExercises {
       alternatives: ['air_bike', 'cycling'],
       progressions: ['incline_spin_bike'],
       regressions: ['recumbent_bike'],
-      thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1681,7 +1681,7 @@ class CardioExercises {
       alternatives: ['elliptical', 'rowing_machine'],
       progressions: ['fast_swim_laps'],
       regressions: ['pool_walking'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1720,7 +1720,7 @@ class CardioExercises {
       alternatives: ['kettlebell_swing', 'sled_push'],
       progressions: ['heavy_tire_flip'],
       regressions: ['sled_push'],
-      thumbnail: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
@@ -1838,7 +1838,7 @@ class CardioExercises {
       alternatives: ['jumping_jacks', 'frog_jump'],
       progressions: ['weighted_tuck_jumps'],
       regressions: ['squat_jumps'],
-      thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
       gifUrl: '',
       videoUrl: '',
       steps: [
