@@ -25,7 +25,9 @@ workflows:
 
       - name: Decode google-services.json
         script: |
-          echo $GOOGLE_SERVICES_JSON | base64 --decode > "$CM_BUILD_DIR/app/android/app/google-services.json"
+          printf '%s' "$GOOGLE_SERVICES_JSON" | base64 -d > "$CM_BUILD_DIR/app/android/app/google-services.json"
+          echo "--- Verifying google-services.json ---"
+          python3 -c "import json,sys; json.load(open('$CM_BUILD_DIR/app/android/app/google-services.json')); print('JSON valid!')"
 
       - name: Write .env file
         script: |
