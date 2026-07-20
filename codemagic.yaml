@@ -41,20 +41,13 @@ workflows:
           cd app
           flutter analyze --no-fatal-infos
 
-      - name: Build Android APK (release)
+      - name: Build Android APK (debug)
         script: |
           cd app
-          flutter build apk --release
-
-      - name: Build Android App Bundle (release)
-        script: |
-          cd app
-          flutter build appbundle --release
+          flutter build apk --debug
 
     artifacts:
-      - app/build/app/outputs/flutter-apk/app-release.apk
-      - app/build/app/outputs/bundle/release/app-release.aab
-      - app/build/app/outputs/**/mapping.txt
+      - app/build/app/outputs/flutter-apk/app-debug.apk
 
     publishing:
       email:
