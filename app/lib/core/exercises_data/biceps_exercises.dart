@@ -28,7 +28,7 @@ class BicepsExercises {
       progressions: ['incline_dumbbell_curl'],
       regressions: ['resistance_band_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/alternating_dumbbell_curl.gif',
       videoUrl: '',
       steps: [
         'Stand tall with dumbbells in hands, palms facing forward.',
@@ -69,7 +69,7 @@ class BicepsExercises {
       progressions: ['heavy_barbell_curl'],
       regressions: ['resistance_band_curl', 'cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_curl.gif',
       videoUrl: '',
       steps: [
         'Stand tall holding a barbell with underhand grip, shoulder-width apart.',
@@ -192,7 +192,7 @@ class BicepsExercises {
       progressions: ['heavy_cable_curl'],
       regressions: ['resistance_band_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_curl.gif',
       videoUrl: '',
       steps: [
         'Attach a straight or EZ-bar to a low pulley cable station.',
@@ -233,7 +233,7 @@ class BicepsExercises {
       progressions: ['heavy_cable_drag_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_drag_curl.gif',
       videoUrl: '',
       steps: [
         'Attach a straight bar to a low pulley and stand facing the machine.',
@@ -273,7 +273,7 @@ class BicepsExercises {
       progressions: ['heavy_cable_preacher_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_preacher_curl.gif',
       videoUrl: '',
       steps: [
         'Place a preacher bench in front of a low cable station.',
@@ -315,7 +315,7 @@ class BicepsExercises {
       progressions: ['heavy_cable_reverse_curl'],
       regressions: ['resistance_band_reverse_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_reverse_curl.gif',
       videoUrl: '',
       steps: [
         'Attach a straight bar or EZ-bar to a low cable station.',
@@ -396,7 +396,7 @@ class BicepsExercises {
       progressions: ['heavy_close_grip_barbell_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/close_grip_barbell_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding a barbell with underhand grip, hands closer than shoulder-width.',
@@ -436,7 +436,7 @@ class BicepsExercises {
       progressions: ['heavy_concentration_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/concentration_curl.gif',
       videoUrl: '',
       steps: [
         'Sit on a bench, legs spread, and hold a dumbbell in one hand.',
@@ -518,7 +518,7 @@ class BicepsExercises {
       progressions: ['heavy_drag_curl'],
       regressions: ['barbell_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/drag_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding a barbell with underhand grip, hands shoulder-width apart.',
@@ -558,7 +558,7 @@ class BicepsExercises {
       progressions: ['heavy_dual_cable_curl'],
       regressions: ['single_arm_cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dual_cable_curl.gif',
       videoUrl: '',
       steps: [
         'Set up two low pulleys with D-handles and stand in the middle.',
@@ -598,7 +598,7 @@ class BicepsExercises {
       progressions: ['heavy_dumbbell_drag_curl'],
       regressions: ['standing_dumbbell_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_drag_curl.gif',
       videoUrl: '',
       steps: [
         'Stand tall holding dumbbells with underhand grip.',
@@ -638,7 +638,7 @@ class BicepsExercises {
       progressions: ['heavy_ez_bar_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/ez_bar_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding an EZ-bar on the outer knurled angled grips (underhand).',
@@ -718,7 +718,7 @@ class BicepsExercises {
       progressions: ['dumbbell_hammer_curls_heavy'],
       regressions: ['resistance_band_curls', 'cable_curls'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hammer_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding dumbbells with palms facing each other (neutral grip).',
@@ -759,7 +759,7 @@ class BicepsExercises {
       progressions: ['heavy_high_cable_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/high_cable_curl.gif',
       videoUrl: '',
       steps: [
         'Stand between two high pulley cable stations, holding handles underhand (crucifix stance).',
@@ -800,7 +800,7 @@ class BicepsExercises {
       progressions: ['heavy_incline_dumbbell_curl'],
       regressions: ['seated_dumbbell_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_dumbbell_curl.gif',
       videoUrl: '',
       steps: [
         'Set an incline bench to 45-60 degrees.',
@@ -841,7 +841,7 @@ class BicepsExercises {
       progressions: ['heavy_machine_curl'],
       regressions: ['assisted_bicep_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_biceps_curl.gif',
       videoUrl: '',
       steps: [
         'Adjust the machine seat so your elbows align with the pivot point of the machine arms.',
@@ -881,7 +881,7 @@ class BicepsExercises {
       progressions: ['heavy_machine_hammer_curl'],
       regressions: ['cable_hammer_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_hammer_curl.gif',
       videoUrl: '',
       steps: [
         'Sit at the machine, adjusting seat so elbows align with pivot point.',
@@ -921,7 +921,7 @@ class BicepsExercises {
       progressions: ['heavy_machine_preacher_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_preacher_curl.gif',
       videoUrl: '',
       steps: [
         'Sit and place armpits snugly over the preacher pad, aligning elbows with pivot point.',
@@ -961,7 +961,7 @@ class BicepsExercises {
       progressions: ['heavy_preacher_dumbbell_curl'],
       regressions: ['concentration_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/preacher_dumbbell_curl.gif',
       videoUrl: '',
       steps: [
         'Sit at a preacher bench and adjust the seat height.',
@@ -1002,7 +1002,7 @@ class BicepsExercises {
       progressions: ['heavier_band_curl'],
       regressions: ['lighter_band_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_curl.gif',
       videoUrl: '',
       steps: [
         'Stand on the middle of a resistance loop or tube band.',
@@ -1043,7 +1043,7 @@ class BicepsExercises {
       progressions: ['heavier_band_hammer_curl'],
       regressions: ['lighter_band_hammer_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_hammer_curl.gif',
       videoUrl: '',
       steps: [
         'Stand on a resistance band and hold the handles in a neutral grip (palms facing).',
@@ -1082,7 +1082,7 @@ class BicepsExercises {
       progressions: ['heavier_band_reverse_curl'],
       regressions: ['lighter_band_reverse_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_reverse_curl.gif',
       videoUrl: '',
       steps: [
         'Stand on a resistance band and grip handles/ends overhand (pronated).',
@@ -1121,7 +1121,7 @@ class BicepsExercises {
       progressions: ['heavy_reverse_barbell_curl'],
       regressions: ['resistance_band_reverse_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_barbell_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding a barbell with a shoulder-width overhand (pronated) grip.',
@@ -1162,7 +1162,7 @@ class BicepsExercises {
       progressions: ['heavy_reverse_dumbbell_curl'],
       regressions: ['resistance_band_reverse_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_dumbbell_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding dumbbells with an overhand (pronated) grip.',
@@ -1243,7 +1243,7 @@ class BicepsExercises {
       progressions: ['heavy_rope_hammer_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/rope_hammer_curl.gif',
       videoUrl: '',
       steps: [
         'Attach a rope handle to a low cable pulley.',
@@ -1284,7 +1284,7 @@ class BicepsExercises {
       progressions: ['heavy_seated_dumbbell_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_dumbbell_curl.gif',
       videoUrl: '',
       steps: [
         'Sit on a flat or upright bench holding dumbbells at your sides, palms facing forward.',
@@ -1324,7 +1324,7 @@ class BicepsExercises {
       progressions: ['heavy_single_arm_cable_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_arm_cable_curl.gif',
       videoUrl: '',
       steps: [
         'Attach a D-handle to a low pulley cable station.',
@@ -1405,7 +1405,7 @@ class BicepsExercises {
       progressions: ['heavy_standing_dumbbell_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/standing_dumbbell_curl.gif',
       videoUrl: '',
       steps: [
         'Stand tall with dumbbells in hands at your sides, palms facing forward.',
@@ -1487,7 +1487,7 @@ class BicepsExercises {
       progressions: ['heavy_wide_grip_barbell_curl'],
       regressions: ['cable_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/wide_grip_barbell_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding a barbell with underhand grip, hands wider than shoulder-width.',
@@ -1527,7 +1527,7 @@ class BicepsExercises {
       progressions: ['heavy_zottman_curl'],
       regressions: ['alternating_dumbbell_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/zottman_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding dumbbells with an underhand grip (palms facing forward).',

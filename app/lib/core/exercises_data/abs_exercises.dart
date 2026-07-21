@@ -28,7 +28,7 @@ class AbsExercises {
       progressions: ['standing_ab_wheel_rollout'],
       regressions: ['knee_plank', 'swiss_ball_rollout'],
       thumbnail: 'https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/ab_wheel_rollout.gif',
       videoUrl: '',
       steps: [
         'Kneel on the floor with your knees on a mat and hold the ab wheel handles.',
@@ -69,7 +69,7 @@ class AbsExercises {
       progressions: ['weighted_bicycle_crunch', 'decline_bicycle_crunch', 'hanging_bicycle_raise'],
       regressions: ['heel_touch', 'crunch'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bicycle_crunch.gif',
       videoUrl: '',
       steps: [
         'Lie on your back with your hands lightly supporting your head.',
@@ -123,7 +123,7 @@ class AbsExercises {
       progressions: ['weighted_bird_dog', 'elevated_bird_dog', 'bird_dog_on_stability_ball'],
       regressions: ['supported_bird_dog', 'arm_only_bird_dog', 'leg_only_bird_dog'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bird_dog.gif',
       videoUrl: '',
       steps: [
         'Start on your hands and knees in a tabletop position with a neutral spine.',
@@ -178,7 +178,7 @@ class AbsExercises {
       progressions: ['weighted_cable_crunch'],
       regressions: ['standard_crunch'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_crunch.gif',
       videoUrl: '',
       steps: [
         'Kneel in front of a cable station with a rope attachment.',
@@ -259,7 +259,7 @@ class AbsExercises {
       progressions: ['decline_crunch', 'weighted_crunch', 'cable_crunch'],
       regressions: ['partial_crunch', 'dead_bug'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/crunch.gif',
       videoUrl: '',
       steps: [
         'Lie on your back with knees bent and feet flat on the floor.',
@@ -310,7 +310,7 @@ class AbsExercises {
       progressions: ['weighted_dead_bug', 'elevated_dead_bug'],
       regressions: ['single_leg_lower', 'dead_bug_static'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dead_bug.gif',
       videoUrl: '',
       steps: [
         'Lie on your back on a mat, arms pointing straight up, knees bent at 90 degrees directly above your hips.',
@@ -391,7 +391,7 @@ class AbsExercises {
       progressions: ['dragon_flag_flutter_kicks'],
       regressions: ['tucked_dragon_flag', 'lying_leg_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dragon_flag.gif',
       videoUrl: '',
       steps: [
         'Lie on your back on a bench, gripping the top of the bench firmly behind your head.',
@@ -471,7 +471,7 @@ class AbsExercises {
       progressions: ['weighted_flutter_kick', 'hollow_body_flutter_kick', 'hanging_flutter_kick'],
       regressions: ['bent_knee_flutter_kick', 'dead_bug'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/flutter_kick.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back with your legs extended.',
@@ -524,7 +524,7 @@ class AbsExercises {
       progressions: ['hanging_leg_raise', 'toes_to_bar'],
       regressions: ['assisted_hanging_knee_raise', 'lying_knee_tucks'],
       thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hanging_knee_raise.gif',
       videoUrl: '',
       steps: [
         'Hang from a pullup bar with a shoulder-width, overhand grip.',
@@ -564,7 +564,7 @@ class AbsExercises {
       progressions: ['toes_to_bar'],
       regressions: ['hanging_knee_raises', 'hanging_knee_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hanging_leg_raise.gif',
       videoUrl: '',
       steps: [
         'Hang from a pullup bar with a shoulder-width grip and fully extended arms.',
@@ -604,7 +604,7 @@ class AbsExercises {
       progressions: ['hanging_windshield_wiper_slow'],
       regressions: ['windshield_wiper', 'hanging_leg_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hanging_windshield_wiper.gif',
       videoUrl: '',
       steps: [
         'Hang from a pullup bar and raise your straight legs into an inverted vertical position (feet toward bar).',
@@ -644,7 +644,7 @@ class AbsExercises {
       progressions: ['weighted_heel_touch', 'decline_heel_touch'],
       regressions: ['crunch'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/heel_touch.gif',
       videoUrl: '',
       steps: [
         'Lie on your back with your knees bent and feet flat on the floor.',
@@ -738,7 +738,7 @@ class AbsExercises {
       progressions: ['weighted_jackknife_sit_up'],
       regressions: ['crunches', 'lying_leg_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/jackknife_sit_up.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back with arms extended overhead and legs straight.',
@@ -778,7 +778,7 @@ class AbsExercises {
       progressions: ['v_sit', 'l_sit_lifts'],
       regressions: ['tucked_l_sit', 'single_leg_l_sit'],
       thumbnail: 'https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/l_sit.gif',
       videoUrl: '',
       steps: [
         'Support your weight on parallettes or parallel bars with elbows locked.',
@@ -817,7 +817,7 @@ class AbsExercises {
       progressions: ['hanging_leg_raise'],
       regressions: ['lying_knee_tucks'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/leg_raise.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back on a mat, hands under glutes or beside hips.',
@@ -856,7 +856,7 @@ class AbsExercises {
       progressions: ['hanging_leg_raises', 'hanging_leg_raise'],
       regressions: ['lying_knee_tucks'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/lying_leg_raise.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back on a mat, hands under your glutes for lower back support.',
@@ -896,7 +896,7 @@ class AbsExercises {
       progressions: ['weighted_machine_crunch'],
       regressions: ['standard_crunch'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_crunch.gif',
       videoUrl: '',
       steps: [
         'Sit on the crunch machine and select a suitable weight.',
@@ -936,7 +936,7 @@ class AbsExercises {
       progressions: ['heavy_medicine_ball_slam'],
       regressions: ['light_medicine_ball_slam'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/medicine_ball_slam.gif',
       videoUrl: '',
       steps: [
         'Stand with feet shoulder-width apart, holding a medicine ball with both hands.',
@@ -976,7 +976,7 @@ class AbsExercises {
       progressions: ['cross_body_mountain_climber', 'sliding_mountain_climbers'],
       regressions: ['incline_mountain_climbers', 'slow_mountain_climber'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/mountain_climber.gif',
       videoUrl: '',
       steps: [
         'Start in a high plank position, hands under shoulders, spine straight.',
@@ -1016,7 +1016,7 @@ class AbsExercises {
       progressions: ['kneeling_pallof_press', 'pallof_press_with_rotation'],
       regressions: ['band_pallof_press_light'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/pallof_press.gif',
       videoUrl: '',
       steps: [
         'Stand lateral to a cable or band attachment, holding the handle with both hands at your chest.',
@@ -1057,7 +1057,7 @@ class AbsExercises {
       progressions: ['weighted_plank', 'plank_shoulder_tap'],
       regressions: ['knee_plank'],
       thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/plank.gif',
       videoUrl: '',
       steps: [
         'Get into a forearm plank position, elbows directly under your shoulders, forearms flat on the floor.',
@@ -1138,7 +1138,7 @@ class AbsExercises {
       progressions: ['decline_reverse_crunch', 'weighted_reverse_crunch', 'dragon_flag'],
       regressions: ['bent_knee_reverse_crunch', 'dead_bug'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_crunch.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back with your arms beside your body.',
@@ -1191,7 +1191,7 @@ class AbsExercises {
       progressions: ['weighted_russian_twists'],
       regressions: ['feet_supported_russian_twists'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/russian_twist.gif',
       videoUrl: '',
       steps: [
         'Sit on the floor, lean your torso back slightly, and lift your feet off the ground.',
@@ -1231,7 +1231,7 @@ class AbsExercises {
       progressions: ['hollow_body_scissor_kicks'],
       regressions: ['bent_knee_scissor_kicks'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/scissor_kick.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back, hands under your glutes for back support.',
@@ -1271,7 +1271,7 @@ class AbsExercises {
       progressions: ['weighted_side_plank', 'side_plank_raises'],
       regressions: ['knee_side_plank'],
       thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/side_plank.gif',
       videoUrl: '',
       steps: [
         'Lie on your side with your elbow directly below your shoulder.',
@@ -1311,7 +1311,7 @@ class AbsExercises {
       progressions: ['weighted_sit_up', 'decline_sit_up', 'medicine_ball_sit_up'],
       regressions: ['partial_sit_up', 'crunch'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/sit_up.gif',
       videoUrl: '',
       steps: [
         'Lie on your back with knees bent and feet flat on the floor.',
@@ -1363,7 +1363,7 @@ class AbsExercises {
       progressions: ['weighted_stability_ball_crunch'],
       regressions: ['standard_crunch'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/stability_ball_crunch.gif',
       videoUrl: '',
       steps: [
         'Lie face-up on a stability ball, with your lower back supported by the curve of the ball.',
@@ -1442,7 +1442,7 @@ class AbsExercises {
       progressions: ['swiss_ball_pike_one_leg'],
       regressions: ['swiss_ball_knee_tucks'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/swiss_ball_pike.gif',
       videoUrl: '',
       steps: [
         'Start in a pushup position with your shins resting on top of a stability ball.',
@@ -1483,7 +1483,7 @@ class AbsExercises {
       progressions: ['weighted_toe_touch'],
       regressions: ['crunch'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/toe_touch.gif',
       videoUrl: '',
       steps: [
         'Lie on your back, raising your straight legs until they point straight toward the ceiling.',
@@ -1564,7 +1564,7 @@ class AbsExercises {
       progressions: ['weighted_v_up'],
       regressions: ['crunches', 'lying_leg_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/v_up.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back with legs straight and arms extended overhead.',
@@ -1604,7 +1604,7 @@ class AbsExercises {
       progressions: ['heavier_weighted_plank'],
       regressions: ['plank'],
       thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/weighted_plank.gif',
       videoUrl: '',
       steps: [
         'Have a partner place a weight plate flat on your upper back while in a forearm plank, or secure it carefully.',
@@ -1644,7 +1644,7 @@ class AbsExercises {
       progressions: ['hanging_windshield_wiper'],
       regressions: ['bent_knee_windshield_wiper'],
       thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/windshield_wiper.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back with arms extended out to the sides for stability.',

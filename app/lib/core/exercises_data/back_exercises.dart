@@ -28,7 +28,7 @@ class BackExercises {
       progressions: ['pull_up'],
       regressions: ['assisted_pull_up_heavy'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/assisted_pull_up.gif',
       videoUrl: '',
       steps: [
         'Set the weight assistance on the machine (heavier provides more help).',
@@ -70,7 +70,7 @@ class BackExercises {
       progressions: ['weighted_back_extension'],
       regressions: ['bird_dog', 'superman'],
       thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/back_extension.gif',
       videoUrl: '',
       steps: [
         'Position yourself in the Roman chair, adjusting the hip pad so it rests just below your hip crease.',
@@ -112,7 +112,7 @@ class BackExercises {
       progressions: ['heavy_barbell_row', 'pendlay_row'],
       regressions: ['chest_supported_row', 'machine_row'],
       thumbnail: 'https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bent_over_barbell_row.gif',
       videoUrl: '',
       steps: [
         'Stand over a barbell with feet hip-width apart, bend knees slightly, and hinge at your hips until your torso is almost parallel to the floor.',
@@ -154,7 +154,7 @@ class BackExercises {
       progressions: ['weighted_bird_dog', 'elevated_bird_dog'],
       regressions: ['single_limb_raises'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bird_dog.gif',
       videoUrl: '',
       steps: [
         'Start on your hands and knees in a tabletop position, hands under shoulders and knees under hips.',
@@ -197,7 +197,7 @@ class BackExercises {
       progressions: ['heavy_cable_pullover'],
       regressions: ['resistance_band_pullover'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_pullover.gif',
       videoUrl: '',
       steps: [
         'Attach a straight bar or rope to a high pulley cable station.',
@@ -281,7 +281,7 @@ class BackExercises {
       progressions: ['weighted_chin_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/chin_up.gif',
       videoUrl: '',
       steps: [
         'Grip the pull-up bar with an underhand (supinated) grip, shoulder-width apart.',
@@ -323,7 +323,7 @@ class BackExercises {
       progressions: ['heavy_seated_cable_row', 'bent_over_barbell_row'],
       regressions: ['machine_row', 'trx_row'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/close_grip_cable_row.gif',
       videoUrl: '',
       steps: [
         'Sit at a cable row machine with a V-bar attachment.',
@@ -365,7 +365,7 @@ class BackExercises {
       progressions: ['heavy_close_grip_pulldown'],
       regressions: ['assisted_pull_up', 'straight_arm_pulldown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/close_grip_lat_pulldown.gif',
       videoUrl: '',
       steps: [
         'Attach a V-bar handle to the lat pulldown station and adjust the thigh pad.',
@@ -407,7 +407,7 @@ class BackExercises {
       progressions: ['weighted_pull_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/close_grip_pull_up.gif',
       videoUrl: '',
       steps: [
         'Grip the pull-up bar with an overhand grip, hands closer than shoulder-width.',
@@ -449,7 +449,7 @@ class BackExercises {
       progressions: ['heavy_deadlifts', 'deficit_deadlift'],
       regressions: ['kettlebell_deadlift', 'rack_pull'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/deadlift.gif',
       videoUrl: '',
       steps: [
         'Stand with feet hip-width apart, with the barbell over the middle of your feet.',
@@ -534,7 +534,7 @@ class BackExercises {
       progressions: ['weighted_rear_delt_fly_heavy'],
       regressions: ['resistance_band_pull_apart'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_rear_delt_fly.gif',
       videoUrl: '',
       steps: [
         'Stand holding dumbbells at your sides.',
@@ -576,7 +576,7 @@ class BackExercises {
       progressions: ['heavy_dumbbell_row'],
       regressions: ['chest_supported_row', 'machine_row'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_row.gif',
       videoUrl: '',
       steps: [
         'Stand holding dumbbells with palms facing each other.',
@@ -618,7 +618,7 @@ class BackExercises {
       progressions: ['heavy_face_pull'],
       regressions: ['band_face_pull'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/face_pull.gif',
       videoUrl: '',
       steps: [
         'Set a cable pulley to upper chest/eye height and attach a rope handle.',
@@ -661,7 +661,7 @@ class BackExercises {
       progressions: ['heavy_good_morning'],
       regressions: ['bodyweight_good_morning', 'back_extension'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/good_morning.gif',
       videoUrl: '',
       steps: [
         'Place a barbell across your upper back (traps) as in a back squat.',
@@ -703,7 +703,7 @@ class BackExercises {
       progressions: ['back_extension', 'weighted_back_extension'],
       regressions: ['bird_dog'],
       thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hyperextension.gif',
       videoUrl: '',
       steps: [
         'Lie face down on a mat or flat bench with your lower body secured.',
@@ -744,7 +744,7 @@ class BackExercises {
       progressions: ['weighted_inverted_row', 'pull_up'],
       regressions: ['assisted_inverted_row'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/inverted_row.gif',
       videoUrl: '',
       steps: [
         'Set a barbell in a rack (or Smith machine) to waist height.',
@@ -786,7 +786,7 @@ class BackExercises {
       progressions: ['deadlift', 'romanian_deadlift'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/kettlebell_deadlift.gif',
       videoUrl: '',
       steps: [
         'Stand with feet shoulder-width apart, with a heavy kettlebell on the floor between your feet.',
@@ -828,7 +828,7 @@ class BackExercises {
       progressions: ['heavy_lat_pulldown', 'pull_up'],
       regressions: ['assisted_pull_up', 'straight_arm_pulldown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/lat_pulldown.gif',
       videoUrl: '',
       steps: [
         'Sit on a lat pulldown machine and adjust the thigh pad to lock yourself in.',
@@ -912,7 +912,7 @@ class BackExercises {
       progressions: ['heavy_machine_row', 'bent_over_barbell_row'],
       regressions: ['trx_row', 'assisted_row'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_row.gif',
       videoUrl: '',
       steps: [
         'Adjust the seat and chest support pad so your chest rests comfortably against the pad and you can reach the handles.',
@@ -995,7 +995,7 @@ class BackExercises {
       progressions: ['pull_up'],
       regressions: ['assisted_pull_up', 'lat_pulldown'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/negative_pull_up.gif',
       videoUrl: '',
       steps: [
         'Stand on a box or bench below a pull-up bar.',
@@ -1036,7 +1036,7 @@ class BackExercises {
       progressions: ['weighted_neutral_grip_pull_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/neutral_grip_pull_up.gif',
       videoUrl: '',
       steps: [
         'Grip the parallel handles of a pull-up bar with palms facing each other.',
@@ -1078,7 +1078,7 @@ class BackExercises {
       progressions: ['heavy_pendlay_row'],
       regressions: ['chest_supported_row', 'dumbbell_row'],
       thumbnail: 'https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/pendlay_row.gif',
       videoUrl: '',
       steps: [
         'Stand over a barbell with feet shoulder-width apart, bar over mid-foot.',
@@ -1120,7 +1120,7 @@ class BackExercises {
       progressions: ['weighted_pull_up', 'muscle_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up', 'lat_pulldown'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/pull_up.gif',
       videoUrl: '',
       steps: [
         'Grip the pull-up bar with an overhand (pronated) grip, slightly wider than shoulder-width.',
@@ -1162,7 +1162,7 @@ class BackExercises {
       progressions: ['heavy_rack_pull'],
       regressions: ['deadlift', 'kettlebell_deadlift'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/rack_pull.gif',
       videoUrl: '',
       steps: [
         'Set the safety pins in a power rack so the barbell rests just below or above your knees.',
@@ -1204,7 +1204,7 @@ class BackExercises {
       progressions: ['heavy_cable_rear_delt_fly'],
       regressions: ['resistance_band_pull_apart'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/rear_delt_cable_fly.gif',
       videoUrl: '',
       steps: [
         'Set dual cable pulleys to chest/shoulder height (without handles, or use standard handles).',
@@ -1247,7 +1247,7 @@ class BackExercises {
       progressions: ['double_band_pull_apart'],
       regressions: ['single_band_pull_apart_light'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_pull_apart.gif',
       videoUrl: '',
       steps: [
         'Stand tall holding a resistance band in front of your chest with hands shoulder-width apart, palms down.',
@@ -1289,7 +1289,7 @@ class BackExercises {
       progressions: ['heavy_reverse_grip_pulldown'],
       regressions: ['assisted_pull_up', 'straight_arm_pulldown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_grip_lat_pulldown.gif',
       videoUrl: '',
       steps: [
         'Grip the lat pulldown bar with an underhand (supinated) grip, shoulder-width apart.',
@@ -1331,7 +1331,7 @@ class BackExercises {
       progressions: ['heavy_reverse_pec_deck'],
       regressions: ['resistance_band_pull_apart'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_pec_deck.gif',
       videoUrl: '',
       steps: [
         'Sit facing the chest press/fly machine, adjusting seat height so the handles are at shoulder level.',
@@ -1372,7 +1372,7 @@ class BackExercises {
       progressions: ['heavy_romanian_deadlift'],
       regressions: ['kettlebell_deadlift', 'back_extension'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/romanian_deadlift.gif',
       videoUrl: '',
       steps: [
         'Stand holding a barbell at your thighs with an overhand grip, feet hip-width apart.',
@@ -1414,7 +1414,7 @@ class BackExercises {
       progressions: ['pull_up', 'negative_pull_up'],
       regressions: ['assisted_scapular_pull_up'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/scapular_pull_up.gif',
       videoUrl: '',
       steps: [
         'Hang from a pull-up bar with an overhand grip, shoulder-width apart (passive hang).',
@@ -1455,7 +1455,7 @@ class BackExercises {
       progressions: ['heavy_seated_cable_row', 'bent_over_barbell_row'],
       regressions: ['trx_row', 'machine_row'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_cable_row.gif',
       videoUrl: '',
       steps: [
         'Sit at a cable row station, place feet on plates, knees slightly bent.',
@@ -1496,7 +1496,7 @@ class BackExercises {
       progressions: ['heavy_single_arm_cable_row'],
       regressions: ['two_arm_seated_cable_row'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_arm_cable_row.gif',
       videoUrl: '',
       steps: [
         'Attach a single D-handle to a seated cable row station.',
@@ -1664,7 +1664,7 @@ class BackExercises {
       progressions: ['heavy_straight_arm_pulldown'],
       regressions: ['resistance_band_lat_pulldown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/straight_arm_pulldown.gif',
       videoUrl: '',
       steps: [
         'Grip a straight bar attached to a high pulley cable station.',
@@ -1705,7 +1705,7 @@ class BackExercises {
       progressions: ['superman_rocks', 'aquaman_alternating'],
       regressions: ['single_leg_lifts', 'bird_dog'],
       thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/superman.gif',
       videoUrl: '',
       steps: [
         'Lie face down on a mat with arms extended straight overhead and legs straight.',
@@ -1747,7 +1747,7 @@ class BackExercises {
       progressions: ['heavy_t_bar_row'],
       regressions: ['chest_supported_row', 'seated_cable_row'],
       thumbnail: 'https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/t_bar_row.gif',
       videoUrl: '',
       steps: [
         'Stand straddling a T-bar row machine, placing feet flat on platforms.',
@@ -1789,7 +1789,7 @@ class BackExercises {
       progressions: ['heavy_trap_bar_deadlift'],
       regressions: ['kettlebell_deadlift', 'glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/trap_bar_deadlift.gif',
       videoUrl: '',
       steps: [
         'Stand inside the trap bar with feet shoulder-width apart.',
@@ -1873,7 +1873,7 @@ class BackExercises {
       progressions: ['weighted_wide_grip_pull_up'],
       regressions: ['assisted_pull_up', 'negative_pull_up'],
       thumbnail: 'https://images.unsplash.com/photo-1530822847156-5df684ec5105?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/wide_grip_pull_up.gif',
       videoUrl: '',
       steps: [
         'Grip the pull-up bar with an overhand grip, significantly wider than shoulder-width.',

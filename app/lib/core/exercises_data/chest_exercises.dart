@@ -28,7 +28,7 @@ class ChestExercises {
       progressions: ['one_arm_push_ups'],
       regressions: ['push_ups', 'assisted_archer_push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/archer_push_ups.gif',
       videoUrl: '',
       steps: [
         'Get into a pushup position but with your hands placed much wider than normal, fingers pointing outward.',
@@ -69,7 +69,7 @@ class ChestExercises {
       progressions: ['dips'],
       regressions: ['bench_dips'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/assisted_dip.gif',
       videoUrl: '',
       steps: [
         'Set weight assistance on machine and place knees/feet on pad.',
@@ -109,7 +109,7 @@ class ChestExercises {
       progressions: ['push_ups', 'dumbbell_bench_press', 'bench_press'],
       regressions: ['chest_press_machine', 'incline_push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bench_press.gif',
       videoUrl: '',
       steps: [
         'Lie flat on the bench, feet flat on the floor. Grip the barbell slightly wider than shoulder-width.',
@@ -150,7 +150,7 @@ class ChestExercises {
       progressions: ['weighted_cable_fly'],
       regressions: ['pec_deck', 'resistance_band_fly'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_fly.gif',
       videoUrl: '',
       steps: [
         'Set the pulleys of a cable crossover machine to shoulder height.',
@@ -191,7 +191,7 @@ class ChestExercises {
       progressions: ['weighted_dips', 'ring_dips'],
       regressions: ['bench_dips', 'band_assisted_dips'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/chest_dip.gif',
       videoUrl: '',
       steps: [
         'Hoist yourself up on parallel bars, arms fully locked out.',
@@ -232,7 +232,7 @@ class ChestExercises {
       progressions: ['bench_press', 'incline_db_press'],
       regressions: ['push_ups', 'chest_press_machine_light'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/chest_press_machine.gif',
       videoUrl: '',
       steps: [
         'Adjust the seat height so the handles align with your mid-chest level.',
@@ -273,7 +273,7 @@ class ChestExercises {
       progressions: ['one_arm_push_up'],
       regressions: ['push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/clap_push_up.gif',
       videoUrl: '',
       steps: [
         'Start in standard push-up plank.',
@@ -313,7 +313,7 @@ class ChestExercises {
       progressions: ['weighted_dips', 'close_grip_paused_bench'],
       regressions: ['tricep_pushdowns', 'push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/close_grip_bench_press.gif',
       videoUrl: '',
       steps: [
         'Lie on a flat bench and grip the bar with a narrow grip (shoulder-width or narrower).',
@@ -353,7 +353,7 @@ class ChestExercises {
       progressions: ['heavy_decline_press'],
       regressions: ['decline_dumbbell_press'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/decline_bench_press.gif',
       videoUrl: '',
       steps: [
         'Secure your legs at the end of a decline bench and lie back flat.',
@@ -392,7 +392,7 @@ class ChestExercises {
       progressions: ['decline_bench_press'],
       regressions: ['assisted_dip'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/decline_chest_press_machine.gif',
       videoUrl: '',
       steps: [
         'Adjust machine seat so handles align with lower chest.',
@@ -432,7 +432,7 @@ class ChestExercises {
       progressions: ['cable_fly'],
       regressions: ['decline_dumbbell_fly_light'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/decline_dumbbell_fly.gif',
       videoUrl: '',
       steps: [
         'Lie on a decline bench with dumbbells held above lower chest.',
@@ -472,7 +472,7 @@ class ChestExercises {
       progressions: ['decline_bench_press'],
       regressions: ['chest_press_machine'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/decline_dumbbell_press.gif',
       videoUrl: '',
       steps: [
         'Secure feet at end of decline bench and lie back with dumbbells.',
@@ -512,7 +512,7 @@ class ChestExercises {
       progressions: ['archer_push_ups', 'ring_push_ups'],
       regressions: ['push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/decline_push_ups.gif',
       videoUrl: '',
       steps: [
         'Place your feet on an elevated surface like a bench or step, and hands on the floor in front of you.',
@@ -553,7 +553,7 @@ class ChestExercises {
       progressions: ['decline_bench_press'],
       regressions: ['assisted_dip'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/decline_smith_machine_press.gif',
       videoUrl: '',
       steps: [
         'Set decline bench inside Smith machine and align bar to lower chest.',
@@ -592,7 +592,7 @@ class ChestExercises {
       progressions: ['weighted_diamond_push_up'],
       regressions: ['knee_diamond_push_up', 'incline_diamond_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/diamond_push_up.gif',
       videoUrl: '',
       steps: [
         'Set up in a push-up plank, placing hands close together under your chest so thumbs and index fingers form a diamond shape.',
@@ -632,7 +632,7 @@ class ChestExercises {
       progressions: ['heavy_dumbbell_bench_press'],
       regressions: ['chest_press_machine', 'floor_press'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_bench_press.gif',
       videoUrl: '',
       steps: [
         'Lie flat on a bench, holding dumbbells at chest height, palms facing forward.',
@@ -671,7 +671,7 @@ class ChestExercises {
       progressions: ['cable_fly'],
       regressions: ['resistance_band_fly', 'floor_db_fly'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_fly.gif',
       videoUrl: '',
       steps: [
         'Lie on a flat bench with a dumbbell in each hand, arms extended above your chest.',
@@ -711,7 +711,7 @@ class ChestExercises {
       progressions: ['heavy_dumbbell_pullover'],
       regressions: ['resistance_band_pullover'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_pullover.gif',
       videoUrl: '',
       steps: [
         'Lie flat across a bench, supporting upper back, feet flat on floor.',
@@ -751,7 +751,7 @@ class ChestExercises {
       progressions: ['bench_press'],
       regressions: ['push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/floor_press.gif',
       videoUrl: '',
       steps: [
         'Lie flat on the floor with knees bent (feet flat).',
@@ -831,7 +831,7 @@ class ChestExercises {
       progressions: ['one_arm_push_up'],
       regressions: ['push_ups', 'knee_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hindu_push_up.gif',
       videoUrl: '',
       steps: [
         'Start in downward dog position (hips high in V-shape).',
@@ -872,7 +872,7 @@ class ChestExercises {
       progressions: ['heavy_incline_press'],
       regressions: ['incline_machine_press'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_barbell_bench_press.gif',
       videoUrl: '',
       steps: [
         'Lie on bench inclined at 30-45 degrees, grip barbell wider than shoulder-width.',
@@ -911,7 +911,7 @@ class ChestExercises {
       progressions: ['incline_db_press'],
       regressions: ['incline_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_chest_press_machine.gif',
       videoUrl: '',
       steps: [
         'Adjust machine seat so handles align with upper chest.',
@@ -951,7 +951,7 @@ class ChestExercises {
       progressions: ['dumbbell_bench_press', 'incline_db_press'],
       regressions: ['machine_chest_press', 'incline_push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_db_press.gif',
       videoUrl: '',
       steps: [
         'Set an incline bench to around 30 to 45 degrees. Sit with a dumbbell in each hand on your thighs.',
@@ -992,7 +992,7 @@ class ChestExercises {
       progressions: ['incline_cable_fly'],
       regressions: ['pec_deck'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_dumbbell_fly.gif',
       videoUrl: '',
       steps: [
         'Lie on a 30-45 degree incline bench holding dumbbells overhead.',
@@ -1032,7 +1032,7 @@ class ChestExercises {
       progressions: ['incline_barbell_bench_press'],
       regressions: ['incline_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_machine_press.gif',
       videoUrl: '',
       steps: [
         'Sit and adjust seat on incline press machine.',
@@ -1071,7 +1071,7 @@ class ChestExercises {
       progressions: ['push_ups'],
       regressions: ['wall_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_push_up.gif',
       videoUrl: '',
       steps: [
         'Place hands on a bench or elevated step slightly wider than shoulder-width, and extend feet back on floor.',
@@ -1110,7 +1110,7 @@ class ChestExercises {
       progressions: ['incline_barbell_bench_press'],
       regressions: ['incline_machine_press'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_smith_machine_press.gif',
       videoUrl: '',
       steps: [
         'Position an incline bench inside the Smith machine.',
@@ -1150,7 +1150,7 @@ class ChestExercises {
       progressions: ['push_ups'],
       regressions: ['wall_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/knee_push_up.gif',
       videoUrl: '',
       steps: [
         'Get on hands and knees, hands slightly wider than shoulders.',
@@ -1229,7 +1229,7 @@ class ChestExercises {
       progressions: ['weighted_one_arm_push_up'],
       regressions: ['archer_push_ups', 'push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/one_arm_push_up.gif',
       videoUrl: '',
       steps: [
         'Set up in push-up plank, feet very wide apart.',
@@ -1310,7 +1310,7 @@ class ChestExercises {
       progressions: ['cable_fly', 'dumbbell_fly'],
       regressions: ['pec_deck_light'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/pec_deck.gif',
       videoUrl: '',
       steps: [
         'Sit on the machine with your back flat against the backrest.',
@@ -1351,7 +1351,7 @@ class ChestExercises {
       progressions: ['clap_push_up'],
       regressions: ['push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/plyometric_push_up.gif',
       videoUrl: '',
       steps: [
         'Lower chest to floor in standard pushup.',
@@ -1391,7 +1391,7 @@ class ChestExercises {
       progressions: ['push_ups'],
       regressions: ['knee_push_up_plus'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/push_up_plus.gif',
       videoUrl: '',
       steps: [
         'Perform standard pushup.',
@@ -1431,7 +1431,7 @@ class ChestExercises {
       progressions: ['decline_push_ups', 'archer_push_ups', 'one_arm_push_ups'],
       regressions: ['incline_push_ups', 'knee_push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/push_ups.gif',
       videoUrl: '',
       steps: [
         'Place hands on the floor slightly wider than shoulder-width, extend legs back in a plank position.',
@@ -1472,7 +1472,7 @@ class ChestExercises {
       progressions: ['cable_fly'],
       regressions: ['lighter_band_fly'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_fly.gif',
       videoUrl: '',
       steps: [
         'Anchor band behind you at shoulder height.',
@@ -1512,7 +1512,7 @@ class ChestExercises {
       progressions: ['weighted_ring_dip'],
       regressions: ['dips', 'assisted_dip'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/ring_dip.gif',
       videoUrl: '',
       steps: [
         'Support your weight on gymnastic rings with arms locked out straight.',
@@ -1552,7 +1552,7 @@ class ChestExercises {
       progressions: ['archer_push_ups', 'weighted_ring_push_ups'],
       regressions: ['push_ups', 'incline_ring_push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/ring_push_ups.gif',
       videoUrl: '',
       steps: [
         'Grip gymnastic rings suspended slightly above the floor and extend your feet back into a plank.',
@@ -1593,7 +1593,7 @@ class ChestExercises {
       progressions: ['heavy_single_arm_cable_fly'],
       regressions: ['cable_fly'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_arm_cable_fly.gif',
       videoUrl: '',
       steps: [
         'Stand next to cable crossover machine, holding single pulley handle at shoulder height.',
@@ -1633,7 +1633,7 @@ class ChestExercises {
       progressions: ['bench_press'],
       regressions: ['chest_press_machine'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/smith_machine_bench_press.gif',
       videoUrl: '',
       steps: [
         'Set flat bench inside Smith machine.',
@@ -1713,7 +1713,7 @@ class ChestExercises {
       progressions: ['heavy_standing_cable_fly'],
       regressions: ['cable_fly'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/standing_cable_fly.gif',
       videoUrl: '',
       steps: [
         'Stand tall between pulleys set at shoulder height.',
@@ -1792,7 +1792,7 @@ class ChestExercises {
       progressions: ['one_arm_push_up'],
       regressions: ['push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/weighted_push_up.gif',
       videoUrl: '',
       steps: [
         'Position a weight plate flat on your upper back.',
@@ -1831,7 +1831,7 @@ class ChestExercises {
       progressions: ['decline_push_ups'],
       regressions: ['knee_push_up', 'incline_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/wide_push_up.gif',
       videoUrl: '',
       steps: [
         'Get in plank position with hands placed much wider than shoulder-width.',

@@ -28,7 +28,7 @@ class LegExercises {
       progressions: ['heavy_back_squats', 'front_squat'],
       regressions: ['goblet_squat', 'bodyweight_squat', 'box_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_back_squat.gif',
       videoUrl: '',
       steps: [
         'Position the barbell across your upper back (traps). Stand with feet shoulder-width apart.',
@@ -69,7 +69,7 @@ class LegExercises {
       progressions: ['heavy_barbell_hip_thrust'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_hip_thrust.gif',
       videoUrl: '',
       steps: [
         'Sit on the floor with your upper back resting against a stable bench.',
@@ -111,7 +111,7 @@ class LegExercises {
       progressions: ['heavy_belt_squat'],
       regressions: ['bodyweight_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/belt_squat.gif',
       videoUrl: '',
       steps: [
         'Strap the belt squat harness around your hips and connect it to the machine cable.',
@@ -152,7 +152,7 @@ class LegExercises {
       progressions: ['goblet_squat', 'pistol_squat'],
       regressions: ['box_squat', 'wall_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bodyweight_squat.gif',
       videoUrl: '',
       steps: [
         'Stand with feet shoulder-width apart, toes pointed slightly outward.',
@@ -192,7 +192,7 @@ class LegExercises {
       progressions: ['high_box_jump'],
       regressions: ['step_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/box_jump.gif',
       videoUrl: '',
       steps: [
         'Stand facing a stable plyo box, feet hip-width apart.',
@@ -233,7 +233,7 @@ class LegExercises {
       progressions: ['heavy_box_squat'],
       regressions: ['bodyweight_box_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/box_squat.gif',
       videoUrl: '',
       steps: [
         'Place a box or bench behind you at or below parallel height.',
@@ -273,7 +273,7 @@ class LegExercises {
       progressions: ['weighted_bulgarian_split_squat'],
       regressions: ['reverse_lunge', 'split_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bulgarian_split_squat.gif',
       videoUrl: '',
       steps: [
         'Stand facing away from a bench, placing the top of your rear foot flat on the bench pad.',
@@ -314,7 +314,7 @@ class LegExercises {
       progressions: ['heavy_cable_kickback'],
       regressions: ['donkey_kick'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_kickback.gif',
       videoUrl: '',
       steps: [
         'Attach ankle strap to low cable pulley.',
@@ -355,7 +355,7 @@ class LegExercises {
       progressions: ['heavy_cable_pull_through'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_pull_through.gif',
       videoUrl: '',
       steps: [
         'Stand facing away from low cable stack, rope attachment between your legs.',
@@ -396,7 +396,7 @@ class LegExercises {
       progressions: ['weighted_curtsy_lunge'],
       regressions: ['reverse_lunge'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/curtsy_lunge.gif',
       videoUrl: '',
       steps: [
         'Stand tall with feet hip-width apart.',
@@ -477,7 +477,7 @@ class LegExercises {
       progressions: ['heavy_donkey_calf_raise'],
       regressions: ['bodyweight_calf_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/donkey_calf_raise.gif',
       videoUrl: '',
       steps: [
         'Place the balls of your feet on a block, hinge at hips, and rest your forearms on the machine pad (or hold a support while partner sits on lower back).',
@@ -516,7 +516,7 @@ class LegExercises {
       progressions: ['weighted_donkey_kick', 'resistance_band_donkey_kick'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/donkey_kick.gif',
       videoUrl: '',
       steps: [
         'Start on hands and knees in tabletop position.',
@@ -556,7 +556,7 @@ class LegExercises {
       progressions: ['barbell_hip_thrust'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_hip_thrust.gif',
       videoUrl: '',
       steps: [
         'Rest upper back on bench, feet flat on floor.',
@@ -596,7 +596,7 @@ class LegExercises {
       progressions: ['banded_fire_hydrant'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/fire_hydrant.gif',
       videoUrl: '',
       steps: [
         'Start on hands and knees in tabletop stance.',
@@ -636,7 +636,7 @@ class LegExercises {
       progressions: ['weighted_forward_lunge', 'deficit_lunge'],
       regressions: ['static_lunge', 'assisted_lunge'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/forward_lunge.gif',
       videoUrl: '',
       steps: [
         'Stand tall, feet hip-width apart.',
@@ -676,7 +676,7 @@ class LegExercises {
       progressions: ['weighted_frog_pump'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/frog_pump.gif',
       videoUrl: '',
       steps: [
         'Lie on your back, bend knees, and place soles of feet together (knees flared outward).',
@@ -716,7 +716,7 @@ class LegExercises {
       progressions: ['heavy_front_squat'],
       regressions: ['goblet_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/front_squat.gif',
       videoUrl: '',
       steps: [
         'Place barbell across front of shoulders (front rack position) with fingers or crossed arms.',
@@ -757,7 +757,7 @@ class LegExercises {
       progressions: ['single_leg_glute_bridge', 'dumbbell_hip_thrust'],
       regressions: ['pelvic_tilts'],
       thumbnail: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/glute_bridge.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back, knees bent, feet flat on floor hip-width apart.',
@@ -797,7 +797,7 @@ class LegExercises {
       progressions: ['weighted_glute_ham_raise'],
       regressions: ['nordic_curl_assisted', 'lying_leg_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/glute_ham_raise.gif',
       videoUrl: '',
       steps: [
         'Set up on a GHD machine with knees on pad, ankles secured under rollers.',
@@ -838,7 +838,7 @@ class LegExercises {
       progressions: ['barbell_back_squat', 'front_squat'],
       regressions: ['bodyweight_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/goblet_squat.gif',
       videoUrl: '',
       steps: [
         'Hold dumbbell vertical against chest, gripping under top weight pad.',
@@ -879,7 +879,7 @@ class LegExercises {
       progressions: ['heavy_hack_squat'],
       regressions: ['leg_press'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hack_squat.gif',
       videoUrl: '',
       steps: [
         'Position shoulders against machine pads and feet flat on footplate.',
@@ -919,7 +919,7 @@ class LegExercises {
       progressions: ['heavy_abduction'],
       regressions: ['lateral_band_walk'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hip_abduction_machine.gif',
       videoUrl: '',
       steps: [
         'Sit on machine, resting outer knees against pads.',
@@ -959,7 +959,7 @@ class LegExercises {
       progressions: ['heavy_adduction'],
       regressions: ['seated_band_adduction'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hip_adduction_machine.gif',
       videoUrl: '',
       steps: [
         'Sit on machine, resting inner knees against pads with legs spread.',
@@ -999,7 +999,7 @@ class LegExercises {
       progressions: ['barbell_hip_thrust', 'dumbbell_hip_thrust'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/hip_thrust.gif',
       videoUrl: '',
       steps: [
         'Sit with back against bench, knees bent and feet flat.',
@@ -1038,7 +1038,7 @@ class LegExercises {
       progressions: ['leg_press'],
       regressions: ['goblet_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/horizontal_leg_press.gif',
       videoUrl: '',
       steps: [
         'Sit on machine seat, placing feet flat on horizontal plate.',
@@ -1077,7 +1077,7 @@ class LegExercises {
       progressions: ['heavy_incline_leg_press'],
       regressions: ['horizontal_leg_press'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_leg_press.gif',
       videoUrl: '',
       steps: [
         'Lie on 45-degree angle seat, feet flat on plate.',
@@ -1154,7 +1154,7 @@ class LegExercises {
       progressions: ['heavy_landmine_squat'],
       regressions: ['goblet_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/landmine_squat.gif',
       videoUrl: '',
       steps: [
         'Stand facing barbell set in landmine attachment.',
@@ -1194,7 +1194,7 @@ class LegExercises {
       progressions: ['heavy_band_walk'],
       regressions: ['bodyweight_side_steps'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/lateral_band_walk.gif',
       videoUrl: '',
       steps: [
         'Place loop band around ankles or thighs.',
@@ -1233,7 +1233,7 @@ class LegExercises {
       progressions: ['weighted_lateral_lunge'],
       regressions: ['lateral_steps'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/lateral_lunge.gif',
       videoUrl: '',
       steps: [
         'Stand tall, feet hip-width apart.',
@@ -1273,7 +1273,7 @@ class LegExercises {
       progressions: ['heavy_leg_extension'],
       regressions: ['bodyweight_knee_extension'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/leg_extension.gif',
       videoUrl: '',
       steps: [
         'Sit on machine, adjusting ankle roller to rest on lower shin.',
@@ -1313,7 +1313,7 @@ class LegExercises {
       progressions: ['squats', 'single_leg_press'],
       regressions: ['goblet_squat', 'bodyweight_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/leg_press.gif',
       videoUrl: '',
       steps: [
         'Sit on the machine, placing feet shoulder-width apart on the platform.',
@@ -1354,7 +1354,7 @@ class LegExercises {
       progressions: ['heavy_leg_press_calf_raise'],
       regressions: ['bodyweight_calf_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/leg_press_calf_raise.gif',
       videoUrl: '',
       steps: [
         'Sit on leg press and place balls of feet on bottom edge of platform (heels hanging off).',
@@ -1393,7 +1393,7 @@ class LegExercises {
       progressions: ['heavy_lying_leg_curl'],
       regressions: ['stability_ball_leg_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/lying_leg_curl.gif',
       videoUrl: '',
       steps: [
         'Lie face down on the machine, aligning knees with pivot point.',
@@ -1473,7 +1473,7 @@ class LegExercises {
       progressions: ['weighted_nordic_curl'],
       regressions: ['assisted_nordic_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/nordic_curl.gif',
       videoUrl: '',
       steps: [
         'Kneel on pad, securing ankles under anchor (or have partner hold them).',
@@ -1514,7 +1514,7 @@ class LegExercises {
       progressions: ['heavy_overhead_squat'],
       regressions: ['goblet_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/overhead_squat.gif',
       videoUrl: '',
       steps: [
         'Hold barbell overhead with very wide snatch grip, elbows locked out completely.',
@@ -1554,7 +1554,7 @@ class LegExercises {
       progressions: ['weighted_pistol_squat'],
       regressions: ['assisted_pistol_squat', 'bench_pistol_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/pistol_squat.gif',
       videoUrl: '',
       steps: [
         'Stand on one leg, extending other leg straight forward in air.',
@@ -1594,7 +1594,7 @@ class LegExercises {
       progressions: ['weighted_reverse_lunge', 'bulgarian_split_squat'],
       regressions: ['assisted_lunge'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_lunge.gif',
       videoUrl: '',
       steps: [
         'Stand tall, feet hip-width apart.',
@@ -1634,7 +1634,7 @@ class LegExercises {
       progressions: ['heavy_seated_calf_raise'],
       regressions: ['bodyweight_calf_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_calf_raise.gif',
       videoUrl: '',
       steps: [
         'Sit in machine, placing thigh pad over lower thighs and balls of feet on block.',
@@ -1673,7 +1673,7 @@ class LegExercises {
       progressions: ['heavy_seated_leg_curl'],
       regressions: ['stability_ball_leg_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_leg_curl.gif',
       videoUrl: '',
       steps: [
         'Sit in machine, securing thighs under pad and calves over roller.',
@@ -1713,7 +1713,7 @@ class LegExercises {
       progressions: ['weighted_single_leg_calf_raise'],
       regressions: ['standing_calf_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_leg_calf_raise.gif',
       videoUrl: '',
       steps: [
         'Stand on one foot with ball of foot on edge of block.',
@@ -1752,7 +1752,7 @@ class LegExercises {
       progressions: ['heavy_single_leg_press'],
       regressions: ['leg_press'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_leg_press.gif',
       videoUrl: '',
       steps: [
         'Sit in leg press machine, place one foot flat on plate, and hold other foot down.',
@@ -1791,7 +1791,7 @@ class LegExercises {
       progressions: ['weighted_single_leg_rdl'],
       regressions: ['kickstand_rdl'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_leg_romanian_deadlift.gif',
       videoUrl: '',
       steps: [
         'Stand on one leg, holding dumbbell in opposite hand.',
@@ -1831,7 +1831,7 @@ class LegExercises {
       progressions: ['weighted_sissy_squat'],
       regressions: ['spanish_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/sissy_squat.gif',
       videoUrl: '',
       steps: [
         'Lock ankles in sissy squat bench (or stand holding support, heels lifted).',
@@ -1910,7 +1910,7 @@ class LegExercises {
       progressions: ['heavy_smith_lunge'],
       regressions: ['assisted_lunge'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/smith_machine_lunge.gif',
       videoUrl: '',
       steps: [
         'Place Smith bar across upper back, standing inside machine.',
@@ -1949,7 +1949,7 @@ class LegExercises {
       progressions: ['barbell_back_squat'],
       regressions: ['bodyweight_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/smith_machine_squat.gif',
       videoUrl: '',
       steps: [
         'Stand inside Smith machine, bar across traps, feet slightly in front of bar path.',
@@ -2029,7 +2029,7 @@ class LegExercises {
       progressions: ['single_leg_stability_ball_curl'],
       regressions: ['glute_bridge'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/stability_ball_leg_curl.gif',
       videoUrl: '',
       steps: [
         'Lie flat on your back on a mat, placing heels on stability ball.',
@@ -2070,7 +2070,7 @@ class LegExercises {
       progressions: ['heavy_standing_calf_raise', 'single_leg_calf_raise'],
       regressions: ['bodyweight_calf_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/standing_calf_raise.gif',
       videoUrl: '',
       steps: [
         'Place shoulders under machine pads and balls of feet on block.',
@@ -2147,7 +2147,7 @@ class LegExercises {
       progressions: ['weighted_step_up'],
       regressions: ['low_box_step_up'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/step_up.gif',
       videoUrl: '',
       steps: [
         'Place one foot flat on a stable bench or box.',
@@ -2187,7 +2187,7 @@ class LegExercises {
       progressions: ['heavy_sldl'],
       regressions: ['kettlebell_deadlift'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/stiff_leg_deadlift.gif',
       videoUrl: '',
       steps: [
         'Stand holding barbell at thighs, knees locked almost straight (very slight soft bend).',
@@ -2227,7 +2227,7 @@ class LegExercises {
       progressions: ['heavy_sumo_deadlift'],
       regressions: ['kettlebell_deadlift'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/sumo_deadlift.gif',
       videoUrl: '',
       steps: [
         'Stand with feet very wide (sumo stance), toes turned out.',
@@ -2267,7 +2267,7 @@ class LegExercises {
       progressions: ['weighted_sumo_squat'],
       regressions: ['bodyweight_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/sumo_squat.gif',
       videoUrl: '',
       steps: [
         'Stand with feet significantly wider than shoulder-width, toes turned out 45 degrees.',
@@ -2347,7 +2347,7 @@ class LegExercises {
       progressions: ['weighted_walking_lunge'],
       regressions: ['reverse_lunge'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/walking_lunge.gif',
       videoUrl: '',
       steps: [
         'Step forward with one foot, lower hips into lunge.',
@@ -2386,7 +2386,7 @@ class LegExercises {
       progressions: ['heavy_weighted_step_up'],
       regressions: ['step_up'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/weighted_step_up.gif',
       videoUrl: '',
       steps: [
         'Hold dumbbells at your sides.',
@@ -2426,7 +2426,7 @@ class LegExercises {
       progressions: ['heavy_zercher_squat'],
       regressions: ['goblet_squat'],
       thumbnail: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/zercher_squat.gif',
       videoUrl: '',
       steps: [
         'Cradle the barbell in the crooks of your elbows, holding your hands together against your chest.',

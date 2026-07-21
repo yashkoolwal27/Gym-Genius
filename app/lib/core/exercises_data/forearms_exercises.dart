@@ -28,7 +28,7 @@ class ForearmsExercises {
       progressions: ['heavy_barbell_finger_curl'],
       regressions: ['dumbbell_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_finger_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding a barbell behind your back (or sit on a bench with forearms on thighs, holding bar underhand).',
@@ -68,7 +68,7 @@ class ForearmsExercises {
       progressions: ['heavy_barbell_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_reverse_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Sit on a bench, resting your forearms flat on your thighs with wrists hanging over your knees.',
@@ -109,7 +109,7 @@ class ForearmsExercises {
       progressions: ['heavy_barbell_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Sit on a bench, resting your forearms flat on your thighs with wrists hanging over knees.',
@@ -150,7 +150,7 @@ class ForearmsExercises {
       progressions: ['heavy_behind_back_wrist_curl'],
       regressions: ['dumbbell_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/behind_the_back_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Stand tall and hold a barbell behind your back with an underhand grip (palms facing away from your body).',
@@ -190,7 +190,7 @@ class ForearmsExercises {
       progressions: ['heavy_cable_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_reverse_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Place a bench in front of a low cable pulley.',
@@ -231,7 +231,7 @@ class ForearmsExercises {
       progressions: ['heavy_cable_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Place a bench in front of a low cable pulley.',
@@ -393,7 +393,7 @@ class ForearmsExercises {
       progressions: ['heavy_dumbbell_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_reverse_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Sit on a bench holding dumbbells overhand, resting forearms on thighs with wrists hanging over knees.',
@@ -473,7 +473,7 @@ class ForearmsExercises {
       progressions: ['heavy_dumbbell_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Sit on a bench holding dumbbells underhand, resting forearms on thighs with wrists hanging over knees.',
@@ -512,7 +512,7 @@ class ForearmsExercises {
       progressions: ['heavy_finger_curl'],
       regressions: ['light_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/finger_curl.gif',
       videoUrl: '',
       steps: [
         'Sit and rest forearms on thighs, holding dumbbells underhand.',
@@ -670,7 +670,7 @@ class ForearmsExercises {
       progressions: ['heavy_band_wrist_curl'],
       regressions: ['lighter_band_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Step on resistance band and grip handles/ends underhand.',
@@ -709,7 +709,7 @@ class ForearmsExercises {
       progressions: ['heavy_reverse_ez_bar_curl'],
       regressions: ['resistance_band_reverse_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_ez_bar_curl.gif',
       videoUrl: '',
       steps: [
         'Stand holding an EZ-bar overhand on knurled angled grips.',
@@ -749,7 +749,7 @@ class ForearmsExercises {
       progressions: ['barbell_reverse_wrist_curl'],
       regressions: ['resistance_band_reverse_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Sit and rest forearms on thighs with wrists hanging over knees overhand.',
@@ -788,7 +788,7 @@ class ForearmsExercises {
       progressions: ['heavy_seated_wrist_curl'],
       regressions: ['resistance_band_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_wrist_curl.gif',
       videoUrl: '',
       steps: [
         'Sit on flat bench, rest forearms on thighs, and curl wrists upward underhand.'
@@ -905,7 +905,7 @@ class ForearmsExercises {
       progressions: ['heavy_wrist_roller'],
       regressions: ['dumbbell_wrist_curl'],
       thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/wrist_roller.gif',
       videoUrl: '',
       steps: [
         'Stand holding a wrist roller in front of you with straight or bent arms, weight suspended at bottom.',

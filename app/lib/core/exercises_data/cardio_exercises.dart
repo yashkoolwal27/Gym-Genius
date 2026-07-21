@@ -28,7 +28,7 @@ class CardioExercises {
       progressions: ['heavy_air_bike_intervals'],
       regressions: ['stationary_bike'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/air_bike.gif',
       videoUrl: '',
       steps: [
         'Sit on the bike and adjust the seat height so your knees have a slight bend at the bottom of the pedal stroke.',
@@ -110,7 +110,7 @@ class CardioExercises {
       progressions: ['heavy_battle_rope_slams'],
       regressions: ['single_arm_rope_waves'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/battle_rope.gif',
       videoUrl: '',
       steps: [
         'Stand with feet shoulder-width apart, holding the ends of the battle ropes with an overhand grip.',
@@ -151,7 +151,7 @@ class CardioExercises {
       progressions: ['weighted_bear_crawl', 'lateral_bear_crawl'],
       regressions: ['tabletop_crawl', 'plank'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bear_crawl.gif',
       videoUrl: '',
       steps: [
         'Start on your hands and knees, hands under shoulders and knees under hips.',
@@ -273,7 +273,7 @@ class CardioExercises {
       progressions: ['weighted_broad_jump'],
       regressions: ['squat_jump'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/broad_jump.gif',
       videoUrl: '',
       steps: [
         'Stand with feet shoulder-width apart behind a starting line.',
@@ -314,7 +314,7 @@ class CardioExercises {
       progressions: ['weighted_burpee', 'burpee_pull_up'],
       regressions: ['half_burpee', 'squat_thrust'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/burpee.gif',
       videoUrl: '',
       steps: [
         'Stand tall, then drop into a squat and place your hands on the floor in front of you.',
@@ -356,7 +356,7 @@ class CardioExercises {
       progressions: ['fast_butt_kicks'],
       regressions: ['walking_butt_kicks'],
       thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/butt_kicks.gif',
       videoUrl: '',
       steps: [
         'Stand tall with feet hip-width apart.',
@@ -518,7 +518,7 @@ class CardioExercises {
       progressions: ['high_resistance_elliptical'],
       regressions: ['walking'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/elliptical.gif',
       videoUrl: '',
       steps: [
         'Step onto the machine pedals and grip the moving handles.',
@@ -640,7 +640,7 @@ class CardioExercises {
       progressions: ['fast_high_knees'],
       regressions: ['marching_in_place'],
       thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/high_knees.gif',
       videoUrl: '',
       steps: [
         'Stand tall with feet hip-width apart.',
@@ -721,7 +721,7 @@ class CardioExercises {
       progressions: ['jogging', 'higher_incline_walk'],
       regressions: ['treadmill_walk'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_treadmill_walk.gif',
       videoUrl: '',
       steps: [
         'Step onto the treadmill, set a moderate walking speed (2.5 to 3.5 mph), and increase the incline (typically 6-12%).',
@@ -801,7 +801,7 @@ class CardioExercises {
       progressions: ['double_under', 'boxer_skip'],
       regressions: ['jumping_jacks'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/jump_rope.gif',
       videoUrl: '',
       steps: [
         'Hold the rope handles, keeping elbows close to torso.',
@@ -842,7 +842,7 @@ class CardioExercises {
       progressions: ['star_jump', 'seal_jacks'],
       regressions: ['step_jacks'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/jumping_jacks.gif',
       videoUrl: '',
       steps: [
         'Stand with feet together and arms at your sides.',
@@ -882,7 +882,7 @@ class CardioExercises {
       progressions: ['one_arm_kettlebell_swing'],
       regressions: ['kettlebell_deadlift'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/kettlebell_swing.gif',
       videoUrl: '',
       steps: [
         'Stand with feet shoulder-width apart, kettlebell on the floor in front of you.',
@@ -963,7 +963,7 @@ class CardioExercises {
       progressions: ['weighted_power_skip'],
       regressions: ['standard_skipping'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/power_skip.gif',
       videoUrl: '',
       steps: [
         'Skip forward, exploding upward on each skip.',
@@ -1003,7 +1003,7 @@ class CardioExercises {
       progressions: ['high_spm_rowing'],
       regressions: ['stationary_bike'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/rowing_machine.gif',
       videoUrl: '',
       steps: [
         'Sit on the seat, strap your feet in securely, and slide forward to grip handle (Catch).',
@@ -1043,7 +1043,7 @@ class CardioExercises {
       progressions: ['sprint', 'hill_sprint'],
       regressions: ['jogging', 'brisk_walking'],
       thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/running.gif',
       videoUrl: '',
       steps: [
         'Maintain a steady running speed (typically 6.0+ mph).',
@@ -1163,7 +1163,7 @@ class CardioExercises {
       progressions: ['double_under'],
       regressions: ['jump_rope', 'boxer_skip'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_leg_rope_jump.gif',
       videoUrl: '',
       steps: [
         'Stand on one leg, holding the jump rope handles.',
@@ -1203,7 +1203,7 @@ class CardioExercises {
       progressions: ['weighted_skater_jumps', 'high_speed_skaters'],
       regressions: ['lateral_steps'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/skater_jumps.gif',
       videoUrl: '',
       steps: [
         'Stand on your right foot with knee slightly bent, sweeping your left leg behind you.',
@@ -1243,7 +1243,7 @@ class CardioExercises {
       progressions: ['heavy_skierg_intervals'],
       regressions: ['stationary_bike'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/ski_erg.gif',
       videoUrl: '',
       steps: [
         'Stand facing the SkiErg, feet hip-width apart, holding handles overhead.',
@@ -1403,7 +1403,7 @@ class CardioExercises {
       progressions: ['weighted_split_jumps'],
       regressions: ['lunges', 'stepping_lunges'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/split_jump.gif',
       videoUrl: '',
       steps: [
         'Start in a lunge position, right foot forward, left foot back.',
@@ -1443,7 +1443,7 @@ class CardioExercises {
       progressions: ['hill_sprint'],
       regressions: ['jogging'],
       thumbnail: 'https://images.unsplash.com/photo-1538388149542-5e24932d11a8?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/sprint.gif',
       videoUrl: '',
       steps: [
         'Start in a semi-crouch or standing stance.',
@@ -1523,7 +1523,7 @@ class CardioExercises {
       progressions: ['high_speed_stairmill'],
       regressions: ['treadmill_walk'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/stair_climber.gif',
       videoUrl: '',
       steps: [
         'Step onto the machine platform, set speed, and start stepping.',
@@ -1643,7 +1643,7 @@ class CardioExercises {
       progressions: ['incline_spin_bike'],
       regressions: ['recumbent_bike'],
       thumbnail: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/stationary_bike.gif',
       videoUrl: '',
       steps: [
         'Adjust the seat height so your leg has a slight bend at the bottom of the pedal stroke.',
@@ -1682,7 +1682,7 @@ class CardioExercises {
       progressions: ['fast_swim_laps'],
       regressions: ['pool_walking'],
       thumbnail: 'https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/swimming.gif',
       videoUrl: '',
       steps: [
         'Enter pool and swim laps using freestyle, breaststroke, or backstroke.',
@@ -1721,7 +1721,7 @@ class CardioExercises {
       progressions: ['heavy_tire_flip'],
       regressions: ['sled_push'],
       thumbnail: 'https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/tire_flip.gif',
       videoUrl: '',
       steps: [
         'Stand close to a heavy tire lying flat on the floor.',
@@ -1839,7 +1839,7 @@ class CardioExercises {
       progressions: ['weighted_tuck_jumps'],
       regressions: ['squat_jumps'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/tuck_jump.gif',
       videoUrl: '',
       steps: [
         'Stand with feet hip-width apart, knees slightly bent.',
@@ -1879,7 +1879,7 @@ class CardioExercises {
       progressions: ['brisk_walking'],
       regressions: ['walking_slow'],
       thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/walking.gif',
       videoUrl: '',
       steps: [
         'Walk at a natural, comfortable pace (typically 2.0 to 3.0 mph).',

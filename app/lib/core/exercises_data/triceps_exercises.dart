@@ -28,7 +28,7 @@ class TricepsExercises {
       progressions: ['tricep_dip'],
       regressions: ['bench_dip'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/assisted_dip_machine.gif',
       videoUrl: '',
       steps: [
         'Set weight assistance on machine and place knees/feet on pad.',
@@ -108,7 +108,7 @@ class TricepsExercises {
       progressions: ['weighted_bench_dip', 'tricep_dip'],
       regressions: ['bench_dip_knees_bent'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/bench_dip.gif',
       videoUrl: '',
       steps: [
         'Place hands on edge of bench behind you, feet flat on floor (knees bent or straight).',
@@ -188,7 +188,7 @@ class TricepsExercises {
       progressions: ['heavy_cable_kickback_tricep'],
       regressions: ['resistance_band_kickback'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_tricep_kickback.gif',
       videoUrl: '',
       steps: [
         'Stand facing low cable pulley, holding cable sleeve with one hand.',
@@ -229,7 +229,7 @@ class TricepsExercises {
       progressions: ['heavy_cable_skull_crusher'],
       regressions: ['tricep_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_skull_crusher.gif',
       videoUrl: '',
       steps: [
         'Place flat bench in front of low cable stack.',
@@ -269,7 +269,7 @@ class TricepsExercises {
       progressions: ['diamond_push_up'],
       regressions: ['knee_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/close_grip_push_up.gif',
       videoUrl: '',
       steps: [
         'Set up in high plank, hands slightly narrower than shoulder-width.',
@@ -309,7 +309,7 @@ class TricepsExercises {
       progressions: ['heavy_cross_body_pushdown'],
       regressions: ['single_arm_cable_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cross_body_cable_pushdown.gif',
       videoUrl: '',
       steps: [
         'Stand facing dual cable machine pulleys set high.',
@@ -349,7 +349,7 @@ class TricepsExercises {
       progressions: ['heavy_decline_skull_crusher'],
       regressions: ['tricep_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/decline_skull_crusher.gif',
       videoUrl: '',
       steps: [
         'Lie back on decline bench holding barbell/EZ-bar overhead, arms angled slightly back toward head.',
@@ -389,7 +389,7 @@ class TricepsExercises {
       progressions: ['cable_tricep_kickback'],
       regressions: ['resistance_band_kickback'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_kickback.gif',
       videoUrl: '',
       steps: [
         'Hinge forward holding dumbbells, elbows bent at 90 degrees next to ribs.',
@@ -469,7 +469,7 @@ class TricepsExercises {
       progressions: ['heavy_dumbbell_skull_crusher'],
       regressions: ['tricep_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_skull_crusher.gif',
       videoUrl: '',
       steps: [
         'Lie flat on bench holding dumbbells overhead, palms facing each other.',
@@ -509,7 +509,7 @@ class TricepsExercises {
       progressions: ['heavy_ez_bar_overhead_extension'],
       regressions: ['resistance_band_overhead_tricep_extension'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/ez_bar_overhead_tricep_extension.gif',
       videoUrl: '',
       steps: [
         'Stand holding EZ-bar overhead on angled grips.',
@@ -589,7 +589,7 @@ class TricepsExercises {
       progressions: ['heavy_floor_skull_crusher'],
       regressions: ['tricep_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/floor_skull_crusher.gif',
       videoUrl: '',
       steps: [
         'Lie flat on floor with knees bent (feet flat).',
@@ -668,7 +668,7 @@ class TricepsExercises {
       progressions: ['heavy_incline_skull_crusher'],
       regressions: ['tricep_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_skull_crusher.gif',
       videoUrl: '',
       steps: [
         'Lie back on incline bench (set to 30-45 degrees) holding barbell/EZ-bar overhead, arms angled slightly back toward head.',
@@ -708,7 +708,7 @@ class TricepsExercises {
       progressions: ['heavy_jm_press'],
       regressions: ['close_grip_bench_press'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/jm_press.gif',
       videoUrl: '',
       steps: [
         'Lie flat on bench, grip bar with narrow grip (close-grip bench style).',
@@ -748,7 +748,7 @@ class TricepsExercises {
       progressions: ['heavy_machine_tricep_extension'],
       regressions: ['resistance_band_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_tricep_extension.gif',
       videoUrl: '',
       steps: [
         'Adjust machine seat so elbows align with pivot point.',
@@ -868,7 +868,7 @@ class TricepsExercises {
       progressions: ['dumbbell_kickback'],
       regressions: ['lighter_band_kickback'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_kickback.gif',
       videoUrl: '',
       steps: [
         'Anchor band in front of you at chest height.',
@@ -947,7 +947,7 @@ class TricepsExercises {
       progressions: ['tricep_pushdown'],
       regressions: ['lighter_band_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_pushdown.gif',
       videoUrl: '',
       steps: [
         'Anchor band high overhead.',
@@ -987,7 +987,7 @@ class TricepsExercises {
       progressions: ['heavy_reverse_grip_pushdown'],
       regressions: ['rope_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_grip_pushdown.gif',
       videoUrl: '',
       steps: [
         'Grip straight bar on high pulley underhand (palms facing up).',
@@ -1066,7 +1066,7 @@ class TricepsExercises {
       progressions: ['heavy_rope_pushdown'],
       regressions: ['resistance_band_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/rope_pushdown.gif',
       videoUrl: '',
       steps: [
         'Attach rope to high pulley stack.',
@@ -1106,7 +1106,7 @@ class TricepsExercises {
       progressions: ['tricep_dip'],
       regressions: ['bench_dip'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_dip_machine.gif',
       videoUrl: '',
       steps: [
         'Sit on dip machine, secure thigh pad.',
@@ -1146,7 +1146,7 @@ class TricepsExercises {
       progressions: ['heavy_single_arm_pushdown'],
       regressions: ['resistance_band_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_arm_cable_pushdown.gif',
       videoUrl: '',
       steps: [
         'Grip single pulley handle with one hand.',
@@ -1225,7 +1225,7 @@ class TricepsExercises {
       progressions: ['heavy_skull_crushers'],
       regressions: ['tricep_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/skull_crusher.gif',
       videoUrl: '',
       steps: [
         'Lie flat on a bench holding a barbell straight above your chest.',
@@ -1265,7 +1265,7 @@ class TricepsExercises {
       progressions: ['heavy_straight_bar_pushdown'],
       regressions: ['rope_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/straight_bar_pushdown.gif',
       videoUrl: '',
       steps: [
         'Perform pushdown using straight bar attachment on high pulley.',
@@ -1304,7 +1304,7 @@ class TricepsExercises {
       progressions: ['heavy_tate_press'],
       regressions: ['dumbbell_skull_crusher'],
       thumbnail: 'https://images.unsplash.com/photo-1534368786749-b63e05c4a4fb?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/tate_press.gif',
       videoUrl: '',
       steps: [
         'Lie flat on bench holding dumbbells overhead, palms facing feet.',
@@ -1466,7 +1466,7 @@ class TricepsExercises {
       progressions: ['heavy_v_bar_pushdown'],
       regressions: ['rope_pushdown'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/v_bar_pushdown.gif',
       videoUrl: '',
       steps: [
         'Perform pushdown using V-bar attachment on high pulley.',

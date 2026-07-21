@@ -28,7 +28,7 @@ class ShouldersExercises {
       progressions: ['barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/alternating_front_raise.gif',
       videoUrl: '',
       steps: [
         'Stand tall holding a dumbbell in each hand at your thighs, palms facing backward.',
@@ -68,7 +68,7 @@ class ShouldersExercises {
       progressions: ['heavy_dumbbell_shoulder_press'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/arnold_press.gif',
       videoUrl: '',
       steps: [
         'Sit on a bench with back support, holding dumbbells at chest height with palms facing your body (like the top of a bicep curl).',
@@ -108,7 +108,7 @@ class ShouldersExercises {
       progressions: ['heavy_barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_front_raise.gif',
       videoUrl: '',
       steps: [
         'Stand tall holding a barbell overhand at your thighs.',
@@ -148,7 +148,7 @@ class ShouldersExercises {
       progressions: ['heavy_overhead_press', 'push_press'],
       regressions: ['dumbbell_shoulder_press', 'kettlebell_overhead_press'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_overhead_press.gif',
       videoUrl: '',
       steps: [
         'Stand with feet shoulder-width apart, barbell resting on your upper chest.',
@@ -189,7 +189,7 @@ class ShouldersExercises {
       progressions: ['heavy_barbell_shrug'],
       regressions: ['light_dumbbell_shrug'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/barbell_shrug.gif',
       videoUrl: '',
       steps: [
         'Stand tall holding a barbell at thighs with overhand grip.',
@@ -310,7 +310,7 @@ class ShouldersExercises {
       progressions: ['barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_front_raise.gif',
       videoUrl: '',
       steps: [
         'Stand facing away from low pulley stack, holding straight bar attachment overhand.',
@@ -350,7 +350,7 @@ class ShouldersExercises {
       progressions: ['leaning_cable_lateral_raise'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cable_lateral_raise.gif',
       videoUrl: '',
       steps: [
         'Stand next to low pulley stack.',
@@ -391,7 +391,7 @@ class ShouldersExercises {
       progressions: ['heavy_cuban_press'],
       regressions: ['external_rotation'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/cuban_press.gif',
       videoUrl: '',
       steps: [
         'Stand holding dumbbells at thighs.',
@@ -432,7 +432,7 @@ class ShouldersExercises {
       progressions: ['barbell_front_raise'],
       regressions: ['resistance_band_front_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_front_raise.gif',
       videoUrl: '',
       steps: [
         'Stand tall holding dumbbells at thighs overhand.',
@@ -472,7 +472,7 @@ class ShouldersExercises {
       progressions: ['cable_lateral_raise', 'dumbbell_lateral_raise_heavy'],
       regressions: ['resistance_band_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_lateral_raise.gif',
       videoUrl: '',
       steps: [
         'Stand tall with dumbbells at your sides, palms facing inward.',
@@ -513,7 +513,7 @@ class ShouldersExercises {
       progressions: ['heavy_dumbbell_shoulder_press'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_shoulder_press.gif',
       videoUrl: '',
       steps: [
         'Sit on a bench with back support, holding dumbbells at shoulder height with palms facing forward.',
@@ -552,7 +552,7 @@ class ShouldersExercises {
       progressions: ['heavy_dumbbell_shrug'],
       regressions: ['light_dumbbell_shrug'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/dumbbell_shrug.gif',
       videoUrl: '',
       steps: [
         'Stand holding dumbbells at your sides.',
@@ -591,7 +591,7 @@ class ShouldersExercises {
       progressions: ['cuban_press'],
       regressions: ['light_band_rotation'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/external_rotation.gif',
       videoUrl: '',
       steps: [
         'Stand holding a light dumbbell (or loop band anchored to a post).',
@@ -632,7 +632,7 @@ class ShouldersExercises {
       progressions: ['freestanding_hspu'],
       regressions: ['pike_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/handstand_push_up.gif',
       videoUrl: '',
       steps: [
         'Kick up into a handstand against a wall, hands shoulder-width apart.',
@@ -672,7 +672,7 @@ class ShouldersExercises {
       progressions: ['power_snatch'],
       regressions: ['upright_row'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/high_pull.gif',
       videoUrl: '',
       steps: [
         'Stand holding barbell with wide grip (snatch grip).',
@@ -712,7 +712,7 @@ class ShouldersExercises {
       progressions: ['leaning_cable_lateral_raise'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/incline_lateral_raise.gif',
       videoUrl: '',
       steps: [
         'Lie chest-down on an incline bench (set to 30-45 degrees).',
@@ -751,7 +751,7 @@ class ShouldersExercises {
       progressions: ['cuban_press'],
       regressions: ['light_band_rotation'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/internal_rotation.gif',
       videoUrl: '',
       steps: [
         'Stand holding light dumbbell (or loop band anchored laterally).',
@@ -792,7 +792,7 @@ class ShouldersExercises {
       progressions: ['heavy_kettlebell_overhead_press'],
       regressions: ['light_dumbbell_press'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/kettlebell_overhead_press.gif',
       videoUrl: '',
       steps: [
         'Hold kettlebell in front rack position (resting in crook of arm/chest).',
@@ -832,7 +832,7 @@ class ShouldersExercises {
       progressions: ['single_arm_landmine_press'],
       regressions: ['push_ups'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/landmine_press.gif',
       videoUrl: '',
       steps: [
         'Stand holding the sleeve of a barbell set in landmine attachment at chest height with both hands.',
@@ -872,7 +872,7 @@ class ShouldersExercises {
       progressions: ['heavy_leaning_cable_raise'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/leaning_cable_lateral_raise.gif',
       videoUrl: '',
       steps: [
         'Stand next to pulley stack, holding column with inner hand and leaning torso outward at an angle.',
@@ -911,7 +911,7 @@ class ShouldersExercises {
       progressions: ['heavy_machine_lateral_raise'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_lateral_raise.gif',
       videoUrl: '',
       steps: [
         'Sit in machine, adjusting seat so elbows align with pads.',
@@ -951,7 +951,7 @@ class ShouldersExercises {
       progressions: ['dumbbell_shoulder_press'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/machine_shoulder_press.gif',
       videoUrl: '',
       steps: [
         'Adjust seat height so handles are at shoulder level.',
@@ -1031,7 +1031,7 @@ class ShouldersExercises {
       progressions: ['handstand_push_up'],
       regressions: ['incline_push_up'],
       thumbnail: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a87?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/pike_push_up.gif',
       videoUrl: '',
       steps: [
         'Start in standard push-up plank, then walk feet forward while lifting hips high into an inverted V-shape (pike stance).',
@@ -1071,7 +1071,7 @@ class ShouldersExercises {
       progressions: ['heavy_plate_front_raise'],
       regressions: ['resistance_band_front_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/plate_front_raise.gif',
       videoUrl: '',
       steps: [
         'Stand holding weight plate on sides (3 and 9 o\'clock).',
@@ -1111,7 +1111,7 @@ class ShouldersExercises {
       progressions: ['jerk'],
       regressions: ['barbell_overhead_press'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/push_press.gif',
       videoUrl: '',
       steps: [
         'Stand with barbell on shoulders in front rack stance.',
@@ -1151,7 +1151,7 @@ class ShouldersExercises {
       progressions: ['dumbbell_front_raise'],
       regressions: ['lighter_band_front_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_front_raise.gif',
       videoUrl: '',
       steps: [
         'Step on band, grip handles overhand.',
@@ -1191,7 +1191,7 @@ class ShouldersExercises {
       progressions: ['dumbbell_lateral_raise'],
       regressions: ['lighter_band_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/resistance_band_lateral_raise.gif',
       videoUrl: '',
       steps: [
         'Step on band, grip handles at sides.',
@@ -1231,7 +1231,7 @@ class ShouldersExercises {
       progressions: ['heavy_reverse_cable_fly'],
       regressions: ['dumbbell_rear_delt_fly'],
       thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/reverse_cable_fly.gif',
       videoUrl: '',
       steps: [
         'Stand facing cable crossover pulleys set to shoulder height.',
@@ -1311,7 +1311,7 @@ class ShouldersExercises {
       progressions: ['barbell_overhead_press'],
       regressions: ['machine_shoulder_press'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_barbell_shoulder_press.gif',
       videoUrl: '',
       steps: [
         'Sit on bench with back support, rack barbell at chest.',
@@ -1350,7 +1350,7 @@ class ShouldersExercises {
       progressions: ['incline_lateral_raise'],
       regressions: ['dumbbell_lateral_raise_light'],
       thumbnail: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/seated_lateral_raise.gif',
       videoUrl: '',
       steps: [
         'Sit on flat bench, holding dumbbells at sides.',
@@ -1389,7 +1389,7 @@ class ShouldersExercises {
       progressions: ['heavy_single_arm_landmine_press'],
       regressions: ['landmine_press'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/single_arm_landmine_press.gif',
       videoUrl: '',
       steps: [
         'Hold sleeve of barbell set in landmine with one hand at shoulder level.',
@@ -1430,7 +1430,7 @@ class ShouldersExercises {
       progressions: ['seated_barbell_shoulder_press'],
       regressions: ['machine_shoulder_press'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/smith_machine_shoulder_press.gif',
       videoUrl: '',
       steps: [
         'Position seat inside Smith machine, bar path in front of face.',
@@ -1469,7 +1469,7 @@ class ShouldersExercises {
       progressions: ['weighted_trx_rear_delt_fly'],
       regressions: ['band_pull_aparts'],
       thumbnail: 'https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/trx_rear_delt_fly.gif',
       videoUrl: '',
       steps: [
         'Grip TRX handles facing anchor point, leaning back at an angle with straight body and arms extended forward.',
@@ -1509,7 +1509,7 @@ class ShouldersExercises {
       progressions: ['high_pull'],
       regressions: ['dumbbell_lateral_raise'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/upright_row.gif',
       videoUrl: '',
       steps: [
         'Stand holding barbell overhand at thighs, shoulder-width grip.',
@@ -1549,7 +1549,7 @@ class ShouldersExercises {
       progressions: ['heavy_z_press'],
       regressions: ['barbell_overhead_press'],
       thumbnail: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=80',
-      gifUrl: '',
+      gifUrl: 'assets/gif/male/z_press.gif',
       videoUrl: '',
       steps: [
         'Sit flat on the floor with legs extended straight out in front of you (V-shape).',
