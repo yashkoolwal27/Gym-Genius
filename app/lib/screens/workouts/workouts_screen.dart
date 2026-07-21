@@ -2081,19 +2081,37 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                       flex: 4,
                       child: ClipRRect(
                         borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
-                        child: ex.thumbnail.isNotEmpty
-                            ? Image.network(
-                                ex.thumbnail,
+                        child: ex.gifUrl.isNotEmpty
+                            ? Image.asset(
+                                ex.gifUrl,
                                 fit: BoxFit.cover,
-                                errorBuilder: (_, __, ___) => Container(
-                                  color: AppColors.background,
-                                  child: const Icon(Icons.image_outlined, size: 20, color: AppColors.textMuted),
-                                ),
+                                errorBuilder: (_, __, ___) => ex.thumbnail.isNotEmpty
+                                    ? Image.network(
+                                        ex.thumbnail,
+                                        fit: BoxFit.cover,
+                                        errorBuilder: (_, __, ___) => Container(
+                                          color: AppColors.background,
+                                          child: const Icon(Icons.image_outlined, size: 20, color: AppColors.textMuted),
+                                        ),
+                                      )
+                                    : Container(
+                                        color: AppColors.background,
+                                        child: const Icon(Icons.fitness_center_rounded, size: 20, color: AppColors.textMuted),
+                                      ),
                               )
-                            : Container(
-                                color: AppColors.background,
-                                child: const Icon(Icons.fitness_center_rounded, size: 20, color: AppColors.textMuted),
-                              ),
+                            : ex.thumbnail.isNotEmpty
+                                ? Image.network(
+                                    ex.thumbnail,
+                                    fit: BoxFit.cover,
+                                    errorBuilder: (_, __, ___) => Container(
+                                      color: AppColors.background,
+                                      child: const Icon(Icons.image_outlined, size: 20, color: AppColors.textMuted),
+                                    ),
+                                  )
+                                : Container(
+                                    color: AppColors.background,
+                                    child: const Icon(Icons.fitness_center_rounded, size: 20, color: AppColors.textMuted),
+                                  ),
                       ),
                     ),
                     Expanded(
@@ -2183,25 +2201,42 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
         padding: const EdgeInsets.all(12),
         child: Row(
           children: [
-            // Thumbnail / fallback
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: SizedBox(
                 width: 48,
                 height: 48,
-                child: ex.thumbnail.isNotEmpty
-                    ? Image.network(
-                        ex.thumbnail,
+                child: ex.gifUrl.isNotEmpty
+                    ? Image.asset(
+                        ex.gifUrl,
                         fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => Container(
-                          color: AppColors.border,
-                          child: const Icon(Icons.image_outlined, size: 20, color: AppColors.textMuted),
-                        ),
+                        errorBuilder: (_, __, ___) => ex.thumbnail.isNotEmpty
+                            ? Image.network(
+                                ex.thumbnail,
+                                fit: BoxFit.cover,
+                                errorBuilder: (_, __, ___) => Container(
+                                  color: AppColors.border,
+                                  child: const Icon(Icons.image_outlined, size: 20, color: AppColors.textMuted),
+                                ),
+                              )
+                            : Container(
+                                color: AppColors.border,
+                                child: const Icon(Icons.fitness_center_rounded, size: 20, color: AppColors.textMuted),
+                              ),
                       )
-                    : Container(
-                        color: AppColors.border,
-                        child: const Icon(Icons.fitness_center_rounded, size: 20, color: AppColors.textMuted),
-                      ),
+                    : ex.thumbnail.isNotEmpty
+                        ? Image.network(
+                            ex.thumbnail,
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, __, ___) => Container(
+                              color: AppColors.border,
+                              child: const Icon(Icons.image_outlined, size: 20, color: AppColors.textMuted),
+                            ),
+                          )
+                        : Container(
+                            color: AppColors.border,
+                            child: const Icon(Icons.fitness_center_rounded, size: 20, color: AppColors.textMuted),
+                          ),
               ),
             ),
             const SizedBox(width: 12),
@@ -2455,8 +2490,7 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                     const SizedBox(height: 20),
                   ],
 
-                  // Image / GIF
-                  if (ex.thumbnail.isNotEmpty)
+                  if (ex.gifUrl.isNotEmpty || ex.thumbnail.isNotEmpty)
                     ClipRRect(
                       borderRadius: BorderRadius.circular(16),
                       child: Container(
@@ -2465,11 +2499,21 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                         decoration: BoxDecoration(
                           border: Border.all(color: AppColors.border),
                         ),
-                        child: Image.network(
-                          ex.thumbnail,
-                          fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => const Center(child: Icon(Icons.image, size: 40, color: AppColors.textMuted)),
-                        ),
+                        child: ex.gifUrl.isNotEmpty
+                            ? Image.asset(
+                                ex.gifUrl,
+                                fit: BoxFit.cover,
+                                errorBuilder: (_, __, ___) => Image.network(
+                                  ex.thumbnail,
+                                  fit: BoxFit.cover,
+                                  errorBuilder: (_, __, ___) => const Center(child: Icon(Icons.image, size: 40, color: AppColors.textMuted)),
+                                ),
+                              )
+                            : Image.network(
+                                ex.thumbnail,
+                                fit: BoxFit.cover,
+                                errorBuilder: (_, __, ___) => const Center(child: Icon(Icons.image, size: 40, color: AppColors.textMuted)),
+                              ),
                       ),
                     ),
                   const SizedBox(height: 20),
