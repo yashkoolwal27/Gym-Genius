@@ -90,11 +90,6 @@ workflows:
           cd app
           flutter pub get
 
-      - name: Install CocoaPods
-        script: |
-          cd app/ios
-          pod install
-
       - name: Build iOS Application (Unsigned)
         script: |
           cd app
