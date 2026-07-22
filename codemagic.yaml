@@ -58,3 +58,63 @@ workflows:
         notify:
           success: true
           failure: true
+
+  ios-workflow:
+    name: Gym Genius iOS Build
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+      groups:
+        - firebase_credentials
+        - app_secrets
+
+    triggering:
+      events:
+        - push
+        - pull_request
+      branch_patterns:
+        - pattern: main
+          include: true
+          source: true
+
+    scripts:
+      - name: Write .env file
+        script: |
+          echo "GEMINI_API_KEY=$GEMINI_API_KEY" > "$CM_BUILD_DIR/app/.env"
+
+      - name: Get Flutter packages
+        script: |
+          cd app
+          flutter pub get
+
+      - name: Install CocoaPods
+        script: |
+          cd app/ios
+          pod install
+
+      - name: Build iOS Application (Unsigned)
+        script: |
+          cd app
+          flutter build ios --release --no-codesign
+
+      - name: Package GymGenius.ipa
+        script: |
+          cd app/build/ios/iphoneos
+          mkdir -p Payload
+          cp -r Runner.app Payload/
+          zip -r GymGenius.ipa Payload
+
+    artifacts:
+      - app/build/ios/iphoneos/GymGenius.ipa
+      - app/build/ios/iphoneos/Runner.app
+
+    publishing:
+      email:
+        recipients:
+          - yashkoolwal2048@gmail.com
+        notify:
+          success: true
+          failure: true
