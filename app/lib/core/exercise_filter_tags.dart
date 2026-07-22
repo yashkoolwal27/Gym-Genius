@@ -9,6 +9,7 @@ class ExerciseFilterTags {
     'Core': ['Upper Abs', 'Lower Abs', 'Obliques', 'Transverse Abdominis'],
     'Forearms': ['Flexors', 'Extensors'],
     'Cardio': ['Full Body'],
+    'Full Body': ['Full Body', 'Calisthenics', 'Yoga', 'Stretching'],
   };
 
   static const List<String> standardEquipment = [

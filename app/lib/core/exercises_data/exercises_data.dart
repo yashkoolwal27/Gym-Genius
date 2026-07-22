@@ -8,6 +8,7 @@ import 'forearms_exercises.dart';
 import 'legs_exercises.dart';
 import 'cardio_exercises.dart';
 import 'abs_exercises.dart';
+import 'full_body_exercises.dart';
 
 class ExercisesData {
   static final List<Exercise> masterExercises = [
@@ -20,5 +21,6 @@ class ExercisesData {
     ...LegExercises.exercises,
     ...CardioExercises.exercises,
     ...AbsExercises.exercises,
+    ...FullBodyExercises.exercises,
   ];
 }
