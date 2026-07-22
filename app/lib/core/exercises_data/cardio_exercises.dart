@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class CardioExercises {
   static final List<Exercise> exercises = [
+    // 1. 5 Dot Drills
     Exercise(
       exerciseId: '5_dot_drills',
       name: '5 Dot Drills',
@@ -36,6 +37,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 2. Assault Air Runner
     Exercise(
       exerciseId: 'assault_air_runner',
       name: 'Assault Air Runner',
@@ -70,6 +72,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 3. Assault Airbike
     Exercise(
       exerciseId: 'assault_airbike',
       name: 'Assault Airbike',
@@ -104,6 +107,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 4. Band Assisted Sprinter Run
     Exercise(
       exerciseId: 'band_assisted_sprinter_run',
       name: 'Band Assisted Sprinter Run',
@@ -138,6 +142,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Beginner', 'Legs', 'Resistance Band', 'Full Body', 'Cardio', 'Core'],
     ),
+    // 5. Battle Rope
     Exercise(
       exerciseId: 'battle_rope',
       name: 'Battle Rope',
@@ -172,6 +177,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 6. Bike
     Exercise(
       exerciseId: 'bike',
       name: 'Bike',
@@ -206,6 +212,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 7. Boxer Shuffle Cardio
     Exercise(
       exerciseId: 'boxer_shuffle_cardio',
       name: 'Boxer Shuffle Cardio',
@@ -240,6 +247,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 8. Briskly Walking
     Exercise(
       exerciseId: 'briskly_walking',
       name: 'Briskly Walking',
@@ -274,6 +282,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core'],
     ),
+    // 9. Burpees
     Exercise(
       exerciseId: 'burpees',
       name: 'Burpees',
@@ -308,6 +317,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 10. Butt Kicks
     Exercise(
       exerciseId: 'butt_kicks',
       name: 'Butt Kicks',
@@ -342,6 +352,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 11. Depth Jump To Hurdle Hop
     Exercise(
       exerciseId: 'depth_jump_to_hurdle_hop',
       name: 'Depth Jump To Hurdle Hop',
@@ -376,6 +387,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 12. Dumbbell Burpees
     Exercise(
       exerciseId: 'dumbbell_burpees',
       name: 'Dumbbell Burpees',
@@ -410,6 +422,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Dumbbell', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 13. Elliptical Machine
     Exercise(
       exerciseId: 'elliptical_machine',
       name: 'Elliptical Machine',
@@ -444,6 +457,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Machine', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 14. Fast Feet Run
     Exercise(
       exerciseId: 'fast_feet_run',
       name: 'Fast Feet Run',
@@ -478,6 +492,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 15. Hands Bike
     Exercise(
       exerciseId: 'hands_bike',
       name: 'Hands Bike',
@@ -512,6 +527,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 16. High Knee Run
     Exercise(
       exerciseId: 'high_knee_run',
       name: 'High Knee Run',
@@ -546,6 +562,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core'],
     ),
+    // 17. High Knee Skips
     Exercise(
       exerciseId: 'high_knee_skips',
       name: 'High Knee Skips',
@@ -580,6 +597,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core'],
     ),
+    // 18. High Knees Lift Run
     Exercise(
       exerciseId: 'high_knees_lift_run',
       name: 'High Knees Lift Run',
@@ -614,6 +632,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core'],
     ),
+    // 19. Incline Treadmill
     Exercise(
       exerciseId: 'incline_treadmill',
       name: 'Incline Treadmill',
@@ -648,6 +667,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 20. Jack Burpee
     Exercise(
       exerciseId: 'jack_burpee',
       name: 'Jack Burpee',
@@ -682,6 +702,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 21. Jump Rope
     Exercise(
       exerciseId: 'jump_rope',
       name: 'Jump Rope',
@@ -716,6 +737,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 22. Jumping Jack
     Exercise(
       exerciseId: 'jumping_jack',
       name: 'Jumping Jack',
@@ -750,6 +772,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 23. Navy Seal Burpee
     Exercise(
       exerciseId: 'navy_seal_burpee',
       name: 'Navy Seal Burpee',
@@ -784,6 +807,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 24. Plyo Jacks
     Exercise(
       exerciseId: 'plyo_jacks',
       name: 'Plyo Jacks',
@@ -818,6 +842,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 25. Power Lunge
     Exercise(
       exerciseId: 'power_lunge',
       name: 'Power Lunge',
@@ -852,6 +877,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 26. Power Skips
     Exercise(
       exerciseId: 'power_skips',
       name: 'Power Skips',
@@ -886,6 +912,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 27. Recumbent Exercise Bike
     Exercise(
       exerciseId: 'recumbent_exercise_bike',
       name: 'Recumbent Exercise Bike',
@@ -920,6 +947,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 28. Riding Outdoor Bicycle
     Exercise(
       exerciseId: 'riding_outdoor_bicycle',
       name: 'Riding Outdoor Bicycle',
@@ -954,6 +982,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 29. Rowing Machine
     Exercise(
       exerciseId: 'rowing_machine',
       name: 'Rowing Machine',
@@ -988,6 +1017,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Machine', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 30. Run In Place
     Exercise(
       exerciseId: 'run_in_place',
       name: 'Run In Place',
@@ -1022,6 +1052,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 31. Running
     Exercise(
       exerciseId: 'running',
       name: 'Running',
@@ -1056,6 +1087,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 32. Shadow Boxing
     Exercise(
       exerciseId: 'shadow_boxing',
       name: 'Shadow Boxing',
@@ -1090,6 +1122,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 33. Short Stride Run
     Exercise(
       exerciseId: 'short_stride_run',
       name: 'Short Stride Run',
@@ -1124,6 +1157,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 34. Split Jacks
     Exercise(
       exerciseId: 'split_jacks',
       name: 'Split Jacks',
@@ -1158,6 +1192,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 35. Sprint
     Exercise(
       exerciseId: 'sprint',
       name: 'Sprint',
@@ -1192,6 +1227,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 36. Stair Climber Machine
     Exercise(
       exerciseId: 'stair_climber_machine',
       name: 'Stair Climber Machine',
@@ -1226,6 +1262,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Machine', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 37. Stationary Bike Run
     Exercise(
       exerciseId: 'stationary_bike_run',
       name: 'Stationary Bike Run',
@@ -1260,6 +1297,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 38. Swimming
     Exercise(
       exerciseId: 'swimming',
       name: 'Swimming',
@@ -1294,6 +1332,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 39. Tire Flip
     Exercise(
       exerciseId: 'tire_flip',
       name: 'Tire Flip',
@@ -1328,6 +1367,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 40. Treadmill
     Exercise(
       exerciseId: 'treadmill',
       name: 'Treadmill',
@@ -1362,6 +1402,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 41. Tuck Jump
     Exercise(
       exerciseId: 'tuck_jump',
       name: 'Tuck Jump',
@@ -1396,6 +1437,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core', 'Intermediate'],
     ),
+    // 42. Walking
     Exercise(
       exerciseId: 'walking',
       name: 'Walking',
@@ -1430,6 +1472,7 @@ class CardioExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cardiovascular System', 'Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Cardio', 'Core'],
     ),
+    // 43. Wheel Run
     Exercise(
       exerciseId: 'wheel_run',
       name: 'Wheel Run',

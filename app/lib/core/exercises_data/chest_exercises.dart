@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class ChestExercises {
   static final List<Exercise> exercises = [
+    // 1. Above Head Chest Stretch
     Exercise(
       exerciseId: 'above_head_chest_stretch',
       name: 'Above Head Chest Stretch',
@@ -36,6 +37,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 2. Across Chest Shoulder Stretch
     Exercise(
       exerciseId: 'across_chest_shoulder_stretch',
       name: 'Across Chest Shoulder Stretch',
@@ -70,6 +72,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 3. Alternate Dumbbell Bench Press
     Exercise(
       exerciseId: 'alternate_dumbbell_bench_press',
       name: 'Alternate Dumbbell Bench Press',
@@ -104,6 +107,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 4. Archer Push Up
     Exercise(
       exerciseId: 'archer_push_up',
       name: 'Archer Push Up',
@@ -138,6 +142,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 5. Assisted Chest Dip
     Exercise(
       exerciseId: 'assisted_chest_dip',
       name: 'Assisted Chest Dip',
@@ -172,6 +177,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest'],
     ),
+    // 6. Badhakonasana Butterfly Pose
     Exercise(
       exerciseId: 'badhakonasana_butterfly_pose',
       name: 'Badhakonasana Butterfly Pose',
@@ -206,6 +212,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 7. Band Alternate Incline Chest Press
     Exercise(
       exerciseId: 'band_alternate_incline_chest_press',
       name: 'Band Alternate Incline Chest Press',
@@ -240,6 +247,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 8. Band Standing Chest Press
     Exercise(
       exerciseId: 'band_standing_chest_press',
       name: 'Band Standing Chest Press',
@@ -274,6 +282,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 9. Banded Thigh Fly
     Exercise(
       exerciseId: 'banded_thigh_fly',
       name: 'Banded Thigh Fly',
@@ -308,6 +317,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 10. Barbell Reverse Close Grip Bench Press
     Exercise(
       exerciseId: 'barbell_reverse_close_grip_bench_press',
       name: 'Barbell Reverse Close Grip Bench Press',
@@ -342,6 +352,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Barbell', 'Intermediate'],
     ),
+    // 11. Bench Pike Push Up
     Exercise(
       exerciseId: 'bench_pike_push_up',
       name: 'Bench Pike Push Up',
@@ -376,6 +387,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Bench', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 12. Bench Press
     Exercise(
       exerciseId: 'bench_press',
       name: 'Bench Press',
@@ -410,6 +422,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Bench', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 13. Bench Press Machine Standing Calf Raise
     Exercise(
       exerciseId: 'bench_press_machine_standing_calf_raise',
       name: 'Bench Press Machine Standing Calf Raise',
@@ -444,6 +457,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 14. Bent Over Reverse Cable Fly
     Exercise(
       exerciseId: 'bent_over_reverse_cable_fly',
       name: 'Bent Over Reverse Cable Fly',
@@ -478,6 +492,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 15. Bosu Ball Push Up
     Exercise(
       exerciseId: 'bosu_ball_push_up',
       name: 'Bosu Ball Push Up',
@@ -512,6 +527,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 16. Butterfly Sit Up
     Exercise(
       exerciseId: 'butterfly_sit_up',
       name: 'Butterfly Sit Up',
@@ -546,6 +562,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 17. Butterfly Stretch
     Exercise(
       exerciseId: 'butterfly_stretch',
       name: 'Butterfly Stretch',
@@ -580,6 +597,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 18. Cable Crossover
     Exercise(
       exerciseId: 'cable_crossover',
       name: 'Cable Crossover',
@@ -614,6 +632,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 19. Cable Upper Chest Crossovers
     Exercise(
       exerciseId: 'cable_upper_chest_crossovers',
       name: 'Cable Upper Chest Crossovers',
@@ -648,6 +667,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 20. Chest And Front Of Shoulder Stretch
     Exercise(
       exerciseId: 'chest_and_front_of_shoulder_stretch',
       name: 'Chest And Front Of Shoulder Stretch',
@@ -682,6 +702,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 21. Chest Dips
     Exercise(
       exerciseId: 'chest_dips',
       name: 'Chest Dips',
@@ -716,6 +737,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 22. Chest Press Machine
     Exercise(
       exerciseId: 'chest_press_machine',
       name: 'Chest Press Machine',
@@ -750,6 +772,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 23. Chest Supported Dumbbell Front Raises
     Exercise(
       exerciseId: 'chest_supported_dumbbell_front_raises',
       name: 'Chest Supported Dumbbell Front Raises',
@@ -784,6 +807,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 24. Chest Tap Push Up
     Exercise(
       exerciseId: 'chest_tap_push_up',
       name: 'Chest Tap Push Up',
@@ -818,6 +842,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 25. Clap Push Up
     Exercise(
       exerciseId: 'clap_push_up',
       name: 'Clap Push Up',
@@ -852,6 +877,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 26. Close Grip Bench Press
     Exercise(
       exerciseId: 'close_grip_bench_press',
       name: 'Close Grip Bench Press',
@@ -886,6 +912,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Bench', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 27. Close Grip Dumbbell Push Up
     Exercise(
       exerciseId: 'close_grip_dumbbell_push_up',
       name: 'Close Grip Dumbbell Push Up',
@@ -920,6 +947,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 28. Close Grip Knee Push Up
     Exercise(
       exerciseId: 'close_grip_knee_push_up',
       name: 'Close Grip Knee Push Up',
@@ -954,6 +982,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest'],
     ),
+    // 29. Cobra Push Up
     Exercise(
       exerciseId: 'cobra_push_up',
       name: 'Cobra Push Up',
@@ -988,6 +1017,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 30. Cross Arm Push Up
     Exercise(
       exerciseId: 'cross_arm_push_up',
       name: 'Cross Arm Push Up',
@@ -1022,6 +1052,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 31. Cross Body Push Up
     Exercise(
       exerciseId: 'cross_body_push_up',
       name: 'Cross Body Push Up',
@@ -1056,6 +1087,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 32. Decline Barbell Bench Press
     Exercise(
       exerciseId: 'decline_barbell_bench_press',
       name: 'Decline Barbell Bench Press',
@@ -1090,6 +1122,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Barbell', 'Intermediate'],
     ),
+    // 33. Decline Cable Fly
     Exercise(
       exerciseId: 'decline_cable_fly',
       name: 'Decline Cable Fly',
@@ -1124,6 +1157,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 34. Decline Chest Press Machine
     Exercise(
       exerciseId: 'decline_chest_press_machine',
       name: 'Decline Chest Press Machine',
@@ -1158,6 +1192,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 35. Decline Dumbbell Fly
     Exercise(
       exerciseId: 'decline_dumbbell_fly',
       name: 'Decline Dumbbell Fly',
@@ -1192,6 +1227,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 36. Decline Dumbbell Press
     Exercise(
       exerciseId: 'decline_dumbbell_press',
       name: 'Decline Dumbbell Press',
@@ -1226,6 +1262,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 37. Decline Push Up
     Exercise(
       exerciseId: 'decline_push_up',
       name: 'Decline Push Up',
@@ -1260,6 +1297,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 38. Diamond Push Up
     Exercise(
       exerciseId: 'diamond_push_up',
       name: 'Diamond Push Up',
@@ -1294,6 +1332,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 39. Drop Push Up
     Exercise(
       exerciseId: 'drop_push_up',
       name: 'Drop Push Up',
@@ -1328,6 +1367,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 40. Dumbbell Fly
     Exercise(
       exerciseId: 'dumbbell_fly',
       name: 'Dumbbell Fly',
@@ -1362,6 +1402,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 41. Dumbbell Pullover
     Exercise(
       exerciseId: 'dumbbell_pullover',
       name: 'Dumbbell Pullover',
@@ -1396,6 +1437,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 42. Dumbbell Reverse Fly
     Exercise(
       exerciseId: 'dumbbell_reverse_fly',
       name: 'Dumbbell Reverse Fly',
@@ -1430,6 +1472,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 43. Dumbbell Reverse Grip 30 Degrees Incline Bench Press
     Exercise(
       exerciseId: 'dumbbell_reverse_grip_30_degrees_incline_bench_press',
       name: 'Dumbbell Reverse Grip 30 Degrees Incline Bench Press',
@@ -1464,6 +1507,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 44. Dumbbell Upward Fly
     Exercise(
       exerciseId: 'dumbbell_upward_fly',
       name: 'Dumbbell Upward Fly',
@@ -1498,6 +1542,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 45. Dynamic Chest Stretch
     Exercise(
       exerciseId: 'dynamic_chest_stretch',
       name: 'Dynamic Chest Stretch',
@@ -1532,6 +1577,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 46. Elbow Reverse Push Up
     Exercise(
       exerciseId: 'elbow_reverse_push_up',
       name: 'Elbow Reverse Push Up',
@@ -1566,6 +1612,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 47. Finger Push Up
     Exercise(
       exerciseId: 'finger_push_up',
       name: 'Finger Push Up',
@@ -1600,6 +1647,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 48. Foam Roller Chest Stretch
     Exercise(
       exerciseId: 'foam_roller_chest_stretch',
       name: 'Foam Roller Chest Stretch',
@@ -1634,6 +1682,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 49. Foam Roller Front Shoulder And Chest
     Exercise(
       exerciseId: 'foam_roller_front_shoulder_and_chest',
       name: 'Foam Roller Front Shoulder And Chest',
@@ -1668,6 +1717,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 50. Forearm Push Up
     Exercise(
       exerciseId: 'forearm_push_up',
       name: 'Forearm Push Up',
@@ -1702,6 +1752,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 51. Handstand Push Ups Between Benches
     Exercise(
       exerciseId: 'handstand_push_ups_between_benches',
       name: 'Handstand Push Ups Between Benches',
@@ -1736,6 +1787,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Bench', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 52. High Cable Crossover
     Exercise(
       exerciseId: 'high_cable_crossover',
       name: 'High Cable Crossover',
@@ -1770,6 +1822,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 53. High Chest Fly With Resistance Band
     Exercise(
       exerciseId: 'high_chest_fly_with_resistance_band',
       name: 'High Chest Fly With Resistance Band',
@@ -1804,6 +1857,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 54. Hindu Push Ups
     Exercise(
       exerciseId: 'hindu_push_ups',
       name: 'Hindu Push Ups',
@@ -1838,6 +1892,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 55. Incline Barbell Bench Press
     Exercise(
       exerciseId: 'incline_barbell_bench_press',
       name: 'Incline Barbell Bench Press',
@@ -1872,6 +1927,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Barbell', 'Intermediate'],
     ),
+    // 56. Incline Cable Fly
     Exercise(
       exerciseId: 'incline_cable_fly',
       name: 'Incline Cable Fly',
@@ -1906,6 +1962,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 57. Incline Chest Fly Machine
     Exercise(
       exerciseId: 'incline_chest_fly_machine',
       name: 'Incline Chest Fly Machine',
@@ -1940,6 +1997,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 58. Incline Chest Press Machine
     Exercise(
       exerciseId: 'incline_chest_press_machine',
       name: 'Incline Chest Press Machine',
@@ -1974,6 +2032,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 59. Incline Close Grip Bench Press
     Exercise(
       exerciseId: 'incline_close_grip_bench_press',
       name: 'Incline Close Grip Bench Press',
@@ -2008,6 +2067,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Bench', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 60. Incline Dumbbell Fly
     Exercise(
       exerciseId: 'incline_dumbbell_fly',
       name: 'Incline Dumbbell Fly',
@@ -2042,6 +2102,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 61. Incline Push Up
     Exercise(
       exerciseId: 'incline_push_up',
       name: 'Incline Push Up',
@@ -2076,6 +2137,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 62. Inner Chest Press Machine
     Exercise(
       exerciseId: 'inner_chest_press_machine',
       name: 'Inner Chest Press Machine',
@@ -2110,6 +2172,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 63. Kettlebell Chest Press On The Floor
     Exercise(
       exerciseId: 'kettlebell_chest_press_on_the_floor',
       name: 'Kettlebell Chest Press On The Floor',
@@ -2144,6 +2207,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Kettlebell', 'Intermediate'],
     ),
+    // 64. Kettlebell Deep Push Up
     Exercise(
       exerciseId: 'kettlebell_deep_push_up',
       name: 'Kettlebell Deep Push Up',
@@ -2178,6 +2242,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Kettlebell', 'Intermediate'],
     ),
+    // 65. Kipping Handstand Push Up
     Exercise(
       exerciseId: 'kipping_handstand_push_up',
       name: 'Kipping Handstand Push Up',
@@ -2212,6 +2277,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 66. Knee Push Up
     Exercise(
       exerciseId: 'knee_push_up',
       name: 'Knee Push Up',
@@ -2246,6 +2312,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest'],
     ),
+    // 67. Kneeling Push Up
     Exercise(
       exerciseId: 'kneeling_push_up',
       name: 'Kneeling Push Up',
@@ -2280,6 +2347,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest'],
     ),
+    // 68. Knuckle Push Up
     Exercise(
       exerciseId: 'knuckle_push_up',
       name: 'Knuckle Push Up',
@@ -2314,6 +2382,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 69. Landmine Floor Chest Fly
     Exercise(
       exerciseId: 'landmine_floor_chest_fly',
       name: 'Landmine Floor Chest Fly',
@@ -2348,6 +2417,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 70. Lever Chest Press
     Exercise(
       exerciseId: 'lever_chest_press',
       name: 'Lever Chest Press',
@@ -2382,6 +2452,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 71. Lever Crossovers
     Exercise(
       exerciseId: 'lever_crossovers',
       name: 'Lever Crossovers',
@@ -2416,6 +2487,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 72. Lever Decline Chest Press
     Exercise(
       exerciseId: 'lever_decline_chest_press',
       name: 'Lever Decline Chest Press',
@@ -2450,6 +2522,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 73. Lever Incline Chest Press
     Exercise(
       exerciseId: 'lever_incline_chest_press',
       name: 'Lever Incline Chest Press',
@@ -2484,6 +2557,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 74. Lever Incline Hammer Chest Press
     Exercise(
       exerciseId: 'lever_incline_hammer_chest_press',
       name: 'Lever Incline Hammer Chest Press',
@@ -2518,6 +2592,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 75. Lever One Arm Chest Press
     Exercise(
       exerciseId: 'lever_one_arm_chest_press',
       name: 'Lever One Arm Chest Press',
@@ -2552,6 +2627,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 76. Low Cable Crossover
     Exercise(
       exerciseId: 'low_cable_crossover',
       name: 'Low Cable Crossover',
@@ -2586,6 +2662,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 77. Low Chest Fly With Resistance Band
     Exercise(
       exerciseId: 'low_chest_fly_with_resistance_band',
       name: 'Low Chest Fly With Resistance Band',
@@ -2620,6 +2697,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 78. Lying Cable Fly
     Exercise(
       exerciseId: 'lying_cable_fly',
       name: 'Lying Cable Fly',
@@ -2654,6 +2732,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 79. Lying Cable Reverse Fly
     Exercise(
       exerciseId: 'lying_cable_reverse_fly',
       name: 'Lying Cable Reverse Fly',
@@ -2688,6 +2767,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 80. Lying Chest Press Machine
     Exercise(
       exerciseId: 'lying_chest_press_machine',
       name: 'Lying Chest Press Machine',
@@ -2722,6 +2802,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 81. Machine Fly
     Exercise(
       exerciseId: 'machine_fly',
       name: 'Machine Fly',
@@ -2756,6 +2837,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 82. Medicine Ball Push Up
     Exercise(
       exerciseId: 'medicine_ball_push_up',
       name: 'Medicine Ball Push Up',
@@ -2790,6 +2872,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 83. Middle Chest Fly With Resistance Band
     Exercise(
       exerciseId: 'middle_chest_fly_with_resistance_band',
       name: 'Middle Chest Fly With Resistance Band',
@@ -2824,6 +2907,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 84. Modified Hindu Push Up
     Exercise(
       exerciseId: 'modified_hindu_push_up',
       name: 'Modified Hindu Push Up',
@@ -2858,6 +2942,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 85. Narrow Grip Wall Push Up
     Exercise(
       exerciseId: 'narrow_grip_wall_push_up',
       name: 'Narrow Grip Wall Push Up',
@@ -2892,6 +2977,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 86. One Arm Cable Chest Press
     Exercise(
       exerciseId: 'one_arm_cable_chest_press',
       name: 'One Arm Cable Chest Press',
@@ -2926,6 +3012,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 87. One Arm Decline Cable Fly
     Exercise(
       exerciseId: 'one_arm_decline_cable_fly',
       name: 'One Arm Decline Cable Fly',
@@ -2960,6 +3047,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 88. One Arm Kettlebell Chest Press On The Bench
     Exercise(
       exerciseId: 'one_arm_kettlebell_chest_press_on_the_bench',
       name: 'One Arm Kettlebell Chest Press On The Bench',
@@ -2994,6 +3082,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced', 'Kettlebell'],
     ),
+    // 89. One Arm Push Ups With Support
     Exercise(
       exerciseId: 'one_arm_push_ups_with_support',
       name: 'One Arm Push Ups With Support',
@@ -3028,6 +3117,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 90. One Leg Push Up
     Exercise(
       exerciseId: 'one_leg_push_up',
       name: 'One Leg Push Up',
@@ -3062,6 +3152,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 91. Pec Deck Fly
     Exercise(
       exerciseId: 'pec_deck_fly',
       name: 'Pec Deck Fly',
@@ -3096,6 +3187,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 92. Pike Push Up Between Chairs
     Exercise(
       exerciseId: 'pike_push_up_between_chairs',
       name: 'Pike Push Up Between Chairs',
@@ -3130,6 +3222,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 93. Planche Push Up
     Exercise(
       exerciseId: 'planche_push_up',
       name: 'Planche Push Up',
@@ -3164,6 +3257,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 94. Push Up
     Exercise(
       exerciseId: 'push_up',
       name: 'Push Up',
@@ -3198,6 +3292,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 95. Push Up Medicine Ball
     Exercise(
       exerciseId: 'push_up_medicine_ball',
       name: 'Push Up Medicine Ball',
@@ -3232,6 +3327,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 96. Push Up Plus
     Exercise(
       exerciseId: 'push_up_plus',
       name: 'Push Up Plus',
@@ -3266,6 +3362,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 97. Push Up To Renegade Row
     Exercise(
       exerciseId: 'push_up_to_renegade_row',
       name: 'Push Up To Renegade Row',
@@ -3300,6 +3397,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 98. Push Up Toe Touch
     Exercise(
       exerciseId: 'push_up_toe_touch',
       name: 'Push Up Toe Touch',
@@ -3334,6 +3432,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 99. Push Up With Push Up Bars
     Exercise(
       exerciseId: 'push_up_with_push_up_bars',
       name: 'Push Up With Push Up Bars',
@@ -3368,6 +3467,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 100. Push Up With Rotation
     Exercise(
       exerciseId: 'push_up_with_rotation',
       name: 'Push Up With Rotation',
@@ -3402,6 +3502,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 101. Resistance Band Alternating Chest Fly
     Exercise(
       exerciseId: 'resistance_band_alternating_chest_fly',
       name: 'Resistance Band Alternating Chest Fly',
@@ -3436,6 +3537,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 102. Reverse Chest Stretch
     Exercise(
       exerciseId: 'reverse_chest_stretch',
       name: 'Reverse Chest Stretch',
@@ -3470,6 +3572,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 103. Reverse Grip Dumbbell Bench Press
     Exercise(
       exerciseId: 'reverse_grip_dumbbell_bench_press',
       name: 'Reverse Grip Dumbbell Bench Press',
@@ -3504,6 +3607,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Dumbbell', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 104. Reverse Push Up
     Exercise(
       exerciseId: 'reverse_push_up',
       name: 'Reverse Push Up',
@@ -3538,6 +3642,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 105. Seated Cable Chest Press
     Exercise(
       exerciseId: 'seated_cable_chest_press',
       name: 'Seated Cable Chest Press',
@@ -3572,6 +3677,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 106. Seated Cable Close Grip Chest Press
     Exercise(
       exerciseId: 'seated_cable_close_grip_chest_press',
       name: 'Seated Cable Close Grip Chest Press',
@@ -3606,6 +3712,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 107. Seated Chest Stretch
     Exercise(
       exerciseId: 'seated_chest_stretch',
       name: 'Seated Chest Stretch',
@@ -3640,6 +3747,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 108. Shoulder Tap Push Up
     Exercise(
       exerciseId: 'shoulder_tap_push_up',
       name: 'Shoulder Tap Push Up',
@@ -3674,6 +3782,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 109. Single Arm Cable Crossover
     Exercise(
       exerciseId: 'single_arm_cable_crossover',
       name: 'Single Arm Cable Crossover',
@@ -3708,6 +3817,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Cable', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 110. Single Arm Push Up
     Exercise(
       exerciseId: 'single_arm_push_up',
       name: 'Single Arm Push Up',
@@ -3742,6 +3852,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 111. Single Arm Push Up On Medicine Ball
     Exercise(
       exerciseId: 'single_arm_push_up_on_medicine_ball',
       name: 'Single Arm Push Up On Medicine Ball',
@@ -3776,6 +3887,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 112. Single Arm Raise Push Up
     Exercise(
       exerciseId: 'single_arm_raise_push_up',
       name: 'Single Arm Raise Push Up',
@@ -3810,6 +3922,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 113. Single Knee To Chest
     Exercise(
       exerciseId: 'single_knee_to_chest',
       name: 'Single Knee To Chest',
@@ -3844,6 +3957,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest'],
     ),
+    // 114. Smith Machine Bench Press
     Exercise(
       exerciseId: 'smith_machine_bench_press',
       name: 'Smith Machine Bench Press',
@@ -3878,6 +3992,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Barbell', 'Intermediate'],
     ),
+    // 115. Smith Machine Decline Bench Press
     Exercise(
       exerciseId: 'smith_machine_decline_bench_press',
       name: 'Smith Machine Decline Bench Press',
@@ -3912,6 +4027,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Barbell', 'Intermediate'],
     ),
+    // 116. Smith Machine Incline Bench Press
     Exercise(
       exerciseId: 'smith_machine_incline_bench_press',
       name: 'Smith Machine Incline Bench Press',
@@ -3946,6 +4062,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Barbell', 'Intermediate'],
     ),
+    // 117. Stability Ball Decline Push Up
     Exercise(
       exerciseId: 'stability_ball_decline_push_up',
       name: 'Stability Ball Decline Push Up',
@@ -3980,6 +4097,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 118. Stability Ball Push Up
     Exercise(
       exerciseId: 'stability_ball_push_up',
       name: 'Stability Ball Push Up',
@@ -4014,6 +4132,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 119. Standing Incline Chest Press With Resistance Band
     Exercise(
       exerciseId: 'standing_incline_chest_press_with_resistance_band',
       name: 'Standing Incline Chest Press With Resistance Band',
@@ -4048,6 +4167,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Pectoralis Major', 'Anterior Deltoid', 'Resistance Band', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 120. Standing Medicine Ball Chest Pass
     Exercise(
       exerciseId: 'standing_medicine_ball_chest_pass',
       name: 'Standing Medicine Ball Chest Pass',
@@ -4082,6 +4202,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 121. Standing One Arm Chest Stretch
     Exercise(
       exerciseId: 'standing_one_arm_chest_stretch',
       name: 'Standing One Arm Chest Stretch',
@@ -4116,6 +4237,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Advanced'],
     ),
+    // 122. Supine Medicine Ball Chest Throw
     Exercise(
       exerciseId: 'supine_medicine_ball_chest_throw',
       name: 'Supine Medicine Ball Chest Throw',
@@ -4150,6 +4272,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 123. Suspended Push Up
     Exercise(
       exerciseId: 'suspended_push_up',
       name: 'Suspended Push Up',
@@ -4184,6 +4307,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 124. Titli Asana Butterfly Pose
     Exercise(
       exerciseId: 'titli_asana_butterfly_pose',
       name: 'Titli Asana Butterfly Pose',
@@ -4218,6 +4342,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 125. TRX Chest Fly
     Exercise(
       exerciseId: 'trx_chest_fly',
       name: 'TRX Chest Fly',
@@ -4252,6 +4377,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 126. TRX Chest Press
     Exercise(
       exerciseId: 'trx_chest_press',
       name: 'TRX Chest Press',
@@ -4286,6 +4412,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 127. Wall Push Up
     Exercise(
       exerciseId: 'wall_push_up',
       name: 'Wall Push Up',
@@ -4320,6 +4447,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 128. Wall Supported Handstand Push Ups
     Exercise(
       exerciseId: 'wall_supported_handstand_push_ups',
       name: 'Wall Supported Handstand Push Ups',
@@ -4354,6 +4482,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 129. Weighted Push Up
     Exercise(
       exerciseId: 'weighted_push_up',
       name: 'Weighted Push Up',
@@ -4388,6 +4517,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 130. Weighted Vest Push Up
     Exercise(
       exerciseId: 'weighted_vest_push_up',
       name: 'Weighted Vest Push Up',
@@ -4422,6 +4552,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 131. Wide Grip Bench Press
     Exercise(
       exerciseId: 'wide_grip_bench_press',
       name: 'Wide Grip Bench Press',
@@ -4456,6 +4587,7 @@ class ChestExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Pectoralis Major', 'Anterior Deltoid', 'Bench', 'Triceps', 'Chest', 'Intermediate'],
     ),
+    // 132. Wide Grip Reverse Bench Press
     Exercise(
       exerciseId: 'wide_grip_reverse_bench_press',
       name: 'Wide Grip Reverse Bench Press',

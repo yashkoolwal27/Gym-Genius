@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class TricepsExercises {
   static final List<Exercise> exercises = [
+    // 1. Alternating Lying Dumbbell Triceps Extension
     Exercise(
       exerciseId: 'alternating_lying_dumbbell_triceps_extension',
       name: 'Alternating Lying Dumbbell Triceps Extension',
@@ -36,6 +37,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 2. Asisted Triceps Dips
     Exercise(
       exerciseId: 'asisted_triceps_dips',
       name: 'Asisted Triceps Dips',
@@ -70,6 +72,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 3. Band Pushdown
     Exercise(
       exerciseId: 'band_pushdown',
       name: 'Band Pushdown',
@@ -104,6 +107,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 4. Band Skull Crusher
     Exercise(
       exerciseId: 'band_skull_crusher',
       name: 'Band Skull Crusher',
@@ -138,6 +142,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 5. Banded Glute Kickbacks
     Exercise(
       exerciseId: 'banded_glute_kickbacks',
       name: 'Banded Glute Kickbacks',
@@ -172,6 +177,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 6. Banded Overhead Triceps Extension
     Exercise(
       exerciseId: 'banded_overhead_triceps_extension',
       name: 'Banded Overhead Triceps Extension',
@@ -206,6 +212,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 7. Banded Standing Glute Kickback
     Exercise(
       exerciseId: 'banded_standing_glute_kickback',
       name: 'Banded Standing Glute Kickback',
@@ -240,6 +247,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 8. Barbell Jm Press
     Exercise(
       exerciseId: 'barbell_jm_press',
       name: 'Barbell Jm Press',
@@ -274,6 +282,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Chest', 'Shoulders', 'Barbell', 'Intermediate'],
     ),
+    // 9. Barbell Lying Back Of The Head Tricep Extension
     Exercise(
       exerciseId: 'barbell_lying_back_of_the_head_tricep_extension',
       name: 'Barbell Lying Back Of The Head Tricep Extension',
@@ -308,6 +317,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Chest', 'Shoulders', 'Barbell', 'Intermediate'],
     ),
+    // 10. Barbell Lying Close Grip Triceps Extension
     Exercise(
       exerciseId: 'barbell_lying_close_grip_triceps_extension',
       name: 'Barbell Lying Close Grip Triceps Extension',
@@ -342,6 +352,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Chest', 'Shoulders', 'Barbell', 'Intermediate'],
     ),
+    // 11. Bench Dips
     Exercise(
       exerciseId: 'bench_dips',
       name: 'Bench Dips',
@@ -376,6 +387,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Bench', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 12. Bent Over Triceps Kick Back
     Exercise(
       exerciseId: 'bent_over_triceps_kick_back',
       name: 'Bent Over Triceps Kick Back',
@@ -410,6 +422,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 13. Bodyweight Skull Crushers
     Exercise(
       exerciseId: 'bodyweight_skull_crushers',
       name: 'Bodyweight Skull Crushers',
@@ -444,6 +457,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 14. Cable Crossover Triceps Extension
     Exercise(
       exerciseId: 'cable_crossover_triceps_extension',
       name: 'Cable Crossover Triceps Extension',
@@ -478,6 +492,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 15. Cable Donkey Kickback
     Exercise(
       exerciseId: 'cable_donkey_kickback',
       name: 'Cable Donkey Kickback',
@@ -512,6 +527,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 16. Cable Incline Triceps Extension
     Exercise(
       exerciseId: 'cable_incline_triceps_extension',
       name: 'Cable Incline Triceps Extension',
@@ -546,6 +562,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 17. Cable Lying Triceps Extension
     Exercise(
       exerciseId: 'cable_lying_triceps_extension',
       name: 'Cable Lying Triceps Extension',
@@ -580,6 +597,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 18. Cable Lying Triceps Extensions
     Exercise(
       exerciseId: 'cable_lying_triceps_extensions',
       name: 'Cable Lying Triceps Extensions',
@@ -614,6 +632,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 19. Cable One Arm Overhead Triceps Extension
     Exercise(
       exerciseId: 'cable_one_arm_overhead_triceps_extension',
       name: 'Cable One Arm Overhead Triceps Extension',
@@ -648,6 +667,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 20. Cable Rope Lying Tricep Extension
     Exercise(
       exerciseId: 'cable_rope_lying_tricep_extension',
       name: 'Cable Rope Lying Tricep Extension',
@@ -682,6 +702,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 21. Cable Rope Overhead Triceps Extension
     Exercise(
       exerciseId: 'cable_rope_overhead_triceps_extension',
       name: 'Cable Rope Overhead Triceps Extension',
@@ -716,6 +737,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 22. Cable Side Triceps Extension
     Exercise(
       exerciseId: 'cable_side_triceps_extension',
       name: 'Cable Side Triceps Extension',
@@ -750,6 +772,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 23. Cable Tricep Kickback
     Exercise(
       exerciseId: 'cable_tricep_kickback',
       name: 'Cable Tricep Kickback',
@@ -784,6 +807,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 24. Decline Close Grip Bench To Skull Crusher
     Exercise(
       exerciseId: 'decline_close_grip_bench_to_skull_crusher',
       name: 'Decline Close Grip Bench To Skull Crusher',
@@ -818,6 +842,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Bench', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 25. Decline Dumbbell Triceps Extension
     Exercise(
       exerciseId: 'decline_dumbbell_triceps_extension',
       name: 'Decline Dumbbell Triceps Extension',
@@ -852,6 +877,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 26. Dumbbell Kickback
     Exercise(
       exerciseId: 'dumbbell_kickback',
       name: 'Dumbbell Kickback',
@@ -886,6 +912,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 27. Dumbbell Seated Front And Back Tate Press
     Exercise(
       exerciseId: 'dumbbell_seated_front_and_back_tate_press',
       name: 'Dumbbell Seated Front And Back Tate Press',
@@ -920,6 +947,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 28. Dumbbell Skull Crusher
     Exercise(
       exerciseId: 'dumbbell_skull_crusher',
       name: 'Dumbbell Skull Crusher',
@@ -954,6 +982,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 29. Dumbbell Tate Press
     Exercise(
       exerciseId: 'dumbbell_tate_press',
       name: 'Dumbbell Tate Press',
@@ -988,6 +1017,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 30. Dumbbell Triceps Extension
     Exercise(
       exerciseId: 'dumbbell_triceps_extension',
       name: 'Dumbbell Triceps Extension',
@@ -1022,6 +1052,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 31. Exercise Ball Triceps Extension
     Exercise(
       exerciseId: 'exercise_ball_triceps_extension',
       name: 'Exercise Ball Triceps Extension',
@@ -1056,6 +1087,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 32. EZ Bar Lying Close Grip Triceps Extension Behind Head
     Exercise(
       exerciseId: 'ez_bar_lying_close_grip_triceps_extension_behind_head',
       name: 'EZ Bar Lying Close Grip Triceps Extension Behind Head',
@@ -1090,6 +1122,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 33. Glute Kickback Machine
     Exercise(
       exerciseId: 'glute_kickback_machine',
       name: 'Glute Kickback Machine',
@@ -1124,6 +1157,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 34. High Pulley Overhead Tricep Extension
     Exercise(
       exerciseId: 'high_pulley_overhead_tricep_extension',
       name: 'High Pulley Overhead Tricep Extension',
@@ -1158,6 +1192,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 35. Incline EZ Bar Triceps Extension
     Exercise(
       exerciseId: 'incline_ez_bar_triceps_extension',
       name: 'Incline EZ Bar Triceps Extension',
@@ -1192,6 +1227,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 36. Kneeling Cable Triceps Extension
     Exercise(
       exerciseId: 'kneeling_cable_triceps_extension',
       name: 'Kneeling Cable Triceps Extension',
@@ -1226,6 +1262,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Triceps', 'Chest', 'Shoulders'],
     ),
+    // 37. Kneeling Cable Triceps Extension 2
     Exercise(
       exerciseId: 'kneeling_cable_triceps_extension_2',
       name: 'Kneeling Cable Triceps Extension 2',
@@ -1260,6 +1297,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Triceps', 'Chest', 'Shoulders'],
     ),
+    // 38. Lever Triceps Dip
     Exercise(
       exerciseId: 'lever_triceps_dip',
       name: 'Lever Triceps Dip',
@@ -1294,6 +1332,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 39. Lever Triceps Extension
     Exercise(
       exerciseId: 'lever_triceps_extension',
       name: 'Lever Triceps Extension',
@@ -1328,6 +1367,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 40. Low Cable Tricep Kickback
     Exercise(
       exerciseId: 'low_cable_tricep_kickback',
       name: 'Low Cable Tricep Kickback',
@@ -1362,6 +1402,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 41. Lying Barbell Triceps Extension
     Exercise(
       exerciseId: 'lying_barbell_triceps_extension',
       name: 'Lying Barbell Triceps Extension',
@@ -1396,6 +1437,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Chest', 'Shoulders', 'Barbell', 'Intermediate'],
     ),
+    // 42. One Arm High Pulley Overhead Tricep Extension
     Exercise(
       exerciseId: 'one_arm_high_pulley_overhead_tricep_extension',
       name: 'One Arm High Pulley Overhead Tricep Extension',
@@ -1430,6 +1472,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 43. One Arm Lying Triceps Extension
     Exercise(
       exerciseId: 'one_arm_lying_triceps_extension',
       name: 'One Arm Lying Triceps Extension',
@@ -1464,6 +1507,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 44. One Arm Pronated Dumbbell Triceps Extension
     Exercise(
       exerciseId: 'one_arm_pronated_dumbbell_triceps_extension',
       name: 'One Arm Pronated Dumbbell Triceps Extension',
@@ -1498,6 +1542,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 45. One Arm Reverse Push Down
     Exercise(
       exerciseId: 'one_arm_reverse_push_down',
       name: 'One Arm Reverse Push Down',
@@ -1532,6 +1577,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 46. One Arm Single Leg Bench Dips
     Exercise(
       exerciseId: 'one_arm_single_leg_bench_dips',
       name: 'One Arm Single Leg Bench Dips',
@@ -1566,6 +1612,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Bench', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 47. One Arm Triceps Pushdown
     Exercise(
       exerciseId: 'one_arm_triceps_pushdown',
       name: 'One Arm Triceps Pushdown',
@@ -1600,6 +1647,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 48. Overhead Triceps Extension Gymstick
     Exercise(
       exerciseId: 'overhead_triceps_extension_gymstick',
       name: 'Overhead Triceps Extension Gymstick',
@@ -1634,6 +1682,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 49. Push Down
     Exercise(
       exerciseId: 'push_down',
       name: 'Push Down',
@@ -1668,6 +1717,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 50. Reverse Grip Pushdown
     Exercise(
       exerciseId: 'reverse_grip_pushdown',
       name: 'Reverse Grip Pushdown',
@@ -1702,6 +1752,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 51. Rope Pushdown
     Exercise(
       exerciseId: 'rope_pushdown',
       name: 'Rope Pushdown',
@@ -1736,6 +1787,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 52. Seated Dumbbell Triceps Extension
     Exercise(
       exerciseId: 'seated_dumbbell_triceps_extension',
       name: 'Seated Dumbbell Triceps Extension',
@@ -1770,6 +1822,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 53. Seated EZ Bar Overhead Triceps Extension
     Exercise(
       exerciseId: 'seated_ez_bar_overhead_triceps_extension',
       name: 'Seated EZ Bar Overhead Triceps Extension',
@@ -1804,6 +1857,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 54. Seated One Arm Dumbbell Triceps Extension
     Exercise(
       exerciseId: 'seated_one_arm_dumbbell_triceps_extension',
       name: 'Seated One Arm Dumbbell Triceps Extension',
@@ -1838,6 +1892,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 55. Side One Arm Reverse Pushdown
     Exercise(
       exerciseId: 'side_one_arm_reverse_pushdown',
       name: 'Side One Arm Reverse Pushdown',
@@ -1872,6 +1927,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Chest', 'Shoulders', 'Advanced'],
     ),
+    // 56. Smith Machine Reverse Kickback
     Exercise(
       exerciseId: 'smith_machine_reverse_kickback',
       name: 'Smith Machine Reverse Kickback',
@@ -1906,6 +1962,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Chest', 'Shoulders', 'Barbell', 'Intermediate'],
     ),
+    // 57. Standing Barbell Triceps Extension
     Exercise(
       exerciseId: 'standing_barbell_triceps_extension',
       name: 'Standing Barbell Triceps Extension',
@@ -1940,6 +1997,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Chest', 'Shoulders', 'Barbell', 'Intermediate'],
     ),
+    // 58. Standing Triceps Extension Gymstick
     Exercise(
       exerciseId: 'standing_triceps_extension_gymstick',
       name: 'Standing Triceps Extension Gymstick',
@@ -1974,6 +2032,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 59. Standing Triceps Stretch
     Exercise(
       exerciseId: 'standing_triceps_stretch',
       name: 'Standing Triceps Stretch',
@@ -2008,6 +2067,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 60. Straight Leg Kickback
     Exercise(
       exerciseId: 'straight_leg_kickback',
       name: 'Straight Leg Kickback',
@@ -2042,6 +2102,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 61. Triceps Dip Machine
     Exercise(
       exerciseId: 'triceps_dip_machine',
       name: 'Triceps Dip Machine',
@@ -2076,6 +2137,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 62. Triceps Dips
     Exercise(
       exerciseId: 'triceps_dips',
       name: 'Triceps Dips',
@@ -2110,6 +2172,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 63. Triceps Dips On Floor
     Exercise(
       exerciseId: 'triceps_dips_on_floor',
       name: 'Triceps Dips On Floor',
@@ -2144,6 +2207,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 64. Triceps Extension Machine
     Exercise(
       exerciseId: 'triceps_extension_machine',
       name: 'Triceps Extension Machine',
@@ -2178,6 +2242,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 65. Triceps Extension With Resistance Bands
     Exercise(
       exerciseId: 'triceps_extension_with_resistance_bands',
       name: 'Triceps Extension With Resistance Bands',
@@ -2212,6 +2277,7 @@ class TricepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Chest', 'Shoulders', 'Intermediate'],
     ),
+    // 66. V Bar Pushdown
     Exercise(
       exerciseId: 'v_bar_pushdown',
       name: 'V Bar Pushdown',

@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class ShouldersExercises {
   static final List<Exercise> exercises = [
+    // 1. Alternate Dumbbell Lateral Raise
     Exercise(
       exerciseId: 'alternate_dumbbell_lateral_raise',
       name: 'Alternate Dumbbell Lateral Raise',
@@ -36,6 +37,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 2. Alternating Dumbbell Front Raise
     Exercise(
       exerciseId: 'alternating_dumbbell_front_raise',
       name: 'Alternating Dumbbell Front Raise',
@@ -70,6 +72,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 3. Arm Circles
     Exercise(
       exerciseId: 'arm_circles',
       name: 'Arm Circles',
@@ -104,6 +107,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 4. Arm Scissors
     Exercise(
       exerciseId: 'arm_scissors',
       name: 'Arm Scissors',
@@ -138,6 +142,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 5. Arnold Press
     Exercise(
       exerciseId: 'arnold_press',
       name: 'Arnold Press',
@@ -172,6 +177,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 6. Assisted Reverse Shoulder Stretch
     Exercise(
       exerciseId: 'assisted_reverse_shoulder_stretch',
       name: 'Assisted Reverse Shoulder Stretch',
@@ -206,6 +212,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids'],
     ),
+    // 7. Back To Wall Alternating Shoulder Flexion
     Exercise(
       exerciseId: 'back_to_wall_alternating_shoulder_flexion',
       name: 'Back To Wall Alternating Shoulder Flexion',
@@ -240,6 +247,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 8. Band Front Lateral Raise
     Exercise(
       exerciseId: 'band_front_lateral_raise',
       name: 'Band Front Lateral Raise',
@@ -274,6 +282,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 9. Band Single Arm Shoulder Press
     Exercise(
       exerciseId: 'band_single_arm_shoulder_press',
       name: 'Band Single Arm Shoulder Press',
@@ -308,6 +317,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 10. Banded Behind Head Military Press
     Exercise(
       exerciseId: 'banded_behind_head_military_press',
       name: 'Banded Behind Head Military Press',
@@ -342,6 +352,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 11. Banded Shoulder Adduction
     Exercise(
       exerciseId: 'banded_shoulder_adduction',
       name: 'Banded Shoulder Adduction',
@@ -376,6 +387,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 12. Banded Shoulder Extension
     Exercise(
       exerciseId: 'banded_shoulder_extension',
       name: 'Banded Shoulder Extension',
@@ -410,6 +422,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 13. Banded Shoulder External Rotation
     Exercise(
       exerciseId: 'banded_shoulder_external_rotation',
       name: 'Banded Shoulder External Rotation',
@@ -444,6 +457,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 14. Banded Shoulder Flexion
     Exercise(
       exerciseId: 'banded_shoulder_flexion',
       name: 'Banded Shoulder Flexion',
@@ -478,6 +492,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 15. Barbell Front Raise
     Exercise(
       exerciseId: 'barbell_front_raise',
       name: 'Barbell Front Raise',
@@ -512,6 +527,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 16. Barbell Front Raise Twist
     Exercise(
       exerciseId: 'barbell_front_raise_twist',
       name: 'Barbell Front Raise Twist',
@@ -546,6 +562,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 17. Barbell Military Press
     Exercise(
       exerciseId: 'barbell_military_press',
       name: 'Barbell Military Press',
@@ -580,6 +597,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 18. Barbell Rear Delt Raise
     Exercise(
       exerciseId: 'barbell_rear_delt_raise',
       name: 'Barbell Rear Delt Raise',
@@ -614,6 +632,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 19. Barbell Shoulder Press
     Exercise(
       exerciseId: 'barbell_shoulder_press',
       name: 'Barbell Shoulder Press',
@@ -648,6 +667,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 20. Barbell Upright Row
     Exercise(
       exerciseId: 'barbell_upright_row',
       name: 'Barbell Upright Row',
@@ -682,6 +702,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 21. Bent Arm Lateral Raise
     Exercise(
       exerciseId: 'bent_arm_lateral_raise',
       name: 'Bent Arm Lateral Raise',
@@ -716,6 +737,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 22. Bent Over Dumbbell Rear Delt Raise With Head On Bench
     Exercise(
       exerciseId: 'bent_over_dumbbell_rear_delt_raise_with_head_on_bench',
       name: 'Bent Over Dumbbell Rear Delt Raise With Head On Bench',
@@ -750,6 +772,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 23. Bent Over Lateral Raise
     Exercise(
       exerciseId: 'bent_over_lateral_raise',
       name: 'Bent Over Lateral Raise',
@@ -784,6 +807,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 24. Bent Over Rear Delt Fly Gymstick
     Exercise(
       exerciseId: 'bent_over_rear_delt_fly_gymstick',
       name: 'Bent Over Rear Delt Fly Gymstick',
@@ -818,6 +842,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 25. Bodyweight Military Press
     Exercise(
       exerciseId: 'bodyweight_military_press',
       name: 'Bodyweight Military Press',
@@ -852,6 +877,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 26. Cable External Shoulder Rotation
     Exercise(
       exerciseId: 'cable_external_shoulder_rotation',
       name: 'Cable External Shoulder Rotation',
@@ -886,6 +912,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 27. Cable Front Raise
     Exercise(
       exerciseId: 'cable_front_raise',
       name: 'Cable Front Raise',
@@ -920,6 +947,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 28. Cable Internal Shoulder Rotation
     Exercise(
       exerciseId: 'cable_internal_shoulder_rotation',
       name: 'Cable Internal Shoulder Rotation',
@@ -954,6 +982,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 29. Cable Lateral Raise
     Exercise(
       exerciseId: 'cable_lateral_raise',
       name: 'Cable Lateral Raise',
@@ -988,6 +1017,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 30. Cable Rear Delt Fly
     Exercise(
       exerciseId: 'cable_rear_delt_fly',
       name: 'Cable Rear Delt Fly',
@@ -1022,6 +1052,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 31. Cable Seated Shoulder Internal Rotation
     Exercise(
       exerciseId: 'cable_seated_shoulder_internal_rotation',
       name: 'Cable Seated Shoulder Internal Rotation',
@@ -1056,6 +1087,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 32. Cable Shoulder Press
     Exercise(
       exerciseId: 'cable_shoulder_press',
       name: 'Cable Shoulder Press',
@@ -1090,6 +1122,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 33. Cross Cable Face Pull
     Exercise(
       exerciseId: 'cross_cable_face_pull',
       name: 'Cross Cable Face Pull',
@@ -1124,6 +1157,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 34. Dip Shrugs Serratus Shrugs
     Exercise(
       exerciseId: 'dip_shrugs_serratus_shrugs',
       name: 'Dip Shrugs Serratus Shrugs',
@@ -1158,6 +1192,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 35. Doorway Pec And Shoulder Stretch
     Exercise(
       exerciseId: 'doorway_pec_and_shoulder_stretch',
       name: 'Doorway Pec And Shoulder Stretch',
@@ -1192,6 +1227,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 36. Double Cable Front Raise
     Exercise(
       exerciseId: 'double_cable_front_raise',
       name: 'Double Cable Front Raise',
@@ -1226,6 +1262,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 37. Dumbbell 4 Ways Lateral Raise
     Exercise(
       exerciseId: 'dumbbell_4_ways_lateral_raise',
       name: 'Dumbbell 4 Ways Lateral Raise',
@@ -1260,6 +1297,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 38. Dumbbell Chest Supported Lateral Raises
     Exercise(
       exerciseId: 'dumbbell_chest_supported_lateral_raises',
       name: 'Dumbbell Chest Supported Lateral Raises',
@@ -1294,6 +1332,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 39. Dumbbell Front Raise
     Exercise(
       exerciseId: 'dumbbell_front_raise',
       name: 'Dumbbell Front Raise',
@@ -1328,6 +1367,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 40. Dumbbell Lateral Raise
     Exercise(
       exerciseId: 'dumbbell_lateral_raise',
       name: 'Dumbbell Lateral Raise',
@@ -1362,6 +1402,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 41. Dumbbell Lateral To Front Raise
     Exercise(
       exerciseId: 'dumbbell_lateral_to_front_raise',
       name: 'Dumbbell Lateral To Front Raise',
@@ -1396,6 +1437,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 42. Dumbbell Lying External Shoulder Rotation
     Exercise(
       exerciseId: 'dumbbell_lying_external_shoulder_rotation',
       name: 'Dumbbell Lying External Shoulder Rotation',
@@ -1430,6 +1472,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 43. Dumbbell Lying One Arm Rear Lateral Raise
     Exercise(
       exerciseId: 'dumbbell_lying_one_arm_rear_lateral_raise',
       name: 'Dumbbell Lying One Arm Rear Lateral Raise',
@@ -1464,6 +1507,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 44. Dumbbell Lying Rear Lateral Raise
     Exercise(
       exerciseId: 'dumbbell_lying_rear_lateral_raise',
       name: 'Dumbbell Lying Rear Lateral Raise',
@@ -1498,6 +1542,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 45. Dumbbell One Arm Shoulder Press
     Exercise(
       exerciseId: 'dumbbell_one_arm_shoulder_press',
       name: 'Dumbbell One Arm Shoulder Press',
@@ -1532,6 +1577,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 46. Dumbbell Push Press
     Exercise(
       exerciseId: 'dumbbell_push_press',
       name: 'Dumbbell Push Press',
@@ -1566,6 +1612,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 47. Dumbbell Rear Delt Row
     Exercise(
       exerciseId: 'dumbbell_rear_delt_row',
       name: 'Dumbbell Rear Delt Row',
@@ -1600,6 +1647,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 48. Dumbbell Seated Alternate Front Raise
     Exercise(
       exerciseId: 'dumbbell_seated_alternate_front_raise',
       name: 'Dumbbell Seated Alternate Front Raise',
@@ -1634,6 +1682,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 49. Dumbbell Seated Bent Over Rear Delt Row
     Exercise(
       exerciseId: 'dumbbell_seated_bent_over_rear_delt_row',
       name: 'Dumbbell Seated Bent Over Rear Delt Row',
@@ -1668,6 +1717,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 50. Dumbbell Shoulder Press
     Exercise(
       exerciseId: 'dumbbell_shoulder_press',
       name: 'Dumbbell Shoulder Press',
@@ -1702,6 +1752,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 51. Dumbbell Side Lying Rear Delt Raise
     Exercise(
       exerciseId: 'dumbbell_side_lying_rear_delt_raise',
       name: 'Dumbbell Side Lying Rear Delt Raise',
@@ -1736,6 +1787,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 52. Dumbbell Single Arm Lateral Raise
     Exercise(
       exerciseId: 'dumbbell_single_arm_lateral_raise',
       name: 'Dumbbell Single Arm Lateral Raise',
@@ -1770,6 +1822,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 53. Dumbbell Upright Row
     Exercise(
       exerciseId: 'dumbbell_upright_row',
       name: 'Dumbbell Upright Row',
@@ -1804,6 +1857,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 54. EZ Bar Incline Front Raise
     Exercise(
       exerciseId: 'ez_bar_incline_front_raise',
       name: 'EZ Bar Incline Front Raise',
@@ -1838,6 +1892,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 55. EZ Bar Upright Row
     Exercise(
       exerciseId: 'ez_bar_upright_row',
       name: 'EZ Bar Upright Row',
@@ -1872,6 +1927,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 56. Face Pull With Resistance Band
     Exercise(
       exerciseId: 'face_pull_with_resistance_band',
       name: 'Face Pull With Resistance Band',
@@ -1906,6 +1962,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 57. Foam Roller Posterior Shoulder
     Exercise(
       exerciseId: 'foam_roller_posterior_shoulder',
       name: 'Foam Roller Posterior Shoulder',
@@ -1940,6 +1997,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 58. Gittleson Shrug
     Exercise(
       exerciseId: 'gittleson_shrug',
       name: 'Gittleson Shrug',
@@ -1974,6 +2032,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 59. Half Arnold Press
     Exercise(
       exerciseId: 'half_arnold_press',
       name: 'Half Arnold Press',
@@ -2008,6 +2067,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 60. Handstand Push Up
     Exercise(
       exerciseId: 'handstand_push_up',
       name: 'Handstand Push Up',
@@ -2042,6 +2102,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 61. Incline Dumbbell Side Lateral Raise
     Exercise(
       exerciseId: 'incline_dumbbell_side_lateral_raise',
       name: 'Incline Dumbbell Side Lateral Raise',
@@ -2076,6 +2137,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 62. Incline Landmine Press
     Exercise(
       exerciseId: 'incline_landmine_press',
       name: 'Incline Landmine Press',
@@ -2110,6 +2172,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 63. Kettlebell Arnold Press
     Exercise(
       exerciseId: 'kettlebell_arnold_press',
       name: 'Kettlebell Arnold Press',
@@ -2144,6 +2207,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Kettlebell', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 64. Kettlebell Lateral Raise
     Exercise(
       exerciseId: 'kettlebell_lateral_raise',
       name: 'Kettlebell Lateral Raise',
@@ -2178,6 +2242,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Kettlebell', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 65. Kettlebell One Arm Military Press
     Exercise(
       exerciseId: 'kettlebell_one_arm_military_press',
       name: 'Kettlebell One Arm Military Press',
@@ -2212,6 +2277,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Kettlebell', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 66. Kettlebell Shoulder Press
     Exercise(
       exerciseId: 'kettlebell_shoulder_press',
       name: 'Kettlebell Shoulder Press',
@@ -2246,6 +2312,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Kettlebell', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 67. Kneeling Cable Shoulder Press
     Exercise(
       exerciseId: 'kneeling_cable_shoulder_press',
       name: 'Kneeling Cable Shoulder Press',
@@ -2280,6 +2347,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids'],
     ),
+    // 68. Kneeling Landmine Press
     Exercise(
       exerciseId: 'kneeling_landmine_press',
       name: 'Kneeling Landmine Press',
@@ -2314,6 +2382,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids'],
     ),
+    // 69. Landmine Lateral Raise
     Exercise(
       exerciseId: 'landmine_lateral_raise',
       name: 'Landmine Lateral Raise',
@@ -2348,6 +2417,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 70. Landmine Press
     Exercise(
       exerciseId: 'landmine_press',
       name: 'Landmine Press',
@@ -2382,6 +2452,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 71. Lateral Raise Machine
     Exercise(
       exerciseId: 'lateral_raise_machine',
       name: 'Lateral Raise Machine',
@@ -2416,6 +2487,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 72. Lateral Raise With Towel On Wall
     Exercise(
       exerciseId: 'lateral_raise_with_towel_on_wall',
       name: 'Lateral Raise With Towel On Wall',
@@ -2450,6 +2522,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 73. Leaning Cable Lateral Raise
     Exercise(
       exerciseId: 'leaning_cable_lateral_raise',
       name: 'Leaning Cable Lateral Raise',
@@ -2484,6 +2557,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 74. Leaning Single Arm Dumbbell Lateral Raise
     Exercise(
       exerciseId: 'leaning_single_arm_dumbbell_lateral_raise',
       name: 'Leaning Single Arm Dumbbell Lateral Raise',
@@ -2518,6 +2592,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 75. Lever Gripless Shrug
     Exercise(
       exerciseId: 'lever_gripless_shrug',
       name: 'Lever Gripless Shrug',
@@ -2552,6 +2627,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 76. Lever Lateral Raise
     Exercise(
       exerciseId: 'lever_lateral_raise',
       name: 'Lever Lateral Raise',
@@ -2586,6 +2662,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 77. Lever Reverse Shoulder Press
     Exercise(
       exerciseId: 'lever_reverse_shoulder_press',
       name: 'Lever Reverse Shoulder Press',
@@ -2620,6 +2697,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 78. Lever Shoulder Press
     Exercise(
       exerciseId: 'lever_shoulder_press',
       name: 'Lever Shoulder Press',
@@ -2654,6 +2732,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 79. Lever Shoulder Press Hammer Grip
     Exercise(
       exerciseId: 'lever_shoulder_press_hammer_grip',
       name: 'Lever Shoulder Press Hammer Grip',
@@ -2688,6 +2767,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 80. Lying Shoulder Press
     Exercise(
       exerciseId: 'lying_shoulder_press',
       name: 'Lying Shoulder Press',
@@ -2722,6 +2802,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 81. Lying Weighted Lateral Neck Flexion
     Exercise(
       exerciseId: 'lying_weighted_lateral_neck_flexion',
       name: 'Lying Weighted Lateral Neck Flexion',
@@ -2756,6 +2837,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 82. Neck Rotation Stretch
     Exercise(
       exerciseId: 'neck_rotation_stretch',
       name: 'Neck Rotation Stretch',
@@ -2790,6 +2872,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 83. One Arm Bent Over Cable Lateral Raise
     Exercise(
       exerciseId: 'one_arm_bent_over_cable_lateral_raise',
       name: 'One Arm Bent Over Cable Lateral Raise',
@@ -2824,6 +2907,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 84. One Arm Dumbbell Upright Row
     Exercise(
       exerciseId: 'one_arm_dumbbell_upright_row',
       name: 'One Arm Dumbbell Upright Row',
@@ -2858,6 +2942,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 85. Pike Push Up
     Exercise(
       exerciseId: 'pike_push_up',
       name: 'Pike Push Up',
@@ -2892,6 +2977,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 86. Plate Loaded Shoulder Press
     Exercise(
       exerciseId: 'plate_loaded_shoulder_press',
       name: 'Plate Loaded Shoulder Press',
@@ -2926,6 +3012,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 87. Push Press
     Exercise(
       exerciseId: 'push_press',
       name: 'Push Press',
@@ -2960,6 +3047,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 88. Rear Delt Machine Fly
     Exercise(
       exerciseId: 'rear_delt_machine_fly',
       name: 'Rear Delt Machine Fly',
@@ -2994,6 +3082,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 89. Resistance Band Bent Over Rear Delt Fly
     Exercise(
       exerciseId: 'resistance_band_bent_over_rear_delt_fly',
       name: 'Resistance Band Bent Over Rear Delt Fly',
@@ -3028,6 +3117,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 90. Resistance Band Seated Shoulder Press
     Exercise(
       exerciseId: 'resistance_band_seated_shoulder_press',
       name: 'Resistance Band Seated Shoulder Press',
@@ -3062,6 +3152,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Resistance Band', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 91. Seated Dumbbell Front Raise
     Exercise(
       exerciseId: 'seated_dumbbell_front_raise',
       name: 'Seated Dumbbell Front Raise',
@@ -3096,6 +3187,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 92. Seated Dumbbell Lateral Raise
     Exercise(
       exerciseId: 'seated_dumbbell_lateral_raise',
       name: 'Seated Dumbbell Lateral Raise',
@@ -3130,6 +3222,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 93. Shoulder External Rotation
     Exercise(
       exerciseId: 'shoulder_external_rotation',
       name: 'Shoulder External Rotation',
@@ -3164,6 +3257,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 94. Shoulder Internal Rotation
     Exercise(
       exerciseId: 'shoulder_internal_rotation',
       name: 'Shoulder Internal Rotation',
@@ -3198,6 +3292,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 95. Shoulder Pendulum
     Exercise(
       exerciseId: 'shoulder_pendulum',
       name: 'Shoulder Pendulum',
@@ -3232,6 +3327,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 96. Shoulder Stretch Behind Back
     Exercise(
       exerciseId: 'shoulder_stretch_behind_back',
       name: 'Shoulder Stretch Behind Back',
@@ -3266,6 +3362,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 97. Side Arm Raises
     Exercise(
       exerciseId: 'side_arm_raises',
       name: 'Side Arm Raises',
@@ -3300,6 +3397,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 98. Side Lying Rear Delt Dumbbell Raise
     Exercise(
       exerciseId: 'side_lying_rear_delt_dumbbell_raise',
       name: 'Side Lying Rear Delt Dumbbell Raise',
@@ -3334,6 +3432,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 99. Side Neck Stretch
     Exercise(
       exerciseId: 'side_neck_stretch',
       name: 'Side Neck Stretch',
@@ -3368,6 +3467,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 100. Side Push Neck Stretch
     Exercise(
       exerciseId: 'side_push_neck_stretch',
       name: 'Side Push Neck Stretch',
@@ -3402,6 +3502,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 101. Single Arm Arnold Press
     Exercise(
       exerciseId: 'single_arm_arnold_press',
       name: 'Single Arm Arnold Press',
@@ -3436,6 +3537,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 102. Single Arm Upright Row Gymstick
     Exercise(
       exerciseId: 'single_arm_upright_row_gymstick',
       name: 'Single Arm Upright Row Gymstick',
@@ -3470,6 +3572,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Advanced', 'Traps', 'Deltoids'],
     ),
+    // 103. Smith Machine Behind Neck Press
     Exercise(
       exerciseId: 'smith_machine_behind_neck_press',
       name: 'Smith Machine Behind Neck Press',
@@ -3504,6 +3607,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 104. Smith Machine Shoulder Press
     Exercise(
       exerciseId: 'smith_machine_shoulder_press',
       name: 'Smith Machine Shoulder Press',
@@ -3538,6 +3642,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 105. Smith Machine Shrug
     Exercise(
       exerciseId: 'smith_machine_shrug',
       name: 'Smith Machine Shrug',
@@ -3572,6 +3677,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 106. Standing Alternating Dumbbell Shoulder Press
     Exercise(
       exerciseId: 'standing_alternating_dumbbell_shoulder_press',
       name: 'Standing Alternating Dumbbell Shoulder Press',
@@ -3606,6 +3712,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 107. Standing Barbell Close Grip Military Press
     Exercise(
       exerciseId: 'standing_barbell_close_grip_military_press',
       name: 'Standing Barbell Close Grip Military Press',
@@ -3640,6 +3747,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 108. Standing Dumbbell Shoulder Press
     Exercise(
       exerciseId: 'standing_dumbbell_shoulder_press',
       name: 'Standing Dumbbell Shoulder Press',
@@ -3674,6 +3782,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 109. Standing Reverse Shoulder Stretch
     Exercise(
       exerciseId: 'standing_reverse_shoulder_stretch',
       name: 'Standing Reverse Shoulder Stretch',
@@ -3708,6 +3817,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 110. Standing Smith Machine Shoulder Press
     Exercise(
       exerciseId: 'standing_smith_machine_shoulder_press',
       name: 'Standing Smith Machine Shoulder Press',
@@ -3742,6 +3852,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Triceps', 'Shoulders', 'Barbell', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 111. Two Arm Cable Front Raise
     Exercise(
       exerciseId: 'two_arm_cable_front_raise',
       name: 'Two Arm Cable Front Raise',
@@ -3776,6 +3887,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 112. Two Arm Cable Lateral Raise
     Exercise(
       exerciseId: 'two_arm_cable_lateral_raise',
       name: 'Two Arm Cable Lateral Raise',
@@ -3810,6 +3922,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 113. Two Arm Dumbbell Front Raise
     Exercise(
       exerciseId: 'two_arm_dumbbell_front_raise',
       name: 'Two Arm Dumbbell Front Raise',
@@ -3844,6 +3957,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 114. Weight Plate Front Raise
     Exercise(
       exerciseId: 'weight_plate_front_raise',
       name: 'Weight Plate Front Raise',
@@ -3878,6 +3992,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 115. Weighted Lying Neck Extension
     Exercise(
       exerciseId: 'weighted_lying_neck_extension',
       name: 'Weighted Lying Neck Extension',
@@ -3912,6 +4027,7 @@ class ShouldersExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Triceps', 'Shoulders', 'Traps', 'Deltoids', 'Intermediate'],
     ),
+    // 116. Weighted Lying Neck Flexion
     Exercise(
       exerciseId: 'weighted_lying_neck_flexion',
       name: 'Weighted Lying Neck Flexion',

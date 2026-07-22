@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class ForearmsExercises {
   static final List<Exercise> exercises = [
+    // 1. Barbell Finger Curl
     Exercise(
       exerciseId: 'barbell_finger_curl',
       name: 'Barbell Finger Curl',
@@ -36,6 +37,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Barbell', 'Grip', 'Intermediate'],
     ),
+    // 2. Barbell Reverse Curl
     Exercise(
       exerciseId: 'barbell_reverse_curl',
       name: 'Barbell Reverse Curl',
@@ -70,6 +72,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Barbell', 'Grip', 'Intermediate'],
     ),
+    // 3. Barbell Reverse Wrist Curl
     Exercise(
       exerciseId: 'barbell_reverse_wrist_curl',
       name: 'Barbell Reverse Wrist Curl',
@@ -104,6 +107,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Barbell', 'Grip', 'Intermediate'],
     ),
+    // 4. Barbell Reverse Wrist Curl Over A Bench
     Exercise(
       exerciseId: 'barbell_reverse_wrist_curl_over_a_bench',
       name: 'Barbell Reverse Wrist Curl Over A Bench',
@@ -138,6 +142,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Barbell', 'Grip', 'Intermediate'],
     ),
+    // 5. Behind The Back Barbell Wrist Curl
     Exercise(
       exerciseId: 'behind_the_back_barbell_wrist_curl',
       name: 'Behind The Back Barbell Wrist Curl',
@@ -172,6 +177,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Barbell', 'Grip', 'Intermediate'],
     ),
+    // 6. Cable One Arm Wrist Curl On Floor
     Exercise(
       exerciseId: 'cable_one_arm_wrist_curl_on_floor',
       name: 'Cable One Arm Wrist Curl On Floor',
@@ -206,6 +212,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Cable', 'Wrist Flexors', 'Advanced', 'Grip'],
     ),
+    // 7. Cable Single Arm Hammer Curl
     Exercise(
       exerciseId: 'cable_single_arm_hammer_curl',
       name: 'Cable Single Arm Hammer Curl',
@@ -240,6 +247,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Cable', 'Wrist Flexors', 'Advanced', 'Grip'],
     ),
+    // 8. Dumbbell Seated Neutral Wrist Curl
     Exercise(
       exerciseId: 'dumbbell_seated_neutral_wrist_curl',
       name: 'Dumbbell Seated Neutral Wrist Curl',
@@ -274,6 +282,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Dumbbell', 'Grip', 'Intermediate'],
     ),
+    // 9. Dumbbell Wrist Curl
     Exercise(
       exerciseId: 'dumbbell_wrist_curl',
       name: 'Dumbbell Wrist Curl',
@@ -308,6 +317,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Dumbbell', 'Grip', 'Intermediate'],
     ),
+    // 10. Hand Gripper
     Exercise(
       exerciseId: 'hand_gripper',
       name: 'Hand Gripper',
@@ -342,6 +352,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 11. Reverse Wrist Curl
     Exercise(
       exerciseId: 'reverse_wrist_curl',
       name: 'Reverse Wrist Curl',
@@ -376,6 +387,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 12. Reverse Wrist Stretch
     Exercise(
       exerciseId: 'reverse_wrist_stretch',
       name: 'Reverse Wrist Stretch',
@@ -410,6 +422,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 13. Seated Barbell Finger Curl
     Exercise(
       exerciseId: 'seated_barbell_finger_curl',
       name: 'Seated Barbell Finger Curl',
@@ -444,6 +457,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Forearms', 'Wrist Flexors', 'Barbell', 'Grip', 'Intermediate'],
     ),
+    // 14. Seated Zottman Curl
     Exercise(
       exerciseId: 'seated_zottman_curl',
       name: 'Seated Zottman Curl',
@@ -478,6 +492,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 15. Weighted Neutral Wrist Curl
     Exercise(
       exerciseId: 'weighted_neutral_wrist_curl',
       name: 'Weighted Neutral Wrist Curl',
@@ -512,6 +527,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 16. Wrist Circles Stretch
     Exercise(
       exerciseId: 'wrist_circles_stretch',
       name: 'Wrist Circles Stretch',
@@ -546,6 +562,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 17. Wrist Curl
     Exercise(
       exerciseId: 'wrist_curl',
       name: 'Wrist Curl',
@@ -580,6 +597,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 18. Wrist Roller
     Exercise(
       exerciseId: 'wrist_roller',
       name: 'Wrist Roller',
@@ -614,6 +632,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 19. Wrist Rotations
     Exercise(
       exerciseId: 'wrist_rotations',
       name: 'Wrist Rotations',
@@ -648,6 +667,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 20. Wrist Stretch
     Exercise(
       exerciseId: 'wrist_stretch',
       name: 'Wrist Stretch',
@@ -682,6 +702,7 @@ class ForearmsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Forearms', 'Wrist Flexors', 'Grip', 'Intermediate'],
     ),
+    // 21. Wrist Ulnar Deviator And Extensor Stretch
     Exercise(
       exerciseId: 'wrist_ulnar_deviator_and_extensor_stretch',
       name: 'Wrist Ulnar Deviator And Extensor Stretch',

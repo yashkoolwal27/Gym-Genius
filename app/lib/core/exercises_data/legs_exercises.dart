@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class LegExercises {
   static final List<Exercise> exercises = [
+    // 1. Adductor Magnus Stretch
     Exercise(
       exerciseId: 'adductor_magnus_stretch',
       name: 'Adductor Magnus Stretch',
@@ -36,6 +37,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 2. Anjaneyasana Low Lunge Pose
     Exercise(
       exerciseId: 'anjaneyasana_low_lunge_pose',
       name: 'Anjaneyasana Low Lunge Pose',
@@ -70,6 +72,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 3. ATG Split Squat
     Exercise(
       exerciseId: 'atg_split_squat',
       name: 'ATG Split Squat',
@@ -104,6 +107,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 4. Banded Donkey Kicks
     Exercise(
       exerciseId: 'banded_donkey_kicks',
       name: 'Banded Donkey Kicks',
@@ -138,6 +142,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 5. Banded Fire Hydrant
     Exercise(
       exerciseId: 'banded_fire_hydrant',
       name: 'Banded Fire Hydrant',
@@ -172,6 +177,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 6. Banded Glute Bridge
     Exercise(
       exerciseId: 'banded_glute_bridge',
       name: 'Banded Glute Bridge',
@@ -206,6 +212,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 7. Banded Kettlebell Goblet Squat
     Exercise(
       exerciseId: 'banded_kettlebell_goblet_squat',
       name: 'Banded Kettlebell Goblet Squat',
@@ -240,6 +247,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 8. Banded Leg Curl
     Exercise(
       exerciseId: 'banded_leg_curl',
       name: 'Banded Leg Curl',
@@ -274,6 +282,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 9. Banded Lunge
     Exercise(
       exerciseId: 'banded_lunge',
       name: 'Banded Lunge',
@@ -308,6 +317,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 10. Banded Lying Leg Curl
     Exercise(
       exerciseId: 'banded_lying_leg_curl',
       name: 'Banded Lying Leg Curl',
@@ -342,6 +352,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 11. Banded Single Leg Glute Bridge
     Exercise(
       exerciseId: 'banded_single_leg_glute_bridge',
       name: 'Banded Single Leg Glute Bridge',
@@ -376,6 +387,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 12. Banded Split Squat
     Exercise(
       exerciseId: 'banded_split_squat',
       name: 'Banded Split Squat',
@@ -410,6 +422,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 13. Banded Step Up
     Exercise(
       exerciseId: 'banded_step_up',
       name: 'Banded Step Up',
@@ -444,6 +457,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 14. Barbell Bench Front Squat
     Exercise(
       exerciseId: 'barbell_bench_front_squat',
       name: 'Barbell Bench Front Squat',
@@ -478,6 +492,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 15. Barbell Bulgarian Split Squat
     Exercise(
       exerciseId: 'barbell_bulgarian_split_squat',
       name: 'Barbell Bulgarian Split Squat',
@@ -512,6 +527,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 16. Barbell Curtsey Lunge
     Exercise(
       exerciseId: 'barbell_curtsey_lunge',
       name: 'Barbell Curtsey Lunge',
@@ -546,6 +562,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 17. Barbell Glute Bridge
     Exercise(
       exerciseId: 'barbell_glute_bridge',
       name: 'Barbell Glute Bridge',
@@ -580,6 +597,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 18. Barbell Glute Bridge On Bench
     Exercise(
       exerciseId: 'barbell_glute_bridge_on_bench',
       name: 'Barbell Glute Bridge On Bench',
@@ -614,6 +632,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 19. Barbell Glute Bridge Two Legs On Bench
     Exercise(
       exerciseId: 'barbell_glute_bridge_two_legs_on_bench',
       name: 'Barbell Glute Bridge Two Legs On Bench',
@@ -648,6 +667,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 20. Barbell Hack Squats
     Exercise(
       exerciseId: 'barbell_hack_squats',
       name: 'Barbell Hack Squats',
@@ -682,6 +702,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 21. Barbell Hip Thrusts
     Exercise(
       exerciseId: 'barbell_hip_thrusts',
       name: 'Barbell Hip Thrusts',
@@ -716,6 +737,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 22. Barbell Jump Squat
     Exercise(
       exerciseId: 'barbell_jump_squat',
       name: 'Barbell Jump Squat',
@@ -750,6 +772,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 23. Barbell Lateral Lunge
     Exercise(
       exerciseId: 'barbell_lateral_lunge',
       name: 'Barbell Lateral Lunge',
@@ -784,6 +807,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 24. Barbell Lunge
     Exercise(
       exerciseId: 'barbell_lunge',
       name: 'Barbell Lunge',
@@ -818,6 +842,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 25. Barbell Pin Squat
     Exercise(
       exerciseId: 'barbell_pin_squat',
       name: 'Barbell Pin Squat',
@@ -852,6 +877,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 26. Barbell Seated Calf Raise
     Exercise(
       exerciseId: 'barbell_seated_calf_raise',
       name: 'Barbell Seated Calf Raise',
@@ -886,6 +912,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 27. Barbell Single Leg Hip Thrust
     Exercise(
       exerciseId: 'barbell_single_leg_hip_thrust',
       name: 'Barbell Single Leg Hip Thrust',
@@ -920,6 +947,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 28. Barbell Split Squat
     Exercise(
       exerciseId: 'barbell_split_squat',
       name: 'Barbell Split Squat',
@@ -954,6 +982,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 29. Barbell Step Up
     Exercise(
       exerciseId: 'barbell_step_up',
       name: 'Barbell Step Up',
@@ -988,6 +1017,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 30. Barbell Sumo Squat
     Exercise(
       exerciseId: 'barbell_sumo_squat',
       name: 'Barbell Sumo Squat',
@@ -1022,6 +1052,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 31. Belt Squat
     Exercise(
       exerciseId: 'belt_squat',
       name: 'Belt Squat',
@@ -1056,6 +1087,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 32. Bench Glute Flutter Kicks
     Exercise(
       exerciseId: 'bench_glute_flutter_kicks',
       name: 'Bench Glute Flutter Kicks',
@@ -1090,6 +1122,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Bench', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 33. Bodyweight Box Squat
     Exercise(
       exerciseId: 'bodyweight_box_squat',
       name: 'Bodyweight Box Squat',
@@ -1124,6 +1157,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 34. Bodyweight Bulgarian Split Squat
     Exercise(
       exerciseId: 'bodyweight_bulgarian_split_squat',
       name: 'Bodyweight Bulgarian Split Squat',
@@ -1158,6 +1192,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 35. Bodyweight Hip Thrust
     Exercise(
       exerciseId: 'bodyweight_hip_thrust',
       name: 'Bodyweight Hip Thrust',
@@ -1192,6 +1227,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 36. Bodyweight Kneeling Sissy Squat
     Exercise(
       exerciseId: 'bodyweight_kneeling_sissy_squat',
       name: 'Bodyweight Kneeling Sissy Squat',
@@ -1226,6 +1262,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 37. Bodyweight Lunge
     Exercise(
       exerciseId: 'bodyweight_lunge',
       name: 'Bodyweight Lunge',
@@ -1260,6 +1297,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 38. Bodyweight Plie Squat
     Exercise(
       exerciseId: 'bodyweight_plie_squat',
       name: 'Bodyweight Plie Squat',
@@ -1294,6 +1332,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 39. Bodyweight Squat
     Exercise(
       exerciseId: 'bodyweight_squat',
       name: 'Bodyweight Squat',
@@ -1328,6 +1367,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 40. Bodyweight Sumo Squat
     Exercise(
       exerciseId: 'bodyweight_sumo_squat',
       name: 'Bodyweight Sumo Squat',
@@ -1362,6 +1402,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 41. Bodyweight Walking Lunge
     Exercise(
       exerciseId: 'bodyweight_walking_lunge',
       name: 'Bodyweight Walking Lunge',
@@ -1396,6 +1437,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 42. Box Jump To Pistol Squat
     Exercise(
       exerciseId: 'box_jump_to_pistol_squat',
       name: 'Box Jump To Pistol Squat',
@@ -1430,6 +1472,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 43. Box Pistol Squat
     Exercise(
       exerciseId: 'box_pistol_squat',
       name: 'Box Pistol Squat',
@@ -1464,6 +1507,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 44. Bulgarian Split Squat Jump
     Exercise(
       exerciseId: 'bulgarian_split_squat_jump',
       name: 'Bulgarian Split Squat Jump',
@@ -1498,6 +1542,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 45. Cable Forward Lunge
     Exercise(
       exerciseId: 'cable_forward_lunge',
       name: 'Cable Forward Lunge',
@@ -1532,6 +1577,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 46. Cable Front Squat
     Exercise(
       exerciseId: 'cable_front_squat',
       name: 'Cable Front Squat',
@@ -1566,6 +1612,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 47. Cable Lunge
     Exercise(
       exerciseId: 'cable_lunge',
       name: 'Cable Lunge',
@@ -1600,6 +1647,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 48. Cable Pull Through
     Exercise(
       exerciseId: 'cable_pull_through',
       name: 'Cable Pull Through',
@@ -1634,6 +1682,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 49. Cable Squat
     Exercise(
       exerciseId: 'cable_squat',
       name: 'Cable Squat',
@@ -1668,6 +1717,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 50. Calf Raise
     Exercise(
       exerciseId: 'calf_raise',
       name: 'Calf Raise',
@@ -1702,6 +1752,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 51. Calf Raise With Resistance Band
     Exercise(
       exerciseId: 'calf_raise_with_resistance_band',
       name: 'Calf Raise With Resistance Band',
@@ -1736,6 +1787,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 52. Calf Stretch With Rope
     Exercise(
       exerciseId: 'calf_stretch_with_rope',
       name: 'Calf Stretch With Rope',
@@ -1770,6 +1822,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 53. Calves Stretch Static Position
     Exercise(
       exerciseId: 'calves_stretch_static_position',
       name: 'Calves Stretch Static Position',
@@ -1804,6 +1857,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 54. Cossack Squat
     Exercise(
       exerciseId: 'cossack_squat',
       name: 'Cossack Squat',
@@ -1838,6 +1892,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 55. Curtsy Lunge
     Exercise(
       exerciseId: 'curtsy_lunge',
       name: 'Curtsy Lunge',
@@ -1872,6 +1927,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 56. Curtsy Squat
     Exercise(
       exerciseId: 'curtsy_squat',
       name: 'Curtsy Squat',
@@ -1906,6 +1962,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 57. Decline Bench Dumbbell Lunge
     Exercise(
       exerciseId: 'decline_bench_dumbbell_lunge',
       name: 'Decline Bench Dumbbell Lunge',
@@ -1940,6 +1997,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 58. Decline Dumbbell Leg Curl
     Exercise(
       exerciseId: 'decline_dumbbell_leg_curl',
       name: 'Decline Dumbbell Leg Curl',
@@ -1974,6 +2032,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 59. Donkey Calf Raise
     Exercise(
       exerciseId: 'donkey_calf_raise',
       name: 'Donkey Calf Raise',
@@ -2008,6 +2067,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 60. Donkey Kick On Leg Extension Machine
     Exercise(
       exerciseId: 'donkey_kick_on_leg_extension_machine',
       name: 'Donkey Kick On Leg Extension Machine',
@@ -2042,6 +2102,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 61. Donkey Kick On Smith Machine
     Exercise(
       exerciseId: 'donkey_kick_on_smith_machine',
       name: 'Donkey Kick On Smith Machine',
@@ -2076,6 +2137,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 62. Donkey Kicks
     Exercise(
       exerciseId: 'donkey_kicks',
       name: 'Donkey Kicks',
@@ -2110,6 +2172,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 63. Dumbbell Bench Squat
     Exercise(
       exerciseId: 'dumbbell_bench_squat',
       name: 'Dumbbell Bench Squat',
@@ -2144,6 +2207,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 64. Dumbbell Bulgarian Split Squat
     Exercise(
       exerciseId: 'dumbbell_bulgarian_split_squat',
       name: 'Dumbbell Bulgarian Split Squat',
@@ -2178,6 +2242,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 65. Dumbbell Cossack Squat
     Exercise(
       exerciseId: 'dumbbell_cossack_squat',
       name: 'Dumbbell Cossack Squat',
@@ -2212,6 +2277,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 66. Dumbbell Forward Leaning Lunge
     Exercise(
       exerciseId: 'dumbbell_forward_leaning_lunge',
       name: 'Dumbbell Forward Leaning Lunge',
@@ -2246,6 +2312,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 67. Dumbbell Glute Bridge
     Exercise(
       exerciseId: 'dumbbell_glute_bridge',
       name: 'Dumbbell Glute Bridge',
@@ -2280,6 +2347,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 68. Dumbbell Goblet Curtsey Lunge
     Exercise(
       exerciseId: 'dumbbell_goblet_curtsey_lunge',
       name: 'Dumbbell Goblet Curtsey Lunge',
@@ -2314,6 +2382,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 69. Dumbbell Goblet Squat
     Exercise(
       exerciseId: 'dumbbell_goblet_squat',
       name: 'Dumbbell Goblet Squat',
@@ -2348,6 +2417,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 70. Dumbbell Jump Squat
     Exercise(
       exerciseId: 'dumbbell_jump_squat',
       name: 'Dumbbell Jump Squat',
@@ -2382,6 +2452,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 71. Dumbbell Lateral Step Up
     Exercise(
       exerciseId: 'dumbbell_lateral_step_up',
       name: 'Dumbbell Lateral Step Up',
@@ -2416,6 +2487,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 72. Dumbbell Lunge
     Exercise(
       exerciseId: 'dumbbell_lunge',
       name: 'Dumbbell Lunge',
@@ -2450,6 +2522,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 73. Dumbbell Pistol Squat
     Exercise(
       exerciseId: 'dumbbell_pistol_squat',
       name: 'Dumbbell Pistol Squat',
@@ -2484,6 +2557,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 74. Dumbbell Rear Lunge
     Exercise(
       exerciseId: 'dumbbell_rear_lunge',
       name: 'Dumbbell Rear Lunge',
@@ -2518,6 +2592,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 75. Dumbbell Reverse Lunge
     Exercise(
       exerciseId: 'dumbbell_reverse_lunge',
       name: 'Dumbbell Reverse Lunge',
@@ -2552,6 +2627,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 76. Dumbbell Squat
     Exercise(
       exerciseId: 'dumbbell_squat',
       name: 'Dumbbell Squat',
@@ -2586,6 +2662,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 77. Dumbbell Step Up
     Exercise(
       exerciseId: 'dumbbell_step_up',
       name: 'Dumbbell Step Up',
@@ -2620,6 +2697,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 78. Dumbbell Sumo Squat
     Exercise(
       exerciseId: 'dumbbell_sumo_squat',
       name: 'Dumbbell Sumo Squat',
@@ -2654,6 +2732,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 79. Dumbbell Walking Lunge
     Exercise(
       exerciseId: 'dumbbell_walking_lunge',
       name: 'Dumbbell Walking Lunge',
@@ -2688,6 +2767,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 80. Exercise Ball Wall Squat
     Exercise(
       exerciseId: 'exercise_ball_wall_squat',
       name: 'Exercise Ball Wall Squat',
@@ -2722,6 +2802,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 81. Fire Hydrant
     Exercise(
       exerciseId: 'fire_hydrant',
       name: 'Fire Hydrant',
@@ -2756,6 +2837,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 82. Foam Roller Calves
     Exercise(
       exerciseId: 'foam_roller_calves',
       name: 'Foam Roller Calves',
@@ -2790,6 +2872,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 83. Foam Roller Glutes
     Exercise(
       exerciseId: 'foam_roller_glutes',
       name: 'Foam Roller Glutes',
@@ -2824,6 +2907,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 84. Foam Roller Hamstrings
     Exercise(
       exerciseId: 'foam_roller_hamstrings',
       name: 'Foam Roller Hamstrings',
@@ -2858,6 +2942,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 85. Foam Roller Inner Thigh Adductor Stretch
     Exercise(
       exerciseId: 'foam_roller_inner_thigh_adductor_stretch',
       name: 'Foam Roller Inner Thigh Adductor Stretch',
@@ -2892,6 +2977,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 86. Frog Pump
     Exercise(
       exerciseId: 'frog_pump',
       name: 'Frog Pump',
@@ -2926,6 +3012,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 87. Front Squat
     Exercise(
       exerciseId: 'front_squat',
       name: 'Front Squat',
@@ -2960,6 +3047,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 88. Glute Bridge
     Exercise(
       exerciseId: 'glute_bridge',
       name: 'Glute Bridge',
@@ -2994,6 +3082,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 89. Glute Bridge On Bench
     Exercise(
       exerciseId: 'glute_bridge_on_bench',
       name: 'Glute Bridge On Bench',
@@ -3028,6 +3117,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Bench', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 90. Glute Bridge One Leg On Bench
     Exercise(
       exerciseId: 'glute_bridge_one_leg_on_bench',
       name: 'Glute Bridge One Leg On Bench',
@@ -3062,6 +3152,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Bench', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 91. Glute Ham Raise
     Exercise(
       exerciseId: 'glute_ham_raise',
       name: 'Glute Ham Raise',
@@ -3096,6 +3187,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 92. Hack Machine One Leg Calf Raise
     Exercise(
       exerciseId: 'hack_machine_one_leg_calf_raise',
       name: 'Hack Machine One Leg Calf Raise',
@@ -3130,6 +3222,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 93. Hack Squat Calf Raise
     Exercise(
       exerciseId: 'hack_squat_calf_raise',
       name: 'Hack Squat Calf Raise',
@@ -3164,6 +3257,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 94. Hack Squats Machine
     Exercise(
       exerciseId: 'hack_squats_machine',
       name: 'Hack Squats Machine',
@@ -3198,6 +3292,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 95. Hawaiian Squat
     Exercise(
       exerciseId: 'hawaiian_squat',
       name: 'Hawaiian Squat',
@@ -3232,6 +3327,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 96. Heel Elevated Goblet Squat
     Exercise(
       exerciseId: 'heel_elevated_goblet_squat',
       name: 'Heel Elevated Goblet Squat',
@@ -3266,6 +3362,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 97. Heel Touch Side Kick Squat
     Exercise(
       exerciseId: 'heel_touch_side_kick_squat',
       name: 'Heel Touch Side Kick Squat',
@@ -3300,6 +3397,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 98. High Knee Lunge On Bosu Ball
     Exercise(
       exerciseId: 'high_knee_lunge_on_bosu_ball',
       name: 'High Knee Lunge On Bosu Ball',
@@ -3334,6 +3432,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Exercise Ball', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 99. High Knee Squat
     Exercise(
       exerciseId: 'high_knee_squat',
       name: 'High Knee Squat',
@@ -3368,6 +3467,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 100. Hip Abduction Machine
     Exercise(
       exerciseId: 'hip_abduction_machine',
       name: 'Hip Abduction Machine',
@@ -3402,6 +3502,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 101. Hip Adduction Machine
     Exercise(
       exerciseId: 'hip_adduction_machine',
       name: 'Hip Adduction Machine',
@@ -3436,6 +3537,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 102. Hip Thrust Machine
     Exercise(
       exerciseId: 'hip_thrust_machine',
       name: 'Hip Thrust Machine',
@@ -3470,6 +3572,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 103. Hip Thrust On The Leg Extension Machine
     Exercise(
       exerciseId: 'hip_thrust_on_the_leg_extension_machine',
       name: 'Hip Thrust On The Leg Extension Machine',
@@ -3504,6 +3607,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 104. Horizontal Leg Press
     Exercise(
       exerciseId: 'horizontal_leg_press',
       name: 'Horizontal Leg Press',
@@ -3538,6 +3642,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 105. Jefferson Squat
     Exercise(
       exerciseId: 'jefferson_squat',
       name: 'Jefferson Squat',
@@ -3572,6 +3677,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 106. Jump Squats
     Exercise(
       exerciseId: 'jump_squats',
       name: 'Jump Squats',
@@ -3606,6 +3712,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 107. Kettlebell Front Squat
     Exercise(
       exerciseId: 'kettlebell_front_squat',
       name: 'Kettlebell Front Squat',
@@ -3640,6 +3747,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Kettlebell', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 108. Kettlebell Goblet Squat
     Exercise(
       exerciseId: 'kettlebell_goblet_squat',
       name: 'Kettlebell Goblet Squat',
@@ -3674,6 +3782,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Kettlebell', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 109. Kettlebell Pistol Squats
     Exercise(
       exerciseId: 'kettlebell_pistol_squats',
       name: 'Kettlebell Pistol Squats',
@@ -3708,6 +3817,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Kettlebell', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 110. Kneeling Jump Squat
     Exercise(
       exerciseId: 'kneeling_jump_squat',
       name: 'Kneeling Jump Squat',
@@ -3742,6 +3852,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 111. Kneeling Leg Out Adductor Stretch
     Exercise(
       exerciseId: 'kneeling_leg_out_adductor_stretch',
       name: 'Kneeling Leg Out Adductor Stretch',
@@ -3776,6 +3887,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 112. Landmine Lunge
     Exercise(
       exerciseId: 'landmine_lunge',
       name: 'Landmine Lunge',
@@ -3810,6 +3922,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 113. Landmine Squat
     Exercise(
       exerciseId: 'landmine_squat',
       name: 'Landmine Squat',
@@ -3844,6 +3957,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 114. Lateral Step Up
     Exercise(
       exerciseId: 'lateral_step_up',
       name: 'Lateral Step Up',
@@ -3878,6 +3992,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 115. Leg Curl
     Exercise(
       exerciseId: 'leg_curl',
       name: 'Leg Curl',
@@ -3912,6 +4027,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 116. Leg Curl On Stability Ball
     Exercise(
       exerciseId: 'leg_curl_on_stability_ball',
       name: 'Leg Curl On Stability Ball',
@@ -3946,6 +4062,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 117. Leg Extension
     Exercise(
       exerciseId: 'leg_extension',
       name: 'Leg Extension',
@@ -3980,6 +4097,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 118. Leg Press
     Exercise(
       exerciseId: 'leg_press',
       name: 'Leg Press',
@@ -4014,6 +4132,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 119. Leg Press Calf Raise
     Exercise(
       exerciseId: 'leg_press_calf_raise',
       name: 'Leg Press Calf Raise',
@@ -4048,6 +4167,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 120. Leg Swings Front To Back
     Exercise(
       exerciseId: 'leg_swings_front_to_back',
       name: 'Leg Swings Front To Back',
@@ -4082,6 +4202,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 121. Lever Assisted Single Leg Press
     Exercise(
       exerciseId: 'lever_assisted_single_leg_press',
       name: 'Lever Assisted Single Leg Press',
@@ -4116,6 +4237,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 122. Lever Donkey Calf Raise
     Exercise(
       exerciseId: 'lever_donkey_calf_raise',
       name: 'Lever Donkey Calf Raise',
@@ -4150,6 +4272,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 123. Lever Kneeling Leg Curl
     Exercise(
       exerciseId: 'lever_kneeling_leg_curl',
       name: 'Lever Kneeling Leg Curl',
@@ -4184,6 +4307,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 124. Lever Seated Calf Raise
     Exercise(
       exerciseId: 'lever_seated_calf_raise',
       name: 'Lever Seated Calf Raise',
@@ -4218,6 +4342,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 125. Lever Single Leg Curl
     Exercise(
       exerciseId: 'lever_single_leg_curl',
       name: 'Lever Single Leg Curl',
@@ -4252,6 +4377,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 126. Lunging Straight Leg Calf Stretch
     Exercise(
       exerciseId: 'lunging_straight_leg_calf_stretch',
       name: 'Lunging Straight Leg Calf Stretch',
@@ -4286,6 +4412,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 127. Lying Alternate Leg Press Gymstick
     Exercise(
       exerciseId: 'lying_alternate_leg_press_gymstick',
       name: 'Lying Alternate Leg Press Gymstick',
@@ -4320,6 +4447,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 128. Lying Dumbbell Leg Curl
     Exercise(
       exerciseId: 'lying_dumbbell_leg_curl',
       name: 'Lying Dumbbell Leg Curl',
@@ -4354,6 +4482,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 129. Lying Glute Stretch
     Exercise(
       exerciseId: 'lying_glute_stretch',
       name: 'Lying Glute Stretch',
@@ -4388,6 +4517,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 130. Lying Hamstring Stretch
     Exercise(
       exerciseId: 'lying_hamstring_stretch',
       name: 'Lying Hamstring Stretch',
@@ -4422,6 +4552,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 131. Nordic Hamstring Curl
     Exercise(
       exerciseId: 'nordic_hamstring_curl',
       name: 'Nordic Hamstring Curl',
@@ -4456,6 +4587,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 132. Overhead Squat
     Exercise(
       exerciseId: 'overhead_squat',
       name: 'Overhead Squat',
@@ -4490,6 +4622,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 133. Pendulum Lunge
     Exercise(
       exerciseId: 'pendulum_lunge',
       name: 'Pendulum Lunge',
@@ -4524,6 +4657,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 134. Pendulum Squat
     Exercise(
       exerciseId: 'pendulum_squat',
       name: 'Pendulum Squat',
@@ -4558,6 +4692,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 135. Pin Squat
     Exercise(
       exerciseId: 'pin_squat',
       name: 'Pin Squat',
@@ -4592,6 +4727,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 136. Pistol Squat
     Exercise(
       exerciseId: 'pistol_squat',
       name: 'Pistol Squat',
@@ -4626,6 +4762,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 137. Pistol Squat To Box
     Exercise(
       exerciseId: 'pistol_squat_to_box',
       name: 'Pistol Squat To Box',
@@ -4660,6 +4797,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 138. Resistance Band Hip Thrust
     Exercise(
       exerciseId: 'resistance_band_hip_thrust',
       name: 'Resistance Band Hip Thrust',
@@ -4694,6 +4832,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 139. Resistance Band Hip Thrusts On Knees
     Exercise(
       exerciseId: 'resistance_band_hip_thrusts_on_knees',
       name: 'Resistance Band Hip Thrusts On Knees',
@@ -4728,6 +4867,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 140. Resistance Band Overhead Squat
     Exercise(
       exerciseId: 'resistance_band_overhead_squat',
       name: 'Resistance Band Overhead Squat',
@@ -4762,6 +4902,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 141. Reverse Hack Squat
     Exercise(
       exerciseId: 'reverse_hack_squat',
       name: 'Reverse Hack Squat',
@@ -4796,6 +4937,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 142. Reverse Lunge
     Exercise(
       exerciseId: 'reverse_lunge',
       name: 'Reverse Lunge',
@@ -4830,6 +4972,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 143. Reverse Lunge Knee
     Exercise(
       exerciseId: 'reverse_lunge_knee',
       name: 'Reverse Lunge Knee',
@@ -4864,6 +5007,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 144. Seated Banded Leg Extension
     Exercise(
       exerciseId: 'seated_banded_leg_extension',
       name: 'Seated Banded Leg Extension',
@@ -4898,6 +5042,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 145. Seated Calf Press On Leg Press Machine
     Exercise(
       exerciseId: 'seated_calf_press_on_leg_press_machine',
       name: 'Seated Calf Press On Leg Press Machine',
@@ -4932,6 +5077,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 146. Seated Hamstring Stretch
     Exercise(
       exerciseId: 'seated_hamstring_stretch',
       name: 'Seated Hamstring Stretch',
@@ -4966,6 +5112,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 147. Seated Leg Curl
     Exercise(
       exerciseId: 'seated_leg_curl',
       name: 'Seated Leg Curl',
@@ -5000,6 +5147,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 148. Seated Leg Extension With Resistance Band
     Exercise(
       exerciseId: 'seated_leg_extension_with_resistance_band',
       name: 'Seated Leg Extension With Resistance Band',
@@ -5034,6 +5182,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 149. Seated Long Adductor Groin Stretch
     Exercise(
       exerciseId: 'seated_long_adductor_groin_stretch',
       name: 'Seated Long Adductor Groin Stretch',
@@ -5068,6 +5217,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 150. Seated Straight Leg Calf Stretch
     Exercise(
       exerciseId: 'seated_straight_leg_calf_stretch',
       name: 'Seated Straight Leg Calf Stretch',
@@ -5102,6 +5252,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 151. Shrimp Squat
     Exercise(
       exerciseId: 'shrimp_squat',
       name: 'Shrimp Squat',
@@ -5136,6 +5287,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 152. Side Lunge Stretch
     Exercise(
       exerciseId: 'side_lunge_stretch',
       name: 'Side Lunge Stretch',
@@ -5170,6 +5322,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 153. Single Calf Raise On Leg Press Machine
     Exercise(
       exerciseId: 'single_calf_raise_on_leg_press_machine',
       name: 'Single Calf Raise On Leg Press Machine',
@@ -5204,6 +5357,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 154. Single Heel Drop Calf Stretch
     Exercise(
       exerciseId: 'single_heel_drop_calf_stretch',
       name: 'Single Heel Drop Calf Stretch',
@@ -5238,6 +5392,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 155. Single Leg Calf Raise
     Exercise(
       exerciseId: 'single_leg_calf_raise',
       name: 'Single Leg Calf Raise',
@@ -5272,6 +5427,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 156. Single Leg Calves Stretch
     Exercise(
       exerciseId: 'single_leg_calves_stretch',
       name: 'Single Leg Calves Stretch',
@@ -5306,6 +5462,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 157. Single Leg Donkey Calf Raise
     Exercise(
       exerciseId: 'single_leg_donkey_calf_raise',
       name: 'Single Leg Donkey Calf Raise',
@@ -5340,6 +5497,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 158. Single Leg Dumbbell Hip Thrust
     Exercise(
       exerciseId: 'single_leg_dumbbell_hip_thrust',
       name: 'Single Leg Dumbbell Hip Thrust',
@@ -5374,6 +5532,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 159. Single Leg Dumbbell Side Bridge
     Exercise(
       exerciseId: 'single_leg_dumbbell_side_bridge',
       name: 'Single Leg Dumbbell Side Bridge',
@@ -5408,6 +5567,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 160. Single Leg Extension
     Exercise(
       exerciseId: 'single_leg_extension',
       name: 'Single Leg Extension',
@@ -5442,6 +5602,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 161. Single Leg Hip Thrust Jump
     Exercise(
       exerciseId: 'single_leg_hip_thrust_jump',
       name: 'Single Leg Hip Thrust Jump',
@@ -5476,6 +5637,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 162. Single Leg Press
     Exercise(
       exerciseId: 'single_leg_press',
       name: 'Single Leg Press',
@@ -5510,6 +5672,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 163. Sissy Squat
     Exercise(
       exerciseId: 'sissy_squat',
       name: 'Sissy Squat',
@@ -5544,6 +5707,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 164. Sitting Wide Leg Adductor Stretch
     Exercise(
       exerciseId: 'sitting_wide_leg_adductor_stretch',
       name: 'Sitting Wide Leg Adductor Stretch',
@@ -5578,6 +5742,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 165. Skater Squat
     Exercise(
       exerciseId: 'skater_squat',
       name: 'Skater Squat',
@@ -5612,6 +5777,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 166. Smith Machine Hip Thrust
     Exercise(
       exerciseId: 'smith_machine_hip_thrust',
       name: 'Smith Machine Hip Thrust',
@@ -5646,6 +5812,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 167. Smith Machine Leg Press
     Exercise(
       exerciseId: 'smith_machine_leg_press',
       name: 'Smith Machine Leg Press',
@@ -5680,6 +5847,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 168. Smith Machine Lunge
     Exercise(
       exerciseId: 'smith_machine_lunge',
       name: 'Smith Machine Lunge',
@@ -5714,6 +5882,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 169. Smith Machine Squat
     Exercise(
       exerciseId: 'smith_machine_squat',
       name: 'Smith Machine Squat',
@@ -5748,6 +5917,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 170. Split Squat
     Exercise(
       exerciseId: 'split_squat',
       name: 'Split Squat',
@@ -5782,6 +5952,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 171. Split Squat Gymstick
     Exercise(
       exerciseId: 'split_squat_gymstick',
       name: 'Split Squat Gymstick',
@@ -5816,6 +5987,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 172. Squat
     Exercise(
       exerciseId: 'squat',
       name: 'Squat',
@@ -5850,6 +6022,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 173. Squat Gymstick
     Exercise(
       exerciseId: 'squat_gymstick',
       name: 'Squat Gymstick',
@@ -5884,6 +6057,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 174. Squat Hold Calf Raise
     Exercise(
       exerciseId: 'squat_hold_calf_raise',
       name: 'Squat Hold Calf Raise',
@@ -5918,6 +6092,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 175. Squat Mobility Complex
     Exercise(
       exerciseId: 'squat_mobility_complex',
       name: 'Squat Mobility Complex',
@@ -5952,6 +6127,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 176. Squat On The Abductor Machine
     Exercise(
       exerciseId: 'squat_on_the_abductor_machine',
       name: 'Squat On The Abductor Machine',
@@ -5986,6 +6162,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 177. Squat Tuck Jump
     Exercise(
       exerciseId: 'squat_tuck_jump',
       name: 'Squat Tuck Jump',
@@ -6020,6 +6197,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 178. Standing Barbell Calf Raise
     Exercise(
       exerciseId: 'standing_barbell_calf_raise',
       name: 'Standing Barbell Calf Raise',
@@ -6054,6 +6232,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Quadriceps', 'Glutes', 'Barbell', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 179. Standing Calf Raise
     Exercise(
       exerciseId: 'standing_calf_raise',
       name: 'Standing Calf Raise',
@@ -6088,6 +6267,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 180. Standing Cross Leg Hamstring Stretch
     Exercise(
       exerciseId: 'standing_cross_leg_hamstring_stretch',
       name: 'Standing Cross Leg Hamstring Stretch',
@@ -6122,6 +6302,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 181. Standing Gastrocnemius Calf Stretch
     Exercise(
       exerciseId: 'standing_gastrocnemius_calf_stretch',
       name: 'Standing Gastrocnemius Calf Stretch',
@@ -6156,6 +6337,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 182. Standing Hamstring Stretch
     Exercise(
       exerciseId: 'standing_hamstring_stretch',
       name: 'Standing Hamstring Stretch',
@@ -6190,6 +6372,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 183. Standing Leg Curl With Resistance Band
     Exercise(
       exerciseId: 'standing_leg_curl_with_resistance_band',
       name: 'Standing Leg Curl With Resistance Band',
@@ -6224,6 +6407,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 184. Standing Leg Extension With Resistance Band
     Exercise(
       exerciseId: 'standing_leg_extension_with_resistance_band',
       name: 'Standing Leg Extension With Resistance Band',
@@ -6258,6 +6442,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 185. Standing Single Leg Curl Machine
     Exercise(
       exerciseId: 'standing_single_leg_curl_machine',
       name: 'Standing Single Leg Curl Machine',
@@ -6292,6 +6477,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Quadriceps', 'Glutes', 'Calves', 'Advanced', 'Hamstrings'],
     ),
+    // 186. Standing Wall Calf Stretch
     Exercise(
       exerciseId: 'standing_wall_calf_stretch',
       name: 'Standing Wall Calf Stretch',
@@ -6326,6 +6512,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 187. Standing Wide Knees Adductor Stretch
     Exercise(
       exerciseId: 'standing_wide_knees_adductor_stretch',
       name: 'Standing Wide Knees Adductor Stretch',
@@ -6360,6 +6547,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 188. Standing Wide Leg Adductor Stretch
     Exercise(
       exerciseId: 'standing_wide_leg_adductor_stretch',
       name: 'Standing Wide Leg Adductor Stretch',
@@ -6394,6 +6582,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 189. Static Lunge
     Exercise(
       exerciseId: 'static_lunge',
       name: 'Static Lunge',
@@ -6428,6 +6617,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 190. Step Up Opposite Elbow To Knee Twist
     Exercise(
       exerciseId: 'step_up_opposite_elbow_to_knee_twist',
       name: 'Step Up Opposite Elbow To Knee Twist',
@@ -6462,6 +6652,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 191. Step Up With Knee Raises
     Exercise(
       exerciseId: 'step_up_with_knee_raises',
       name: 'Step Up With Knee Raises',
@@ -6496,6 +6687,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 192. Stiff Leg Deadlift
     Exercise(
       exerciseId: 'stiff_leg_deadlift',
       name: 'Stiff Leg Deadlift',
@@ -6530,6 +6722,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 193. Sumo Deadlift
     Exercise(
       exerciseId: 'sumo_deadlift',
       name: 'Sumo Deadlift',
@@ -6564,6 +6757,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 194. Sumo Plie Dumbbell Squat
     Exercise(
       exerciseId: 'sumo_plie_dumbbell_squat',
       name: 'Sumo Plie Dumbbell Squat',
@@ -6598,6 +6792,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 195. Supported Pistol Squat
     Exercise(
       exerciseId: 'supported_pistol_squat',
       name: 'Supported Pistol Squat',
@@ -6632,6 +6827,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 196. Towel Leg Curl
     Exercise(
       exerciseId: 'towel_leg_curl',
       name: 'Towel Leg Curl',
@@ -6666,6 +6862,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 197. Trap Bar Jump Squat
     Exercise(
       exerciseId: 'trap_bar_jump_squat',
       name: 'Trap Bar Jump Squat',
@@ -6700,6 +6897,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 198. TRX Pistol Squat
     Exercise(
       exerciseId: 'trx_pistol_squat',
       name: 'TRX Pistol Squat',
@@ -6734,6 +6932,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 199. Walking High Knee Lunges
     Exercise(
       exerciseId: 'walking_high_knee_lunges',
       name: 'Walking High Knee Lunges',
@@ -6768,6 +6967,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings'],
     ),
+    // 200. Weighted Donkey Calf Raise
     Exercise(
       exerciseId: 'weighted_donkey_calf_raise',
       name: 'Weighted Donkey Calf Raise',
@@ -6802,6 +7002,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 201. Weighted Seated Calf Raise
     Exercise(
       exerciseId: 'weighted_seated_calf_raise',
       name: 'Weighted Seated Calf Raise',
@@ -6836,6 +7037,7 @@ class LegExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Legs', 'Quadriceps', 'Glutes', 'Calves', 'Hamstrings', 'Intermediate'],
     ),
+    // 202. Zercher Squat
     Exercise(
       exerciseId: 'zercher_squat',
       name: 'Zercher Squat',

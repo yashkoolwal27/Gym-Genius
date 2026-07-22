@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class BicepsExercises {
   static final List<Exercise> exercises = [
+    // 1. Arm Blaster Hammer Curl
     Exercise(
       exerciseId: 'arm_blaster_hammer_curl',
       name: 'Arm Blaster Hammer Curl',
@@ -36,6 +37,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 2. Band Biceps Curl
     Exercise(
       exerciseId: 'band_biceps_curl',
       name: 'Band Biceps Curl',
@@ -70,6 +72,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Resistance Band', 'Biceps', 'Intermediate'],
     ),
+    // 3. Barbell Alternate Biceps Curl
     Exercise(
       exerciseId: 'barbell_alternate_biceps_curl',
       name: 'Barbell Alternate Biceps Curl',
@@ -104,6 +107,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Biceps', 'Barbell', 'Intermediate'],
     ),
+    // 4. Barbell Curl
     Exercise(
       exerciseId: 'barbell_curl',
       name: 'Barbell Curl',
@@ -138,6 +142,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Biceps', 'Barbell', 'Intermediate'],
     ),
+    // 5. Barbell Curl On Arm Blaster
     Exercise(
       exerciseId: 'barbell_curl_on_arm_blaster',
       name: 'Barbell Curl On Arm Blaster',
@@ -172,6 +177,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Biceps', 'Barbell', 'Intermediate'],
     ),
+    // 6. Barbell Drag Curl
     Exercise(
       exerciseId: 'barbell_drag_curl',
       name: 'Barbell Drag Curl',
@@ -206,6 +212,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Biceps', 'Barbell', 'Intermediate'],
     ),
+    // 7. Bicep Curl Machine
     Exercise(
       exerciseId: 'bicep_curl_machine',
       name: 'Bicep Curl Machine',
@@ -240,6 +247,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Machine', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 8. Biceps Leg Concentration Curl
     Exercise(
       exerciseId: 'biceps_leg_concentration_curl',
       name: 'Biceps Leg Concentration Curl',
@@ -274,6 +282,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 9. Cable Concentration Curl
     Exercise(
       exerciseId: 'cable_concentration_curl',
       name: 'Cable Concentration Curl',
@@ -308,6 +317,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 10. Cable Curl
     Exercise(
       exerciseId: 'cable_curl',
       name: 'Cable Curl',
@@ -342,6 +352,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 11. Cable Incline Biceps Curl
     Exercise(
       exerciseId: 'cable_incline_biceps_curl',
       name: 'Cable Incline Biceps Curl',
@@ -376,6 +387,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 12. Cable Kneeling Biceps Curl
     Exercise(
       exerciseId: 'cable_kneeling_biceps_curl',
       name: 'Cable Kneeling Biceps Curl',
@@ -410,6 +422,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Beginner', 'Forearms', 'Cable', 'Biceps'],
     ),
+    // 13. Cable Preacher Curl
     Exercise(
       exerciseId: 'cable_preacher_curl',
       name: 'Cable Preacher Curl',
@@ -444,6 +457,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 14. Cable Pulldown Biceps Curl
     Exercise(
       exerciseId: 'cable_pulldown_biceps_curl',
       name: 'Cable Pulldown Biceps Curl',
@@ -478,6 +492,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 15. Cable Reverse Grip EZ Bar Biceps Curl
     Exercise(
       exerciseId: 'cable_reverse_grip_ez_bar_biceps_curl',
       name: 'Cable Reverse Grip EZ Bar Biceps Curl',
@@ -512,6 +527,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 16. Cable Rope Hammer Curl
     Exercise(
       exerciseId: 'cable_rope_hammer_curl',
       name: 'Cable Rope Hammer Curl',
@@ -546,6 +562,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 17. Cable Two Arm Curl On Incline Bench
     Exercise(
       exerciseId: 'cable_two_arm_curl_on_incline_bench',
       name: 'Cable Two Arm Curl On Incline Bench',
@@ -580,6 +597,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 18. Chin Up Around The Bar
     Exercise(
       exerciseId: 'chin_up_around_the_bar',
       name: 'Chin Up Around The Bar',
@@ -614,6 +632,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 19. Close Grip Barbell Curl
     Exercise(
       exerciseId: 'close_grip_barbell_curl',
       name: 'Close Grip Barbell Curl',
@@ -648,6 +667,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Biceps', 'Barbell', 'Intermediate'],
     ),
+    // 20. Close Grip Chin Up
     Exercise(
       exerciseId: 'close_grip_chin_up',
       name: 'Close Grip Chin Up',
@@ -682,6 +702,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 21. Close Grip Z Bar Curl
     Exercise(
       exerciseId: 'close_grip_z_bar_curl',
       name: 'Close Grip Z Bar Curl',
@@ -716,6 +737,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 22. Concentration Curl
     Exercise(
       exerciseId: 'concentration_curl',
       name: 'Concentration Curl',
@@ -750,6 +772,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 23. Double Arm Dumbbell Curl
     Exercise(
       exerciseId: 'double_arm_dumbbell_curl',
       name: 'Double Arm Dumbbell Curl',
@@ -784,6 +807,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 24. Dumbbell Alternate Preacher Curl
     Exercise(
       exerciseId: 'dumbbell_alternate_preacher_curl',
       name: 'Dumbbell Alternate Preacher Curl',
@@ -818,6 +842,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 25. Dumbbell Curl
     Exercise(
       exerciseId: 'dumbbell_curl',
       name: 'Dumbbell Curl',
@@ -852,6 +877,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 26. Dumbbell Curl On Arm Blaster
     Exercise(
       exerciseId: 'dumbbell_curl_on_arm_blaster',
       name: 'Dumbbell Curl On Arm Blaster',
@@ -886,6 +912,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 27. Dumbbell Finger Curl
     Exercise(
       exerciseId: 'dumbbell_finger_curl',
       name: 'Dumbbell Finger Curl',
@@ -920,6 +947,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 28. Dumbbell High Curl
     Exercise(
       exerciseId: 'dumbbell_high_curl',
       name: 'Dumbbell High Curl',
@@ -954,6 +982,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 29. Dumbbell Preacher Curl
     Exercise(
       exerciseId: 'dumbbell_preacher_curl',
       name: 'Dumbbell Preacher Curl',
@@ -988,6 +1017,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 30. Dumbbell Preacher Hammer Curl
     Exercise(
       exerciseId: 'dumbbell_preacher_hammer_curl',
       name: 'Dumbbell Preacher Hammer Curl',
@@ -1022,6 +1052,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 31. Dumbbell Reverse Curl
     Exercise(
       exerciseId: 'dumbbell_reverse_curl',
       name: 'Dumbbell Reverse Curl',
@@ -1056,6 +1087,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 32. Dumbbell Scott Curl
     Exercise(
       exerciseId: 'dumbbell_scott_curl',
       name: 'Dumbbell Scott Curl',
@@ -1090,6 +1122,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 33. Dumbbell Scott Hammer Curl
     Exercise(
       exerciseId: 'dumbbell_scott_hammer_curl',
       name: 'Dumbbell Scott Hammer Curl',
@@ -1124,6 +1157,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 34. Flexor Incline Dumbbell Curls
     Exercise(
       exerciseId: 'flexor_incline_dumbbell_curls',
       name: 'Flexor Incline Dumbbell Curls',
@@ -1158,6 +1192,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 35. Hammer Curl
     Exercise(
       exerciseId: 'hammer_curl',
       name: 'Hammer Curl',
@@ -1192,6 +1227,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 36. Hammer Curl With Resistance Band
     Exercise(
       exerciseId: 'hammer_curl_with_resistance_band',
       name: 'Hammer Curl With Resistance Band',
@@ -1226,6 +1262,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Resistance Band', 'Biceps', 'Intermediate'],
     ),
+    // 37. High Cable Single Arm Bicep Curl
     Exercise(
       exerciseId: 'high_cable_single_arm_bicep_curl',
       name: 'High Cable Single Arm Bicep Curl',
@@ -1260,6 +1297,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Advanced'],
     ),
+    // 38. Lever Biceps Curl
     Exercise(
       exerciseId: 'lever_biceps_curl',
       name: 'Lever Biceps Curl',
@@ -1294,6 +1332,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Machine', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 39. Lever Preacher Curl
     Exercise(
       exerciseId: 'lever_preacher_curl',
       name: 'Lever Preacher Curl',
@@ -1328,6 +1367,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Machine', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 40. Lying Cable Curl
     Exercise(
       exerciseId: 'lying_cable_curl',
       name: 'Lying Cable Curl',
@@ -1362,6 +1402,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 41. Lying High Bench Barbell Curl
     Exercise(
       exerciseId: 'lying_high_bench_barbell_curl',
       name: 'Lying High Bench Barbell Curl',
@@ -1396,6 +1437,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Biceps', 'Barbell', 'Intermediate'],
     ),
+    // 42. One Arm Biceps Curl
     Exercise(
       exerciseId: 'one_arm_biceps_curl',
       name: 'One Arm Biceps Curl',
@@ -1430,6 +1472,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Advanced'],
     ),
+    // 43. One Arm Biceps Curl With Resistance Band
     Exercise(
       exerciseId: 'one_arm_biceps_curl_with_resistance_band',
       name: 'One Arm Biceps Curl With Resistance Band',
@@ -1464,6 +1507,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Resistance Band', 'Biceps', 'Advanced'],
     ),
+    // 44. One Arm Cable Bicep Curl
     Exercise(
       exerciseId: 'one_arm_cable_bicep_curl',
       name: 'One Arm Cable Bicep Curl',
@@ -1498,6 +1542,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Advanced'],
     ),
+    // 45. One Arm Cable Curl
     Exercise(
       exerciseId: 'one_arm_cable_curl',
       name: 'One Arm Cable Curl',
@@ -1532,6 +1577,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Advanced'],
     ),
+    // 46. One Arm Chin Up
     Exercise(
       exerciseId: 'one_arm_chin_up',
       name: 'One Arm Chin Up',
@@ -1566,6 +1612,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Advanced'],
     ),
+    // 47. One Arm Prone Dumbbell Curl
     Exercise(
       exerciseId: 'one_arm_prone_dumbbell_curl',
       name: 'One Arm Prone Dumbbell Curl',
@@ -1600,6 +1647,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Advanced'],
     ),
+    // 48. Overhead Cable Curl
     Exercise(
       exerciseId: 'overhead_cable_curl',
       name: 'Overhead Cable Curl',
@@ -1634,6 +1682,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Intermediate'],
     ),
+    // 49. Prone Incline Biceps Curl
     Exercise(
       exerciseId: 'prone_incline_biceps_curl',
       name: 'Prone Incline Biceps Curl',
@@ -1668,6 +1717,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 50. Reverse Grip EZ Bar Curl
     Exercise(
       exerciseId: 'reverse_grip_ez_bar_curl',
       name: 'Reverse Grip EZ Bar Curl',
@@ -1702,6 +1752,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 51. Seated Alternating Dumbbell Curl
     Exercise(
       exerciseId: 'seated_alternating_dumbbell_curl',
       name: 'Seated Alternating Dumbbell Curl',
@@ -1736,6 +1787,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 52. Seated Bicep Curl With Resistance Band
     Exercise(
       exerciseId: 'seated_bicep_curl_with_resistance_band',
       name: 'Seated Bicep Curl With Resistance Band',
@@ -1770,6 +1822,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Resistance Band', 'Biceps', 'Intermediate'],
     ),
+    // 53. Seated Biceps Curl
     Exercise(
       exerciseId: 'seated_biceps_curl',
       name: 'Seated Biceps Curl',
@@ -1804,6 +1857,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 54. Seated Close Grip Concentration Curl
     Exercise(
       exerciseId: 'seated_close_grip_concentration_curl',
       name: 'Seated Close Grip Concentration Curl',
@@ -1838,6 +1892,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 55. Seated Hammer Curl
     Exercise(
       exerciseId: 'seated_hammer_curl',
       name: 'Seated Hammer Curl',
@@ -1872,6 +1927,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 56. Seated Incline Dumbbell Curl
     Exercise(
       exerciseId: 'seated_incline_dumbbell_curl',
       name: 'Seated Incline Dumbbell Curl',
@@ -1906,6 +1962,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 57. Single Arm Reverse Grip Cable Bicep Curl
     Exercise(
       exerciseId: 'single_arm_reverse_grip_cable_bicep_curl',
       name: 'Single Arm Reverse Grip Cable Bicep Curl',
@@ -1940,6 +1997,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Cable', 'Biceps', 'Advanced'],
     ),
+    // 58. Single Dumbbell Spider Hammer Curl
     Exercise(
       exerciseId: 'single_dumbbell_spider_hammer_curl',
       name: 'Single Dumbbell Spider Hammer Curl',
@@ -1974,6 +2032,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 59. Standing Barbell Concentration Curl
     Exercise(
       exerciseId: 'standing_barbell_concentration_curl',
       name: 'Standing Barbell Concentration Curl',
@@ -2008,6 +2067,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Biceps', 'Barbell', 'Intermediate'],
     ),
+    // 60. Step Up Single Leg Balance With Bicep Curl
     Exercise(
       exerciseId: 'step_up_single_leg_balance_with_bicep_curl',
       name: 'Step Up Single Leg Balance With Bicep Curl',
@@ -2042,6 +2102,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Advanced'],
     ),
+    // 61. Two Dumbbell Preacher Curl
     Exercise(
       exerciseId: 'two_dumbbell_preacher_curl',
       name: 'Two Dumbbell Preacher Curl',
@@ -2076,6 +2137,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Forearms', 'Dumbbell', 'Biceps', 'Intermediate'],
     ),
+    // 62. Waiter Curl
     Exercise(
       exerciseId: 'waiter_curl',
       name: 'Waiter Curl',
@@ -2110,6 +2172,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 63. Water Bottle Hammer Curl
     Exercise(
       exerciseId: 'water_bottle_hammer_curl',
       name: 'Water Bottle Hammer Curl',
@@ -2144,6 +2207,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 64. Z Bar Curl
     Exercise(
       exerciseId: 'z_bar_curl',
       name: 'Z Bar Curl',
@@ -2178,6 +2242,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 65. Z Bar Preacher Curl
     Exercise(
       exerciseId: 'z_bar_preacher_curl',
       name: 'Z Bar Preacher Curl',
@@ -2212,6 +2277,7 @@ class BicepsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Brachialis', 'Bodyweight', 'Forearms', 'Biceps', 'Intermediate'],
     ),
+    // 66. Zottman Curl
     Exercise(
       exerciseId: 'zottman_curl',
       name: 'Zottman Curl',

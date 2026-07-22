@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class FullBodyExercises {
   static final List<Exercise> exercises = [
+    // 1. 1 2 Stick Drill
     Exercise(
       exerciseId: '1_2_stick_drill',
       name: '1 2 Stick Drill',
@@ -36,6 +37,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 2. 4 Point Tummy Vacuum Exercise
     Exercise(
       exerciseId: '4_point_tummy_vacuum_exercise',
       name: '4 Point Tummy Vacuum Exercise',
@@ -70,6 +72,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 3. 90 90 Hip Stretch
     Exercise(
       exerciseId: '90_90_hip_stretch',
       name: '90 90 Hip Stretch',
@@ -104,6 +107,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 4. 90 Degree Cable External Rotation
     Exercise(
       exerciseId: '90_degree_cable_external_rotation',
       name: '90 Degree Cable External Rotation',
@@ -138,6 +142,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 5. 90 Degree Cable Internal Rotation
     Exercise(
       exerciseId: '90_degree_cable_internal_rotation',
       name: '90 Degree Cable Internal Rotation',
@@ -172,6 +177,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 6. Ab Coaster Machine
     Exercise(
       exerciseId: 'ab_coaster_machine',
       name: 'Ab Coaster Machine',
@@ -206,6 +212,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 7. Adho Mukha Vrksasana Yoga Handstand Pose
     Exercise(
       exerciseId: 'adho_mukha_vrksasana_yoga_handstand_pose',
       name: 'Adho Mukha Vrksasana Yoga Handstand Pose',
@@ -240,6 +247,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 8. Advasana L Reverse Corpse Pose
     Exercise(
       exerciseId: 'advasana_l_reverse_corpse_pose',
       name: 'Advasana L Reverse Corpse Pose',
@@ -274,6 +282,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 9. All Fours Squad Stretch
     Exercise(
       exerciseId: 'all_fours_squad_stretch',
       name: 'All Fours Squad Stretch',
@@ -308,6 +317,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 10. Ardha Uttanasana Standing Half Forward Bend
     Exercise(
       exerciseId: 'ardha_uttanasana_standing_half_forward_bend',
       name: 'Ardha Uttanasana Standing Half Forward Bend',
@@ -342,6 +352,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 11. Astride Jumps
     Exercise(
       exerciseId: 'astride_jumps',
       name: 'Astride Jumps',
@@ -376,6 +387,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 12. Balasana Child Pose
     Exercise(
       exerciseId: 'balasana_child_pose',
       name: 'Balasana Child Pose',
@@ -410,6 +422,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 13. Band Assisted Muscle Up
     Exercise(
       exerciseId: 'band_assisted_muscle_up',
       name: 'Band Assisted Muscle Up',
@@ -444,6 +457,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 14. Band Foot External Rotation
     Exercise(
       exerciseId: 'band_foot_external_rotation',
       name: 'Band Foot External Rotation',
@@ -478,6 +492,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 15. Band Lying Hip External Rotation
     Exercise(
       exerciseId: 'band_lying_hip_external_rotation',
       name: 'Band Lying Hip External Rotation',
@@ -512,6 +527,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 16. Band Pull Apart
     Exercise(
       exerciseId: 'band_pull_apart',
       name: 'Band Pull Apart',
@@ -546,6 +562,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 17. Band Seated Hip External Rotation
     Exercise(
       exerciseId: 'band_seated_hip_external_rotation',
       name: 'Band Seated Hip External Rotation',
@@ -580,6 +597,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 18. Band Seated Hip Internal Rotation
     Exercise(
       exerciseId: 'band_seated_hip_internal_rotation',
       name: 'Band Seated Hip Internal Rotation',
@@ -614,6 +632,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 19. Band Side Lying Clam
     Exercise(
       exerciseId: 'band_side_lying_clam',
       name: 'Band Side Lying Clam',
@@ -648,6 +667,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 20. Band Side Lying Leg Lift
     Exercise(
       exerciseId: 'band_side_lying_leg_lift',
       name: 'Band Side Lying Leg Lift',
@@ -682,6 +702,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 21. Banded Lying Leg And Hip Raise
     Exercise(
       exerciseId: 'banded_lying_leg_and_hip_raise',
       name: 'Banded Lying Leg And Hip Raise',
@@ -716,6 +737,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 22. Banded Seated Hip Abduction
     Exercise(
       exerciseId: 'banded_seated_hip_abduction',
       name: 'Banded Seated Hip Abduction',
@@ -750,6 +772,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 23. Banded Walk
     Exercise(
       exerciseId: 'banded_walk',
       name: 'Banded Walk',
@@ -784,6 +807,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 24. Barbell Clean And Press
     Exercise(
       exerciseId: 'barbell_clean_and_press',
       name: 'Barbell Clean And Press',
@@ -818,6 +842,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 25. Barbell Floor Press
     Exercise(
       exerciseId: 'barbell_floor_press',
       name: 'Barbell Floor Press',
@@ -852,6 +877,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 26. Barbell Hang Clean
     Exercise(
       exerciseId: 'barbell_hang_clean',
       name: 'Barbell Hang Clean',
@@ -886,6 +912,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 27. Barbell One Arm Floor Press
     Exercise(
       exerciseId: 'barbell_one_arm_floor_press',
       name: 'Barbell One Arm Floor Press',
@@ -920,6 +947,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Advanced', 'Arms'],
     ),
+    // 28. Barbell Reverse Grip Skullcrusher
     Exercise(
       exerciseId: 'barbell_reverse_grip_skullcrusher',
       name: 'Barbell Reverse Grip Skullcrusher',
@@ -954,6 +982,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 29. Barbell Rollout
     Exercise(
       exerciseId: 'barbell_rollout',
       name: 'Barbell Rollout',
@@ -988,6 +1017,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 30. Barbell Side Bend
     Exercise(
       exerciseId: 'barbell_side_bend',
       name: 'Barbell Side Bend',
@@ -1022,6 +1052,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 31. Barbell Snatch
     Exercise(
       exerciseId: 'barbell_snatch',
       name: 'Barbell Snatch',
@@ -1056,6 +1087,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 32. Barbell Thruster
     Exercise(
       exerciseId: 'barbell_thruster',
       name: 'Barbell Thruster',
@@ -1090,6 +1122,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 33. Bear Crawls
     Exercise(
       exerciseId: 'bear_crawls',
       name: 'Bear Crawls',
@@ -1124,6 +1157,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 34. Bench Dips On Floor
     Exercise(
       exerciseId: 'bench_dips_on_floor',
       name: 'Bench Dips On Floor',
@@ -1158,6 +1192,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Bench', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 35. Bench Side Bend
     Exercise(
       exerciseId: 'bench_side_bend',
       name: 'Bench Side Bend',
@@ -1192,6 +1227,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Bench', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 36. Bench Supported Dumbbell External Rotation
     Exercise(
       exerciseId: 'bench_supported_dumbbell_external_rotation',
       name: 'Bench Supported Dumbbell External Rotation',
@@ -1226,6 +1262,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 37. Bent Over Barbell Reverse Raise
     Exercise(
       exerciseId: 'bent_over_barbell_reverse_raise',
       name: 'Bent Over Barbell Reverse Raise',
@@ -1260,6 +1297,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 38. Bent Over Twist
     Exercise(
       exerciseId: 'bent_over_twist',
       name: 'Bent Over Twist',
@@ -1294,6 +1332,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 39. Bhekasana Frog Pose
     Exercise(
       exerciseId: 'bhekasana_frog_pose',
       name: 'Bhekasana Frog Pose',
@@ -1328,6 +1367,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 40. Bitilasana Cow Pose
     Exercise(
       exerciseId: 'bitilasana_cow_pose',
       name: 'Bitilasana Cow Pose',
@@ -1362,6 +1402,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 41. Boat Pose
     Exercise(
       exerciseId: 'boat_pose',
       name: 'Boat Pose',
@@ -1396,6 +1437,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 42. Body Saw Plank
     Exercise(
       exerciseId: 'body_saw_plank',
       name: 'Body Saw Plank',
@@ -1430,6 +1472,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 43. Body Ups
     Exercise(
       exerciseId: 'body_ups',
       name: 'Body Ups',
@@ -1464,6 +1507,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 44. Bodyweight Windmill
     Exercise(
       exerciseId: 'bodyweight_windmill',
       name: 'Bodyweight Windmill',
@@ -1498,6 +1542,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 45. Bow Pose
     Exercise(
       exerciseId: 'bow_pose',
       name: 'Bow Pose',
@@ -1532,6 +1577,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 46. Box Jump 1 To 2
     Exercise(
       exerciseId: 'box_jump_1_to_2',
       name: 'Box Jump 1 To 2',
@@ -1566,6 +1612,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 47. Box Jump 2 To 1
     Exercise(
       exerciseId: 'box_jump_2_to_1',
       name: 'Box Jump 2 To 1',
@@ -1600,6 +1647,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 48. Boxing Right Cross
     Exercise(
       exerciseId: 'boxing_right_cross',
       name: 'Boxing Right Cross',
@@ -1634,6 +1682,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 49. Bridge Hip Abduction
     Exercise(
       exerciseId: 'bridge_hip_abduction',
       name: 'Bridge Hip Abduction',
@@ -1668,6 +1717,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 50. Bridge Pose
     Exercise(
       exerciseId: 'bridge_pose',
       name: 'Bridge Pose',
@@ -1702,6 +1752,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 51. Burpee Long Jump
     Exercise(
       exerciseId: 'burpee_long_jump',
       name: 'Burpee Long Jump',
@@ -1736,6 +1787,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 52. Burpee With Push Up
     Exercise(
       exerciseId: 'burpee_with_push_up',
       name: 'Burpee With Push Up',
@@ -1770,6 +1822,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 53. Cable Concentration Extension On Knee
     Exercise(
       exerciseId: 'cable_concentration_extension_on_knee',
       name: 'Cable Concentration Extension On Knee',
@@ -1804,6 +1857,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 54. Cable Hip Abduction
     Exercise(
       exerciseId: 'cable_hip_abduction',
       name: 'Cable Hip Abduction',
@@ -1838,6 +1892,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 55. Cable Hip Adduction
     Exercise(
       exerciseId: 'cable_hip_adduction',
       name: 'Cable Hip Adduction',
@@ -1872,6 +1927,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 56. Cable Hip Extension
     Exercise(
       exerciseId: 'cable_hip_extension',
       name: 'Cable Hip Extension',
@@ -1906,6 +1962,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 57. Cable Kneeling Pull Through
     Exercise(
       exerciseId: 'cable_kneeling_pull_through',
       name: 'Cable Kneeling Pull Through',
@@ -1940,6 +1997,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 58. Cable Rear Drive
     Exercise(
       exerciseId: 'cable_rear_drive',
       name: 'Cable Rear Drive',
@@ -1974,6 +2032,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 59. Cable Seated Cross Arm Twist
     Exercise(
       exerciseId: 'cable_seated_cross_arm_twist',
       name: 'Cable Seated Cross Arm Twist',
@@ -2008,6 +2067,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 60. Cable Seated Neck Extension With Head Harness
     Exercise(
       exerciseId: 'cable_seated_neck_extension_with_head_harness',
       name: 'Cable Seated Neck Extension With Head Harness',
@@ -2042,6 +2102,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 61. Cable Seated Neck Flexion With Head Harness
     Exercise(
       exerciseId: 'cable_seated_neck_flexion_with_head_harness',
       name: 'Cable Seated Neck Flexion With Head Harness',
@@ -2076,6 +2137,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 62. Cable Seated Twist On Floor
     Exercise(
       exerciseId: 'cable_seated_twist_on_floor',
       name: 'Cable Seated Twist On Floor',
@@ -2110,6 +2172,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 63. Cable Side Bend
     Exercise(
       exerciseId: 'cable_side_bend',
       name: 'Cable Side Bend',
@@ -2144,6 +2207,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 64. Cable Upright
     Exercise(
       exerciseId: 'cable_upright',
       name: 'Cable Upright',
@@ -2178,6 +2242,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 65. Cable Y Raise
     Exercise(
       exerciseId: 'cable_y_raise',
       name: 'Cable Y Raise',
@@ -2212,6 +2277,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 66. Cat Cow Pose
     Exercise(
       exerciseId: 'cat_cow_pose',
       name: 'Cat Cow Pose',
@@ -2246,6 +2312,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 67. Chair Dips
     Exercise(
       exerciseId: 'chair_dips',
       name: 'Chair Dips',
@@ -2280,6 +2347,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 68. Childs Pose To Cobra Pose
     Exercise(
       exerciseId: 'childs_pose_to_cobra_pose',
       name: 'Childs Pose To Cobra Pose',
@@ -2314,6 +2382,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 69. Chin Tuck
     Exercise(
       exerciseId: 'chin_tuck',
       name: 'Chin Tuck',
@@ -2348,6 +2417,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 70. Clean And Jerk
     Exercise(
       exerciseId: 'clean_and_jerk',
       name: 'Clean And Jerk',
@@ -2382,6 +2452,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 71. Climbing Monkey Bars
     Exercise(
       exerciseId: 'climbing_monkey_bars',
       name: 'Climbing Monkey Bars',
@@ -2416,6 +2487,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 72. Close Grip Dumbbell Press
     Exercise(
       exerciseId: 'close_grip_dumbbell_press',
       name: 'Close Grip Dumbbell Press',
@@ -2450,6 +2522,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 73. Close Grip Incline Dumbbell Press
     Exercise(
       exerciseId: 'close_grip_incline_dumbbell_press',
       name: 'Close Grip Incline Dumbbell Press',
@@ -2484,6 +2557,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 74. Cobra Abdominal Stretch
     Exercise(
       exerciseId: 'cobra_abdominal_stretch',
       name: 'Cobra Abdominal Stretch',
@@ -2518,6 +2592,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 75. Corner Wall Stretch
     Exercise(
       exerciseId: 'corner_wall_stretch',
       name: 'Corner Wall Stretch',
@@ -2552,6 +2627,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 76. Crab Pose
     Exercise(
       exerciseId: 'crab_pose',
       name: 'Crab Pose',
@@ -2586,6 +2662,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 77. Crab Twist Toe Touch
     Exercise(
       exerciseId: 'crab_twist_toe_touch',
       name: 'Crab Twist Toe Touch',
@@ -2620,6 +2697,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 78. Dandayamana Bharmanasana Balancing Table Pose
     Exercise(
       exerciseId: 'dandayamana_bharmanasana_balancing_table_pose',
       name: 'Dandayamana Bharmanasana Balancing Table Pose',
@@ -2654,6 +2732,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 79. Decline Hammer Press
     Exercise(
       exerciseId: 'decline_hammer_press',
       name: 'Decline Hammer Press',
@@ -2688,6 +2767,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 80. Dhanurasana Rocking Bow Pose
     Exercise(
       exerciseId: 'dhanurasana_rocking_bow_pose',
       name: 'Dhanurasana Rocking Bow Pose',
@@ -2722,6 +2802,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 81. Dips Between Chairs
     Exercise(
       exerciseId: 'dips_between_chairs',
       name: 'Dips Between Chairs',
@@ -2756,6 +2837,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 82. Double Leg Stretch
     Exercise(
       exerciseId: 'double_leg_stretch',
       name: 'Double Leg Stretch',
@@ -2790,6 +2872,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 83. Double Pigeon Pose
     Exercise(
       exerciseId: 'double_pigeon_pose',
       name: 'Double Pigeon Pose',
@@ -2824,6 +2907,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 84. Down To Up Twist Gymstick
     Exercise(
       exerciseId: 'down_to_up_twist_gymstick',
       name: 'Down To Up Twist Gymstick',
@@ -2858,6 +2942,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 85. Dragon Flag
     Exercise(
       exerciseId: 'dragon_flag',
       name: 'Dragon Flag',
@@ -2892,6 +2977,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 86. Duck Walk
     Exercise(
       exerciseId: 'duck_walk',
       name: 'Duck Walk',
@@ -2926,6 +3012,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 87. Dumbbell 6 Ways Raise
     Exercise(
       exerciseId: 'dumbbell_6_ways_raise',
       name: 'Dumbbell 6 Ways Raise',
@@ -2960,6 +3047,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 88. Dumbbell Cuban External Rotation
     Exercise(
       exerciseId: 'dumbbell_cuban_external_rotation',
       name: 'Dumbbell Cuban External Rotation',
@@ -2994,6 +3082,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 89. Dumbbell Cuban Press
     Exercise(
       exerciseId: 'dumbbell_cuban_press',
       name: 'Dumbbell Cuban Press',
@@ -3028,6 +3117,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 90. Dumbbell Decline One Arm Hammer Press
     Exercise(
       exerciseId: 'dumbbell_decline_one_arm_hammer_press',
       name: 'Dumbbell Decline One Arm Hammer Press',
@@ -3062,6 +3152,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 91. Dumbbell Devil Press
     Exercise(
       exerciseId: 'dumbbell_devil_press',
       name: 'Dumbbell Devil Press',
@@ -3096,6 +3187,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 92. Dumbbell Floor Wipers
     Exercise(
       exerciseId: 'dumbbell_floor_wipers',
       name: 'Dumbbell Floor Wipers',
@@ -3130,6 +3222,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 93. Dumbbell Incline T Raise
     Exercise(
       exerciseId: 'dumbbell_incline_t_raise',
       name: 'Dumbbell Incline T Raise',
@@ -3164,6 +3257,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 94. Dumbbell Incline Two Arm Extension
     Exercise(
       exerciseId: 'dumbbell_incline_two_arm_extension',
       name: 'Dumbbell Incline Two Arm Extension',
@@ -3198,6 +3292,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 95. Dumbbell Iron Cross
     Exercise(
       exerciseId: 'dumbbell_iron_cross',
       name: 'Dumbbell Iron Cross',
@@ -3232,6 +3327,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 96. Dumbbell One Arm Reverse Grip Press
     Exercise(
       exerciseId: 'dumbbell_one_arm_reverse_grip_press',
       name: 'Dumbbell One Arm Reverse Grip Press',
@@ -3266,6 +3362,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 97. Dumbbell Power Clean
     Exercise(
       exerciseId: 'dumbbell_power_clean',
       name: 'Dumbbell Power Clean',
@@ -3300,6 +3397,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 98. Dumbbell Press
     Exercise(
       exerciseId: 'dumbbell_press',
       name: 'Dumbbell Press',
@@ -3334,6 +3432,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 99. Dumbbell Pull Through
     Exercise(
       exerciseId: 'dumbbell_pull_through',
       name: 'Dumbbell Pull Through',
@@ -3368,6 +3467,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 100. Dumbbell Raise
     Exercise(
       exerciseId: 'dumbbell_raise',
       name: 'Dumbbell Raise',
@@ -3402,6 +3502,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 101. Dumbbell Scaption
     Exercise(
       exerciseId: 'dumbbell_scaption',
       name: 'Dumbbell Scaption',
@@ -3436,6 +3537,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 102. Dumbbell Seated Cuban Press
     Exercise(
       exerciseId: 'dumbbell_seated_cuban_press',
       name: 'Dumbbell Seated Cuban Press',
@@ -3470,6 +3572,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 103. Dumbbell Side Bend
     Exercise(
       exerciseId: 'dumbbell_side_bend',
       name: 'Dumbbell Side Bend',
@@ -3504,6 +3607,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 104. Dumbbell Split Jump
     Exercise(
       exerciseId: 'dumbbell_split_jump',
       name: 'Dumbbell Split Jump',
@@ -3538,6 +3642,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 105. Dumbbell Standing Palms In Press
     Exercise(
       exerciseId: 'dumbbell_standing_palms_in_press',
       name: 'Dumbbell Standing Palms In Press',
@@ -3572,6 +3677,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 106. Dumbbell W Press
     Exercise(
       exerciseId: 'dumbbell_w_press',
       name: 'Dumbbell W Press',
@@ -3606,6 +3712,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 107. Dumbbell Windmill
     Exercise(
       exerciseId: 'dumbbell_windmill',
       name: 'Dumbbell Windmill',
@@ -3640,6 +3747,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 108. Dumbbell Z Press
     Exercise(
       exerciseId: 'dumbbell_z_press',
       name: 'Dumbbell Z Press',
@@ -3674,6 +3782,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 109. Eka Pada Setu Bandha Sarvangasana
     Exercise(
       exerciseId: 'eka_pada_setu_bandha_sarvangasana',
       name: 'Eka Pada Setu Bandha Sarvangasana',
@@ -3708,6 +3817,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 110. Elbow Flexion
     Exercise(
       exerciseId: 'elbow_flexion',
       name: 'Elbow Flexion',
@@ -3742,6 +3852,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 111. Elbow To Knee Twists
     Exercise(
       exerciseId: 'elbow_to_knee_twists',
       name: 'Elbow To Knee Twists',
@@ -3776,6 +3887,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 112. EZ Bar Underhand Press
     Exercise(
       exerciseId: 'ez_bar_underhand_press',
       name: 'EZ Bar Underhand Press',
@@ -3810,6 +3922,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 113. Farmers Walk
     Exercise(
       exerciseId: 'farmers_walk',
       name: 'Farmers Walk',
@@ -3844,6 +3957,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 114. Feet And Ankle Rotation
     Exercise(
       exerciseId: 'feet_and_ankle_rotation',
       name: 'Feet And Ankle Rotation',
@@ -3878,6 +3992,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 115. Fish Pose
     Exercise(
       exerciseId: 'fish_pose',
       name: 'Fish Pose',
@@ -3912,6 +4027,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 116. Foam Roller It Iliotibial Band Stretch
     Exercise(
       exerciseId: 'foam_roller_it_iliotibial_band_stretch',
       name: 'Foam Roller It Iliotibial Band Stretch',
@@ -3946,6 +4062,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 117. Foam Roller Lat Stretch
     Exercise(
       exerciseId: 'foam_roller_lat_stretch',
       name: 'Foam Roller Lat Stretch',
@@ -3980,6 +4097,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 118. Foam Roller Plantar Fasciitis
     Exercise(
       exerciseId: 'foam_roller_plantar_fasciitis',
       name: 'Foam Roller Plantar Fasciitis',
@@ -4014,6 +4132,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 119. Foam Roller Quads
     Exercise(
       exerciseId: 'foam_roller_quads',
       name: 'Foam Roller Quads',
@@ -4048,6 +4167,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 120. Foam Roller Rhomboids
     Exercise(
       exerciseId: 'foam_roller_rhomboids',
       name: 'Foam Roller Rhomboids',
@@ -4082,6 +4202,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 121. Foot And Ankles Stretches
     Exercise(
       exerciseId: 'foot_and_ankles_stretches',
       name: 'Foot And Ankles Stretches',
@@ -4116,6 +4237,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 122. Frog Pose
     Exercise(
       exerciseId: 'frog_pose',
       name: 'Frog Pose',
@@ -4150,6 +4272,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 123. Frog Stand
     Exercise(
       exerciseId: 'frog_stand',
       name: 'Frog Stand',
@@ -4184,6 +4307,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 124. Front Rack Pvc Stretch
     Exercise(
       exerciseId: 'front_rack_pvc_stretch',
       name: 'Front Rack Pvc Stretch',
@@ -4218,6 +4342,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 125. Full Planche
     Exercise(
       exerciseId: 'full_planche',
       name: 'Full Planche',
@@ -4252,6 +4377,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 126. Garudasana Eagle Pose
     Exercise(
       exerciseId: 'garudasana_eagle_pose',
       name: 'Garudasana Eagle Pose',
@@ -4286,6 +4412,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 127. Half Frog Pose
     Exercise(
       exerciseId: 'half_frog_pose',
       name: 'Half Frog Pose',
@@ -4320,6 +4447,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 128. Half Kneeling Cable External Rotation
     Exercise(
       exerciseId: 'half_kneeling_cable_external_rotation',
       name: 'Half Kneeling Cable External Rotation',
@@ -4354,6 +4482,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 129. Half Wipers
     Exercise(
       exerciseId: 'half_wipers',
       name: 'Half Wipers',
@@ -4388,6 +4517,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 130. Hammer Press
     Exercise(
       exerciseId: 'hammer_press',
       name: 'Hammer Press',
@@ -4422,6 +4552,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 131. Handstand
     Exercise(
       exerciseId: 'handstand',
       name: 'Handstand',
@@ -4456,6 +4587,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 132. Handstand Walk
     Exercise(
       exerciseId: 'handstand_walk',
       name: 'Handstand Walk',
@@ -4490,6 +4622,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 133. Happy Baby Pose
     Exercise(
       exerciseId: 'happy_baby_pose',
       name: 'Happy Baby Pose',
@@ -4524,6 +4657,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 134. Heaving Snatch Balance
     Exercise(
       exerciseId: 'heaving_snatch_balance',
       name: 'Heaving Snatch Balance',
@@ -4558,6 +4692,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 135. Hell Slide
     Exercise(
       exerciseId: 'hell_slide',
       name: 'Hell Slide',
@@ -4592,6 +4727,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 136. High Knees Against Wall
     Exercise(
       exerciseId: 'high_knees_against_wall',
       name: 'High Knees Against Wall',
@@ -4626,6 +4762,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 137. High Plank
     Exercise(
       exerciseId: 'high_plank',
       name: 'High Plank',
@@ -4660,6 +4797,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 138. Hip Circles
     Exercise(
       exerciseId: 'hip_circles',
       name: 'Hip Circles',
@@ -4694,6 +4832,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 139. Hip Extension On Bench
     Exercise(
       exerciseId: 'hip_extension_on_bench',
       name: 'Hip Extension On Bench',
@@ -4728,6 +4867,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Bench', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 140. Hook Kick
     Exercise(
       exerciseId: 'hook_kick',
       name: 'Hook Kick',
@@ -4762,6 +4902,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 141. Human Flag
     Exercise(
       exerciseId: 'human_flag',
       name: 'Human Flag',
@@ -4796,6 +4937,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 142. Humble Warrior Pose
     Exercise(
       exerciseId: 'humble_warrior_pose',
       name: 'Humble Warrior Pose',
@@ -4830,6 +4972,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 143. Impossible Dips
     Exercise(
       exerciseId: 'impossible_dips',
       name: 'Impossible Dips',
@@ -4864,6 +5007,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 144. Inchworm
     Exercise(
       exerciseId: 'inchworm',
       name: 'Inchworm',
@@ -4898,6 +5042,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 145. Incline Dumbbel Hammer Press
     Exercise(
       exerciseId: 'incline_dumbbel_hammer_press',
       name: 'Incline Dumbbel Hammer Press',
@@ -4932,6 +5077,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 146. Incline Dumbbell Press
     Exercise(
       exerciseId: 'incline_dumbbell_press',
       name: 'Incline Dumbbell Press',
@@ -4966,6 +5112,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 147. Incline Dumbbell Y Raise
     Exercise(
       exerciseId: 'incline_dumbbell_y_raise',
       name: 'Incline Dumbbell Y Raise',
@@ -5000,6 +5147,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 148. Incline Leg Hip Raise
     Exercise(
       exerciseId: 'incline_leg_hip_raise',
       name: 'Incline Leg Hip Raise',
@@ -5034,6 +5182,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 149. Inner Thigh Side Stretch
     Exercise(
       exerciseId: 'inner_thigh_side_stretch',
       name: 'Inner Thigh Side Stretch',
@@ -5068,6 +5217,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 150. Jab Boxing
     Exercise(
       exerciseId: 'jab_boxing',
       name: 'Jab Boxing',
@@ -5102,6 +5252,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 151. Kettlebell Clean And Jerk
     Exercise(
       exerciseId: 'kettlebell_clean_and_jerk',
       name: 'Kettlebell Clean And Jerk',
@@ -5136,6 +5287,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 152. Kettlebell Clean And Press
     Exercise(
       exerciseId: 'kettlebell_clean_and_press',
       name: 'Kettlebell Clean And Press',
@@ -5170,6 +5322,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 153. Kettlebell Figure 8
     Exercise(
       exerciseId: 'kettlebell_figure_8',
       name: 'Kettlebell Figure 8',
@@ -5204,6 +5357,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 154. Kettlebell Hang Clean
     Exercise(
       exerciseId: 'kettlebell_hang_clean',
       name: 'Kettlebell Hang Clean',
@@ -5238,6 +5392,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 155. Kettlebell Split Snatch
     Exercise(
       exerciseId: 'kettlebell_split_snatch',
       name: 'Kettlebell Split Snatch',
@@ -5272,6 +5427,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 156. Kettlebell Swings
     Exercise(
       exerciseId: 'kettlebell_swings',
       name: 'Kettlebell Swings',
@@ -5306,6 +5462,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 157. Kettlebell Thruster
     Exercise(
       exerciseId: 'kettlebell_thruster',
       name: 'Kettlebell Thruster',
@@ -5340,6 +5497,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 158. Kettlebell Windmill
     Exercise(
       exerciseId: 'kettlebell_windmill',
       name: 'Kettlebell Windmill',
@@ -5374,6 +5532,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell', 'Intermediate'],
     ),
+    // 159. Kicks Leg Bent
     Exercise(
       exerciseId: 'kicks_leg_bent',
       name: 'Kicks Leg Bent',
@@ -5408,6 +5567,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 160. Knee Circles
     Exercise(
       exerciseId: 'knee_circles',
       name: 'Knee Circles',
@@ -5442,6 +5602,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 161. Kneeling Hip Flexor Stretch
     Exercise(
       exerciseId: 'kneeling_hip_flexor_stretch',
       name: 'Kneeling Hip Flexor Stretch',
@@ -5476,6 +5637,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 162. Kneeling Incline Press Gymstick
     Exercise(
       exerciseId: 'kneeling_incline_press_gymstick',
       name: 'Kneeling Incline Press Gymstick',
@@ -5510,6 +5672,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 163. Kneeling Neck Stretch
     Exercise(
       exerciseId: 'kneeling_neck_stretch',
       name: 'Kneeling Neck Stretch',
@@ -5544,6 +5707,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 164. Kneeling Quad Stretch
     Exercise(
       exerciseId: 'kneeling_quad_stretch',
       name: 'Kneeling Quad Stretch',
@@ -5578,6 +5742,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 165. Kneeling Single Leg Kick Gymstick
     Exercise(
       exerciseId: 'kneeling_single_leg_kick_gymstick',
       name: 'Kneeling Single Leg Kick Gymstick',
@@ -5612,6 +5777,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 166. Kneeling T Spine Rotation
     Exercise(
       exerciseId: 'kneeling_t_spine_rotation',
       name: 'Kneeling T Spine Rotation',
@@ -5646,6 +5812,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 167. Korean Dips
     Exercise(
       exerciseId: 'korean_dips',
       name: 'Korean Dips',
@@ -5680,6 +5847,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 168. Landmine Twist
     Exercise(
       exerciseId: 'landmine_twist',
       name: 'Landmine Twist',
@@ -5714,6 +5882,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 169. Lateral Leg Swings
     Exercise(
       exerciseId: 'lateral_leg_swings',
       name: 'Lateral Leg Swings',
@@ -5748,6 +5917,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 170. Lateral Speed Step
     Exercise(
       exerciseId: 'lateral_speed_step',
       name: 'Lateral Speed Step',
@@ -5782,6 +5952,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 171. Leg Pull In Knee Ups
     Exercise(
       exerciseId: 'leg_pull_in_knee_ups',
       name: 'Leg Pull In Knee Ups',
@@ -5816,6 +5987,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 172. Leg Scissors
     Exercise(
       exerciseId: 'leg_scissors',
       name: 'Leg Scissors',
@@ -5850,6 +6022,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 173. Lever Neck Extension Plate Loaded
     Exercise(
       exerciseId: 'lever_neck_extension_plate_loaded',
       name: 'Lever Neck Extension Plate Loaded',
@@ -5884,6 +6057,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 174. Lever Neck Right Side Flexion Plate Loaded
     Exercise(
       exerciseId: 'lever_neck_right_side_flexion_plate_loaded',
       name: 'Lever Neck Right Side Flexion Plate Loaded',
@@ -5918,6 +6092,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 175. Lever Side Hip Abduction
     Exercise(
       exerciseId: 'lever_side_hip_abduction',
       name: 'Lever Side Hip Abduction',
@@ -5952,6 +6127,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 176. Lever Side Hip Adduction
     Exercise(
       exerciseId: 'lever_side_hip_adduction',
       name: 'Lever Side Hip Adduction',
@@ -5986,6 +6162,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 177. Lever Standing Hip Extension
     Exercise(
       exerciseId: 'lever_standing_hip_extension',
       name: 'Lever Standing Hip Extension',
@@ -6020,6 +6197,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 178. Lever Standing Rear Kick
     Exercise(
       exerciseId: 'lever_standing_rear_kick',
       name: 'Lever Standing Rear Kick',
@@ -6054,6 +6232,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 179. Log Lift
     Exercise(
       exerciseId: 'log_lift',
       name: 'Log Lift',
@@ -6088,6 +6267,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 180. Long Jump
     Exercise(
       exerciseId: 'long_jump',
       name: 'Long Jump',
@@ -6122,6 +6302,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 181. Lying Toe Touches
     Exercise(
       exerciseId: 'lying_toe_touches',
       name: 'Lying Toe Touches',
@@ -6156,6 +6337,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 182. Lying Upper Body Rotation
     Exercise(
       exerciseId: 'lying_upper_body_rotation',
       name: 'Lying Upper Body Rotation',
@@ -6190,6 +6372,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 183. Lying Weighted Neck Extension
     Exercise(
       exerciseId: 'lying_weighted_neck_extension',
       name: 'Lying Weighted Neck Extension',
@@ -6224,6 +6407,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 184. Lying Weighted Neck Flexion
     Exercise(
       exerciseId: 'lying_weighted_neck_flexion',
       name: 'Lying Weighted Neck Flexion',
@@ -6258,6 +6442,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 185. Makarasana Crocodile Pose
     Exercise(
       exerciseId: 'makarasana_crocodile_pose',
       name: 'Makarasana Crocodile Pose',
@@ -6292,6 +6477,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 186. Medicine Ball Overhead Slam
     Exercise(
       exerciseId: 'medicine_ball_overhead_slam',
       name: 'Medicine Ball Overhead Slam',
@@ -6326,6 +6512,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 187. Muscle Snatch
     Exercise(
       exerciseId: 'muscle_snatch',
       name: 'Muscle Snatch',
@@ -6360,6 +6547,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 188. Muscle Up
     Exercise(
       exerciseId: 'muscle_up',
       name: 'Muscle Up',
@@ -6394,6 +6582,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 189. One Arm Dumbbell Snatch
     Exercise(
       exerciseId: 'one_arm_dumbbell_snatch',
       name: 'One Arm Dumbbell Snatch',
@@ -6428,6 +6617,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 190. One Arm Kettlebell Snatch
     Exercise(
       exerciseId: 'one_arm_kettlebell_snatch',
       name: 'One Arm Kettlebell Snatch',
@@ -6462,6 +6652,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms', 'Kettlebell'],
     ),
+    // 191. One Arm Kettlebell Swing
     Exercise(
       exerciseId: 'one_arm_kettlebell_swing',
       name: 'One Arm Kettlebell Swing',
@@ -6496,6 +6687,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms', 'Kettlebell'],
     ),
+    // 192. One Arm Medicine Ball Slam
     Exercise(
       exerciseId: 'one_arm_medicine_ball_slam',
       name: 'One Arm Medicine Ball Slam',
@@ -6530,6 +6722,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 193. Pada Hastasana Hands To Feet Pose
     Exercise(
       exerciseId: 'pada_hastasana_hands_to_feet_pose',
       name: 'Pada Hastasana Hands To Feet Pose',
@@ -6564,6 +6757,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 194. Parallel Bar Dips
     Exercise(
       exerciseId: 'parallel_bar_dips',
       name: 'Parallel Bar Dips',
@@ -6598,6 +6792,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 195. Parsva Balasana Thread The Needle Pose
     Exercise(
       exerciseId: 'parsva_balasana_thread_the_needle_pose',
       name: 'Parsva Balasana Thread The Needle Pose',
@@ -6632,6 +6827,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 196. Pelvic Tilt
     Exercise(
       exerciseId: 'pelvic_tilt',
       name: 'Pelvic Tilt',
@@ -6666,6 +6862,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 197. Piriformis Stretch
     Exercise(
       exerciseId: 'piriformis_stretch',
       name: 'Piriformis Stretch',
@@ -6700,6 +6897,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 198. Plate Push
     Exercise(
       exerciseId: 'plate_push',
       name: 'Plate Push',
@@ -6734,6 +6932,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 199. Posterior Tibialis Stretch
     Exercise(
       exerciseId: 'posterior_tibialis_stretch',
       name: 'Posterior Tibialis Stretch',
@@ -6768,6 +6967,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 200. Power Clean
     Exercise(
       exerciseId: 'power_clean',
       name: 'Power Clean',
@@ -6802,6 +7002,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 201. Power Snatch
     Exercise(
       exerciseId: 'power_snatch',
       name: 'Power Snatch',
@@ -6836,6 +7037,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 202. Prone Cervical Extension
     Exercise(
       exerciseId: 'prone_cervical_extension',
       name: 'Prone Cervical Extension',
@@ -6870,6 +7072,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 203. Pull Through With Resistance Band
     Exercise(
       exerciseId: 'pull_through_with_resistance_band',
       name: 'Pull Through With Resistance Band',
@@ -6904,6 +7107,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 204. Pull Up
     Exercise(
       exerciseId: 'pull_up',
       name: 'Pull Up',
@@ -6938,6 +7142,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 205. Punches
     Exercise(
       exerciseId: 'punches',
       name: 'Punches',
@@ -6972,6 +7177,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 206. Rear Drive With Resistance Band
     Exercise(
       exerciseId: 'rear_drive_with_resistance_band',
       name: 'Rear Drive With Resistance Band',
@@ -7006,6 +7212,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 207. Resistance Band Lateral Walk
     Exercise(
       exerciseId: 'resistance_band_lateral_walk',
       name: 'Resistance Band Lateral Walk',
@@ -7040,6 +7247,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 208. Resistance Band Toe Touch
     Exercise(
       exerciseId: 'resistance_band_toe_touch',
       name: 'Resistance Band Toe Touch',
@@ -7074,6 +7282,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 209. Reverse Dips
     Exercise(
       exerciseId: 'reverse_dips',
       name: 'Reverse Dips',
@@ -7108,6 +7317,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 210. Reverse Grip Incline Dumbbell Press
     Exercise(
       exerciseId: 'reverse_grip_incline_dumbbell_press',
       name: 'Reverse Grip Incline Dumbbell Press',
@@ -7142,6 +7352,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 211. Reverse Warrior Pose
     Exercise(
       exerciseId: 'reverse_warrior_pose',
       name: 'Reverse Warrior Pose',
@@ -7176,6 +7387,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 212. Right Cross
     Exercise(
       exerciseId: 'right_cross',
       name: 'Right Cross',
@@ -7210,6 +7422,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 213. Right Uppercut
     Exercise(
       exerciseId: 'right_uppercut',
       name: 'Right Uppercut',
@@ -7244,6 +7457,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 214. Ring Dips
     Exercise(
       exerciseId: 'ring_dips',
       name: 'Ring Dips',
@@ -7278,6 +7492,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 215. Rolling Like A Ball
     Exercise(
       exerciseId: 'rolling_like_a_ball',
       name: 'Rolling Like A Ball',
@@ -7312,6 +7527,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 216. Rope Climb
     Exercise(
       exerciseId: 'rope_climb',
       name: 'Rope Climb',
@@ -7346,6 +7562,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 217. Rotator Cuff Stretch
     Exercise(
       exerciseId: 'rotator_cuff_stretch',
       name: 'Rotator Cuff Stretch',
@@ -7380,6 +7597,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 218. Samakonasana Straight Angle Pose
     Exercise(
       exerciseId: 'samakonasana_straight_angle_pose',
       name: 'Samakonasana Straight Angle Pose',
@@ -7414,6 +7632,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 219. Scapula Dips
     Exercise(
       exerciseId: 'scapula_dips',
       name: 'Scapula Dips',
@@ -7448,6 +7667,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 220. Scapular Protraction And Retraction
     Exercise(
       exerciseId: 'scapular_protraction_and_retraction',
       name: 'Scapular Protraction And Retraction',
@@ -7482,6 +7702,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 221. Scott Press
     Exercise(
       exerciseId: 'scott_press',
       name: 'Scott Press',
@@ -7516,6 +7737,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 222. Seated Ballerina Exercise
     Exercise(
       exerciseId: 'seated_ballerina_exercise',
       name: 'Seated Ballerina Exercise',
@@ -7550,6 +7772,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 223. Seated Barbell Twist
     Exercise(
       exerciseId: 'seated_barbell_twist',
       name: 'Seated Barbell Twist',
@@ -7584,6 +7807,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 224. Seated Behind Neck Press
     Exercise(
       exerciseId: 'seated_behind_neck_press',
       name: 'Seated Behind Neck Press',
@@ -7618,6 +7842,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 225. Seated Bench Leg Pull In
     Exercise(
       exerciseId: 'seated_bench_leg_pull_in',
       name: 'Seated Bench Leg Pull In',
@@ -7652,6 +7877,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Bench', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 226. Seated Cable Twist
     Exercise(
       exerciseId: 'seated_cable_twist',
       name: 'Seated Cable Twist',
@@ -7686,6 +7912,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 227. Seated Oblique Twist
     Exercise(
       exerciseId: 'seated_oblique_twist',
       name: 'Seated Oblique Twist',
@@ -7720,6 +7947,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 228. Seated Piriformis Stretch
     Exercise(
       exerciseId: 'seated_piriformis_stretch',
       name: 'Seated Piriformis Stretch',
@@ -7754,6 +7982,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 229. Seated Rear Lateral Dumbbell Raise
     Exercise(
       exerciseId: 'seated_rear_lateral_dumbbell_raise',
       name: 'Seated Rear Lateral Dumbbell Raise',
@@ -7788,6 +8017,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 230. Seated Scapular Retraction Exercise
     Exercise(
       exerciseId: 'seated_scapular_retraction_exercise',
       name: 'Seated Scapular Retraction Exercise',
@@ -7822,6 +8052,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 231. Seated Toe Touches
     Exercise(
       exerciseId: 'seated_toe_touches',
       name: 'Seated Toe Touches',
@@ -7856,6 +8087,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 232. Seated Twist Machine
     Exercise(
       exerciseId: 'seated_twist_machine',
       name: 'Seated Twist Machine',
@@ -7890,6 +8122,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 233. Seated Twist With Resistance Band
     Exercise(
       exerciseId: 'seated_twist_with_resistance_band',
       name: 'Seated Twist With Resistance Band',
@@ -7924,6 +8157,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 234. Serratus Wall Slide With Foam Roller
     Exercise(
       exerciseId: 'serratus_wall_slide_with_foam_roller',
       name: 'Serratus Wall Slide With Foam Roller',
@@ -7958,6 +8192,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 235. Side Bend Press
     Exercise(
       exerciseId: 'side_bend_press',
       name: 'Side Bend Press',
@@ -7992,6 +8227,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 236. Side Bend With Resistance Band
     Exercise(
       exerciseId: 'side_bend_with_resistance_band',
       name: 'Side Bend With Resistance Band',
@@ -8026,6 +8262,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 237. Side Bent
     Exercise(
       exerciseId: 'side_bent',
       name: 'Side Bent',
@@ -8060,6 +8297,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 238. Side Bridge
     Exercise(
       exerciseId: 'side_bridge',
       name: 'Side Bridge',
@@ -8094,6 +8332,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 239. Side Bridge Hip Abduction
     Exercise(
       exerciseId: 'side_bridge_hip_abduction',
       name: 'Side Bridge Hip Abduction',
@@ -8128,6 +8367,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 240. Side Hip Abduction
     Exercise(
       exerciseId: 'side_hip_abduction',
       name: 'Side Hip Abduction',
@@ -8162,6 +8402,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 241. Side Lying Clam
     Exercise(
       exerciseId: 'side_lying_clam',
       name: 'Side Lying Clam',
@@ -8196,6 +8437,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 242. Side Lying Feet Raise
     Exercise(
       exerciseId: 'side_lying_feet_raise',
       name: 'Side Lying Feet Raise',
@@ -8230,6 +8472,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 243. Side Lying Hip Adduction
     Exercise(
       exerciseId: 'side_lying_hip_adduction',
       name: 'Side Lying Hip Adduction',
@@ -8264,6 +8507,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 244. Side Plank Hip Adduction
     Exercise(
       exerciseId: 'side_plank_hip_adduction',
       name: 'Side Plank Hip Adduction',
@@ -8298,6 +8542,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 245. Side Shuttle
     Exercise(
       exerciseId: 'side_shuttle',
       name: 'Side Shuttle',
@@ -8332,6 +8577,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 246. Single Arm Circles
     Exercise(
       exerciseId: 'single_arm_circles',
       name: 'Single Arm Circles',
@@ -8366,6 +8612,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 247. Single Dumbbell Close Grip Press
     Exercise(
       exerciseId: 'single_dumbbell_close_grip_press',
       name: 'Single Dumbbell Close Grip Press',
@@ -8400,6 +8647,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Dumbbell', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 248. Single Leg Box Jump
     Exercise(
       exerciseId: 'single_leg_box_jump',
       name: 'Single Leg Box Jump',
@@ -8434,6 +8682,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 249. Single Leg Bridge
     Exercise(
       exerciseId: 'single_leg_bridge',
       name: 'Single Leg Bridge',
@@ -8468,6 +8717,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 250. Single Leg Broad Jump
     Exercise(
       exerciseId: 'single_leg_broad_jump',
       name: 'Single Leg Broad Jump',
@@ -8502,6 +8752,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 251. Single Leg Step Down
     Exercise(
       exerciseId: 'single_leg_step_down',
       name: 'Single Leg Step Down',
@@ -8536,6 +8787,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Advanced', 'Arms'],
     ),
+    // 252. Sitting Rotation Hip Stretch
     Exercise(
       exerciseId: 'sitting_rotation_hip_stretch',
       name: 'Sitting Rotation Hip Stretch',
@@ -8570,6 +8822,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 253. Skater
     Exercise(
       exerciseId: 'skater',
       name: 'Skater',
@@ -8604,6 +8857,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 254. Ski Ergometer
     Exercise(
       exerciseId: 'ski_ergometer',
       name: 'Ski Ergometer',
@@ -8638,6 +8892,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 255. Ski Step
     Exercise(
       exerciseId: 'ski_step',
       name: 'Ski Step',
@@ -8672,6 +8927,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 256. Skier Gymstick
     Exercise(
       exerciseId: 'skier_gymstick',
       name: 'Skier Gymstick',
@@ -8706,6 +8962,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 257. Smith Machine Hex Press
     Exercise(
       exerciseId: 'smith_machine_hex_press',
       name: 'Smith Machine Hex Press',
@@ -8740,6 +8997,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 258. Snap Jumps
     Exercise(
       exerciseId: 'snap_jumps',
       name: 'Snap Jumps',
@@ -8774,6 +9032,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 259. Sphinx Stretch
     Exercise(
       exerciseId: 'sphinx_stretch',
       name: 'Sphinx Stretch',
@@ -8808,6 +9067,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 260. Stability Ball Knee Tuck
     Exercise(
       exerciseId: 'stability_ball_knee_tuck',
       name: 'Stability Ball Knee Tuck',
@@ -8842,6 +9102,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 261. Standing Barbell Rollout
     Exercise(
       exerciseId: 'standing_barbell_rollout',
       name: 'Standing Barbell Rollout',
@@ -8876,6 +9137,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Full Body', 'Shoulders', 'Barbell', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 262. Standing Cable High To Low Twist
     Exercise(
       exerciseId: 'standing_cable_high_to_low_twist',
       name: 'Standing Cable High To Low Twist',
@@ -8910,6 +9172,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 263. Standing Cable Low To High Twist
     Exercise(
       exerciseId: 'standing_cable_low_to_high_twist',
       name: 'Standing Cable Low To High Twist',
@@ -8944,6 +9207,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 264. Standing Cable Twist
     Exercise(
       exerciseId: 'standing_cable_twist',
       name: 'Standing Cable Twist',
@@ -8978,6 +9242,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Cable', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 265. Standing Dorsiflexion
     Exercise(
       exerciseId: 'standing_dorsiflexion',
       name: 'Standing Dorsiflexion',
@@ -9012,6 +9277,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 266. Standing Hip Abduction
     Exercise(
       exerciseId: 'standing_hip_abduction',
       name: 'Standing Hip Abduction',
@@ -9046,6 +9312,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 267. Standing Hip Extension
     Exercise(
       exerciseId: 'standing_hip_extension',
       name: 'Standing Hip Extension',
@@ -9080,6 +9347,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 268. Standing Knee Hugs
     Exercise(
       exerciseId: 'standing_knee_hugs',
       name: 'Standing Knee Hugs',
@@ -9114,6 +9382,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 269. Standing Leg Circles
     Exercise(
       exerciseId: 'standing_leg_circles',
       name: 'Standing Leg Circles',
@@ -9148,6 +9417,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 270. Standing Quadriceps Stretch
     Exercise(
       exerciseId: 'standing_quadriceps_stretch',
       name: 'Standing Quadriceps Stretch',
@@ -9182,6 +9452,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 271. Standing Rotation
     Exercise(
       exerciseId: 'standing_rotation',
       name: 'Standing Rotation',
@@ -9216,6 +9487,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 272. Standing Side Bend
     Exercise(
       exerciseId: 'standing_side_bend',
       name: 'Standing Side Bend',
@@ -9250,6 +9522,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 273. Standing Side Bend Gymstick
     Exercise(
       exerciseId: 'standing_side_bend_gymstick',
       name: 'Standing Side Bend Gymstick',
@@ -9284,6 +9557,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 274. Standing Side Bend Stretch
     Exercise(
       exerciseId: 'standing_side_bend_stretch',
       name: 'Standing Side Bend Stretch',
@@ -9318,6 +9592,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 275. Standing Side Toe Touching
     Exercise(
       exerciseId: 'standing_side_toe_touching',
       name: 'Standing Side Toe Touching',
@@ -9352,6 +9627,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 276. Standing Toe Flexor Stretch
     Exercise(
       exerciseId: 'standing_toe_flexor_stretch',
       name: 'Standing Toe Flexor Stretch',
@@ -9386,6 +9662,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 277. Standing Toe Touch
     Exercise(
       exerciseId: 'standing_toe_touch',
       name: 'Standing Toe Touch',
@@ -9420,6 +9697,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 278. Standing Toe Touches
     Exercise(
       exerciseId: 'standing_toe_touches',
       name: 'Standing Toe Touches',
@@ -9454,6 +9732,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 279. Standing Toe Up Achilles Stretch
     Exercise(
       exerciseId: 'standing_toe_up_achilles_stretch',
       name: 'Standing Toe Up Achilles Stretch',
@@ -9488,6 +9767,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 280. Standing Twist Machine
     Exercise(
       exerciseId: 'standing_twist_machine',
       name: 'Standing Twist Machine',
@@ -9522,6 +9802,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 281. Step Behind Rotational Med Ball Throw
     Exercise(
       exerciseId: 'step_behind_rotational_med_ball_throw',
       name: 'Step Behind Rotational Med Ball Throw',
@@ -9556,6 +9837,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 282. Straddle Planche
     Exercise(
       exerciseId: 'straddle_planche',
       name: 'Straddle Planche',
@@ -9590,6 +9872,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 283. Straight Bar Dip
     Exercise(
       exerciseId: 'straight_bar_dip',
       name: 'Straight Bar Dip',
@@ -9624,6 +9907,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 284. Stretch With Towel
     Exercise(
       exerciseId: 'stretch_with_towel',
       name: 'Stretch With Towel',
@@ -9658,6 +9942,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 285. Supine Spinal Twist
     Exercise(
       exerciseId: 'supine_spinal_twist',
       name: 'Supine Spinal Twist',
@@ -9692,6 +9977,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 286. Supported One Leg Standing Hip Flexor And Knee Extensor Stretch
     Exercise(
       exerciseId: 'supported_one_leg_standing_hip_flexor_and_knee_extensor_stretch',
       name: 'Supported One Leg Standing Hip Flexor And Knee Extensor Stretch',
@@ -9726,6 +10012,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 287. Supta Baddha Konasana Reclining Bound Angle
     Exercise(
       exerciseId: 'supta_baddha_konasana_reclining_bound_angle',
       name: 'Supta Baddha Konasana Reclining Bound Angle',
@@ -9760,6 +10047,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 288. Suspended Ab Fall Out
     Exercise(
       exerciseId: 'suspended_ab_fall_out',
       name: 'Suspended Ab Fall Out',
@@ -9794,6 +10082,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 289. Svend Press
     Exercise(
       exerciseId: 'svend_press',
       name: 'Svend Press',
@@ -9828,6 +10117,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 290. Swing 360
     Exercise(
       exerciseId: 'swing_360',
       name: 'Swing 360',
@@ -9862,6 +10152,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 291. Swing Gymstick
     Exercise(
       exerciseId: 'swing_gymstick',
       name: 'Swing Gymstick',
@@ -9896,6 +10187,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 292. Swiss Ball Rollout
     Exercise(
       exerciseId: 'swiss_ball_rollout',
       name: 'Swiss Ball Rollout',
@@ -9930,6 +10222,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 293. Tadasana Mountain Pose
     Exercise(
       exerciseId: 'tadasana_mountain_pose',
       name: 'Tadasana Mountain Pose',
@@ -9964,6 +10257,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 294. Tall Kneeling One Arm Kettlebell Press
     Exercise(
       exerciseId: 'tall_kneeling_one_arm_kettlebell_press',
       name: 'Tall Kneeling One Arm Kettlebell Press',
@@ -9998,6 +10292,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Kettlebell'],
     ),
+    // 295. Teaser Pilates
     Exercise(
       exerciseId: 'teaser_pilates',
       name: 'Teaser Pilates',
@@ -10032,6 +10327,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 296. The Box Jump
     Exercise(
       exerciseId: 'the_box_jump',
       name: 'The Box Jump',
@@ -10066,6 +10362,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 297. Tiger Yoga Pose
     Exercise(
       exerciseId: 'tiger_yoga_pose',
       name: 'Tiger Yoga Pose',
@@ -10100,6 +10397,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 298. Tire Sledge Hammer
     Exercise(
       exerciseId: 'tire_sledge_hammer',
       name: 'Tire Sledge Hammer',
@@ -10134,6 +10432,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 299. Toe Extensor Stretch
     Exercise(
       exerciseId: 'toe_extensor_stretch',
       name: 'Toe Extensor Stretch',
@@ -10168,6 +10467,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 300. Toe Reaches
     Exercise(
       exerciseId: 'toe_reaches',
       name: 'Toe Reaches',
@@ -10202,6 +10502,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 301. Toes To Bar
     Exercise(
       exerciseId: 'toes_to_bar',
       name: 'Toes To Bar',
@@ -10236,6 +10537,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 302. Turkish Get Up
     Exercise(
       exerciseId: 'turkish_get_up',
       name: 'Turkish Get Up',
@@ -10270,6 +10572,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 303. Twist Down Up With Resistance Band
     Exercise(
       exerciseId: 'twist_down_up_with_resistance_band',
       name: 'Twist Down Up With Resistance Band',
@@ -10304,6 +10607,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 304. Twist With Resistance Band
     Exercise(
       exerciseId: 'twist_with_resistance_band',
       name: 'Twist With Resistance Band',
@@ -10338,6 +10642,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Resistance Band', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 305. Unilateral Bridge
     Exercise(
       exerciseId: 'unilateral_bridge',
       name: 'Unilateral Bridge',
@@ -10372,6 +10677,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 306. Upavistha Konasana
     Exercise(
       exerciseId: 'upavistha_konasana',
       name: 'Upavistha Konasana',
@@ -10406,6 +10712,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 307. Ustrasana
     Exercise(
       exerciseId: 'ustrasana',
       name: 'Ustrasana',
@@ -10440,6 +10747,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 308. Utthita Trikonasana Extended Triangle Pose
     Exercise(
       exerciseId: 'utthita_trikonasana_extended_triangle_pose',
       name: 'Utthita Trikonasana Extended Triangle Pose',
@@ -10474,6 +10782,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 309. Vibration Plate
     Exercise(
       exerciseId: 'vibration_plate',
       name: 'Vibration Plate',
@@ -10508,6 +10817,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 310. Walk Wave Machine
     Exercise(
       exerciseId: 'walk_wave_machine',
       name: 'Walk Wave Machine',
@@ -10542,6 +10852,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Machine', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 311. Wall Ball
     Exercise(
       exerciseId: 'wall_ball',
       name: 'Wall Ball',
@@ -10576,6 +10887,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 312. Wall Slides
     Exercise(
       exerciseId: 'wall_slides',
       name: 'Wall Slides',
@@ -10610,6 +10922,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 313. Wall Supported Arm Raises
     Exercise(
       exerciseId: 'wall_supported_arm_raises',
       name: 'Wall Supported Arm Raises',
@@ -10644,6 +10957,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 314. Wall Walk
     Exercise(
       exerciseId: 'wall_walk',
       name: 'Wall Walk',
@@ -10678,6 +10992,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms'],
     ),
+    // 315. Warrior 1 Pose
     Exercise(
       exerciseId: 'warrior_1_pose',
       name: 'Warrior 1 Pose',
@@ -10712,6 +11027,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 316. Warrior 2 Pose
     Exercise(
       exerciseId: 'warrior_2_pose',
       name: 'Warrior 2 Pose',
@@ -10746,6 +11062,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 317. Warrior 3 Pose
     Exercise(
       exerciseId: 'warrior_3_pose',
       name: 'Warrior 3 Pose',
@@ -10780,6 +11097,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 318. Weighted Lying Twist
     Exercise(
       exerciseId: 'weighted_lying_twist',
       name: 'Weighted Lying Twist',
@@ -10814,6 +11132,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 319. Weighted Muscle Up
     Exercise(
       exerciseId: 'weighted_muscle_up',
       name: 'Weighted Muscle Up',
@@ -10848,6 +11167,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 320. Weighted Neck Harness Extension
     Exercise(
       exerciseId: 'weighted_neck_harness_extension',
       name: 'Weighted Neck Harness Extension',
@@ -10882,6 +11202,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 321. Weighted Round Arm
     Exercise(
       exerciseId: 'weighted_round_arm',
       name: 'Weighted Round Arm',
@@ -10916,6 +11237,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 322. Weighted Side Bend On Stability Ball
     Exercise(
       exerciseId: 'weighted_side_bend_on_stability_ball',
       name: 'Weighted Side Bend On Stability Ball',
@@ -10950,6 +11272,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Exercise Ball', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 323. Wheel Pose Urdhva Dhanurasana
     Exercise(
       exerciseId: 'wheel_pose_urdhva_dhanurasana',
       name: 'Wheel Pose Urdhva Dhanurasana',
@@ -10984,6 +11307,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 324. Zercher Carry
     Exercise(
       exerciseId: 'zercher_carry',
       name: 'Zercher Carry',
@@ -11018,6 +11342,7 @@ class FullBodyExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Legs', 'Bodyweight', 'Full Body', 'Shoulders', 'Core', 'Arms', 'Intermediate'],
     ),
+    // 325. Zig Zag Hops Plyometric
     Exercise(
       exerciseId: 'zig_zag_hops_plyometric',
       name: 'Zig Zag Hops Plyometric',

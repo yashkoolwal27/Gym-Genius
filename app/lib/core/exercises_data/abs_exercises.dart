@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class AbsExercises {
   static final List<Exercise> exercises = [
+    // 1. Ab Roller Crunch
     Exercise(
       exerciseId: 'ab_roller_crunch',
       name: 'Ab Roller Crunch',
@@ -36,6 +37,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 2. Ab Straps Leg Raise
     Exercise(
       exerciseId: 'ab_straps_leg_raise',
       name: 'Ab Straps Leg Raise',
@@ -70,6 +72,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 3. Ab Wheel Rollout
     Exercise(
       exerciseId: 'ab_wheel_rollout',
       name: 'Ab Wheel Rollout',
@@ -104,6 +107,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 4. Alternate Leg Raises
     Exercise(
       exerciseId: 'alternate_leg_raises',
       name: 'Alternate Leg Raises',
@@ -138,6 +142,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 5. Alternate Lying Floor Leg Raise
     Exercise(
       exerciseId: 'alternate_lying_floor_leg_raise',
       name: 'Alternate Lying Floor Leg Raise',
@@ -172,6 +177,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 6. Arm Leg Raises
     Exercise(
       exerciseId: 'arm_leg_raises',
       name: 'Arm Leg Raises',
@@ -206,6 +212,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 7. Banded Jack Knife Sit Up
     Exercise(
       exerciseId: 'banded_jack_knife_sit_up',
       name: 'Banded Jack Knife Sit Up',
@@ -240,6 +247,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Obliques', 'Resistance Band', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 8. Bicycle Crunch
     Exercise(
       exerciseId: 'bicycle_crunch',
       name: 'Bicycle Crunch',
@@ -274,6 +282,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 9. Bicycle Crunch Gymstick
     Exercise(
       exerciseId: 'bicycle_crunch_gymstick',
       name: 'Bicycle Crunch Gymstick',
@@ -308,6 +317,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 10. Bicycle Twisting Crunch
     Exercise(
       exerciseId: 'bicycle_twisting_crunch',
       name: 'Bicycle Twisting Crunch',
@@ -342,6 +352,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 11. Cable Half Kneeling Pallof Press
     Exercise(
       exerciseId: 'cable_half_kneeling_pallof_press',
       name: 'Cable Half Kneeling Pallof Press',
@@ -376,6 +387,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 12. Captains Chair Leg Raise
     Exercise(
       exerciseId: 'captains_chair_leg_raise',
       name: 'Captains Chair Leg Raise',
@@ -410,6 +422,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 13. Chaturanga Dandasana Low Plank Pose
     Exercise(
       exerciseId: 'chaturanga_dandasana_low_plank_pose',
       name: 'Chaturanga Dandasana Low Plank Pose',
@@ -444,6 +457,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 14. Cross Body Mountain Climber
     Exercise(
       exerciseId: 'cross_body_mountain_climber',
       name: 'Cross Body Mountain Climber',
@@ -478,6 +492,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 15. Cross Crunch
     Exercise(
       exerciseId: 'cross_crunch',
       name: 'Cross Crunch',
@@ -512,6 +527,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 16. Crunch
     Exercise(
       exerciseId: 'crunch',
       name: 'Crunch',
@@ -546,6 +562,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 17. Crunch With Leg Raise
     Exercise(
       exerciseId: 'crunch_with_leg_raise',
       name: 'Crunch With Leg Raise',
@@ -580,6 +597,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 18. Dead Bug
     Exercise(
       exerciseId: 'dead_bug',
       name: 'Dead Bug',
@@ -614,6 +632,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 19. Decline Sit Up
     Exercise(
       exerciseId: 'decline_sit_up',
       name: 'Decline Sit Up',
@@ -648,6 +667,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 20. Double Crunches
     Exercise(
       exerciseId: 'double_crunches',
       name: 'Double Crunches',
@@ -682,6 +702,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 21. Dumbbell V Up
     Exercise(
       exerciseId: 'dumbbell_v_up',
       name: 'Dumbbell V Up',
@@ -716,6 +737,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Obliques', 'Dumbbell', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 22. Exercise Ball Frog Crunch
     Exercise(
       exerciseId: 'exercise_ball_frog_crunch',
       name: 'Exercise Ball Frog Crunch',
@@ -750,6 +772,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 23. Floor Crunch
     Exercise(
       exerciseId: 'floor_crunch',
       name: 'Floor Crunch',
@@ -784,6 +807,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 24. Flutter Kick
     Exercise(
       exerciseId: 'flutter_kick',
       name: 'Flutter Kick',
@@ -818,6 +842,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 25. Frog Crunch
     Exercise(
       exerciseId: 'frog_crunch',
       name: 'Frog Crunch',
@@ -852,6 +877,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 26. Front Plank With Arm And Leg Lift
     Exercise(
       exerciseId: 'front_plank_with_arm_and_leg_lift',
       name: 'Front Plank With Arm And Leg Lift',
@@ -886,6 +912,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 27. Front Plank With Arm Lift
     Exercise(
       exerciseId: 'front_plank_with_arm_lift',
       name: 'Front Plank With Arm Lift',
@@ -920,6 +947,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 28. Front To Side Plank
     Exercise(
       exerciseId: 'front_to_side_plank',
       name: 'Front To Side Plank',
@@ -954,6 +982,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 29. Full Crunch Machine
     Exercise(
       exerciseId: 'full_crunch_machine',
       name: 'Full Crunch Machine',
@@ -988,6 +1017,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 30. Half Cross Crunch
     Exercise(
       exerciseId: 'half_cross_crunch',
       name: 'Half Cross Crunch',
@@ -1022,6 +1052,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 31. Hands In Air Dead Bug
     Exercise(
       exerciseId: 'hands_in_air_dead_bug',
       name: 'Hands In Air Dead Bug',
@@ -1056,6 +1087,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 32. Hanging Knee Raises
     Exercise(
       exerciseId: 'hanging_knee_raises',
       name: 'Hanging Knee Raises',
@@ -1090,6 +1122,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 33. Hanging Leg Raises
     Exercise(
       exerciseId: 'hanging_leg_raises',
       name: 'Hanging Leg Raises',
@@ -1124,6 +1157,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 34. Hanging Side Knee Raises
     Exercise(
       exerciseId: 'hanging_side_knee_raises',
       name: 'Hanging Side Knee Raises',
@@ -1158,6 +1192,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 35. Hanging Windshield Wiper
     Exercise(
       exerciseId: 'hanging_windshield_wiper',
       name: 'Hanging Windshield Wiper',
@@ -1192,6 +1227,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 36. Heel Touch
     Exercise(
       exerciseId: 'heel_touch',
       name: 'Heel Touch',
@@ -1226,6 +1262,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 37. Jackknife Sit Ups
     Exercise(
       exerciseId: 'jackknife_sit_ups',
       name: 'Jackknife Sit Ups',
@@ -1260,6 +1297,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 38. Kneeling Cable Crunch
     Exercise(
       exerciseId: 'kneeling_cable_crunch',
       name: 'Kneeling Cable Crunch',
@@ -1294,6 +1332,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 39. L Sit
     Exercise(
       exerciseId: 'l_sit',
       name: 'L Sit',
@@ -1328,6 +1367,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Advanced'],
     ),
+    // 40. Leg Raise
     Exercise(
       exerciseId: 'leg_raise',
       name: 'Leg Raise',
@@ -1362,6 +1402,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 41. Lever Lying Crunch
     Exercise(
       exerciseId: 'lever_lying_crunch',
       name: 'Lever Lying Crunch',
@@ -1396,6 +1437,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 42. Lever Standing Leg Raise
     Exercise(
       exerciseId: 'lever_standing_leg_raise',
       name: 'Lever Standing Leg Raise',
@@ -1430,6 +1472,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 43. Long Arm Crunch
     Exercise(
       exerciseId: 'long_arm_crunch',
       name: 'Long Arm Crunch',
@@ -1464,6 +1507,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 44. Lying Knee Raise
     Exercise(
       exerciseId: 'lying_knee_raise',
       name: 'Lying Knee Raise',
@@ -1498,6 +1542,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 45. Lying Scissor Kick
     Exercise(
       exerciseId: 'lying_scissor_kick',
       name: 'Lying Scissor Kick',
@@ -1532,6 +1577,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 46. Medicine Ball Crunch
     Exercise(
       exerciseId: 'medicine_ball_crunch',
       name: 'Medicine Ball Crunch',
@@ -1566,6 +1612,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 47. Medicine Ball Rotational Throw
     Exercise(
       exerciseId: 'medicine_ball_rotational_throw',
       name: 'Medicine Ball Rotational Throw',
@@ -1600,6 +1647,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 48. Mountain Climber
     Exercise(
       exerciseId: 'mountain_climber',
       name: 'Mountain Climber',
@@ -1634,6 +1682,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 49. Oblique Floor Crunches
     Exercise(
       exerciseId: 'oblique_floor_crunches',
       name: 'Oblique Floor Crunches',
@@ -1668,6 +1717,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 50. Plank
     Exercise(
       exerciseId: 'plank',
       name: 'Plank',
@@ -1702,6 +1752,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 51. Plank Jacks Extended Leg
     Exercise(
       exerciseId: 'plank_jacks_extended_leg',
       name: 'Plank Jacks Extended Leg',
@@ -1736,6 +1787,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 52. Plank Knee To Elbow
     Exercise(
       exerciseId: 'plank_knee_to_elbow',
       name: 'Plank Knee To Elbow',
@@ -1770,6 +1822,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 53. Plank Leg Lift
     Exercise(
       exerciseId: 'plank_leg_lift',
       name: 'Plank Leg Lift',
@@ -1804,6 +1857,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 54. Plank With Arm And Leg Lift
     Exercise(
       exerciseId: 'plank_with_arm_and_leg_lift',
       name: 'Plank With Arm And Leg Lift',
@@ -1838,6 +1892,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 55. Quarter Sit Up
     Exercise(
       exerciseId: 'quarter_sit_up',
       name: 'Quarter Sit Up',
@@ -1872,6 +1927,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 56. Resistance Band Bicycle Crunch
     Exercise(
       exerciseId: 'resistance_band_bicycle_crunch',
       name: 'Resistance Band Bicycle Crunch',
@@ -1906,6 +1962,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Obliques', 'Resistance Band', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 57. Reverse Crunch
     Exercise(
       exerciseId: 'reverse_crunch',
       name: 'Reverse Crunch',
@@ -1940,6 +1997,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 58. Reverse Plank
     Exercise(
       exerciseId: 'reverse_plank',
       name: 'Reverse Plank',
@@ -1974,6 +2032,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 59. Reverse Plank Kicks
     Exercise(
       exerciseId: 'reverse_plank_kicks',
       name: 'Reverse Plank Kicks',
@@ -2008,6 +2067,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 60. Russian Twist
     Exercise(
       exerciseId: 'russian_twist',
       name: 'Russian Twist',
@@ -2042,6 +2102,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 61. Seated Ab Crunch Machine
     Exercise(
       exerciseId: 'seated_ab_crunch_machine',
       name: 'Seated Ab Crunch Machine',
@@ -2076,6 +2137,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 62. Seated Crunch Machine
     Exercise(
       exerciseId: 'seated_crunch_machine',
       name: 'Seated Crunch Machine',
@@ -2110,6 +2172,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 63. Seated Flutter Kick
     Exercise(
       exerciseId: 'seated_flutter_kick',
       name: 'Seated Flutter Kick',
@@ -2144,6 +2207,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 64. Seated Side Crunch
     Exercise(
       exerciseId: 'seated_side_crunch',
       name: 'Seated Side Crunch',
@@ -2178,6 +2242,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 65. Side Plank Knee To Elbow
     Exercise(
       exerciseId: 'side_plank_knee_to_elbow',
       name: 'Side Plank Knee To Elbow',
@@ -2212,6 +2277,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 66. Side Plank Leg Raises
     Exercise(
       exerciseId: 'side_plank_leg_raises',
       name: 'Side Plank Leg Raises',
@@ -2246,6 +2312,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 67. Side Plank Oblique Crunch
     Exercise(
       exerciseId: 'side_plank_oblique_crunch',
       name: 'Side Plank Oblique Crunch',
@@ -2280,6 +2347,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 68. Side Plank Rotation
     Exercise(
       exerciseId: 'side_plank_rotation',
       name: 'Side Plank Rotation',
@@ -2314,6 +2382,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 69. Sit Ups
     Exercise(
       exerciseId: 'sit_ups',
       name: 'Sit Ups',
@@ -2348,6 +2417,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 70. Spider Plank
     Exercise(
       exerciseId: 'spider_plank',
       name: 'Spider Plank',
@@ -2382,6 +2452,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 71. Stability Ball V Up
     Exercise(
       exerciseId: 'stability_ball_v_up',
       name: 'Stability Ball V Up',
@@ -2416,6 +2487,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 72. Standing Cable Crunch
     Exercise(
       exerciseId: 'standing_cable_crunch',
       name: 'Standing Cable Crunch',
@@ -2450,6 +2522,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 73. Standing Leg Raise With Resistance Band
     Exercise(
       exerciseId: 'standing_leg_raise_with_resistance_band',
       name: 'Standing Leg Raise With Resistance Band',
@@ -2484,6 +2557,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Obliques', 'Resistance Band', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 74. Standing Stomach Vacuum
     Exercise(
       exerciseId: 'standing_stomach_vacuum',
       name: 'Standing Stomach Vacuum',
@@ -2518,6 +2592,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 75. Standing Straight Leg Raise With Resistance Band
     Exercise(
       exerciseId: 'standing_straight_leg_raise_with_resistance_band',
       name: 'Standing Straight Leg Raise With Resistance Band',
@@ -2552,6 +2627,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Obliques', 'Resistance Band', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 76. T Cross Sit Up
     Exercise(
       exerciseId: 't_cross_sit_up',
       name: 'T Cross Sit Up',
@@ -2586,6 +2662,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 77. TRX Mountain Climber
     Exercise(
       exerciseId: 'trx_mountain_climber',
       name: 'TRX Mountain Climber',
@@ -2620,6 +2697,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 78. Tuck Crunch
     Exercise(
       exerciseId: 'tuck_crunch',
       name: 'Tuck Crunch',
@@ -2654,6 +2732,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 79. Vertical Mountain Climber
     Exercise(
       exerciseId: 'vertical_mountain_climber',
       name: 'Vertical Mountain Climber',
@@ -2688,6 +2767,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 80. Weighted Crunch
     Exercise(
       exerciseId: 'weighted_crunch',
       name: 'Weighted Crunch',
@@ -2722,6 +2802,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 81. Weighted Front Plank
     Exercise(
       exerciseId: 'weighted_front_plank',
       name: 'Weighted Front Plank',
@@ -2756,6 +2837,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core', 'Intermediate'],
     ),
+    // 82. Weighted Hanging Knee Raises
     Exercise(
       exerciseId: 'weighted_hanging_knee_raises',
       name: 'Weighted Hanging Knee Raises',
@@ -2790,6 +2872,7 @@ class AbsExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Obliques', 'Rectus Abdominis', 'Transverse Abdominis', 'Core'],
     ),
+    // 83. Weighted Sit Ups
     Exercise(
       exerciseId: 'weighted_sit_ups',
       name: 'Weighted Sit Ups',

@@ -2,6 +2,7 @@ import '../../models/models.dart';
 
 class BackExercises {
   static final List<Exercise> exercises = [
+    // 1. 45 Degree Incline Row
     Exercise(
       exerciseId: '45_degree_incline_row',
       name: '45 Degree Incline Row',
@@ -36,6 +37,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 2. Anuvittasana Standing Backbend Pose
     Exercise(
       exerciseId: 'anuvittasana_standing_backbend_pose',
       name: 'Anuvittasana Standing Backbend Pose',
@@ -70,6 +72,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 3. Archer Pull Up
     Exercise(
       exerciseId: 'archer_pull_up',
       name: 'Archer Pull Up',
@@ -104,6 +107,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 4. Assisted Pull Up
     Exercise(
       exerciseId: 'assisted_pull_up',
       name: 'Assisted Pull Up',
@@ -138,6 +142,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 5. Back Lever
     Exercise(
       exerciseId: 'back_lever',
       name: 'Back Lever',
@@ -172,6 +177,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 6. Back Pec Stretch
     Exercise(
       exerciseId: 'back_pec_stretch',
       name: 'Back Pec Stretch',
@@ -206,6 +212,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 7. Back Slaps Wrap Around Stretch
     Exercise(
       exerciseId: 'back_slaps_wrap_around_stretch',
       name: 'Back Slaps Wrap Around Stretch',
@@ -240,6 +247,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 8. Backhand Raise
     Exercise(
       exerciseId: 'backhand_raise',
       name: 'Backhand Raise',
@@ -274,6 +282,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 9. Backward Jump
     Exercise(
       exerciseId: 'backward_jump',
       name: 'Backward Jump',
@@ -308,6 +317,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 10. Backward Medicine Ball Throw
     Exercise(
       exerciseId: 'backward_medicine_ball_throw',
       name: 'Backward Medicine Ball Throw',
@@ -342,6 +352,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 11. Backwards Running
     Exercise(
       exerciseId: 'backwards_running',
       name: 'Backwards Running',
@@ -376,6 +387,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 12. Ball Russian Twist Throw With Partner
     Exercise(
       exerciseId: 'ball_russian_twist_throw_with_partner',
       name: 'Ball Russian Twist Throw With Partner',
@@ -410,6 +422,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 13. Band Alternating Lat Pulldown
     Exercise(
       exerciseId: 'band_alternating_lat_pulldown',
       name: 'Band Alternating Lat Pulldown',
@@ -444,6 +457,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 14. Band Alternating Low Row With Twist
     Exercise(
       exerciseId: 'band_alternating_low_row_with_twist',
       name: 'Band Alternating Low Row With Twist',
@@ -478,6 +492,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 15. Band Assisted Pull Up
     Exercise(
       exerciseId: 'band_assisted_pull_up',
       name: 'Band Assisted Pull Up',
@@ -512,6 +527,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 16. Band Seated Row
     Exercise(
       exerciseId: 'band_seated_row',
       name: 'Band Seated Row',
@@ -546,6 +562,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 17. Barbell Bent Over Row
     Exercise(
       exerciseId: 'barbell_bent_over_row',
       name: 'Barbell Bent Over Row',
@@ -580,6 +597,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 18. Barbell Decline Bent Arm Pullover
     Exercise(
       exerciseId: 'barbell_decline_bent_arm_pullover',
       name: 'Barbell Decline Bent Arm Pullover',
@@ -614,6 +632,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 19. Barbell Pendlay Row
     Exercise(
       exerciseId: 'barbell_pendlay_row',
       name: 'Barbell Pendlay Row',
@@ -648,6 +667,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 20. Barbell Pullover
     Exercise(
       exerciseId: 'barbell_pullover',
       name: 'Barbell Pullover',
@@ -682,6 +702,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 21. Barbell Shrug
     Exercise(
       exerciseId: 'barbell_shrug',
       name: 'Barbell Shrug',
@@ -716,6 +737,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Biceps', 'Rear Delts', 'Barbell', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 22. Barbell Single Leg Deadlift
     Exercise(
       exerciseId: 'barbell_single_leg_deadlift',
       name: 'Barbell Single Leg Deadlift',
@@ -750,6 +772,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Advanced', 'Back'],
     ),
+    // 23. Behind The Back Barbell Shrug
     Exercise(
       exerciseId: 'behind_the_back_barbell_shrug',
       name: 'Behind The Back Barbell Shrug',
@@ -784,6 +807,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Biceps', 'Rear Delts', 'Barbell', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 24. Behind The Neck Pull Up
     Exercise(
       exerciseId: 'behind_the_neck_pull_up',
       name: 'Behind The Neck Pull Up',
@@ -818,6 +842,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 25. Bent Over Dumbbell Row
     Exercise(
       exerciseId: 'bent_over_dumbbell_row',
       name: 'Bent Over Dumbbell Row',
@@ -852,6 +877,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 26. Bent Over Row Gymstick
     Exercise(
       exerciseId: 'bent_over_row_gymstick',
       name: 'Bent Over Row Gymstick',
@@ -886,6 +912,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 27. Bird Dog
     Exercise(
       exerciseId: 'bird_dog',
       name: 'Bird Dog',
@@ -920,6 +947,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 28. Bodyweight Row In Doorway
     Exercise(
       exerciseId: 'bodyweight_row_in_doorway',
       name: 'Bodyweight Row In Doorway',
@@ -954,6 +982,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 29. Bodyweight Single Leg Deadlift
     Exercise(
       exerciseId: 'bodyweight_single_leg_deadlift',
       name: 'Bodyweight Single Leg Deadlift',
@@ -988,6 +1017,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 30. Brachialis Pull Up
     Exercise(
       exerciseId: 'brachialis_pull_up',
       name: 'Brachialis Pull Up',
@@ -1022,6 +1052,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 31. Cable Bent Over Row
     Exercise(
       exerciseId: 'cable_bent_over_row',
       name: 'Cable Bent Over Row',
@@ -1056,6 +1087,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 32. Cable Crossover Lat Pulldown
     Exercise(
       exerciseId: 'cable_crossover_lat_pulldown',
       name: 'Cable Crossover Lat Pulldown',
@@ -1090,6 +1122,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 33. Cable One Arm Lat Pulldown
     Exercise(
       exerciseId: 'cable_one_arm_lat_pulldown',
       name: 'Cable One Arm Lat Pulldown',
@@ -1124,6 +1157,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 34. Cable One Arm Pulldown
     Exercise(
       exerciseId: 'cable_one_arm_pulldown',
       name: 'Cable One Arm Pulldown',
@@ -1158,6 +1192,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 35. Cable Pullover
     Exercise(
       exerciseId: 'cable_pullover',
       name: 'Cable Pullover',
@@ -1192,6 +1227,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 36. Cable Rear Pulldown
     Exercise(
       exerciseId: 'cable_rear_pulldown',
       name: 'Cable Rear Pulldown',
@@ -1226,6 +1262,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 37. Cable Seated Pullover
     Exercise(
       exerciseId: 'cable_seated_pullover',
       name: 'Cable Seated Pullover',
@@ -1260,6 +1297,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 38. Cable Shrug
     Exercise(
       exerciseId: 'cable_shrug',
       name: 'Cable Shrug',
@@ -1294,6 +1332,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Biceps', 'Rear Delts', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 39. Cable Straight Arm Pulldown
     Exercise(
       exerciseId: 'cable_straight_arm_pulldown',
       name: 'Cable Straight Arm Pulldown',
@@ -1328,6 +1367,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 40. Cable Twisting Standing High Row
     Exercise(
       exerciseId: 'cable_twisting_standing_high_row',
       name: 'Cable Twisting Standing High Row',
@@ -1362,6 +1402,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 41. Chin Up
     Exercise(
       exerciseId: 'chin_up',
       name: 'Chin Up',
@@ -1396,6 +1437,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 42. Close Grip Cable Row
     Exercise(
       exerciseId: 'close_grip_cable_row',
       name: 'Close Grip Cable Row',
@@ -1430,6 +1472,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 43. Close Grip Lat Pulldown
     Exercise(
       exerciseId: 'close_grip_lat_pulldown',
       name: 'Close Grip Lat Pulldown',
@@ -1464,6 +1507,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 44. Commander Pull Up
     Exercise(
       exerciseId: 'commander_pull_up',
       name: 'Commander Pull Up',
@@ -1498,6 +1542,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 45. Crouching Heel Back Calf Stretch
     Exercise(
       exerciseId: 'crouching_heel_back_calf_stretch',
       name: 'Crouching Heel Back Calf Stretch',
@@ -1532,6 +1577,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 46. Deadlift
     Exercise(
       exerciseId: 'deadlift',
       name: 'Deadlift',
@@ -1566,6 +1612,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 47. Double Cable Neutral Grip Lat Pulldown On Floor
     Exercise(
       exerciseId: 'double_cable_neutral_grip_lat_pulldown_on_floor',
       name: 'Double Cable Neutral Grip Lat Pulldown On Floor',
@@ -1600,6 +1647,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 48. Dumbbell Bent Over Reverse Row
     Exercise(
       exerciseId: 'dumbbell_bent_over_reverse_row',
       name: 'Dumbbell Bent Over Reverse Row',
@@ -1634,6 +1682,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 49. Dumbbell Deadlift
     Exercise(
       exerciseId: 'dumbbell_deadlift',
       name: 'Dumbbell Deadlift',
@@ -1668,6 +1717,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 50. Dumbbell Good Morning
     Exercise(
       exerciseId: 'dumbbell_good_morning',
       name: 'Dumbbell Good Morning',
@@ -1702,6 +1752,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 51. Dumbbell Incline Shrug
     Exercise(
       exerciseId: 'dumbbell_incline_shrug',
       name: 'Dumbbell Incline Shrug',
@@ -1736,6 +1787,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Biceps', 'Rear Delts', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 52. Dumbbell Jefferson Curl
     Exercise(
       exerciseId: 'dumbbell_jefferson_curl',
       name: 'Dumbbell Jefferson Curl',
@@ -1770,6 +1822,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 53. Dumbbell Pullover On Stability Ball
     Exercise(
       exerciseId: 'dumbbell_pullover_on_stability_ball',
       name: 'Dumbbell Pullover On Stability Ball',
@@ -1804,6 +1857,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 54. Dumbbell Renegade Row
     Exercise(
       exerciseId: 'dumbbell_renegade_row',
       name: 'Dumbbell Renegade Row',
@@ -1838,6 +1892,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 55. Dumbbell Romanian Deadlift
     Exercise(
       exerciseId: 'dumbbell_romanian_deadlift',
       name: 'Dumbbell Romanian Deadlift',
@@ -1872,6 +1927,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 56. Dumbbell Row
     Exercise(
       exerciseId: 'dumbbell_row',
       name: 'Dumbbell Row',
@@ -1906,6 +1962,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 57. Dumbbell Seal Row
     Exercise(
       exerciseId: 'dumbbell_seal_row',
       name: 'Dumbbell Seal Row',
@@ -1940,6 +1997,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 58. Dumbbell Shrug
     Exercise(
       exerciseId: 'dumbbell_shrug',
       name: 'Dumbbell Shrug',
@@ -1974,6 +2032,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Dumbbell', 'Biceps', 'Rear Delts', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 59. Dumbbell Single Leg Deadlift
     Exercise(
       exerciseId: 'dumbbell_single_leg_deadlift',
       name: 'Dumbbell Single Leg Deadlift',
@@ -2008,6 +2067,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 60. Dumbbell Straight Arm Pullover Knees At 90 Degrees
     Exercise(
       exerciseId: 'dumbbell_straight_arm_pullover_knees_at_90_degrees',
       name: 'Dumbbell Straight Arm Pullover Knees At 90 Degrees',
@@ -2042,6 +2102,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Back'],
     ),
+    // 61. Dumbbell Straight Leg Deadlift
     Exercise(
       exerciseId: 'dumbbell_straight_leg_deadlift',
       name: 'Dumbbell Straight Leg Deadlift',
@@ -2076,6 +2137,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 62. Dumbbell Sumo Deadlift
     Exercise(
       exerciseId: 'dumbbell_sumo_deadlift',
       name: 'Dumbbell Sumo Deadlift',
@@ -2110,6 +2172,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 63. Eccentric Pull Up
     Exercise(
       exerciseId: 'eccentric_pull_up',
       name: 'Eccentric Pull Up',
@@ -2144,6 +2207,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 64. EZ Bar Bent Arm Pullover
     Exercise(
       exerciseId: 'ez_bar_bent_arm_pullover',
       name: 'EZ Bar Bent Arm Pullover',
@@ -2178,6 +2242,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 65. Face Pull
     Exercise(
       exerciseId: 'face_pull',
       name: 'Face Pull',
@@ -2212,6 +2277,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 66. Flat Bench Hyperextension
     Exercise(
       exerciseId: 'flat_bench_hyperextension',
       name: 'Flat Bench Hyperextension',
@@ -2246,6 +2312,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Bench', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 67. Floor Hyperextension
     Exercise(
       exerciseId: 'floor_hyperextension',
       name: 'Floor Hyperextension',
@@ -2280,6 +2347,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 68. Foam Roller Back Stretch
     Exercise(
       exerciseId: 'foam_roller_back_stretch',
       name: 'Foam Roller Back Stretch',
@@ -2314,6 +2382,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 69. Foam Roller Upper Back
     Exercise(
       exerciseId: 'foam_roller_upper_back',
       name: 'Foam Roller Upper Back',
@@ -2348,6 +2417,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 70. Forward Bend
     Exercise(
       exerciseId: 'forward_bend',
       name: 'Forward Bend',
@@ -2382,6 +2452,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 71. Front And Back Neck Stretch
     Exercise(
       exerciseId: 'front_and_back_neck_stretch',
       name: 'Front And Back Neck Stretch',
@@ -2416,6 +2487,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 72. Front Lever Pull Up
     Exercise(
       exerciseId: 'front_lever_pull_up',
       name: 'Front Lever Pull Up',
@@ -2450,6 +2522,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 73. Full Range Of Motion Lat Pulldown
     Exercise(
       exerciseId: 'full_range_of_motion_lat_pulldown',
       name: 'Full Range Of Motion Lat Pulldown',
@@ -2484,6 +2557,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 74. Good Morning
     Exercise(
       exerciseId: 'good_morning',
       name: 'Good Morning',
@@ -2518,6 +2592,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 75. Good Morning With Resistance Band
     Exercise(
       exerciseId: 'good_morning_with_resistance_band',
       name: 'Good Morning With Resistance Band',
@@ -2552,6 +2627,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 76. Half Kneeling High Cable Row Rope
     Exercise(
       exerciseId: 'half_kneeling_high_cable_row_rope',
       name: 'Half Kneeling High Cable Row Rope',
@@ -2586,6 +2662,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 77. Half Kneeling Lat Pulldown
     Exercise(
       exerciseId: 'half_kneeling_lat_pulldown',
       name: 'Half Kneeling Lat Pulldown',
@@ -2620,6 +2697,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 78. Hyperextension
     Exercise(
       exerciseId: 'hyperextension',
       name: 'Hyperextension',
@@ -2654,6 +2732,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 79. Incline Barbell Row
     Exercise(
       exerciseId: 'incline_barbell_row',
       name: 'Incline Barbell Row',
@@ -2688,6 +2767,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 80. Incline Cable Row
     Exercise(
       exerciseId: 'incline_cable_row',
       name: 'Incline Cable Row',
@@ -2722,6 +2802,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 81. Incline Dumbbell Hammer Row
     Exercise(
       exerciseId: 'incline_dumbbell_hammer_row',
       name: 'Incline Dumbbell Hammer Row',
@@ -2756,6 +2837,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 82. Incline Reverse Grip Dumbbell Row
     Exercise(
       exerciseId: 'incline_reverse_grip_dumbbell_row',
       name: 'Incline Reverse Grip Dumbbell Row',
@@ -2790,6 +2872,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Dumbbell', 'Biceps', 'Lats', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 83. Inverted Row
     Exercise(
       exerciseId: 'inverted_row',
       name: 'Inverted Row',
@@ -2824,6 +2907,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 84. Isometric Pull Up
     Exercise(
       exerciseId: 'isometric_pull_up',
       name: 'Isometric Pull Up',
@@ -2858,6 +2942,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 85. Jumping Pull Up
     Exercise(
       exerciseId: 'jumping_pull_up',
       name: 'Jumping Pull Up',
@@ -2892,6 +2977,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 86. Kettlebell Bent Over Row
     Exercise(
       exerciseId: 'kettlebell_bent_over_row',
       name: 'Kettlebell Bent Over Row',
@@ -2926,6 +3012,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Kettlebell', 'Intermediate', 'Back'],
     ),
+    // 87. Kettlebell Deadlift
     Exercise(
       exerciseId: 'kettlebell_deadlift',
       name: 'Kettlebell Deadlift',
@@ -2960,6 +3047,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Kettlebell', 'Intermediate', 'Back'],
     ),
+    // 88. Kettlebell Renegade Row
     Exercise(
       exerciseId: 'kettlebell_renegade_row',
       name: 'Kettlebell Renegade Row',
@@ -2994,6 +3082,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Kettlebell', 'Intermediate', 'Back'],
     ),
+    // 89. Kettlebell Single Leg Deadlift
     Exercise(
       exerciseId: 'kettlebell_single_leg_deadlift',
       name: 'Kettlebell Single Leg Deadlift',
@@ -3028,6 +3117,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Kettlebell', 'Back'],
     ),
+    // 90. Kneeling Back Rotation
     Exercise(
       exerciseId: 'kneeling_back_rotation',
       name: 'Kneeling Back Rotation',
@@ -3062,6 +3152,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 91. Kneeling High Pulley Row
     Exercise(
       exerciseId: 'kneeling_high_pulley_row',
       name: 'Kneeling High Pulley Row',
@@ -3096,6 +3187,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 92. Kneeling Pulldown With Resistance Band
     Exercise(
       exerciseId: 'kneeling_pulldown_with_resistance_band',
       name: 'Kneeling Pulldown With Resistance Band',
@@ -3130,6 +3222,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 93. Kneeling Single Arm High Pulley Row
     Exercise(
       exerciseId: 'kneeling_single_arm_high_pulley_row',
       name: 'Kneeling Single Arm High Pulley Row',
@@ -3164,6 +3257,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Beginner', 'Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Back'],
     ),
+    // 94. L Sit Pull Up
     Exercise(
       exerciseId: 'l_sit_pull_up',
       name: 'L Sit Pull Up',
@@ -3198,6 +3292,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 95. Landmine Deadlift
     Exercise(
       exerciseId: 'landmine_deadlift',
       name: 'Landmine Deadlift',
@@ -3232,6 +3327,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 96. Landmine T Bar Row
     Exercise(
       exerciseId: 'landmine_t_bar_row',
       name: 'Landmine T Bar Row',
@@ -3266,6 +3362,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 97. Lat Pulldown
     Exercise(
       exerciseId: 'lat_pulldown',
       name: 'Lat Pulldown',
@@ -3300,6 +3397,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 98. Lever Cable Rear Pulldown
     Exercise(
       exerciseId: 'lever_cable_rear_pulldown',
       name: 'Lever Cable Rear Pulldown',
@@ -3334,6 +3432,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 99. Lever Deadlift
     Exercise(
       exerciseId: 'lever_deadlift',
       name: 'Lever Deadlift',
@@ -3368,6 +3467,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 100. Lever Front Pulldown
     Exercise(
       exerciseId: 'lever_front_pulldown',
       name: 'Lever Front Pulldown',
@@ -3402,6 +3502,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 101. Lever High Row
     Exercise(
       exerciseId: 'lever_high_row',
       name: 'Lever High Row',
@@ -3436,6 +3537,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 102. Lever Pullover
     Exercise(
       exerciseId: 'lever_pullover',
       name: 'Lever Pullover',
@@ -3470,6 +3572,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 103. Lever Reverse T Bar Row
     Exercise(
       exerciseId: 'lever_reverse_t_bar_row',
       name: 'Lever Reverse T Bar Row',
@@ -3504,6 +3607,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 104. Lever Shrug
     Exercise(
       exerciseId: 'lever_shrug',
       name: 'Lever Shrug',
@@ -3538,6 +3642,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Biceps', 'Rear Delts', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 105. Lever T Bar Row
     Exercise(
       exerciseId: 'lever_t_bar_row',
       name: 'Lever T Bar Row',
@@ -3572,6 +3677,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 106. Medicine Ball Overhead Throw
     Exercise(
       exerciseId: 'medicine_ball_overhead_throw',
       name: 'Medicine Ball Overhead Throw',
@@ -3606,6 +3712,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 107. Medicine Ball Sit Up Throw
     Exercise(
       exerciseId: 'medicine_ball_sit_up_throw',
       name: 'Medicine Ball Sit Up Throw',
@@ -3640,6 +3747,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 108. Nauka Sanchalanasan Rowing The Boat Pose
     Exercise(
       exerciseId: 'nauka_sanchalanasan_rowing_the_boat_pose',
       name: 'Nauka Sanchalanasan Rowing The Boat Pose',
@@ -3674,6 +3782,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 109. Neutral Grip Pull Up
     Exercise(
       exerciseId: 'neutral_grip_pull_up',
       name: 'Neutral Grip Pull Up',
@@ -3708,6 +3817,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 110. One Arm Barbell Row
     Exercise(
       exerciseId: 'one_arm_barbell_row',
       name: 'One Arm Barbell Row',
@@ -3742,6 +3852,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Advanced', 'Back'],
     ),
+    // 111. One Arm Cable Row
     Exercise(
       exerciseId: 'one_arm_cable_row',
       name: 'One Arm Cable Row',
@@ -3776,6 +3887,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 112. One Arm Landmine Row
     Exercise(
       exerciseId: 'one_arm_landmine_row',
       name: 'One Arm Landmine Row',
@@ -3810,6 +3922,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 113. Overhead Shrug
     Exercise(
       exerciseId: 'overhead_shrug',
       name: 'Overhead Shrug',
@@ -3844,6 +3957,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Biceps', 'Rear Delts', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 114. Plate Loaded Seated Row
     Exercise(
       exerciseId: 'plate_loaded_seated_row',
       name: 'Plate Loaded Seated Row',
@@ -3878,6 +3992,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 115. Prone Incline Shrug
     Exercise(
       exerciseId: 'prone_incline_shrug',
       name: 'Prone Incline Shrug',
@@ -3912,6 +4027,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Biceps', 'Rear Delts', 'Traps', 'Intermediate', 'Back'],
     ),
+    // 116. Pvc Hip Hinge
     Exercise(
       exerciseId: 'pvc_hip_hinge',
       name: 'Pvc Hip Hinge',
@@ -3946,6 +4062,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 117. Rack Pull
     Exercise(
       exerciseId: 'rack_pull',
       name: 'Rack Pull',
@@ -3980,6 +4097,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 118. Reaction Ball Throw
     Exercise(
       exerciseId: 'reaction_ball_throw',
       name: 'Reaction Ball Throw',
@@ -4014,6 +4132,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Exercise Ball', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 119. Resistance Band Pull Apart
     Exercise(
       exerciseId: 'resistance_band_pull_apart',
       name: 'Resistance Band Pull Apart',
@@ -4048,6 +4167,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 120. Resistance Band Reverse Hyperextension
     Exercise(
       exerciseId: 'resistance_band_reverse_hyperextension',
       name: 'Resistance Band Reverse Hyperextension',
@@ -4082,6 +4202,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 121. Reverse Grip Barbell Row
     Exercise(
       exerciseId: 'reverse_grip_barbell_row',
       name: 'Reverse Grip Barbell Row',
@@ -4116,6 +4237,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 122. Reverse Grip Machine Row
     Exercise(
       exerciseId: 'reverse_grip_machine_row',
       name: 'Reverse Grip Machine Row',
@@ -4150,6 +4272,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 123. Reverse Grip Pull Up
     Exercise(
       exerciseId: 'reverse_grip_pull_up',
       name: 'Reverse Grip Pull Up',
@@ -4184,6 +4307,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 124. Reverse Hyperextension Machine
     Exercise(
       exerciseId: 'reverse_hyperextension_machine',
       name: 'Reverse Hyperextension Machine',
@@ -4218,6 +4342,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 125. Reverse Hyperextensions
     Exercise(
       exerciseId: 'reverse_hyperextensions',
       name: 'Reverse Hyperextensions',
@@ -4252,6 +4377,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 126. Reverse Lat Pulldown
     Exercise(
       exerciseId: 'reverse_lat_pulldown',
       name: 'Reverse Lat Pulldown',
@@ -4286,6 +4412,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 127. Ring Inverted Row
     Exercise(
       exerciseId: 'ring_inverted_row',
       name: 'Ring Inverted Row',
@@ -4320,6 +4447,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 128. Romanian Deadlift
     Exercise(
       exerciseId: 'romanian_deadlift',
       name: 'Romanian Deadlift',
@@ -4354,6 +4482,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 129. Rope Straight Arm Pulldown
     Exercise(
       exerciseId: 'rope_straight_arm_pulldown',
       name: 'Rope Straight Arm Pulldown',
@@ -4388,6 +4517,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 130. Scapula Pull Up
     Exercise(
       exerciseId: 'scapula_pull_up',
       name: 'Scapula Pull Up',
@@ -4422,6 +4552,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 131. Seated Back Extension
     Exercise(
       exerciseId: 'seated_back_extension',
       name: 'Seated Back Extension',
@@ -4456,6 +4587,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 132. Seated Cable Rope Row
     Exercise(
       exerciseId: 'seated_cable_rope_row',
       name: 'Seated Cable Rope Row',
@@ -4490,6 +4622,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 133. Seated Cable Row
     Exercise(
       exerciseId: 'seated_cable_row',
       name: 'Seated Cable Row',
@@ -4524,6 +4657,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 134. Seated Row Machine
     Exercise(
       exerciseId: 'seated_row_machine',
       name: 'Seated Row Machine',
@@ -4558,6 +4692,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Machine', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 135. Shotgun Row
     Exercise(
       exerciseId: 'shotgun_row',
       name: 'Shotgun Row',
@@ -4592,6 +4727,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 136. Single Arm Twisting Seated Cable Row
     Exercise(
       exerciseId: 'single_arm_twisting_seated_cable_row',
       name: 'Single Arm Twisting Seated Cable Row',
@@ -4626,6 +4762,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 137. Single Leg Deadlift With Resistance Band
     Exercise(
       exerciseId: 'single_leg_deadlift_with_resistance_band',
       name: 'Single Leg Deadlift With Resistance Band',
@@ -4660,6 +4797,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 138. Single Leg Reverse Hyperextension Gymstick
     Exercise(
       exerciseId: 'single_leg_reverse_hyperextension_gymstick',
       name: 'Single Leg Reverse Hyperextension Gymstick',
@@ -4694,6 +4832,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 139. Smith Machine Bent Over Row
     Exercise(
       exerciseId: 'smith_machine_bent_over_row',
       name: 'Smith Machine Bent Over Row',
@@ -4728,6 +4867,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 140. Smith Machine Good Morning
     Exercise(
       exerciseId: 'smith_machine_good_morning',
       name: 'Smith Machine Good Morning',
@@ -4762,6 +4902,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 141. Standing Banded Row
     Exercise(
       exerciseId: 'standing_banded_row',
       name: 'Standing Banded Row',
@@ -4796,6 +4937,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Resistance Band', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 142. Standing Reach Up Back Rotation Stretch
     Exercise(
       exerciseId: 'standing_reach_up_back_rotation_stretch',
       name: 'Standing Reach Up Back Rotation Stretch',
@@ -4830,6 +4972,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 143. Superman
     Exercise(
       exerciseId: 'superman',
       name: 'Superman',
@@ -4864,6 +5007,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 144. T Bar Row
     Exercise(
       exerciseId: 't_bar_row',
       name: 'T Bar Row',
@@ -4898,6 +5042,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 145. Table Inverted Row
     Exercise(
       exerciseId: 'table_inverted_row',
       name: 'Table Inverted Row',
@@ -4932,6 +5077,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 146. Top Half Pull Up
     Exercise(
       exerciseId: 'top_half_pull_up',
       name: 'Top Half Pull Up',
@@ -4966,6 +5112,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 147. Trap Bar Deadlift
     Exercise(
       exerciseId: 'trap_bar_deadlift',
       name: 'Trap Bar Deadlift',
@@ -5000,6 +5147,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 148. Twisting Hyperextension
     Exercise(
       exerciseId: 'twisting_hyperextension',
       name: 'Twisting Hyperextension',
@@ -5034,6 +5182,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 149. Unilateral Lat Stretch On The Wall
     Exercise(
       exerciseId: 'unilateral_lat_stretch_on_the_wall',
       name: 'Unilateral Lat Stretch On The Wall',
@@ -5068,6 +5217,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 150. Upper Back Stretch
     Exercise(
       exerciseId: 'upper_back_stretch',
       name: 'Upper Back Stretch',
@@ -5102,6 +5252,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 151. Upside Down Pull Up
     Exercise(
       exerciseId: 'upside_down_pull_up',
       name: 'Upside Down Pull Up',
@@ -5136,6 +5287,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 152. V Bar Lat Pulldown
     Exercise(
       exerciseId: 'v_bar_lat_pulldown',
       name: 'V Bar Lat Pulldown',
@@ -5170,6 +5322,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Cable', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 153. Weighted Back Extension
     Exercise(
       exerciseId: 'weighted_back_extension',
       name: 'Weighted Back Extension',
@@ -5204,6 +5357,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 154. Weighted One Arm Pull Up
     Exercise(
       exerciseId: 'weighted_one_arm_pull_up',
       name: 'Weighted One Arm Pull Up',
@@ -5238,6 +5392,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Advanced', 'Back'],
     ),
+    // 155. Weighted Pull Up
     Exercise(
       exerciseId: 'weighted_pull_up',
       name: 'Weighted Pull Up',
@@ -5272,6 +5427,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Bodyweight', 'Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Intermediate', 'Back'],
     ),
+    // 156. Wide Grip Alternate Barbell Bent Over Row Plus
     Exercise(
       exerciseId: 'wide_grip_alternate_barbell_bent_over_row_plus',
       name: 'Wide Grip Alternate Barbell Bent Over Row Plus',
@@ -5306,6 +5462,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 157. Wide Grip Barbell Bent Over Row Plus
     Exercise(
       exerciseId: 'wide_grip_barbell_bent_over_row_plus',
       name: 'Wide Grip Barbell Bent Over Row Plus',
@@ -5340,6 +5497,7 @@ class BackExercises {
       estimatedCaloriesPerMinute: 6.0,
       tags: ['Upper Back', 'Lats', 'Biceps', 'Rear Delts', 'Barbell', 'Intermediate', 'Back'],
     ),
+    // 158. Zercher Deadlift
     Exercise(
       exerciseId: 'zercher_deadlift',
       name: 'Zercher Deadlift',
