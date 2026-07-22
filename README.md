@@ -12,7 +12,7 @@
   <a href="https://gym-genius-chi.vercel.app"><img src="https://img.shields.io/badge/Web%20App-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
   <a href="https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk"><img src="https://img.shields.io/badge/Android-Download%20Release-3DDC84?style=for-the-badge&logo=android&logoColor=white" /></a>
   <a href="https://github.com/yashkoolwal27/Gym-Genius/releases/download/v2.0.0/gym-genius-app-debug.apk"><img src="https://img.shields.io/badge/Android-Download%20Debug-orange?style=for-the-badge&logo=android&logoColor=white" /></a>
-  <a href="#-ios-installation"><img src="https://img.shields.io/badge/iOS-Xcode%20Build-000000?style=for-the-badge&logo=apple&logoColor=white" /></a>
+  <a href="https://codemagic.io/app/6a3af45b1c1cf2dde1a54bd1/build/6a608e83c8615a8049c38744"><img src="https://img.shields.io/badge/iOS-Download%20IPA-000000?style=for-the-badge&logo=apple&logoColor=white" /></a>
 </p>
 
 <p align="center">
@@ -44,8 +44,8 @@
 | Platform | Build Status | Access / Download |
 |:---|:---|:---|
 | **🌐 Web (Next.js)** | ![Vercel Deploy](https://img.shields.io/badge/Vercel-Deployed-brightgreen?style=flat-square) | [Launch Live Site](https://gym-genius-chi.vercel.app) |
-| **🤖 Android App** | ![APK Release](https://img.shields.io/badge/APK-Available-blue?style=flat-square) | [Download Release APK (59MB)](https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk) <br> [Download Debug APK (181MB)](https://github.com/yashkoolwal27/Gym-Genius/releases/download/v2.0.0/gym-genius-app-debug.apk) |
-| **🍎 iOS App** | ![Xcode Compilation](https://img.shields.io/badge/Xcode-Build%20Ready-lightgrey?style=flat-square) | [iOS Instructions](#-ios-installation) |
+| **🤖 Android App** | ![APK Available](https://img.shields.io/badge/APK-Available-blue?style=flat-square) | [Download Release APK (59MB)](https://github.com/yashkoolwal27/Gym-Genius/raw/main/gym-genius-app.apk) <br> [Download Debug APK (181MB)](https://github.com/yashkoolwal27/Gym-Genius/releases/download/v2.0.0/gym-genius-app-debug.apk) |
+| **🍎 iOS App** | ![IPA Available](https://img.shields.io/badge/IPA-Available-black?style=flat-square) | [Download GymGenius.ipa (252MB)](https://codemagic.io/app/6a3af45b1c1cf2dde1a54bd1/build/6a608e83c8615a8049c38744) <br> [iOS Installation Guide](#-ios-installation) |
 
 ---
 
@@ -140,12 +140,19 @@ flutter run
 *Note: You can also clean and fetch packages from the workspace root: `npm run app:clean`, `npm run app:pubget`.*
 
 #### 🍏 iOS Installation
-To run the iOS version on a simulator or device:
+You can install the **GymGenius.ipa** on any iPhone without jailbreaking:
+
+**Option 1: Direct Sideloading via Sideloadly (Windows & Mac)**
+1. Download **[GymGenius.ipa](https://codemagic.io/app/6a3af45b1c1cf2dde1a54bd1/build/6a608e83c8615a8049c38744)** from the link above.
+2. Download and install **[Sideloadly](https://sideloadly.io/)**.
+3. Connect your iPhone to your PC via USB cable.
+4. Drag `GymGenius.ipa` into Sideloadly, enter your Apple ID, and click **Start**.
+
+**Option 2: Build via Xcode (Mac)**
 1. Open terminal in `/app/ios`.
 2. Run `pod install`.
 3. Open `Runner.xcworkspace` in Xcode.
-4. Configure your Development Team signing profiles.
-5. Select a target iOS simulator and click **Run** (or run `flutter run` inside `/app`).
+4. Select your target device and click **Run** (or `flutter run` inside `/app`).
 
 ---
 
