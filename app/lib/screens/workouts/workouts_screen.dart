@@ -2454,9 +2454,17 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                                       borderRadius: BorderRadius.circular(6),
                                       child: SizedBox(
                                         width: 36, height: 36,
-                                        child: altEx.thumbnail.isNotEmpty
-                                            ? Image.network(altEx.thumbnail, fit: BoxFit.cover, errorBuilder: (_, __, ___) => Container(color: AppColors.border))
-                                            : Container(color: AppColors.border, child: const Icon(Icons.fitness_center, size: 16)),
+                                        child: altEx.gifUrl.isNotEmpty
+                                            ? Image.asset(
+                                                altEx.gifUrl,
+                                                fit: BoxFit.cover,
+                                                errorBuilder: (_, __, ___) => altEx.thumbnail.isNotEmpty
+                                                    ? Image.network(altEx.thumbnail, fit: BoxFit.cover, errorBuilder: (_, __, ___) => Container(color: AppColors.border))
+                                                    : Container(color: AppColors.border, child: const Icon(Icons.fitness_center, size: 16)),
+                                              )
+                                            : altEx.thumbnail.isNotEmpty
+                                                ? Image.network(altEx.thumbnail, fit: BoxFit.cover, errorBuilder: (_, __, ___) => Container(color: AppColors.border))
+                                                : Container(color: AppColors.border, child: const Icon(Icons.fitness_center, size: 16)),
                                       ),
                                     ),
                                     const SizedBox(width: 8),
