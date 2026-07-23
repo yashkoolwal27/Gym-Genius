@@ -57,5 +57,6 @@ flutter:
     - assets/lottie/
     - assets/gif/male/
     - assets/images/
+    - assets/json/
 
 

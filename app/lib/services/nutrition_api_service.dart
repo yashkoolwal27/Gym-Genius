@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:uuid/uuid.dart';
 import '../models/models.dart';
@@ -589,6 +590,34 @@ class NutritionApiService {
     return servings;
   }
 
+  static List<FoodItem> _jsonFoodDb = [];
+
+  static Future<void> loadAssetFoodDatabase() async {
+    if (_jsonFoodDb.isNotEmpty) return;
+    try {
+      final jsonString = await rootBundle.loadString('assets/json/master_indian_foods_db.json');
+      final Map<String, dynamic> data = json.decode(jsonString);
+      final List items = data['items'] ?? [];
+      _jsonFoodDb = items.map((item) {
+        final String name = item['name'] ?? '';
+        final String serving = item['servingUnit'] ?? '100g';
+        return FoodItem(
+          id: item['foodId'] ?? 'food_${name.toLowerCase().replaceAll(' ', '_')}',
+          name: name,
+          servingSize: serving,
+          calories: (item['calories'] as num?)?.toDouble() ?? 0.0,
+          protein: (item['protein'] as num?)?.toDouble() ?? 0.0,
+          carbs: (item['carbs'] as num?)?.toDouble() ?? 0.0,
+          fat: (item['fat'] as num?)?.toDouble() ?? 0.0,
+          fiber: (item['fiber'] as num?)?.toDouble() ?? 0.0,
+          imageUrl: item['imageUrl'] ?? getFoodImage(name),
+          lastUpdated: DateTime.now().toIso8601String(),
+          servings: parseServings(serving),
+        );
+      }).toList();
+    } catch (_) {}
+  }
+
   // Strict Fallback Search Query (Master DB -> Custom Foods -> USDA -> OpenFoodFacts)
   Future<List<FoodItem>> searchFoods(String query) async {
     if (query.trim().isEmpty) return [];
@@ -599,7 +628,18 @@ class NutritionApiService {
     // Fetch global image overrides
     final overrides = await firestoreService.getGlobalFoodOverrides();
 
-    // 1. Search foods_master on Firestore
+    // Load master 1,284 asset database
+    await loadAssetFoodDatabase();
+
+    // 1. Search 1,284 items master asset JSON database
+    final jsonMatches = _jsonFoodDb
+        .where((f) => f.name.toLowerCase().contains(query.toLowerCase()))
+        .toList();
+    if (jsonMatches.isNotEmpty) {
+      rawResults.addAll(jsonMatches);
+    }
+
+    // 2. Search foods_master on Firestore
     try {
       final masterSnap = await FirebaseFirestore.instance
           .collection('foods_master')
@@ -611,7 +651,7 @@ class NutritionApiService {
       }
     } catch (_) {}
 
-    // 2. Search local DB
+    // 3. Search local DB
     final localMatches = _localFoodDb
         .where((f) => f.name.toLowerCase().contains(query.toLowerCase()))
         .toList();
