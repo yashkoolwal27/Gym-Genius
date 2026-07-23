@@ -625,14 +625,18 @@ class FirestoreService {
         }
       }
       if (snap.docs.isEmpty || needsReSeed) {
-        // Seed/overwrite from local
+        // Seed/overwrite from local in batches of 400 (Firestore max is 500 per batch)
         final localList = ExercisesData.masterExercises;
-        final batch = _db.batch();
-        for (final ex in localList) {
-          final docRef = _db.collection('exercise_master').doc(ex.exerciseId);
-          batch.set(docRef, ex.toMap());
+        for (int i = 0; i < localList.length; i += 400) {
+          final batch = _db.batch();
+          final end = (i + 400 < localList.length) ? i + 400 : localList.length;
+          for (int j = i; j < end; j++) {
+            final ex = localList[j];
+            final docRef = _db.collection('exercise_master').doc(ex.exerciseId);
+            batch.set(docRef, ex.toMap());
+          }
+          await batch.commit();
         }
-        await batch.commit();
         return localList;
       } else {
         return snap.docs.map((d) => Exercise.fromMap(d.data())).toList();

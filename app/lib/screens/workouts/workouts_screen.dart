@@ -833,6 +833,29 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     return score;
   }
 
+  bool _exerciseMatchesMuscleGroup(Exercise ex, String targetMuscle) {
+    final targetLower = targetMuscle.toLowerCase();
+    
+    final isAbsTarget = targetLower == 'abs' || targetLower == 'core';
+    
+    bool matchesString(String str) {
+      final s = str.toLowerCase();
+      if (isAbsTarget && (s == 'abs' || s == 'core' || s.contains('abdom') || s.contains('oblique'))) {
+        return true;
+      }
+      return s == targetLower || s.contains(targetLower);
+    }
+
+    if (matchesString(ex.muscleGroup)) return true;
+    if (matchesString(ex.bodyRegion)) return true;
+    if (ex.primaryMuscles.any(matchesString)) return true;
+    if (ex.secondaryMuscles.any(matchesString)) return true;
+    if (ex.targetRegions.any(matchesString)) return true;
+    if (ex.tags.any(matchesString)) return true;
+
+    return false;
+  }
+
   Exercise? _getExerciseByName(String name) {
     try {
       return _allExercises.firstWhere((e) => e.name.toLowerCase() == name.toLowerCase());
@@ -1432,7 +1455,18 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
   }
 
   Widget _buildStep1_Muscles() {
-    final List<String> muscleList = ['Chest', 'Back', 'Legs', 'Shoulders', 'Biceps', 'Triceps', 'Abs', 'Cardio'];
+    final List<String> muscleList = [
+      'Chest',
+      'Back',
+      'Legs',
+      'Shoulders',
+      'Biceps',
+      'Triceps',
+      'Abs',
+      'Forearms',
+      'Cardio',
+      'Full Body',
+    ];
     final recoveryData = _getMuscleRecoveryHours();
 
     return SingleChildScrollView(
@@ -1725,9 +1759,14 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
 
     final filteredExercises = _allExercises.where((ex) {
       if (_searchQuery.isNotEmpty) {
-        return ex.name.toLowerCase().contains(_searchQuery.toLowerCase());
+        final query = _searchQuery.toLowerCase();
+        return ex.name.toLowerCase().contains(query) ||
+            ex.exerciseId.toLowerCase().contains(query) ||
+            ex.muscleGroup.toLowerCase().contains(query) ||
+            ex.tags.any((t) => t.toLowerCase().contains(query));
       }
-      return _selectedMuscles.contains(ex.muscleGroup);
+      if (_selectedMuscles.isEmpty) return true;
+      return _selectedMuscles.any((m) => _exerciseMatchesMuscleGroup(ex, m));
     }).toList();
 
     List<Exercise> displayExercises = filteredExercises;
