@@ -738,7 +738,7 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
   List<WorkoutLog> _workoutHistory = [];
   bool _isLoadingData = true;
   final Set<String> _activeFilters = {};
-  bool _isExerciseGridView = false;
+  int _exerciseViewMode = 2; // 0: Detailed List, 1: 1-Col Grid, 2: 2-Col Grid, 3: 3-Col Grid
 
   // Added search, favorites, recents, templates state
   final TextEditingController _searchController = TextEditingController();
@@ -754,7 +754,9 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     'Biceps': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcAuGhshbzpV6PZKnj3lGdJpG991ZD0xajbsXGK2A6YtieNOT-zZZid5EP&s=10?w=400&q=80',
     'Triceps': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxe-tc2WdbAjxGyjguenedpTya49ro0x5aHmjin0EA2w&s=10?w=400&q=80',
     'Abs': 'https://cdn.mypowerlife.com/wp-content/uploads/2021/04/64572607_s.jpg?w=400&q=80',
+    'Forearms': 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&q=80',
     'Cardio': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFpdUqEFnnA4AoBJkcrmcJuxlrWqQIFvSubImdAQiG3XB8JY_-9a0RJuOI&s=10?w=400&q=80',
+    'Full Body': 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&q=80',
   };
 
   @override
@@ -849,9 +851,7 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     if (matchesString(ex.muscleGroup)) return true;
     if (matchesString(ex.bodyRegion)) return true;
     if (ex.primaryMuscles.any(matchesString)) return true;
-    if (ex.secondaryMuscles.any(matchesString)) return true;
     if (ex.targetRegions.any(matchesString)) return true;
-    if (ex.tags.any(matchesString)) return true;
 
     return false;
   }
@@ -1648,7 +1648,7 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                         children: [
                           Expanded(
                             child: Image.network(
-                              _muscleImages[muscle]!,
+                              _muscleImages[muscle] ?? '',
                               fit: BoxFit.cover,
                               errorBuilder: (_, __, ___) => Container(color: AppColors.border, child: const Icon(Icons.fitness_center)),
                             ),
@@ -1836,18 +1836,67 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                   color: AppColors.cardBg,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: IconButton(
+                child: PopupMenuButton<int>(
+                  initialValue: _exerciseViewMode,
+                  color: AppColors.cardBg,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                   icon: Icon(
-                    _isExerciseGridView
+                    _exerciseViewMode == 0
                         ? Icons.format_list_bulleted_rounded
-                        : Icons.grid_view_rounded,
+                        : _exerciseViewMode == 1
+                            ? Icons.view_agenda_rounded
+                            : _exerciseViewMode == 2
+                                ? Icons.grid_view_rounded
+                                : Icons.apps_rounded,
                     color: AppColors.primary,
                   ),
-                  onPressed: () {
+                  onSelected: (mode) {
                     setState(() {
-                      _isExerciseGridView = !_isExerciseGridView;
+                      _exerciseViewMode = mode;
                     });
                   },
+                  itemBuilder: (context) => [
+                    const PopupMenuItem(
+                      value: 0,
+                      child: Row(
+                        children: [
+                          Icon(Icons.format_list_bulleted_rounded, color: AppColors.primary, size: 18),
+                          SizedBox(width: 10),
+                          Text('Detailed List (1 per row)', style: TextStyle(color: AppColors.textPrimary, fontSize: 12)),
+                        ],
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 1,
+                      child: Row(
+                        children: [
+                          Icon(Icons.view_agenda_rounded, color: AppColors.primary, size: 18),
+                          SizedBox(width: 10),
+                          Text('Large Cards (1 per row)', style: TextStyle(color: AppColors.textPrimary, fontSize: 12)),
+                        ],
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 2,
+                      child: Row(
+                        children: [
+                          Icon(Icons.grid_view_rounded, color: AppColors.primary, size: 18),
+                          SizedBox(width: 10),
+                          Text('2-Column Grid (2 per row)', style: TextStyle(color: AppColors.textPrimary, fontSize: 12)),
+                        ],
+                      ),
+                    ),
+                    const PopupMenuItem(
+                      value: 3,
+                      child: Row(
+                        children: [
+                          Icon(Icons.apps_rounded, color: AppColors.primary, size: 18),
+                          SizedBox(width: 10),
+                          Text('3-Column Grid (3 per row)', style: TextStyle(color: AppColors.textPrimary, fontSize: 12)),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
@@ -2041,8 +2090,8 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                           ],
                         ),
                       ),
-                      if (_isExerciseGridView)
-                        _buildExerciseGrid(recommended)
+                      if (_exerciseViewMode > 0)
+                        _buildExerciseGrid(recommended, columns: _exerciseViewMode)
                       else
                         ...recommended.map((ex) => _buildExerciseTile(ex)),
                       const SizedBox(height: 16),
@@ -2059,8 +2108,8 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                           ),
                         ),
                       ),
-                      if (_isExerciseGridView)
-                        _buildExerciseGrid(other)
+                      if (_exerciseViewMode > 0)
+                        _buildExerciseGrid(other, columns: _exerciseViewMode)
                       else
                         ...other.map((ex) => _buildExerciseTile(ex)),
                     ],
@@ -2071,15 +2120,17 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
     );
   }
 
-  Widget _buildExerciseGrid(List<Exercise> exercises) {
+  Widget _buildExerciseGrid(List<Exercise> exercises, {int columns = 2}) {
+    final double aspectRatio = columns == 1 ? 1.4 : (columns == 2 ? 0.95 : 0.7);
+
     return GridView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: columns,
         mainAxisSpacing: 8,
         crossAxisSpacing: 8,
-        childAspectRatio: 0.7,
+        childAspectRatio: aspectRatio,
       ),
       itemCount: exercises.length,
       itemBuilder: (context, index) {
@@ -2541,24 +2592,22 @@ class LogWorkoutStepperState extends State<LogWorkoutStepper> {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(16),
                       child: Container(
-                        height: 200,
                         width: double.infinity,
-                        decoration: BoxDecoration(
-                          border: Border.all(color: AppColors.border),
-                        ),
+                        constraints: const BoxConstraints(maxHeight: 280, minHeight: 180),
+                        color: Colors.white,
                         child: ex.gifUrl.isNotEmpty
                             ? Image.asset(
                                 ex.gifUrl,
-                                fit: BoxFit.cover,
+                                fit: BoxFit.contain,
                                 errorBuilder: (_, __, ___) => Image.network(
                                   ex.thumbnail,
-                                  fit: BoxFit.cover,
+                                  fit: BoxFit.contain,
                                   errorBuilder: (_, __, ___) => const Center(child: Icon(Icons.image, size: 40, color: AppColors.textMuted)),
                                 ),
                               )
                             : Image.network(
                                 ex.thumbnail,
-                                fit: BoxFit.cover,
+                                fit: BoxFit.contain,
                                 errorBuilder: (_, __, ___) => const Center(child: Icon(Icons.image, size: 40, color: AppColors.textMuted)),
                               ),
                       ),
